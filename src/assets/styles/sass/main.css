@@ -1,0 +1,56 @@
+:root {
+  --color-primary: #cc4600;
+  --color-secondary: #bb45cb;
+  --color-tertiary: #eefff8;
+  --color-dark: rgba(22, 22, 22, 1);
+  --color--dark-1: rgba(34, 34, 34, 1);
+  --color--dark-2: rgba(45, 45, 45, 1);
+  --color--dark-3: rgba(51, 51, 51, 1);
+  --color--dark-4: rgba(189, 189, 189, 1);
+  --color-white: rgba(255, 255, 255, 1);
+  --light-blue: rgba(97, 218, 251, 1);
+  --dark-blue: rgba(0, 122, 204, 1);
+  --color-green: rgba(131, 205, 41, 1);
+  --font-size: 1rem;
+  --font-size--small: 1.2rem;
+  --font-size--medium: 1.4rem;
+  --font-size--large: 1.6rem;
+  --font-size--x-large: 1.8rem;
+  --font-size--xx-large: 2rem;
+  --font-family: "Roboto", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: var(--font-family);
+  color: var(--color-white);
+  background-color: var(--color-dark);
+}
+
+::-moz-selection {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+::selection {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.layout {
+  font-size: var(--font-size);
+}
+.layout--title__content {
+  color: var(--color-tertiary);
+  text-shadow: var(--color-secondary) 0 1px 0;
+  margin: 0rem;
+  padding: 0.2rem 0.5rem;
+}/*# sourceMappingURL=main.css.map */
