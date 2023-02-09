@@ -22,13 +22,12 @@ const CustomNavLink = ({ to, ...props }) => {
   return (
     <NavLink
       to={to}
-      style={({ isActive }) =>
-        isActive ? activeStyle : { textDecoration: "none" }
-      }
+      style={({ isActive }) => isActive ? activeStyle : { textDecoration: "none" }}
       {...props}
     />
   );
 };
+
 
 const LayoutSmall = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -45,19 +44,15 @@ const LayoutSmall = () => {
     <div className="layout-small">
       <header className="layout-small--header">
         <div className="layout-small--title">
-          <h1 className="layout-small--title__content">
-            {"<"}ELUEMICHAEL {"/>"}
-          </h1>
+          <h1 className="layout-small--title__content">{"<"}ELUEMICHAEL {"/>"}</h1>
         </div>
         <div className="layout-small--menu">
           <button className="layout-small--menu__button" onClick={toggleMenu}>
             {showMenu ? <MdClose /> : <FiMenu />}
           </button>
-          <div
-            className={`layout-small--menu__content ${showMenu ? "show" : ""}`}
-          >
-            <ul className="layout-small--menu__content__list">
-              <li className="layout-small--menu__content__list__item">
+          <div className={`layout-small--menu__content ${showMenu ? "show" : ""}`}>
+            {/* <ul className="layout-small--menu__content__list"> */}
+              {/* <li className="layout-small--menu__content__list__item"> */}
                 <CustomNavLink to="/" onClick={closeMenu}>
                   Home
                 </CustomNavLink>
@@ -90,9 +85,7 @@ const LayoutLarge = () => {
     <div className="layout-large">
       <header className="layout-large--header">
         <div className="layout-large--title">
-          <h1 className="layout-large--title__content">
-            {"<"}ELUEMICHAEL {"/>"}
-          </h1>
+          <h1 className="layout-large--title__content">{"<"}ELUEMICHAEL {"/>"}</h1>
         </div>
         <div className="layout-large--menu">
           <ul className="layout-large--menu__list">
@@ -113,6 +106,6 @@ const LayoutLarge = () => {
       </header>
     </div>
   );
-};
+}
 
 export { Layout, LayoutSmall, LayoutLarge };

@@ -7,7 +7,6 @@ import Fallback from "./components/fallback";
 function App() {
   return (
     <ErrorBoundary FallbackComponent={Fallback}>
-      <Layout />
       <Routes>
         <Route path="/" element={<Home />} />
         {/* <Route path="/layout" element={<Layout />} /> */}
