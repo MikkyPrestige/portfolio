@@ -1,0 +1,19 @@
+.layout {
+width: 100%;
+height: 100%;
+
+
+  &--large {
+    display: none;
+  }
+
+  &--title {
+
+    &__content {
+      color: var(--color-tertiary);
+      text-shadow: var(--color-secondary) 0 1px 0;
+      margin: 0rem;
+      padding: .2rem .5rem;
+    }
+  }
+}
