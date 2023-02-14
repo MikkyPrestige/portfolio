@@ -10,13 +10,13 @@
 
     &__title {
       text-align: center;
+      position: relative;
 
       &__content {
         color: var(--color--text);
         font-family: var(--font-family--tertiary);
         font-size: var(--font-size--large);
         font-weight: var(--font-weight--regular);
-        position: absolute;
         z-index: 1000;
 
         &__span {

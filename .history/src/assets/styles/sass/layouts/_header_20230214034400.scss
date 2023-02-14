@@ -16,8 +16,6 @@
         font-family: var(--font-family--tertiary);
         font-size: var(--font-size--large);
         font-weight: var(--font-weight--regular);
-        position: absolute;
-        z-index: 1000;
 
         &__span {
           color: var(--dark-blue);
@@ -97,7 +95,7 @@
           }
 
           span {
-            color: var(--color--white-1);
+            color: var(--color--text);
           }
         }
       }

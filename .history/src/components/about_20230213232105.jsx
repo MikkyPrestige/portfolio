@@ -1,13 +1,4 @@
 import React from "react";
-import { GiSkills } from "react-icons/gi";
-import { FaHtml5 } from "react-icons/fa";
-import { FaCss3Alt } from "react-icons/fa";
-import { FaSass } from "react-icons/fa";
-import { FaJs } from "react-icons/fa";
-import { DiGit } from "react-icons/di";
-import { FaReact } from "react-icons/fa";
-import { FaVuejs } from "react-icons/fa";
-import { FaFigma } from "react-icons/fa";
 
 const AboutMe = () => {
   return (
@@ -47,24 +38,20 @@ const AboutMe = () => {
       </div>
       <div className="about--skills">
         <div className="about--skills__title">
-          <h1 className="about--skills__title__head">
-            My skills <GiSkills />
-          </h1>
+          <h1 className="about--skills__title__head">My skills</h1>
         </div>
         <div className="about--skills__content">
           <div className="about--skills__content__item">
             <div className="about--skills__content__item__icon">
-              <FaHtml5 />
+              <i className="fab fa-html5"></i>
             </div>
             <div className="about--skills__content__item__text">
-              <h2 className="about--skills__content__item__text__head">
-                HTML5
-              </h2>
+              <h2 className="about--skills__content__item__text__head">HTML5</h2>
             </div>
           </div>
           <div className="about--skills__content__item">
             <div className="about--skills__content__item__icon">
-              <FaCss3Alt />
+              <i className="fab fa-css3-alt"></i>
             </div>
             <div className="about--skills__content__item__text">
               <h2 className="about--skills__content__item__text__head">CSS3</h2>
@@ -72,15 +59,17 @@ const AboutMe = () => {
           </div>
           <div className="about--skills__content__item">
             <div className="about--skills__content__item__icon">
-              <FaSass />
+              <i className="fab fa-js-square"></i>
             </div>
             <div className="about--skills__content__item__text">
-              <h2 className="about--skills__content__item__text__head">SCSS</h2>
+              <h2 className="about--skills__content__item__text__head">
+                SCSS
+              </h2>
             </div>
           </div>
           <div className="about--skills__content__item">
             <div className="about--skills__content__item__icon">
-              <FaJs />
+              <i className="fab fa-react"></i>
             </div>
             <div className="about--skills__content__item__text">
               <h2 className="about--skills__content__item__text__head">
@@ -90,25 +79,15 @@ const AboutMe = () => {
           </div>
           <div className="about--skills__content__item">
             <div className="about--skills__content__item__icon">
-              <DiGit />
+              <i className="fab fa-vuejs"></i>
             </div>
             <div className="about--skills__content__item__text">
-              <h2 className="about--skills__content__item__text__head">Git</h2>
+              <h2 className="about--skills__content__item__text__head">React</h2>
             </div>
           </div>
           <div className="about--skills__content__item">
             <div className="about--skills__content__item__icon">
-              <FaReact />
-            </div>
-            <div className="about--skills__content__item__text">
-              <h2 className="about--skills__content__item__text__head">
-                React
-              </h2>
-            </div>
-          </div>
-          <div className="about--skills__content__item">
-            <div className="about--skills__content__item__icon">
-              <FaVuejs />
+              <i className="fab fa-node-js"></i>
             </div>
             <div className="about--skills__content__item__text">
               <h2 className="about--skills__content__item__text__head">Vue</h2>
@@ -116,11 +95,35 @@ const AboutMe = () => {
           </div>
           <div className="about--skills__content__item">
             <div className="about--skills__content__item__icon">
-              <FaFigma />
+              <i className="fab fa-git-alt"></i>
+            </div>
+            <div className="about--skills__content__item__text">
+              <h2 className="about--skills__content__item__text__head">Git</h2>
+            </div>
+          </div>
+          <div className="about--skills__content__item">
+            <div className="about--skills__content__item__icon">
+              <i className="fab fa-npm"></i>
+            </div>
+            <div className="about--skills__content__item__text">
+              <h2 className="about--skills__content__item__text__head">Figma</h2>
+            </div>
+          </div>
+          <div className="about--skills__content__item">
+            <div className="about--skills__content__item__icon">
+              <i className="fab fa-sass"></i>
+            </div>
+            <div className="about--skills__content__item__text">
+              <h2 className="about--skills__content__item__text__head">SASS</h2>
+            </div>
+          </div>
+          <div className="about--skills__content__item">
+            <div className="about--skills__content__item__icon">
+              <i className="fab fa-bootstrap"></i>
             </div>
             <div className="about--skills__content__item__text">
               <h2 className="about--skills__content__item__text__head">
-                Figma
+                Bootstrap
               </h2>
             </div>
           </div>

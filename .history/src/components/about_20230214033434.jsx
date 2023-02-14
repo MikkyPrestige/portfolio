@@ -1,13 +1,14 @@
 import React from "react";
-import { GiSkills } from "react-icons/gi";
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
 import { FaSass } from "react-icons/fa";
+// import { TbBrandSass } from"react-icons/tb";
 import { FaJs } from "react-icons/fa";
-import { DiGit } from "react-icons/di";
+import { DiGit } from ".react-icons/di"
 import { FaReact } from "react-icons/fa";
 import { FaVuejs } from "react-icons/fa";
 import { FaFigma } from "react-icons/fa";
+
 
 const AboutMe = () => {
   return (
@@ -47,24 +48,20 @@ const AboutMe = () => {
       </div>
       <div className="about--skills">
         <div className="about--skills__title">
-          <h1 className="about--skills__title__head">
-            My skills <GiSkills />
-          </h1>
+          <h1 className="about--skills__title__head">My skills</h1>
         </div>
         <div className="about--skills__content">
           <div className="about--skills__content__item">
             <div className="about--skills__content__item__icon">
-              <FaHtml5 />
+            <FaHtml5 />
             </div>
             <div className="about--skills__content__item__text">
-              <h2 className="about--skills__content__item__text__head">
-                HTML5
-              </h2>
+              <h2 className="about--skills__content__item__text__head">HTML5</h2>
             </div>
           </div>
           <div className="about--skills__content__item">
             <div className="about--skills__content__item__icon">
-              <FaCss3Alt />
+            <FaCss3Alt />
             </div>
             <div className="about--skills__content__item__text">
               <h2 className="about--skills__content__item__text__head">CSS3</h2>
@@ -72,15 +69,17 @@ const AboutMe = () => {
           </div>
           <div className="about--skills__content__item">
             <div className="about--skills__content__item__icon">
-              <FaSass />
+            <FaSass />
             </div>
             <div className="about--skills__content__item__text">
-              <h2 className="about--skills__content__item__text__head">SCSS</h2>
+              <h2 className="about--skills__content__item__text__head">
+                SCSS
+              </h2>
             </div>
           </div>
           <div className="about--skills__content__item">
             <div className="about--skills__content__item__icon">
-              <FaJs />
+            <FaJs />
             </div>
             <div className="about--skills__content__item__text">
               <h2 className="about--skills__content__item__text__head">
@@ -90,7 +89,7 @@ const AboutMe = () => {
           </div>
           <div className="about--skills__content__item">
             <div className="about--skills__content__item__icon">
-              <DiGit />
+            <DiGit />
             </div>
             <div className="about--skills__content__item__text">
               <h2 className="about--skills__content__item__text__head">Git</h2>
@@ -98,17 +97,15 @@ const AboutMe = () => {
           </div>
           <div className="about--skills__content__item">
             <div className="about--skills__content__item__icon">
-              <FaReact />
+            <FaReact />
             </div>
             <div className="about--skills__content__item__text">
-              <h2 className="about--skills__content__item__text__head">
-                React
-              </h2>
+              <h2 className="about--skills__content__item__text__head">React</h2>
             </div>
           </div>
           <div className="about--skills__content__item">
             <div className="about--skills__content__item__icon">
-              <FaVuejs />
+            <FaVuejs />
             </div>
             <div className="about--skills__content__item__text">
               <h2 className="about--skills__content__item__text__head">Vue</h2>
@@ -116,12 +113,10 @@ const AboutMe = () => {
           </div>
           <div className="about--skills__content__item">
             <div className="about--skills__content__item__icon">
-              <FaFigma />
+            <FaFigma />
             </div>
             <div className="about--skills__content__item__text">
-              <h2 className="about--skills__content__item__text__head">
-                Figma
-              </h2>
+              <h2 className="about--skills__content__item__text__head">Figma</h2>
             </div>
           </div>
         </div>

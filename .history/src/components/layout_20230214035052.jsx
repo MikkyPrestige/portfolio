@@ -66,7 +66,7 @@ const LayoutSmall = () => {
                   onClick={closeMenu}
                   className="layout--menu__content__list__item"
                 >
-                  <span>#</span>Home
+                 <span>#</span>Home
                 </CustomNavLink>
               </li>
               <li>
@@ -84,7 +84,7 @@ const LayoutSmall = () => {
                   onClick={closeMenu}
                   className="layout--menu__content__list__item"
                 >
-                  <span>#</span>Projects
+                 <span>#</span>Projects
                 </CustomNavLink>
               </li>
               <li>
@@ -93,7 +93,7 @@ const LayoutSmall = () => {
                   onClick={closeMenu}
                   className="layout--menu__content__list__item"
                 >
-                  <span>#</span>Contact
+                 <span>#</span>Contact
                 </CustomNavLink>
               </li>
             </ul>

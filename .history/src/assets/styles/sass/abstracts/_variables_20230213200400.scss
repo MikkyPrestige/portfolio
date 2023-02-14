@@ -22,7 +22,6 @@
   //WHITE
   --color--white: rgba(255, 255, 255, 1);
   --color--white-1: rgba(240, 227, 202, 1);
-  --color--white-op: rgba(240, 227, 202, 0.76);
 
   // GRAY
   --color--gray: #ABB2BF;
@@ -31,9 +30,9 @@
   --light-blue--1: #3bc9db;
   --dark-blue: rgba(0, 122, 204, 1);
   --blue-cyan: #228be6;
-  --dark-blue-op: rgba(0, 122, 204, 0.82);
+  --dark-blue--op: rgba(0, 122, 204, 1, 0.82);
 
-  --color--green: rgba(131, 205, 41, 1);
+  --color-green: rgba(131, 205, 41, 1);
 
   //Font size
   --font-size: 1rem;

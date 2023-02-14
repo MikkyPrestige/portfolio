@@ -4,7 +4,7 @@
   background-color: var(--color--bg-dark-2);
   color: var(--color--gray);
 
-  &--desc {
+  &--container {
     padding: 5rem;
     display: flex;
     flex-direction: column;
@@ -28,7 +28,7 @@
 
     &__content2 {
       width: 3rem;
-      height: 3rem;
+      height:3rem;
       position: absolute;
       top: 0;
       left: 0;
