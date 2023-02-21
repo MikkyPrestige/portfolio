@@ -44,10 +44,7 @@ const Projects = () => {
           </div>
           <div className="project--card__links">
             <Link
-              to={{
-                pathname:
-                  "https://github.com/MeekyBerry/Phonie-project-Phantom_Devz",
-              }}
+              to={{ pathname: "https://github.com/MeekyBerry/Phonie-project-Phantom_Devz" }}
               target="_blank"
               className="project--card__links__link"
             >

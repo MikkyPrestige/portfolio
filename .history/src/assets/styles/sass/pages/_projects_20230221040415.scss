@@ -1,0 +1,36 @@
+.project {
+  padding: 2rem;
+  background-color: var(--color--bg-dark-2);
+
+  &--title {
+    font-family: var(--font--family--secondary);
+    font-size: var(--font-size--large);
+    font-weight: var(--font-weight--bold);
+    color: var(--blue-cyan);
+    margin-bottom: 1rem;
+  }
+
+  &--wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
+  }
+
+  &--card {
+    background-color: var(--color--bg-dark);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.5rem 0.1rem var(--color--dark-4);
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      transform: translateY(-0.5rem);
+      box-shadow: 0 0 0.5rem 0.1rem var(--color--dark-4);
+    }
+  }
+}

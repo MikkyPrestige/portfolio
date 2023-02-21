@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 const Projects = () => {
   return (
     <div className="project">
-      <h1 className="project--title">My Works</h1>
+      <h1 className="project--header">My Works</h1>
       <div className="project--wrapper">
         <div className="project--card">
-          <div className="project--card__blur project--card__blur-1"></div>
+          <div className="project--card__blur"></div>
           <div className="project--card__content">
             <h2 className="project--card__content__title">RanDomPeopleApp</h2>
             <p className="project--card__content__desc">
@@ -33,7 +33,7 @@ const Projects = () => {
           </div>
         </div>
         <div className="project--card">
-          <div className="project--card__blur project--card__blur-2"></div>
+          <div className="project--card__blur"></div>
           <div className="project--card__content">
             <h2 className="project--card__content__title">Phonie App</h2>
             <p className="project--card__content__desc">
@@ -44,10 +44,7 @@ const Projects = () => {
           </div>
           <div className="project--card__links">
             <Link
-              to={{
-                pathname:
-                  "https://github.com/MeekyBerry/Phonie-project-Phantom_Devz",
-              }}
+              to={{ pathname: "https://github.com/MeekyBerry/Phonie-project-Phantom_Devz" }}
               target="_blank"
               className="project--card__links__link"
             >
@@ -63,7 +60,7 @@ const Projects = () => {
           </div>
         </div>
         <div className="project--card">
-          <div className="project--card__blur project--card__blur-3"></div>
+          <div className="project--card__blur"></div>
           <div className="project--card__content">
             <h2 className="project--card__content__title">
               Chat App (Css Illustration)
@@ -93,7 +90,7 @@ const Projects = () => {
           </div>
         </div>
         <div className="project--card">
-          <div className="project--card__blur project--card__blur-4"></div>
+          <div className="project--card__blur"></div>
           <div className="project--card__content">
             <h2 className="project--card__content__title">
               Natour Landing Page
@@ -124,7 +121,7 @@ const Projects = () => {
           </div>
         </div>
         <div className="project--card">
-          <div className="project--card__blur project--card__blur-5"></div>
+          <div className="project--card__blur"></div>
           <div className="project--card__content">
             <h2 className="project--card__content__title">
               GitHub Repository App
@@ -155,7 +152,7 @@ const Projects = () => {
           </div>
         </div>
         <div className="project--card">
-          <div className="project--card__blur project--card__blur-6"></div>
+          <div className="project--card__blur"></div>
           <div className="project--card__content">
             <h2 className="project--card__content__title">
               Trillo Landing Page
@@ -188,7 +185,7 @@ const Projects = () => {
           </div>
         </div>
         <div className="project--card">
-          <div className="project--card__blur project--card__blur-7"></div>
+          <div className="project--card__blur"></div>
           <div className="project--card__content">
             <h2 className="project--card__content__title">
               Phony Authentication
@@ -218,7 +215,7 @@ const Projects = () => {
           </div>
         </div>
         <div className="project--card">
-          <div className="project--card__blur project--card__blur-8"></div>
+          <div className="project--card__blur"></div>
           <div className="project--card__content">
             <h2 className="project--card__content__title">Calculator</h2>
             <p className="project--card__content__desc">
@@ -243,7 +240,7 @@ const Projects = () => {
           </div>
         </div>
         <div className="project--card">
-          <div className="project--card__blur project--card__blur-9"></div>
+          <div className="project--card__blur"></div>
           <div className="project--card__content">
             <h2 className="project--card__content__title">
               Interactive Rating Component
@@ -277,7 +274,7 @@ const Projects = () => {
           </div>
         </div>
         <div className="project--card">
-          <div className="project--card__blur project--card__blur-10"></div>
+          <div className="project--card__blur"></div>
           <div className="project--card__content">
             <h2 className="project--card__content__title">
               Flyo Data Store layout
@@ -308,7 +305,7 @@ const Projects = () => {
           </div>
         </div>
         <div className="project--card">
-          <div className="project--card__blur project--card__blur-11"></div>
+          <div className="project--card__blur"></div>
           <div className="project--card__content">
             <h2 className="project--card__content__title">
               Order Summary Card Component
@@ -340,7 +337,7 @@ const Projects = () => {
           </div>
         </div>
         <div className="project--card">
-          <div className="project--card__blur project--card__blur-13"></div>
+          <div className="project--card__blur"></div>
           <div className="project--card__content">
             <h2 className="project--card__content__title">
               Stats Preview Card Component
@@ -372,7 +369,7 @@ const Projects = () => {
           </div>
         </div>
         <div className="project--card">
-          <div className="project--card__blur project--card__blur-14"></div>
+          <div className="project--card__blur"></div>
           <div className="project--card__content">
             <h2 className="project--card__content__title">
               Shoe Brand Landing Page

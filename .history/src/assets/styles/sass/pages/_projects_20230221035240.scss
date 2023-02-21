@@ -1,0 +1,12 @@
+.project {
+  padding: 2rem;
+  background-color: var(--color--bg-dark-2);
+
+  &--title {
+    font-family: var(--font--family--secondary);
+    font-size: var(--font-size--large);
+    font-weight: var(--font-weight--bold);
+    color: var(--blue-cyan);
+    margin-bottom: 1rem;
+  }
+}
