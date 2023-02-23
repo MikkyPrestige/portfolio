@@ -1,0 +1,162 @@
+.project {
+  padding: 2rem;
+  background-color: var(--color--bg-dark-2);
+
+  &--title {
+    font-family: var(--font--family--secondary);
+    font-size: var(--font-size--large);
+    font-weight: var(--font-weight--bold);
+    color: var(--blue-cyan);
+    margin-bottom: 1rem;
+  }
+
+  &--wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    width: 100%;
+  }
+
+  &--card {
+    background-color: var(--color--bg-dark);
+    // margin: auto;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.5rem 0.1rem var(--color--dark-4);
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // height: 100%;
+    max-width: 60rem;
+    overflow-y: hidden;
+
+    &:hover {
+      transform: translateY(-0.5rem);
+      box-shadow: 0 0 0.5rem 0.1rem var(--color--dark-4);
+    }
+
+    &__blur {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 30rem;
+      border-radius: 1rem;
+      border: 1px solid red;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      filter: blur(0.5rem);
+      // z-index: -1;
+
+      &-1 {
+        background-image: url(../../../images/randomApp.jpeg);
+      }
+
+      &-2 {
+        background-image: url(../../../images/phonieApp.jpeg);
+      }
+
+      &-3 {
+        background-image: url(../../../images/natours.jpeg);
+      }
+
+      &-4 {
+        background-image: url(../../../images/calculator.jpeg);
+      }
+
+      &-5 {
+        background-image: url(../../../images/repoApp.jpeg);
+      }
+
+      &-6 {
+        background-image: url(../../../images/fylo.jpeg);
+      }
+
+      &-7 {
+        background-image: url(../../../images/orderCard.jpeg);
+      }
+
+      &-8 {
+        background-image: url(../../../images/phonyApp.jpeg);
+      }
+
+      &-9 {
+        background-image: url(../../../images/ratingApp.jpeg);
+      }
+
+      &-10 {
+        background-image: url(../../../images/chatAppCss.jpeg);
+      }
+
+      &-11 {
+        background-image: url(../../../images/trillo.jpeg);
+      }
+
+      &-12 {
+        background-image: url(../../../images/statsCard.jpeg);
+      }
+
+      &-13 {
+        background-image: url(../../../images/phonyApp.jpeg);
+      }
+
+      &-14 {
+        background-image: url(../../../images/shoebrand.jpeg);
+      }
+    }
+
+    &__content {
+      height: 30rem;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      position: relative;
+      top: 0;
+      left: 0;
+
+      &__title {
+        font-family: var(--font--family--secondary);
+        font-size: var(--font-size--large);
+        font-weight: var(--font-weight--bold);
+        color: var(--blue-cyan);
+      }
+
+      &__desc {
+        font-family: var(--font--family--secondary);
+        font-size: var(--font-size--medium);
+        font-weight: var(--font-weight--regular);
+        color: var(--color--white);
+        text-align: center;
+      }
+    }
+
+    &__links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 3rem;
+
+      &__link {
+        padding: 1rem 2rem;
+        background-color: var(--color--green);
+        border-radius: 0.5rem;
+        font-family: var(--font--family--secondary);
+        font-size: var(--font-size--medium);
+        font-weight: var(--font-weight--regular);
+        color: var(--color--white);
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          color: var(--blue-cyan);
+        }
+      }
+    }
+  }
+}
