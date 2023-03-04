@@ -1,13 +1,23 @@
 import React from "react";
-import { GiSkills } from "react-icons/gi";
-import { FaHtml5 } from "react-icons/fa";
-import { FaCss3Alt } from "react-icons/fa";
-import { FaSass } from "react-icons/fa";
-import { FaJs } from "react-icons/fa";
-import { DiGit } from "react-icons/di";
-import { FaReact } from "react-icons/fa";
-import { FaVuejs } from "react-icons/fa";
-import { FaFigma } from "react-icons/fa";
+import Avatar from "./avatar";
+import Skills from "../assets/images/skills/skill-logo.png";
+import HTML5 from "../assets/images/skills/html-logo.png";
+import CSS3 from "../assets/images/skills/css-logo.png";
+import SASS from "../assets/images/skills/sass-logo.png";
+import JS from "../assets/images/skills/javascript-logo.png";
+import GIT from "../assets/images/skills/git-logo.png";
+import REACT from "../assets/images/skills/react-logo.png";
+import VUE from "../assets/images/skills/vuejs-logo.png";
+import FIGMA from "../assets/images/skills/figma-logo.png";
+// import { GiSkills } from "react-icons/gi";
+// import { FaHtml5 } from "react-icons/fa";
+// import { FaCss3Alt } from "react-icons/fa";
+// import { FaSass } from "react-icons/fa";
+// import { FaJs } from "react-icons/fa";
+// import { DiGit } from "react-icons/di";
+// import { FaReact } from "react-icons/fa";
+// import { FaVuejs } from "react-icons/fa";
+// import { FaFigma } from "react-icons/fa";
 
 const AboutMe = () => {
   return (
@@ -51,16 +61,18 @@ const AboutMe = () => {
           <div className="about--skills__title">
             <h1 className="about--skills__title__head">
               My skills{" "}
-              <span className="about--skills__title__icon">
-                <GiSkills style={{ color: "#228be6" }} />
-              </span>
+              {/* <span className="about--skills__title__icon"> */}
+                {/* <GiSkills style={{ color: "#228be6" }} /> */}
+              {/* </span> */}
             </h1>
+            <Avatar image={Skills} alt="skills-logo" style={{ width: "3rem", height: "3rem"}}/>
           </div>
           <div className="about--skills__content">
             <div className="about--skills__content__items">
               <div className="about--skills__content__items__card">
                 <div className="about--skills__content__items__card__icon">
-                  <FaHtml5 style={{ color: "#dd4b25" }} />
+                  <Avatar image={HTML5} alt="html5-logo" style={{ width: "5rem", height: "5rem"}} />
+                  {/* <FaHtml5 style={{ color: "#dd4b25" }} /> */}
                 </div>
                 <h2 className="about--skills__content__items__card__text">
                   HTML5
@@ -68,7 +80,8 @@ const AboutMe = () => {
               </div>
               <div className="about--skills__content__items__card">
                 <div className="about--skills__content__items__card__icon">
-                  <FaCss3Alt style={{ color: "#254bdd" }} />
+                  <Avatar image={CSS3} alt="css3-logo" style={{ width: "5rem", height: "5rem"}} />
+                  {/* <FaCss3Alt style={{ color: "#254bdd" }} /> */}
                 </div>
                 <h2 className="about--skills__content__items__card__text">
                   CSS3
@@ -76,7 +89,8 @@ const AboutMe = () => {
               </div>
               <div className="about--skills__content__items__card">
                 <div className="about--skills__content__items__card__icon">
-                  <FaSass style={{ color: "#cc6699" }} />
+                  <Avatar image={SASS} alt="sass-logo" style={{ width: "5rem", height: "5rem"}} />
+                  {/* <FaSass style={{ color: "#cc6699" }} /> */}
                 </div>
                 <h2 className="about--skills__content__items__card__text">
                   SCSS
@@ -84,7 +98,8 @@ const AboutMe = () => {
               </div>
               <div className="about--skills__content__items__card">
                 <div className="about--skills__content__items__card__icon">
-                  <FaJs style={{ color: "#e8d44d" }} />
+                  <Avatar image={JS} alt="javascript-logo" style={{ width: "5rem", height: "5rem"}} />
+                  {/* <FaJs style={{ color: "#e8d44d" }} /> */}
                 </div>
                 <h2 className="about--skills__content__items__card__text">
                   JavaScript
@@ -92,7 +107,8 @@ const AboutMe = () => {
               </div>
               <div className="about--skills__content__items__card">
                 <div className="about--skills__content__items__card__icon">
-                  <DiGit style={{ color: "#e84d31" }} />
+                  <Avatar image={GIT} alt="git-logo" style={{ width: "5rem", height: "5rem"}} />
+                  {/* <DiGit style={{ color: "#e84d31" }} /> */}
                 </div>
                 <h2 className="about--skills__content__items__card__text">
                   Git
@@ -100,7 +116,8 @@ const AboutMe = () => {
               </div>
               <div className="about--skills__content__items__card">
                 <div className="about--skills__content__items__card__icon">
-                  <FaReact style={{ color: "#67def3" }} />
+                  <Avatar image={REACT} alt="react-logo" style={{ width: "5rem", height: "5rem"}} />
+                  {/* <FaReact style={{ color: "#67def3" }} /> */}
                 </div>
                 <h2 className="about--skills__content__items__card__text">
                   React
@@ -108,7 +125,8 @@ const AboutMe = () => {
               </div>
               <div className="about--skills__content__items__card">
                 <div className="about--skills__content__items__card__icon">
-                  <FaVuejs style={{ color: "#3fb27f" }} />
+                  <Avatar image={VUE} alt="vue-logo" style={{ width: "5rem", height: "5rem"}} />
+                  {/* <FaVuejs style={{ color: "#3fb27f" }} /> */}
                 </div>
                 <h2 className="about--skills__content__items__card__text">
                   Vue
@@ -116,7 +134,8 @@ const AboutMe = () => {
               </div>
               <div className="about--skills__content__items__card">
                 <div className="about--skills__content__items__card__icon">
-                  <FaFigma style={{ color: "#cc4600" }} />
+                  <Avatar image={FIGMA} alt="figma-logo" style={{ width: "5rem", height: "5rem"}} />
+                  {/* <FaFigma style={{ color: "#cc4600" }} /> */}
                 </div>
                 <h2 className="about--skills__content__items__card__text">
                   Figma

@@ -1,0 +1,25 @@
+.contact {
+  background-color: var(--color--bg-dark-2);
+  color: var(--color--white);
+  padding: 2rem;
+
+  &--header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    font-family: var(--font-family--secondary);
+
+    &__title {
+      font-size: var(--font-size--xx-large);
+      font-weight: var(--font-weight--boldest);
+      color: var(--color--white);
+    }
+
+    &__subtitle {
+      font-size: var(--font-size--large);
+      font-weight: var(--font-weight--bold);
+      color: var(--blue-cyan);
+    }
+  }
+}

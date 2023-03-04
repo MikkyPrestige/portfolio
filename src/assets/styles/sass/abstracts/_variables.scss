@@ -27,6 +27,16 @@
 
   // GRAY
   --color--gray: #ABB2BF;
+  --color--gray-1: #6C757D;
+  --color--gray-2: #343A40;
+
+  --grey-color: #eee;
+
+  // RED
+  --color--red: rgba(255, 0, 0, 1);
+  --color--red-1: rgba(255, 0, 0, 0.5);
+  --color--red-2: #D61355;
+
 
   --light-blue: rgba(97, 218, 251, 1);
   --light-blue--1: #3bc9db;
@@ -37,6 +47,8 @@
   --dark-blue-op: rgba(6, 6, 7, 0.82);
 
   --color--green: rgba(131, 205, 41, 1);
+  --color--green-light: #93F9B9;
+  --color--green-dark: #1D976C;
 
   //Font size
   --font-size: 1rem;

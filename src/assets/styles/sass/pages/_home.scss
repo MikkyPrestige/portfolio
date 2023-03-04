@@ -1,9 +1,10 @@
 .home {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background: radial-gradient(100% 100% at 50% 100%, var(--color--bg-dark-2) 21.52%, var(--color--bg-dark) 100%);
 
   &--contents {
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
