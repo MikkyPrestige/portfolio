@@ -1,0 +1,16 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 50%;
+}
+
+::selection {
+  background-color: var(--color--green);
+  color: var(--color--white-1);
+}
