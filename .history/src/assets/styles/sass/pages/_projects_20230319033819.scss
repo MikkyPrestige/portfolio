@@ -1,0 +1,210 @@
+.project {
+  margin-top: 5rem;
+  padding: 2rem;
+  background-color: var(--color--bg-dark-2);
+
+  &--title {
+    font-family: var(--font-family--1);
+    font-size: var(--font-size--x-large);
+    font-weight: var(--font-weight--bold);
+    background-image: linear-gradient(to top, var(--blue-cyan), var(--light-blue--2));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 2rem;
+    text-align: center;
+    letter-spacing: .5rem;
+    text-transform: uppercase;
+  }
+
+  &--wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    width: 100%;
+  }
+
+  &--card {
+    background-color: var(--color--bg-dark);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.5rem 0.1rem var(--color--dark-4);
+    transition: all 0.5s ease-in-out;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 60rem;
+    overflow-y: hidden;
+
+    &:hover {
+      transform: translateY(-0.5rem);
+      box-shadow: 0 0 0.5rem 0.1rem var(--color--dark-4);
+    }
+
+    &__blur {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 25rem;
+      border-radius: 1rem;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      filter: blur(0.7rem);
+      -webkit-filter: blur(0.7rem);
+      transition: all 0.5s ease-in;
+      z-index: 0;
+
+      &:hover {
+        filter: blur(0rem);
+        -webkit-filter: blur(0rem);
+        z-index: 100;
+      }
+
+      &-1 {
+        background-image: url(../../../images/projects/repoApp.jpeg);
+      }
+
+      &-2 {
+        background-image: url(../../../images/projects/phonieApp.jpeg);
+      }
+
+      &-3 {
+        background-image: url(../../../images/projects/randomApp.jpeg);
+      }
+
+      &-4 {
+        background-image: url(../../../images/projects/counter.jpeg);
+      }
+
+      &-5 {
+        background-image: url(../../../images/projects/ratingApp.jpeg);
+      }
+
+      &-6 {
+        background-image: url(../../../images/projects/natours.jpeg);
+      }
+
+      &-7 {
+        background-image: url(../../../images/projects/trillo.jpeg);
+      }
+
+      &-8 {
+        background-image: url(../../../images/projects/phonyApp.jpeg);
+      }
+
+      &-9 {
+        background-image: url(../../../images/projects/calculator.jpeg);
+      }
+
+      &-10 {
+        background-image: url(../../../images/projects/chatAppCss.jpeg);
+      }
+
+      &-11 {
+        background-image: url(../../../images/projects/shoebrand.jpeg);
+      }
+
+      &-12 {
+        background-image: url(../../../images/projects/orderCard.jpeg);
+      }
+
+      &-13 {
+        background-image: url(../../../images/projects/statsCard.jpeg);
+      }
+
+      &-14 {
+        background-image: url(../../../images/projects/fylo.jpeg);
+      }
+    }
+
+    &__content {
+      height: 25rem;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      position: relative;
+      top: 0;
+      left: 0;
+      transition: all 1s ease-out;
+
+      &:hover {
+        opacity: 0;
+        z-index: -100;
+      }
+
+      &__title {
+        font-family: var(--font--family--tertiary);
+        font-size: var(--font-size--x-large);
+        font-weight: var(--font-weight--bold);
+        color: var(--blue-cyan);
+        text-transform: uppercase;
+      }
+
+      &__desc {
+        font-family: var(--font--family--secondary);
+        font-size: var(--font-size--medium);
+        font-weight: var(--font-weight--medium);
+        color: var(--color--markup);
+        text-align: center;
+      }
+    }
+
+    &__links {
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+
+      &__link {
+        text-decoration: none;
+        padding: 1rem;
+        border-radius: 1.5rem;
+        font-family: var(--font--family--secondary);
+        font-size: var(--font-size--medium);
+        font-weight: var(--font-weight--medium);
+        color: var(--color--white);
+        transition: all 0.3s ease-in-out;
+        display: inline-flex;
+        align-items: center;
+        gap: .5rem;
+        cursor: pointer;
+        position: relative;
+        outline: none;
+        overflow: hidden;
+        border: none;
+
+        &:hover {
+          padding-right: 2.2rem;
+          padding-left: .8rem;
+
+          &:after {
+            opacity: 1;
+            right: 1rem;
+          }
+        }
+
+        &::after {
+          content: "\00BB";
+          position: absolute;
+          opacity: 0;
+          font-size: var(--font-size--x-large);
+          font-family: var(--font--family--secondary);
+          font-weight: var(--font-weight--medium);
+          line-height: 3.8rem;
+          top: 0;
+          transition: 0.5s;
+          -webkit-transition: 0.5s;
+          -moz-transition: 0.5s;
+          -ms-transition: 0.5s;
+          -o-transition: 0.5s;
+        }
+      }
+    }
+  }
+}
