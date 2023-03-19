@@ -10,11 +10,11 @@ const Projects = () => {
         <div className="project--card">
           <div className="project--card__img project--card__img-1"></div>
           <div className="project--card__frame">
-            <span className="project--card__frame__item">Css</span>
-            <span className="project--card__frame__item">React</span>
+          <span className="project--card__frame__item">Css</span>
+          <span className="project--card__frame__item">React</span>
           </div>
           <div className="project--card__content">
-            <h2 className="project--card__content__title margin-top">
+          <h2 className="project--card__content__title margin-top">
               GitHub Repository App
             </h2>
             <p className="project--card__content__desc">
@@ -27,7 +27,7 @@ const Projects = () => {
             </p>
           </div>
           <div className="project--card__links">
-            <Link
+          <Link
               to={{
                 pathname:
                   "https://github.com/MeekyBerry/exam-project-altschoolafrica",
@@ -49,16 +49,14 @@ const Projects = () => {
           </div>
         </div>
         <div className="project--card">
-          <div className="project--card__img project--card__img-2"></div>
+        <div className="project--card__img project--card__img-2"></div>
           <div className="project--card__frame">
-            <span className="project--card__frame__item">Html</span>
-            <span className="project--card__frame__item">Css</span>
-            <span className="project--card__frame__item">JavaScript</span>
+          <span className="project--card__frame__item">Html</span>
+          <span className="project--card__frame__item">Css</span>
+          <span className="project--card__frame__item">JavaScript</span>
           </div>
           <div className="project--card__content">
-            <h2 className="project--card__content__title margin-top">
-              Phonie App
-            </h2>
+            <h2 className="project--card__content__title">Phonie App</h2>
             <p className="project--card__content__desc">
               The Phonie Project is a web-based application created by the team
               "Phantom_Devz" that determines the telecom carrier based on a
@@ -90,16 +88,13 @@ const Projects = () => {
           </div>
         </div>
         <div className="project--card">
-          <div className="project--card__img project--card__img-3"></div>
+        <div className="project--card__img project--card__img-3"></div>
           <div className="project--card__frame">
-            <span className="project--card__frame__item">Css</span>
-            <span className="project--card__frame__item">React</span>
-            <span className="project--card__frame__item">Firebase</span>
+          <span className="project--card__frame__item">React</span>
+          <span className="project--card__frame__item">CSS</span>
           </div>
           <div className="project--card__content">
-            <h2 className="project--card__content__title margin-top">
-              RandomPeopleApp
-            </h2>
+            <h2 className="project--card__content__title">RandomPeopleApp</h2>
             <p className="project--card__content__desc">
               This is a web app that uses firebase authentication and displays
               random people data generated from randomuser API.
@@ -125,15 +120,13 @@ const Projects = () => {
           </div>
         </div>
         <div className="project--card">
-          <div className="project--card__img project--card__img-4"></div>
+        <div className="project--card__img project--card__img-4"></div>
           <div className="project--card__frame">
-            <span className="project--card__frame__item">VueJs</span>
-            <span className="project--card__frame__item">Sass</span>
+          <span className="project--card__frame__item">VueJs</span>
+          <span className="project--card__frame__item">Sass</span>
           </div>
           <div className="project--card__content">
-            <h2 className="project--card__content__title margin-top">
-              Counter App
-            </h2>
+            <h2 className="project--card__content__title">Counter App</h2>
             <p className="project--card__content__desc">
               This is a simple web tool for counting numbers.
             </p>
@@ -158,20 +151,20 @@ const Projects = () => {
           </div>
         </div>
         <div className="project--card">
-          <div className="project--card__img project--card__img-5"></div>
+        <div className="project--card__img project--card__img-5"></div>
           <div className="project--card__frame">
-            <span className="project--card__frame__item">Html</span>
-            <span className="project--card__frame__item">CSS</span>
-            <span className="project--card__frame__item">JavaScript</span>
+          <span className="project--card__frame__item">Html</span>
+          <span className="project--card__frame__item">CSS</span>
+          <span className="project--card__frame__item">JavaScript</span>
           </div>
           <div className="project--card__content">
-            <h2 className="project--card__content__title margin-top">
+            <h2 className="project--card__content__title">
               Interactive Rating Component
             </h2>
             <p className="project--card__content__desc">
-              This is a solution for the Frontend Mentor Challenge, 'Interactive
-              rating component'. This is a small project to practice interacting
-              with users and updating the DOM.
+              This is a solution for the Frontend Mentor Challenge's
+              'Interactive rating component'. This is a small project to
+              practice interacting with users and updating the DOM.
             </p>
           </div>
           <div className="project--card__links">
@@ -200,20 +193,20 @@ const Projects = () => {
           </div>
         </div>
         <div className="project--card">
-          <div className="project--card__img project--card__img-6"></div>
+        <div className="project--card__img project--card__img-6"></div>
           <div className="project--card__frame">
-            <span className="project--card__frame__item">Html</span>
-            <span className="project--card__frame__item">CSS</span>
-            <span className="project--card__frame__item">Sass</span>
+          <span className="project--card__frame__item">Html</span>
+          <span className="project--card__frame__item">CSS</span>
+          <span className="project--card__frame__item">Sass</span>
           </div>
           <div className="project--card__content">
-            <h2 className="project--card__content__title margin-top">
+            <h2 className="project--card__content__title">
               Natours Landing Page
             </h2>
             <p className="project--card__content__desc">
               This is a landing page for a fictional company called Natours. It
-              was a code along project from the online course by JONAS
-              SCHMEDTMANN on Udemy.
+              was a code along project from the online course by
+              JONAS SCHMEDTMANN on Udemy.
             </p>
           </div>
           <div className="project--card__links">
@@ -239,20 +232,20 @@ const Projects = () => {
           </div>
         </div>
         <div className="project--card">
-          <div className="project--card__img project--card__img-7"></div>
+        <div className="project--card__img project--card__img-7"></div>
           <div className="project--card__frame">
-            <span className="project--card__frame__item">Html</span>
-            <span className="project--card__frame__item">CSS</span>
-            <span className="project--card__frame__item">Sass</span>
+          <span className="project--card__frame__item">Html</span>
+          <span className="project--card__frame__item">CSS</span>
+          <span className="project--card__frame__item">Sass</span>
           </div>
           <div className="project--card__content">
-            <h2 className="project--card__content__title margin-top">
+            <h2 className="project--card__content__title">
               Trillo Landing Page
             </h2>
             <p className="project--card__content__desc">
               This is a landing page for a fictional company called Trillo. It
-              was a code along project from the online course by JONAS
-              SCHMEDTMANN on Udemy.
+              was a code along project from the online course by
+              JONAS SCHMEDTMANN on Udemy.
             </p>
           </div>
           <div className="project--card__links">
@@ -280,19 +273,18 @@ const Projects = () => {
           </div>
         </div>
         <div className="project--card">
-          <div className="project--card__img project--card__img-8"></div>
+        <div className="project--card__img project--card__img-8"></div>
           <div className="project--card__frame">
-            <span className="project--card__frame__item">Css</span>
-            <span className="project--card__frame__item">React</span>
-            <span className="project--card__frame__item">Firebase</span>
+          <span className="project--card__frame__item">Css</span>
+          <span className="project--card__frame__item">React</span>
+          <span className="project--card__frame__item">Firebase</span>
           </div>
           <div className="project--card__content">
-            <h2 className="project--card__content__title margin-top">
+            <h2 className="project--card__content__title">
               Phony Authentication
             </h2>
             <p className="project--card__content__desc">
-              This is a simple fake authentication app. I worked on this project
-              to improve my skills on firebase authentication.
+              This is a simple fake authentication app. I worked on this project to improve my skills on firebase authentication.
             </p>
           </div>
           <div className="project--card__links">
@@ -318,15 +310,13 @@ const Projects = () => {
           </div>
         </div>
         <div className="project--card">
-          <div className="project--card__img project--card__img-9"></div>
+        <div className="project--card__img project--card__img-9"></div>
           <div className="project--card__frame">
-            <span className="project--card__frame__item">Css</span>
-            <span className="project--card__frame__item">React</span>
+          <span className="project--card__frame__item">Css</span>
+          <span className="project--card__frame__item">React</span>
           </div>
           <div className="project--card__content">
-            <h2 className="project--card__content__title margin-top">
-              Calculator
-            </h2>
+            <h2 className="project--card__content__title">Calculator</h2>
             <p className="project--card__content__desc">
               This is a powerful calculator with high-level functions. The
               interface is sleek and user-friendly, and the mathematical
@@ -353,20 +343,19 @@ const Projects = () => {
           </div>
         </div>
         <div className="project--card">
-          <div className="project--card__img project--card__img-10"></div>
+        <div className="project--card__img project--card__img-10"></div>
           <div className="project--card__frame">
-            <span className="project--card__frame__item">Html</span>
-            <span className="project--card__frame__item">CSS</span>
+          <span className="project--card__frame__item">Html</span>
+          <span className="project--card__frame__item">CSS</span>
           </div>
           <div className="project--card__content">
-            <h2 className="project--card__content__title margin-top">
+            <h2 className="project--card__content__title">
               Chat App CSS Illustration
             </h2>
             <p className="project--card__content__desc">
               This is a solution to Frontend Mentor Challenge, 'Chat App CSS
               Illustration'. Frontend Mentor created a visually stunning chat
-              app illustration. In this project, I re-created it illustration
-              from scratch to finish.
+              app illustration. In this project, I re-created it illustration from scratch to finish.
             </p>
           </div>
           <div className="project--card__links">
@@ -392,21 +381,21 @@ const Projects = () => {
           </div>
         </div>
         <div className="project--card">
-          <div className="project--card__img project--card__img-11"></div>
+        <div className="project--card__img project--card__img-11"></div>
           <div className="project--card__frame">
-            <span className="project--card__frame__item">Html</span>
-            <span className="project--card__frame__item">CSS</span>
-            <span className="project--card__frame__item">Sass</span>
-            <span className="project--card__frame__item">Javascript</span>
+          <span className="project--card__frame__item">Html</span>
+          <span className="project--card__frame__item">CSS</span>
+          <span className="project--card__frame__item">Sass</span>
+          <span className="project--card__frame__item">Javascript</span>
           </div>
           <div className="project--card__content">
-            <h2 className="project--card__content__title margin-top">
+            <h2 className="project--card__content__title">
               Shoe-Brand Landing Page
             </h2>
             <p className="project--card__content__desc">
-              This Landing page was a code along project on 'Learn HTML & CSS in
-              2022 crash course' by Design Course on Udemy. Sass was also used
-              but only for the Nesting feature.
+              This Landing page was a code
+              along project on 'Learn HTML & CSS in 2022 crash course' by Design
+              Course on Udemy. Sass was also used but only for the Nesting feature.
             </p>
           </div>
           <div className="project--card__links">
@@ -432,13 +421,13 @@ const Projects = () => {
           </div>
         </div>
         <div className="project--card">
-          <div className="project--card__img project--card__img-12"></div>
+        <div className="project--card__img project--card__img-12"></div>
           <div className="project--card__frame">
-            <span className="project--card__frame__item">Html</span>
-            <span className="project--card__frame__item">CSS</span>
+          <span className="project--card__frame__item">Html</span>
+          <span className="project--card__frame__item">CSS</span>
           </div>
           <div className="project--card__content">
-            <h2 className="project--card__content__title margin-top">
+            <h2 className="project--card__content__title">
               Order Summary Card
             </h2>
             <p className="project--card__content__desc">
@@ -471,19 +460,18 @@ const Projects = () => {
           </div>
         </div>
         <div className="project--card">
-          <div className="project--card__img project--card__img-13"></div>
+        <div className="project--card__img project--card__img-13"></div>
           <div className="project--card__frame">
-            <span className="project--card__frame__item">Html</span>
-            <span className="project--card__frame__item">CSS</span>
+          <span className="project--card__frame__item">Html</span>
+          <span className="project--card__frame__item">CSS</span>
           </div>
           <div className="project--card__content">
-            <h2 className="project--card__content__title margin-top">
+            <h2 className="project--card__content__title">
               Stats Preview Card
             </h2>
             <p className="project--card__content__desc">
               This is a solution to the 'Stats preview card component' on
-              Frontend Mentor Challenge. I worked on this project to practice
-              CSS grid.
+              Frontend Mentor Challenge. I worked on this project to practice CSS grid.
             </p>
           </div>
           <div className="project--card__links">
@@ -511,15 +499,13 @@ const Projects = () => {
           </div>
         </div>
         <div className="project--card">
-          <div className="project--card__img project--card__img-14"></div>
+        <div className="project--card__img project--card__img-14"></div>
           <div className="project--card__frame">
-            <span className="project--card__frame__item">Html</span>
-            <span className="project--card__frame__item">CSS</span>
+          <span className="project--card__frame__item">Html</span>
+          <span className="project--card__frame__item">CSS</span>
           </div>
           <div className="project--card__content">
-            <h2 className="project--card__content__title margin-top">
-              Fylo Data Storage
-            </h2>
+            <h2 className="project--card__content__title">Fylo Data Storage</h2>
             <p className="project--card__content__desc">
               This is the solution to the Frontend Mentor Challenge's 'Fylo data
               storage component'.

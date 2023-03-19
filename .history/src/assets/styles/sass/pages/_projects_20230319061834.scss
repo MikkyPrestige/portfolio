@@ -11,7 +11,8 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin: 0 0 2rem .5rem;
+    margin-bottom: 2rem;
+    letter-spacing: .2rem;
     text-transform: uppercase;
     display: flex;
     align-items: center;
@@ -19,7 +20,7 @@
 
     &::after {
       content: '';
-      width: 22rem;
+      width: 25rem;
       height: .1rem;
       background-color: var(--color--white-1);
     }

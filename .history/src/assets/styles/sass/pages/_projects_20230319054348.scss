@@ -11,25 +11,21 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin: 0 0 2rem .5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    letter-spacing: .2rem;
     text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    gap: .5rem;
-
-    &::after {
-      content: '';
-      width: 22rem;
-      height: .1rem;
-      background-color: var(--color--white-1);
-    }
   }
 
   &--wrapper {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 2rem;
-    width: 100%;
+    // display: grid;
+    // grid-template-columns: repeat(1, 1fr);
+    // width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    overflow: hidden;
   }
 
   &--card {
@@ -39,7 +35,7 @@
     justify-content: center;
     align-items: center;
     padding: 1rem 0;
-    box-shadow: 0 0 .5rem var(--color--dark-4);
+    box-shadow: 0 0 1rem var(--color--dark-4);
     border-radius: .5rem;
 
     &__img {
@@ -53,58 +49,6 @@
 
       &-1 {
         background-image: url(../../../images/projects/repoApp.jpeg);
-      }
-
-      &-2 {
-        background-image: url(../../../images/projects/phonieApp.jpeg);
-      }
-
-      &-3 {
-        background-image: url(../../../images/projects/randomApp.jpeg);
-      }
-
-      &-4 {
-        background-image: url(../../../images/projects/counter.jpeg);
-      }
-
-      &-5 {
-        background-image: url(../../../images/projects/ratingApp.jpeg);
-      }
-
-      &-6 {
-        background-image: url(../../../images/projects/natours.jpeg);
-      }
-
-      &-7 {
-        background-image: url(../../../images/projects/trillo.jpeg);
-      }
-
-      &-8 {
-        background-image: url(../../../images/projects/phonyApp.jpeg);
-      }
-
-      &-9 {
-        background-image: url(../../../images/projects/calculator.jpeg);
-      }
-
-      &-10 {
-        background-image: url(../../../images/projects/chatAppCss.jpeg);
-      }
-
-      &-11 {
-        background-image: url(../../../images/projects/shoebrand.jpeg);
-      }
-
-      &-12 {
-        background-image: url(../../../images/projects/orderCard.jpeg);
-      }
-
-      &-13 {
-        background-image: url(../../../images/projects/statsCard.jpeg);
-      }
-
-      &-14 {
-        background-image: url(../../../images/projects/fylo.jpeg);
       }
     }
 
@@ -126,6 +70,63 @@
         text-transform: uppercase;
       }
     }
+
+    //   &-1 {
+    //     background-image: url(../../../images/projects/repoApp.jpeg);
+    //   }
+
+    //   &-2 {
+    //     background-image: url(../../../images/projects/phonieApp.jpeg);
+    //   }
+
+    //   &-3 {
+    //     background-image: url(../../../images/projects/randomApp.jpeg);
+    //   }
+
+    //   &-4 {
+    //     background-image: url(../../../images/projects/counter.jpeg);
+    //   }
+
+    //   &-5 {
+    //     background-image: url(../../../images/projects/ratingApp.jpeg);
+    //   }
+
+    //   &-6 {
+    //     background-image: url(../../../images/projects/natours.jpeg);
+    //   }
+
+    //   &-7 {
+    //     background-image: url(../../../images/projects/trillo.jpeg);
+    //   }
+
+    //   &-8 {
+    //     background-image: url(../../../images/projects/phonyApp.jpeg);
+    //   }
+
+    //   &-9 {
+    //     background-image: url(../../../images/projects/calculator.jpeg);
+    //   }
+
+    //   &-10 {
+    //     background-image: url(../../../images/projects/chatAppCss.jpeg);
+    //   }
+
+    //   &-11 {
+    //     background-image: url(../../../images/projects/shoebrand.jpeg);
+    //   }
+
+    //   &-12 {
+    //     background-image: url(../../../images/projects/orderCard.jpeg);
+    //   }
+
+    //   &-13 {
+    //     background-image: url(../../../images/projects/statsCard.jpeg);
+    //   }
+
+    //   &-14 {
+    //     background-image: url(../../../images/projects/fylo.jpeg);
+    //   }
+    // }
 
     &__content {
       width: 100%;
