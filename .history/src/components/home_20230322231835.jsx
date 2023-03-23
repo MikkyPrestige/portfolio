@@ -1,8 +1,10 @@
 import React from "react";
+import Avatar from "./avatar";
 import WebDeveloper from "../assets/images/web-developer.gif";
 import GitHub from "../assets/images/socials/icons8-github-94.png";
 import LinkedIn from "../assets/images/socials/icons8-linkedin-94.png";
 import LeetCode from "../assets/images/socials/leetCode.png";
+
 // import AboutMe from "./about";
 // import Projects from "./projects";
 // import Contact from "./contact";
@@ -14,43 +16,13 @@ const Home = () => {
         <div className="home--media__line"></div>
         <div className="home--media__frame">
           <div className="home--media__frame__github">
-            <a
-              href="https://github.com/MeekyBerry"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                src={GitHub}
-                alt="GitHub Icon"
-                className="home--media__frame__img"
-              />
-            </a>
+            <Avatar image={GitHub} alt="GitHub icon" style={{ width: "3rem", height: "3rem" }} />
           </div>
           <div className="home--media__frame__leetCode">
-            <a
-              href="https://leetcode.com/meekyberry/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                src={LeetCode}
-                alt="LeetCode Icon"
-                className="home--media__frame__img"
-              />
-            </a>
+            <Avatar image={LeetCode} alt="LeetCode icon" style={{ width: "3rem", height: "3rem" }} />
           </div>
           <div className="home--media__frame__LinkedIn">
-            <a
-              href="https://www.linkedin.com/in/mikkylanky/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                src={LinkedIn}
-                alt="LinkedIn Icon"
-                className="home--media__frame__img"
-              />
-            </a>
+            <Avatar image={LinkedIn} alt="LinkedIn icon" style={{ width: "3rem", height: "3rem" }} />
           </div>
         </div>
       </div>
@@ -66,11 +38,13 @@ const Home = () => {
           </p>
         </div>
         <div className="home--avatar">
-          <img
-            src={WebDeveloper}
-            alt="GIF of a web developer working"
-            className="home--avatar__img"
-          />
+          <div className="home--avatar__img">
+            <Avatar
+              image={WebDeveloper}
+              alt="Meeky"
+              style={{ width: "20rem", height: "20rem", borderRadius: "5%" }}
+            />
+          </div>
         </div>
       </div>
       {/* <AboutMe />

@@ -1,4 +1,5 @@
 import React from "react";
+import Avatar from "./avatar";
 import WebDeveloper from "../assets/images/web-developer.gif";
 import GitHub from "../assets/images/socials/icons8-github-94.png";
 import LinkedIn from "../assets/images/socials/icons8-linkedin-94.png";
@@ -66,11 +67,13 @@ const Home = () => {
           </p>
         </div>
         <div className="home--avatar">
-          <img
-            src={WebDeveloper}
-            alt="GIF of a web developer working"
-            className="home--avatar__img"
-          />
+          <div className="home--avatar__img">
+            <Avatar
+              image={WebDeveloper}
+              alt="Meeky"
+              style={{ width: "20rem", height: "20rem", borderRadius: "5%" }}
+            />
+          </div>
         </div>
       </div>
       {/* <AboutMe />

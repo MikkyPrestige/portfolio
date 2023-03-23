@@ -41,14 +41,11 @@
         background-color: var(--color--white-1);
         border: 1px solid var(--grey-color--1);
         cursor: pointer;
-        transition: transform .3s ease-in-out;
+        transition: all .3s ease-in-out;
 
         &:hover {
-          transform: scale(1.1);
-          -webkit-transform: scale();
-          -moz-transform: scale();
-          -ms-transform: scale();
-          -o-transform: scale();
+          border: 1px solid var(--grey-color--2);
+          background-color: var(--grey-color--2);
         }
       }
     }
