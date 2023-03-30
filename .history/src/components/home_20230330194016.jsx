@@ -85,29 +85,13 @@ const Home = () => {
             className="home--avatar__img"
           />
         </div>
-        <figure className="home--quote">
-          <blockquote
-            className="home--quote__block"
-            cite="https://www.ted.com/speakers/alan_kay#:~:text=%22The%20best%20way%20to%20predict,epistemology%2C%20molecular%20biology%20and%20more"
-          >
-            <p className="home--quote__block__text">
-              The best way to predict the future is to invent it.
-            </p>
-          </blockquote>
-          <figcaption className="home--quote__block__caption">
-            — Alan Kay
-            <cite>
-              <a
-                href="https://www.ted.com/speakers/alan_kay#:~:text=%22The%20best%20way%20to%20predict,epistemology%2C%20molecular%20biology%20and%20more"
-                target="_blank"
-                rel="noreferrer"
-                className="home--quote__block__caption__cite"
-              >
-              TED ideas worth spreading
-              </a>
-            </cite>
-          </figcaption>
-        </figure>
+        <div className="home--quote">
+          <p className="home--quote__text">
+            "The best way to predict the future is to create it."
+          </p>
+          <p className="home--quote__author">- Abraham Lincoln</p>
+
+        </div>
         <div className="home--slides">
           <ProjectSlide />
         </div>

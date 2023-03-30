@@ -95,16 +95,9 @@ const Home = () => {
             </p>
           </blockquote>
           <figcaption className="home--quote__block__caption">
-            — Alan Kay
-            <cite>
-              <a
-                href="https://www.ted.com/speakers/alan_kay#:~:text=%22The%20best%20way%20to%20predict,epistemology%2C%20molecular%20biology%20and%20more"
-                target="_blank"
-                rel="noreferrer"
-                className="home--quote__block__caption__cite"
-              >
+            —Alan Kay
+            <cite className="home--quote__block__caption__cite">
               TED ideas worth spreading
-              </a>
             </cite>
           </figcaption>
         </figure>

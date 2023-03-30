@@ -162,7 +162,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1rem;
     padding: 0;
     width: 100%;
 
@@ -208,20 +208,12 @@
         background-color: var(--color--bg-dark-2);
         padding: .5rem 1rem;
         border-radius: 1rem;
-        box-shadow: 0 0 .5rem var(--grey-color--1);
+        box-shadow: 0 0 1rem var(--grey-color--1);
 
         &__cite {
           font-weight: var(--font-weight--regular);
           font-family: var(--font-family--2);
-          font-size: var(--font-size--small);
-          text-decoration: none;
-          color: var(--color--white-1);
-          transition: color .3s ease-in-out;
-          cursor: pointer;
 
-          &:hover {
-            color: var(--blue-cyan);
-          }
         }
       }
     }

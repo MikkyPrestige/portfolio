@@ -162,7 +162,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1rem;
     padding: 0;
     width: 100%;
 
@@ -170,59 +170,14 @@
       margin: 0;
 
       &__text {
-        font-family: var(--font--family--primary);
-        font-size: var(--font-size--small);
-        font-weight: var(--font-weight--medium);
-        color: var(--dark-blue-op);
-        text-align: center;
-        background-color: var(--color--white-1);
-        padding: 1rem;
-        border-radius: 1rem;
-        box-shadow: 0 0 1rem var(--grey-color--1);
-
-        &::before {
-          content: '\201C';
-          font-size: var(--font-size--medium);
-          font-weight: var(--font-weight--bold);
-          color: var(--blue-cyan);
-        }
-
-        &::after {
-          content: '\201D';
-          font-size: var(--font-size--medium);
-          font-weight: var(--font-weight--bold);
-          color: var(--blue-cyan);
-        }
-      }
-
-      &__caption {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: .5rem;
-        font-family: var(--font-family--secondary);
+        font-family: var(--font-family--2);
         font-size: var(--font-size--small);
         font-weight: var(--font-weight--bold);
         color: var(--color--white-1);
         text-align: center;
-        background-color: var(--color--bg-dark-2);
-        padding: .5rem 1rem;
+        background-color: var(--grey-color--2);
+        padding: 1rem;
         border-radius: 1rem;
-        box-shadow: 0 0 .5rem var(--grey-color--1);
-
-        &__cite {
-          font-weight: var(--font-weight--regular);
-          font-family: var(--font-family--2);
-          font-size: var(--font-size--small);
-          text-decoration: none;
-          color: var(--color--white-1);
-          transition: color .3s ease-in-out;
-          cursor: pointer;
-
-          &:hover {
-            color: var(--blue-cyan);
-          }
-        }
       }
     }
   }

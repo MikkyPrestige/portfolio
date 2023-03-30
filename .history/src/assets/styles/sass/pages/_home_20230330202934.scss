@@ -213,15 +213,7 @@
         &__cite {
           font-weight: var(--font-weight--regular);
           font-family: var(--font-family--2);
-          font-size: var(--font-size--small);
-          text-decoration: none;
-          color: var(--color--white-1);
-          transition: color .3s ease-in-out;
-          cursor: pointer;
 
-          &:hover {
-            color: var(--blue-cyan);
-          }
         }
       }
     }
