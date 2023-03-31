@@ -64,6 +64,7 @@
   --font-weight--medium: 600;
   --font-weight--bold: 800;
   --font-weight--boldest: 900;
+  --box-shadow: 0 1rem 2rem rgba(6, 6, 7, .5);
 }
 
 .github-link-bg {
@@ -389,13 +390,6 @@ html {
   padding: 1rem;
   box-shadow: 0 0 1rem var(--grey-color--1);
 }
-.home--avatar__img {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background-color: var(--color--white-1);
-  border: 1px solid var(--grey-color--1);
-}
 .home--slides {
   width: 100%;
   height: 100%;
@@ -477,7 +471,7 @@ html {
   padding: 2rem;
 }
 .about--desc {
-  padding: 5rem;
+  padding: 5rem 1rem 1rem 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1392,6 +1386,137 @@ html {
   -moz-transform: scale();
   -ms-transform: scale();
   -o-transform: scale();
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100%;
+  background-color: var(--color--bg-dark-2);
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+}
+.footer--line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.footer--line__content {
+  width: 100%;
+  height: 0.1rem;
+  border: 1px solid var(--grey-color--1);
+}
+.footer--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  height: 100%;
+  padding: 2rem 1rem 1rem 1rem;
+}
+.footer--container__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 5rem;
+}
+.footer--container__content--details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.footer--container__content--details__top {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.footer--container__content--details__top--logo {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border: 1px solid var(--grey-color--1);
+}
+.footer--container__content--details__top--email--link:link, .footer--container__content--details__top--email--link:visited {
+  font-size: var(--font-size--small);
+  font-weight: var(--font-weight--medium);
+  color: var(--color--white-1);
+  background-color: var(--color--bg-dark-2);
+  border: 1px solid var(--grey-color--1);
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  display: inline;
+  padding: 0.5rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+.footer--container__content--details__top--email--link:hover, .footer--container__content--details__top--email--link:active {
+  color: var(--blue-cyan);
+  box-shadow: var(--box-shadow);
+  border: unset;
+  transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  -o-transform: scale(1.3);
+}
+.footer--container__content--details__bottom {
+  margin: 0;
+  padding: 0;
+}
+.footer--container__content--details__bottom--text {
+  font-size: var(--font-size--small);
+  font-weight: var(--font-weight--regular);
+  font-style: oblique;
+  color: var(--color--white-1);
+  text-align: center;
+}
+.footer--container__content--media {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.footer--container__content--media--title {
+  font-size: var(--font-size--medium);
+  font-weight: var(--font-weight--medium);
+  font-family: var(--font-family--2);
+  color: var(--color--white-1);
+}
+.footer--container__content--media--links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+.footer--container__content--media--links--link {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+.footer--container__copyright--text {
+  font-size: var(--font-size--small);
+  font-weight: var(--font-weight--regular);
+  font-style: oblique;
+  font-family: var(--font-family--secondary);
+  color: var(--color--white-1);
 }
 
 @keyframes Heartbeat {

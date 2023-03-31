@@ -1,0 +1,25 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  min-height: 100%;
+  background-color: var(--color--bg-dark-2);
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  width: 100%;
+  height: 30rem;
+
+  &--line {
+    width: 100%;
+    height: 1px;
+    background-color: var(--grey-color--1);
+  }
+}
