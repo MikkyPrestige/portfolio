@@ -1,0 +1,20 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 50%; // 1REM = 8PX  ===> 8/16 = 50%
+
+  @include respond(tablet) {
+    font-size: 62.5%; // 1REM = 10PX ===> 10/16 = 62.5%
+  }
+}
+
+::selection {
+  background-color: var(--color--green);
+  color: var(--color--white-1);
+}
