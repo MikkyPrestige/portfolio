@@ -10,7 +10,9 @@ const Projects = () => {
         <h1 className="project--title">My Works</h1>
         <div className="project--wrapper">
           <div className="project--card">
-            <div className="project--card__img project--card__img-15"></div>
+            <div className="project--card__bg">
+              <div className="project--card__bg--img project--card__bg--img-15"></div>
+            </div>
             <div className="project--card__frame">
               <span className="project--card__frame__item">Html</span>
               <span className="project--card__frame__item">Css</span>
@@ -53,7 +55,9 @@ const Projects = () => {
             </div>
           </div>
           <div className="project--card">
-            <div className="project--card__img project--card__img-1"></div>
+            <div className="project--card__bg">
+              <div className="project--card__bg--img project--card__bg--img-1"></div>
+            </div>
             <div className="project--card__frame">
               <span className="project--card__frame__item">Css</span>
               <span className="project--card__frame__item">React</span>
@@ -94,7 +98,9 @@ const Projects = () => {
             </div>
           </div>
           <div className="project--card">
-            <div className="project--card__img project--card__img-2"></div>
+            <div className="project--card__bg">
+              <div className="project--card__bg--img project--card__bg--img-2"></div>
+            </div>
             <div className="project--card__frame">
               <span className="project--card__frame__item">Html</span>
               <span className="project--card__frame__item">Css</span>
@@ -135,7 +141,9 @@ const Projects = () => {
             </div>
           </div>
           <div className="project--card">
-            <div className="project--card__img project--card__img-3"></div>
+            <div className="project--card__bg">
+              <div className="project--card__bg--img project--card__bg--img-3"></div>
+            </div>
             <div className="project--card__frame">
               <span className="project--card__frame__item">Css</span>
               <span className="project--card__frame__item">React</span>
@@ -172,7 +180,9 @@ const Projects = () => {
             </div>
           </div>
           <div className="project--card">
-            <div className="project--card__img project--card__img-4"></div>
+            <div className="project--card__bg">
+              <div className="project--card__bg--img project--card__bg--img-4"></div>
+            </div>
             <div className="project--card__frame">
               <span className="project--card__frame__item">VueJs</span>
               <span className="project--card__frame__item">Sass</span>
@@ -205,7 +215,9 @@ const Projects = () => {
             </div>
           </div>
           <div className="project--card">
-            <div className="project--card__img project--card__img-5"></div>
+            <div className="project--card__bg">
+              <div className="project--card__bg--img project--card__bg--img-5"></div>
+            </div>
             <div className="project--card__frame">
               <span className="project--card__frame__item">Html</span>
               <span className="project--card__frame__item">CSS</span>
@@ -247,7 +259,9 @@ const Projects = () => {
             </div>
           </div>
           <div className="project--card">
-            <div className="project--card__img project--card__img-6"></div>
+            <div className="project--card__bg">
+              <div className="project--card__bg--img project--card__bg--img-6"></div>
+            </div>
             <div className="project--card__frame">
               <span className="project--card__frame__item">Html</span>
               <span className="project--card__frame__item">CSS</span>
@@ -286,7 +300,9 @@ const Projects = () => {
             </div>
           </div>
           <div className="project--card">
-            <div className="project--card__img project--card__img-7"></div>
+            <div className="project--card__bg">
+              <div className="project--card__bg--img project--card__bg--img-7"></div>
+            </div>
             <div className="project--card__frame">
               <span className="project--card__frame__item">Html</span>
               <span className="project--card__frame__item">CSS</span>
@@ -327,7 +343,9 @@ const Projects = () => {
             </div>
           </div>
           <div className="project--card">
-            <div className="project--card__img project--card__img-8"></div>
+            <div className="project--card__bg">
+              <div className="project--card__bg--img project--card__bg--img-8"></div>
+            </div>
             <div className="project--card__frame">
               <span className="project--card__frame__item">Css</span>
               <span className="project--card__frame__item">React</span>
@@ -365,7 +383,9 @@ const Projects = () => {
             </div>
           </div>
           <div className="project--card">
-            <div className="project--card__img project--card__img-9"></div>
+            <div className="project--card__bg">
+              <div className="project--card__bg--img project--card__bg--img-9"></div>
+            </div>
             <div className="project--card__frame">
               <span className="project--card__frame__item">Css</span>
               <span className="project--card__frame__item">React</span>
@@ -400,7 +420,9 @@ const Projects = () => {
             </div>
           </div>
           <div className="project--card">
-            <div className="project--card__img project--card__img-10"></div>
+            <div className="project--card__bg">
+              <div className="project--card__bg--img project--card__bg--img-10"></div>
+            </div>
             <div className="project--card__frame">
               <span className="project--card__frame__item">Html</span>
               <span className="project--card__frame__item">CSS</span>
@@ -439,7 +461,9 @@ const Projects = () => {
             </div>
           </div>
           <div className="project--card">
-            <div className="project--card__img project--card__img-11"></div>
+            <div className="project--card__bg">
+              <div className="project--card__bg--img project--card__bg--img-11"></div>
+            </div>
             <div className="project--card__frame">
               <span className="project--card__frame__item">Html</span>
               <span className="project--card__frame__item">CSS</span>
@@ -481,7 +505,9 @@ const Projects = () => {
             </div>
           </div>
           <div className="project--card">
-            <div className="project--card__img project--card__img-12"></div>
+            <div className="project--card__bg">
+              <div className="project--card__bg--img project--card__bg--img-12"></div>
+            </div>
             <div className="project--card__frame">
               <span className="project--card__frame__item">Html</span>
               <span className="project--card__frame__item">CSS</span>
@@ -520,7 +546,9 @@ const Projects = () => {
             </div>
           </div>
           <div className="project--card">
-            <div className="project--card__img project--card__img-13"></div>
+            <div className="project--card__bg">
+              <div className="project--card__bg--img project--card__bg--img-13"></div>
+            </div>
             <div className="project--card__frame">
               <span className="project--card__frame__item">Html</span>
               <span className="project--card__frame__item">CSS</span>
@@ -560,7 +588,9 @@ const Projects = () => {
             </div>
           </div>
           <div className="project--card">
-            <div className="project--card__img project--card__img-14"></div>
+            <div className="project--card__bg">
+              <div className="project--card__bg--img project--card__bg--img-14"></div>
+            </div>
             <div className="project--card__frame">
               <span className="project--card__frame__item">Html</span>
               <span className="project--card__frame__item">CSS</span>

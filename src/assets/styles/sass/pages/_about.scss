@@ -37,7 +37,7 @@
       -moz-transform: rotate(51.88deg);
       -ms-transform: rotate(51.88deg);
       -o-transform: rotate(51.88deg);
-}
+    }
 
     &__content2 {
       width: 5rem;
@@ -140,7 +140,7 @@
       &__avatar {
         width: 7rem;
         height: 7rem;
-}
+      }
 
       &__items {
         display: grid;
@@ -150,6 +150,25 @@
         padding: 1rem 3rem;
         border-radius: 1rem;
         background-color: var(--color--bg-dark);
+
+        @include respond(phone-normal) {
+          gap: 3rem 5rem;
+          padding: 1rem 5rem;
+        }
+
+        @include respond(tablet-land) {
+          grid-template-columns: repeat(4, 1fr);
+        }
+
+        @include respond(desktop) {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+          gap: 2rem;
+
+        }
 
         &__card {
           display: flex;

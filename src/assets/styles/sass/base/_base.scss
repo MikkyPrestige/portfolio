@@ -7,27 +7,32 @@
 }
 
 html {
-  // font-size: 50%; // 1REM = 8PX  ===> 8/16 = 50%
+  font-size: 45%; // 1rem ===> 7/16
 
-  @include respond(phone) {
-    font-size: 50%; // 1REM = 8PX ===> 8/16 = 50%
+  @include respond(phone-normal) {
+    font-size: 50%; // 1rem ===> 8/16
   }
 
-  @include respond(tablet) {
-    font-size: 62.5%; // 1REM = 10PX ===> 10/16 = 62.5%
+  @include respond(tablet-port) {
+    font-size: 56.25%; // 1rem ===> 9/16
+  }
+
+  @include respond(tablet-land) {
+    font-size: 62.5%; // 1rem ===> 10/16
   }
 
   @include respond(laptop) {
-    font-size: 75%; // 1REM = 12PX ===> 12/16 = 75%
+    font-size: 75%; // 1rem ===> 12/16
   }
 
   @include respond(desktop) {
-    font-size: 87.5%; // 1REM = 14PX ===> 14/16 = 87.5%
+    font-size: 87.5%; // 1rem ===> 14/16
   }
 
   @include respond(large-screens) {
-    font-size: 100%; // 1REM = 16PX ===> 16/16 = 100%
+    font-size: 100%; // 1rem ===> 16/16
   }
+
 }
 
 ::selection {

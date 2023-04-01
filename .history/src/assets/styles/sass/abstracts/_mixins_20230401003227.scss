@@ -1,0 +1,49 @@
+// Mixins
+// Media queries manager
+// 0 - 480px        phone-small
+// 481 -600px       phone-normal
+// 600 - 767px      tablet-port
+// 768 - 900px      tablet-land
+// 901 - 1200px     laptop
+// 1201 - 1800px    desktop
+// 1801px and above large-screens
+
+// 16px == 1em;
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone-small {
+    @media only screen and (max-width: 30em) {
+      @content;
+    }
+  }
+  @else if $breakpoint == phone-normal {
+    @media only screen and (min-width: 30.063em){
+      @content;
+    }
+  }
+  @else if $breakpoint == tablet-port {
+    @media only screen and (min-width: 37.5em) {
+      @content;
+    }
+  }
+  @else if $breakpoint == tablet-land {
+    @media only screen and (min-width: 48em) {
+      @content;
+    }
+  }
+  @else if $breakpoint == laptop {
+    @media only screen and (min-width: 56.25em) {
+      @content;
+    }
+  }
+  @else if $breakpoint == desktop {
+    @media only screen and (min-width: 75em) {
+      @content;
+    }
+  }
+  @else if $breakpoint == large-screens {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    }
+  }
+}

@@ -1,9 +1,9 @@
 import { React, useState, useEffect, useRef } from "react";
+import Avatar from "../avatar";
 import Forward from "../../assets/images/forward.svg";
 import Backward from "../../assets/images/back.svg";
 import Play from "../../assets/images/play.svg";
 import Pause from "../../assets/images/pause.svg";
-// import Right from "../../assets/images/right.svg";
 
 const ProjectSlider = ({
   projects,
@@ -58,10 +58,16 @@ const ProjectSlider = ({
     <div className="projectSlider">
       <div className="projectSlider--contents">
         <div className="projectSlider--contents__container">
-          <img
-            src={projects[currentProject].image}
+          <Avatar
+            image={projects[currentProject].image}
             alt={projects[currentProject].title}
-            className="projectSlider--contents__container--img"
+            style={{
+              width: "100%",
+              height: "100%",
+              border: "1px solid #ededed",
+              borderRadius: "1rem",
+              objectFit: "cover",
+            }}
           />
         </div>
         <div className="projectSlider--contents__details">
@@ -86,10 +92,10 @@ const ProjectSlider = ({
           className="projectSlider--controls__btn"
           onClick={handlePreviousSlide}
         >
-          <img
-            src={Backward}
+          <Avatar
+            image={Backward}
             alt="Backward Icon"
-            className="projectSlider--controls__btn--img"
+            style={{ width: "100%", height: "100%" }}
           />
         </button>
         <button
@@ -97,16 +103,16 @@ const ProjectSlider = ({
           onClick={handlePlayPause}
         >
           {isPlaying ? (
-            <img
-              src={Pause}
+            <Avatar
+              image={Pause}
               alt="Pause Icon"
-              className="projectSlider--controls__btn--img"
+              style={{ width: "100%", height: "100%" }}
             />
           ) : (
-            <img
-              src={Play}
+            <Avatar
+              image={Play}
               alt="Play Icon"
-              className="projectSlider--controls__btn--img"
+              style={{ width: "100%", height: "100%" }}
             />
           )}
         </button>
@@ -114,10 +120,10 @@ const ProjectSlider = ({
           className="projectSlider--controls__btn svgSize"
           onClick={handleNextSlide}
         >
-          <img
-            src={Forward}
+          <Avatar
+            image={Forward}
             alt="Forward Icon"
-            className="projectSlider--controls__btn--img"
+            style={{ width: "100%", height: "100%" }}
           />
         </button>
       </div>

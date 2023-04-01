@@ -1,0 +1,28 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  @include respond(phone-small) {
+    font-size: 43.75%;        // 1rem ===> 7/16
+  }
+  @include respond(phone-normal) {
+    font-size: 56.25%;            // 1rem ===> 9/16
+  }
+  @include respond(tablet-port) {
+    font-size: 62.5%;            // 1rem ===> 10/16
+  }
+  @include respond(tablet-land) {
+    font-size: 68.75%;            // 1rem ===> 11/16
+  }
+  
+}
+
+::selection {
+  background-color: var(--color--green);
+  color: var(--color--white-1);
+}
