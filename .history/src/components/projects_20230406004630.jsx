@@ -873,7 +873,7 @@ const Projects = () => {
                   <Link
                     to={{
                       pathname:
-                        "https://github.com/MeekyBerry/FCC-responsive-web-design-projects/tree/master/Beating%20heart",
+                        "https://github.com/MeekyBerry/Frontend-Mentor-challenges/tree/main/testimonial-grid-section",
                     }}
                     target="_blank"
                     className="project--card__links__link github-link-bg"
@@ -913,7 +913,7 @@ const Projects = () => {
                   <Link
                     to={{
                       pathname:
-                        "https://github.com/MeekyBerry/FCC-responsive-web-design-projects/tree/master/Half%20moon",
+                        "https://github.com/MeekyBerry/Frontend-Mentor-challenges/tree/main/testimonial-grid-section",
                     }}
                     target="_blank"
                     className="project--card__links__link github-link-bg"

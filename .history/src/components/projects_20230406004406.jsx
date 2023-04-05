@@ -855,7 +855,7 @@ const Projects = () => {
               </div>
               <div className="project--card">
                 <div className="project--card__bg">
-                  <div className="project--card__bg--img project--card__bg--img-21"></div>
+                  <div className="project--card__bg--img project--card__bg--img-20"></div>
                 </div>
                 <div className="project--card__frame">
                   <span className="project--card__frame__item">Html</span>
@@ -863,17 +863,18 @@ const Projects = () => {
                 </div>
                 <div className="project--card__content">
                   <h2 className="project--card__content__title margin-top">
-                    Beating Heart
+                    Testimonial Grid section
                   </h2>
                   <p className="project--card__content__desc">
-                  Just for Fun.
+                  This is the solution to the Frontend Mentor Challenge's
+                    'Testimonial Grid section'.
                   </p>
                 </div>
                 <div className="project--card__links">
                   <Link
                     to={{
                       pathname:
-                        "https://github.com/MeekyBerry/FCC-responsive-web-design-projects/tree/master/Beating%20heart",
+                        "https://github.com/MeekyBerry/Frontend-Mentor-challenges/tree/main/testimonial-grid-section",
                     }}
                     target="_blank"
                     className="project--card__links__link github-link-bg"
@@ -883,7 +884,7 @@ const Projects = () => {
                   </Link>
                   <Link
                     to={{
-                      pathname: "https://fanciful-salamander-e14723.netlify.app/",
+                      pathname: "https://testimonial-grids-section.netlify.app/",
                     }}
                     target="_blank"
                     className="project--card__links__link live-link-bg blue-markup"
@@ -895,7 +896,7 @@ const Projects = () => {
               </div>
               <div className="project--card">
                 <div className="project--card__bg">
-                  <div className="project--card__bg--img project--card__bg--img-22"></div>
+                  <div className="project--card__bg--img project--card__bg--img-20"></div>
                 </div>
                 <div className="project--card__frame">
                   <span className="project--card__frame__item">Html</span>
@@ -903,17 +904,18 @@ const Projects = () => {
                 </div>
                 <div className="project--card__content">
                   <h2 className="project--card__content__title margin-top">
-                    Half Moon
+                    Testimonial Grid section
                   </h2>
                   <p className="project--card__content__desc">
-                  Just for Fun.
+                  This is the solution to the Frontend Mentor Challenge's
+                    'Testimonial Grid section'.
                   </p>
                 </div>
                 <div className="project--card__links">
                   <Link
                     to={{
                       pathname:
-                        "https://github.com/MeekyBerry/FCC-responsive-web-design-projects/tree/master/Half%20moon",
+                        "https://github.com/MeekyBerry/Frontend-Mentor-challenges/tree/main/testimonial-grid-section",
                     }}
                     target="_blank"
                     className="project--card__links__link github-link-bg"
@@ -923,7 +925,7 @@ const Projects = () => {
                   </Link>
                   <Link
                     to={{
-                      pathname: "https://dreamy-dango-249305.netlify.app/"
+                      pathname: "https://testimonial-grids-section.netlify.app/",
                     }}
                     target="_blank"
                     className="project--card__links__link live-link-bg blue-markup"

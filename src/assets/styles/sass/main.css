@@ -978,6 +978,27 @@ html {
 .project--card__bg--img-15 {
   background-image: url(../../../images/projects/tip-calculator.jpeg);
 }
+.project--card__bg--img-16 {
+  background-image: url(../../../images/projects/form.jpeg);
+}
+.project--card__bg--img-17 {
+  background-image: url(../../../images/projects/marley.jpeg);
+}
+.project--card__bg--img-18 {
+  background-image: url(../../../images/projects/cssDocumentation.jpeg);
+}
+.project--card__bg--img-19 {
+  background-image: url(../../../images/projects/binance.jpeg);
+}
+.project--card__bg--img-20 {
+  background-image: url(../../../images/projects/grid.jpeg);
+}
+.project--card__bg--img-21 {
+  background-image: url(../../../images/projects/beating-heart.jpeg);
+}
+.project--card__bg--img-22 {
+  background-image: url(../../../images/projects/half-moon.jpeg);
+}
 .project--card__frame {
   display: flex;
   align-items: center;

@@ -742,7 +742,7 @@ const Projects = () => {
                 </div>
                 <div className="project--card__content">
                   <h2 className="project--card__content__title margin-top">
-                    Technical Documentation
+                    Technical Documentation Page
                   </h2>
                   <p className="project--card__content__desc">
                   For the 'Responsive Web Design' certification projects on freeCodeCamp, I created this CSS documentation. I found CSS to be particularly fascinating when I first embarked on my journey as a developer, which inspired me to take this topic for the project.
@@ -843,87 +843,7 @@ const Projects = () => {
                   </Link>
                   <Link
                     to={{
-                      pathname: "https://testimonial-grids-section.netlify.app/",
-                    }}
-                    target="_blank"
-                    className="project--card__links__link live-link-bg blue-markup"
-                  >
-                    <FaExternalLinkAlt style={{ color: "#a8ff78" }} />
-                    View Live
-                  </Link>
-                </div>
-              </div>
-              <div className="project--card">
-                <div className="project--card__bg">
-                  <div className="project--card__bg--img project--card__bg--img-21"></div>
-                </div>
-                <div className="project--card__frame">
-                  <span className="project--card__frame__item">Html</span>
-                  <span className="project--card__frame__item">CSS</span>
-                </div>
-                <div className="project--card__content">
-                  <h2 className="project--card__content__title margin-top">
-                    Beating Heart
-                  </h2>
-                  <p className="project--card__content__desc">
-                  Just for Fun.
-                  </p>
-                </div>
-                <div className="project--card__links">
-                  <Link
-                    to={{
-                      pathname:
-                        "https://github.com/MeekyBerry/FCC-responsive-web-design-projects/tree/master/Beating%20heart",
-                    }}
-                    target="_blank"
-                    className="project--card__links__link github-link-bg"
-                  >
-                    <FaGithub style={{ color: "#000" }} />
-                    View on GitHub
-                  </Link>
-                  <Link
-                    to={{
-                      pathname: "https://fanciful-salamander-e14723.netlify.app/",
-                    }}
-                    target="_blank"
-                    className="project--card__links__link live-link-bg blue-markup"
-                  >
-                    <FaExternalLinkAlt style={{ color: "#a8ff78" }} />
-                    View Live
-                  </Link>
-                </div>
-              </div>
-              <div className="project--card">
-                <div className="project--card__bg">
-                  <div className="project--card__bg--img project--card__bg--img-22"></div>
-                </div>
-                <div className="project--card__frame">
-                  <span className="project--card__frame__item">Html</span>
-                  <span className="project--card__frame__item">CSS</span>
-                </div>
-                <div className="project--card__content">
-                  <h2 className="project--card__content__title margin-top">
-                    Half Moon
-                  </h2>
-                  <p className="project--card__content__desc">
-                  Just for Fun.
-                  </p>
-                </div>
-                <div className="project--card__links">
-                  <Link
-                    to={{
-                      pathname:
-                        "https://github.com/MeekyBerry/FCC-responsive-web-design-projects/tree/master/Half%20moon",
-                    }}
-                    target="_blank"
-                    className="project--card__links__link github-link-bg"
-                  >
-                    <FaGithub style={{ color: "#000" }} />
-                    View on GitHub
-                  </Link>
-                  <Link
-                    to={{
-                      pathname: "https://dreamy-dango-249305.netlify.app/"
+                      pathname: "https://fylo-data-store-layout.netlify.app/",
                     }}
                     target="_blank"
                     className="project--card__links__link live-link-bg blue-markup"
