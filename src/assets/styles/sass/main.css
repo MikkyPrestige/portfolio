@@ -106,11 +106,6 @@
   margin-bottom: 1rem;
 }
 
-.svgSize {
-  width: 4% !important;
-  height: 4% !important;
-}
-
 *,
 *::after,
 *::before {
@@ -428,7 +423,7 @@ html {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding: 3rem 0;
+  padding: 1rem 0;
   gap: 3rem;
   margin-top: 5rem;
 }
@@ -815,10 +810,6 @@ html {
   padding: 0;
   width: 100%;
 }
-.about--skills__content__avatar {
-  width: 7rem;
-  height: 7rem;
-}
 .about--skills__content__items {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -862,7 +853,11 @@ html {
   -ms-border-radius: 1rem;
   -o-border-radius: 1rem;
 }
-.about--skills__content__items__card__text {
+.about--skills__content__items__avatar {
+  width: 7rem;
+  height: 7rem;
+}
+.about--skills__content__items__text {
   font-family: var(--font-family--secondary);
   font-size: var(--font-size--medium);
   font-weight: var(--font-weight--medium);
@@ -1742,10 +1737,15 @@ html {
   height: 100%;
 }
 .projectSlider--controls__btn {
-  width: 5%;
-  height: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10%;
+  height: 10%;
   border-radius: 50%;
   border: 1px solid var(--grey-color--1);
+  padding: 0.5rem;
+  margin: auto;
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
 }
@@ -1763,12 +1763,11 @@ html {
   gap: 3rem;
   width: 100%;
   height: 100%;
-  padding-top: 1rem;
+  margin-top: 3rem;
 }
 @media only screen and (min-width: 30.063em) {
   .projectSlider--pagination {
     justify-content: space-around;
-    gap: unset;
   }
 }
 @media only screen and (min-width: 56.25em) {
@@ -1987,6 +1986,11 @@ html {
   }
 }
 
+.animate__tada:hover {
+  animation: Tada 0.5;
+  -webkit-animation: Tada 0.5;
+}
+
 @keyframes Heartbeat {
   0% {
     transform: scale(1);
@@ -2008,5 +2012,22 @@ html {
     -moz-transform: scale(1);
     -ms-transform: scale(1);
     -o-transform: scale(1);
+  }
+}
+@keyframes Tada {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+  10%, 20% {
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+  }
+  30%, 50%, 70%, 90% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+  40%, 60%, 80% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+  to {
+    transform: scale3d(1, 1, 1);
   }
 }/*# sourceMappingURL=main.css.map */
