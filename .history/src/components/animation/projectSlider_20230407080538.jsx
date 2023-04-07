@@ -88,48 +88,48 @@ const ProjectSlider = ({
         </Fade>
       </div>
       {/* <div className="animation-overflow"> */}
-      <Fade direction="left" duration={5000}>
-        <div className="projectSlider--controls">
-          <button
-            className="projectSlider--controls__btn"
-            onClick={handlePreviousSlide}
-          >
-            <FaBackward
-              style={{
-                width: "2rem",
-                height: "2rem",
-                fill: "rgba(255, 0, 0, 0.5)",
-              }}
-            />
-          </button>
-          <button
-            className="projectSlider--controls__btn padding-small"
-            onClick={handlePlayPause}
-          >
-            {isPlaying ? (
-              <Avatar
-                image={Pause}
-                alt="Pause Icon"
-                style={{ width: "2.5rem", height: "2.5rem" }}
+        <Fade direction="left" duration={5000}>
+          <div className="projectSlider--controls">
+            <button
+              className="projectSlider--controls__btn"
+              onClick={handlePreviousSlide}
+            >
+              <FaBackward
+                style={{
+                  width: "2rem",
+                  height: "2rem",
+                  fill: "rgba(255, 0, 0, 0.5)",
+                }}
               />
-            ) : (
-              <Avatar
-                image={Play}
-                alt="Play Icon"
-                style={{ width: "2.5rem", height: "2.5rem" }}
+            </button>
+            <button
+              className="projectSlider--controls__btn padding-small"
+              onClick={handlePlayPause}
+            >
+              {isPlaying ? (
+                <Avatar
+                  image={Pause}
+                  alt="Pause Icon"
+                  style={{ width: "2.5rem", height: "2.5rem" }}
+                />
+              ) : (
+                <Avatar
+                  image={Play}
+                  alt="Play Icon"
+                  style={{ width: "2.5rem", height: "2.5rem" }}
+                />
+              )}
+            </button>
+            <button
+              className="projectSlider--controls__btn"
+              onClick={handleNextSlide}
+            >
+              <FaForward
+                style={{ width: "2rem", height: "2rem", fill: "#1D976C" }}
               />
-            )}
-          </button>
-          <button
-            className="projectSlider--controls__btn"
-            onClick={handleNextSlide}
-          >
-            <FaForward
-              style={{ width: "2rem", height: "2rem", fill: "#1D976C" }}
-            />
-          </button>
-        </div>
-      </Fade>
+            </button>
+          </div>
+        </Fade>
       {/* </div> */}
       <Fade direction="right" duration={5000}>
         {projects.length > 1 && (
