@@ -136,10 +136,13 @@
       &__btn {
         display: flex;
         align-items: center;
-        justify-content: center;
-        gap: 2rem;
+        justify-content: space-around;
         margin-top: 2rem;
         width: 100%;
+
+        @include respond(laptop) {
+          gap: 2rem;
+        }
 
         a {
           text-decoration: none;

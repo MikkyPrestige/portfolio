@@ -68,6 +68,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    // padding: 1rem 0;
     gap: 3rem;
     margin-top: 5rem;
 
@@ -136,10 +137,13 @@
       &__btn {
         display: flex;
         align-items: center;
-        justify-content: center;
-        gap: 2rem;
+        justify-content: space-around;
         margin-top: 2rem;
         width: 100%;
+
+        @include respond(laptop) {
+          gap: 2rem;
+        }
 
         a {
           text-decoration: none;
