@@ -377,6 +377,7 @@ html {
   background-color: var(--color--bg-dark-2);
   width: 3rem;
   height: 100%;
+  overflow: hidden;
 }
 @media only screen and (min-width: 56.25em) {
   .home--media {
@@ -459,6 +460,7 @@ html {
   flex-basis: 60%;
   padding: 0 5rem;
   gap: 0.5rem;
+  overflow: hidden;
 }
 @media only screen and (min-width: 56.25em) {
   .home--contents__content {
@@ -533,6 +535,7 @@ html {
   position: relative;
   width: 100%;
   flex-grow: 1;
+  overflow: hidden;
 }
 .home--contents__illustration__wrapper {
   width: 90%;
@@ -603,6 +606,7 @@ html {
   gap: 1.5rem;
   padding: 0 1rem;
   width: 100%;
+  overflow: hidden;
 }
 @media only screen and (min-width: 30.063em) {
   .home--contents__quote {
@@ -701,6 +705,7 @@ html {
   align-items: center;
   gap: 1rem;
   padding: 2rem;
+  overflow: hidden;
 }
 .about--desc {
   padding: 5rem 1rem 1rem 1rem;
@@ -892,8 +897,9 @@ html {
 .project--wrapper {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: 3rem;
+  gap: 2rem;
   width: 100%;
+  overflow: hidden;
 }
 @media only screen and (min-width: 48em) {
   .project--wrapper {
@@ -1096,6 +1102,7 @@ html {
   align-items: center;
   gap: 0.5rem;
   font-family: var(--font-family--secondary);
+  overflow: hidden;
 }
 .contact--header__title {
   font-size: var(--font-size--xx-large);
@@ -1116,6 +1123,20 @@ html {
   width: 100%;
   background-color: var(--color--dark-4);
 }
+.contact--content__animation {
+  width: 75%;
+  overflow: hidden;
+}
+@media only screen and (min-width: 37.55em) {
+  .contact--content__animation {
+    width: 60%;
+  }
+}
+@media only screen and (min-width: 56.25em) {
+  .contact--content__animation {
+    width: 40%;
+  }
+}
 @media only screen and (min-width: 56.25em) {
   .contact--content {
     flex-direction: row;
@@ -1127,24 +1148,15 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 1rem;
   padding: 0.5rem;
-  width: 75%;
+  width: 100%;
   border-radius: 0.5rem;
   -webkit-border-radius: 0.5rem;
   -moz-border-radius: 0.5rem;
   -ms-border-radius: 0.5rem;
   -o-border-radius: 0.5rem;
-}
-@media only screen and (min-width: 37.55em) {
-  .contact--content__left {
-    width: 60%;
-  }
-}
-@media only screen and (min-width: 56.25em) {
-  .contact--content__left {
-    flex-basis: 40%;
-  }
 }
 .contact--content__left__title {
   font-size: var(--font-size--large);
@@ -1170,6 +1182,7 @@ html {
   -moz-border-radius: 1rem;
   -ms-border-radius: 1rem;
   -o-border-radius: 1rem;
+  overflow: hidden;
 }
 @media only screen and (min-width: 30.063em) {
   .contact--content__right {
@@ -1735,6 +1748,7 @@ html {
   gap: 1rem;
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 .projectSlider--controls__btn {
   display: flex;
@@ -1816,6 +1830,9 @@ html {
   -moz-transform: scale();
   -ms-transform: scale();
   -o-transform: scale();
+}
+.projectSlider--animation {
+  overflow: hidden;
 }
 
 .app {
