@@ -41,9 +41,6 @@ const Form = () => {
     if (!form.email.trim()) {
       formIsValid = false;
       errors.email = "Email is required";
-    } else if (!/\S+@\S+\.\S+/.test(form.email)) {
-      formIsValid = false;
-      errors.email = "Please enter a valid email address";
     }
     if (!form.message.trim()) {
       formIsValid = false;
@@ -57,14 +54,14 @@ const Form = () => {
   const handleFormSubmit = (e) => {
     e.preventDefault();
     if (validateForm()) {
-      sendMessage(form);
+      // sendMessage(form);
       setFullNameSuccess(form.fullName);
       setForm(reset);
       setSuccess(true);
-      setTimeout(() => {
-        setSuccess(false);
-        setFullNameSuccess("");
-      }, 15000);
+      // setTimeout(() => {
+      //   setSuccess(false);
+      //   setFullNameSuccess("");
+      // }, 15000);
     }
   };
 

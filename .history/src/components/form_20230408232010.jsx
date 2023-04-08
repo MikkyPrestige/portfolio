@@ -12,6 +12,12 @@ const Form = () => {
     message: "",
   });
 
+  const [formErrors, setFormErrors] = useState({
+    fullname: "",
+    email: "",
+    message: "",
+  });
+
   // ERROR STATE
   const [error, setError] = useState({});
   // SUCCESS STATE
@@ -42,7 +48,6 @@ const Form = () => {
       formIsValid = false;
       errors.email = "Email is required";
     } else if (!/\S+@\S+\.\S+/.test(form.email)) {
-      formIsValid = false;
       errors.email = "Please enter a valid email address";
     }
     if (!form.message.trim()) {
@@ -56,16 +61,32 @@ const Form = () => {
   // CREATE A FUNCTION TO HANDLE THE FORM SUBMISSION
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    if (validateForm()) {
-      sendMessage(form);
-      setFullNameSuccess(form.fullName);
-      setForm(reset);
-      setSuccess(true);
-      setTimeout(() => {
-        setSuccess(false);
-        setFullNameSuccess("");
-      }, 15000);
+    const errorForm = validateForm();
+    if (Object.keys(formErrors).length) {
+      Object.keys(formErrors).forEach((fieldName) => {
+        // console.log(fieldName, errors[fieldName]);
+        setFormErrors((prevState) => ({
+          ...prevState,
+          [fieldName]: errorForm[fieldName],
+        }));
+      })
+      return
     }
+    // sendMessage(form);
+    setFullNameSuccess(form.fullName);
+    setFormErrors(reset);
+    setSuccess(true)
+
+    // if (validateForm()) {
+    //   // sendMessage(form);
+    //   setFullNameSuccess(form.fullName);
+    //   setForm(reset);
+    //   setSuccess(true);
+    //   // setTimeout(() => {
+    //   //   setSuccess(false);
+    //   //   setFullNameSuccess("");
+    //   // }, 15000);
+    // }
   };
 
   // SEND FORM DATA TO FIREBASE
@@ -133,9 +154,12 @@ const Form = () => {
             Full Name
           </label>
           <Zoom duration={3000}>
-            {error.fullName && (
+            {/* {error.fullName && (
               <p className="form--content__error">{error.fullName}</p>
-            )}
+            )} */}
+             {formErrors.fullname && (
+      <div className="error">{formErrors.fullname}</div>
+    )}
           </Zoom>
         </div>
         <div className="form--content__container margin-bottom-1">
@@ -152,9 +176,12 @@ const Form = () => {
             Email Address
           </label>
           <Zoom duration={3000}>
-            {error.email && (
+            {/* {error.email && (
               <p className="form--content__error">{error.email}</p>
-            )}
+            )} */}
+             {formErrors.email && (
+      <div className="error">{formErrors.email}</div>
+    )}
           </Zoom>
         </div>
         <div className="form--content__container">
@@ -170,9 +197,12 @@ const Form = () => {
             Message
           </label>
           <Zoom duration={3000}>
-            {error.message && (
+            {/* {error.message && (
               <p className="form--content__error">{error.message}</p>
-            )}
+            )} */}
+             {formErrors.message && (
+      <div className="error">{formErrors.message}</div>
+    )}
           </Zoom>
         </div>
         <div className="form--content__container">

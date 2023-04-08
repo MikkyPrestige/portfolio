@@ -41,9 +41,6 @@ const Form = () => {
     if (!form.email.trim()) {
       formIsValid = false;
       errors.email = "Email is required";
-    } else if (!/\S+@\S+\.\S+/.test(form.email)) {
-      formIsValid = false;
-      errors.email = "Please enter a valid email address";
     }
     if (!form.message.trim()) {
       formIsValid = false;
@@ -57,14 +54,14 @@ const Form = () => {
   const handleFormSubmit = (e) => {
     e.preventDefault();
     if (validateForm()) {
-      sendMessage(form);
+      // sendMessage(form);
       setFullNameSuccess(form.fullName);
       setForm(reset);
       setSuccess(true);
-      setTimeout(() => {
-        setSuccess(false);
-        setFullNameSuccess("");
-      }, 15000);
+      // setTimeout(() => {
+      //   setSuccess(false);
+      //   setFullNameSuccess("");
+      // }, 15000);
     }
   };
 
@@ -132,7 +129,7 @@ const Form = () => {
           <label htmlFor="fullName" className="form--content__label">
             Full Name
           </label>
-          <Zoom duration={3000}>
+          <Zoom duration={3000} delay={1000}>
             {error.fullName && (
               <p className="form--content__error">{error.fullName}</p>
             )}
@@ -151,7 +148,7 @@ const Form = () => {
           <label htmlFor="email" className="form--content__label">
             Email Address
           </label>
-          <Zoom duration={3000}>
+          <Zoom duration={3000} delay={1000}>
             {error.email && (
               <p className="form--content__error">{error.email}</p>
             )}
@@ -169,7 +166,7 @@ const Form = () => {
           <label htmlFor="message" className="form--content__label">
             Message
           </label>
-          <Zoom duration={3000}>
+          <Zoom duration={3000} delay={1000}>
             {error.message && (
               <p className="form--content__error">{error.message}</p>
             )}

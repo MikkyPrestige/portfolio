@@ -151,7 +151,7 @@ const Form = () => {
           <label htmlFor="email" className="form--content__label">
             Email Address
           </label>
-          <Zoom duration={3000}>
+          <Zoom duration={3000} cascade damping={1}>
             {error.email && (
               <p className="form--content__error">{error.email}</p>
             )}

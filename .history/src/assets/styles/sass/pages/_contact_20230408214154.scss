@@ -37,12 +37,8 @@
 
     &__animation {
       width: 75%;
-      overflow: hidden;
-      border-radius: 1rem;
-      -webkit-border-radius: 1rem;
-      -moz-border-radius: 1rem;
-      -ms-border-radius: 1rem;
-      -o-border-radius: 1rem;
+      // overflow: hidden;
+
 
       @include respond(tablet-port) {
         width: 60%;

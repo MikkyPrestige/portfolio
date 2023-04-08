@@ -119,7 +119,7 @@ const Form = () => {
         className="form--content"
         onSubmit={handleFormSubmit}
       >
-        <div className="form--content__container margin-bottom-1">
+        <div className="form--content__container">
           <input
             type="text"
             name="fullName"
@@ -138,7 +138,7 @@ const Form = () => {
             )}
           </Zoom>
         </div>
-        <div className="form--content__container margin-bottom-1">
+        <div className="form--content__container">
           <input
             type="email"
             name="email"

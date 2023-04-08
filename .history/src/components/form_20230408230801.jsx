@@ -42,7 +42,6 @@ const Form = () => {
       formIsValid = false;
       errors.email = "Email is required";
     } else if (!/\S+@\S+\.\S+/.test(form.email)) {
-      formIsValid = false;
       errors.email = "Please enter a valid email address";
     }
     if (!form.message.trim()) {
@@ -56,16 +55,18 @@ const Form = () => {
   // CREATE A FUNCTION TO HANDLE THE FORM SUBMISSION
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    if (validateForm()) {
-      sendMessage(form);
-      setFullNameSuccess(form.fullName);
-      setForm(reset);
-      setSuccess(true);
-      setTimeout(() => {
-        setSuccess(false);
-        setFullNameSuccess("");
-      }, 15000);
-    }
+    const errorForm = validateForm();
+    if (Object.keys(errorForm).length)
+    // if (validateForm()) {
+    //   // sendMessage(form);
+    //   setFullNameSuccess(form.fullName);
+    //   setForm(reset);
+    //   setSuccess(true);
+    //   // setTimeout(() => {
+    //   //   setSuccess(false);
+    //   //   setFullNameSuccess("");
+    //   // }, 15000);
+    // }
   };
 
   // SEND FORM DATA TO FIREBASE

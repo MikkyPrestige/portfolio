@@ -42,7 +42,6 @@ const Form = () => {
       formIsValid = false;
       errors.email = "Email is required";
     } else if (!/\S+@\S+\.\S+/.test(form.email)) {
-      formIsValid = false;
       errors.email = "Please enter a valid email address";
     }
     if (!form.message.trim()) {
@@ -57,14 +56,14 @@ const Form = () => {
   const handleFormSubmit = (e) => {
     e.preventDefault();
     if (validateForm()) {
-      sendMessage(form);
+      // sendMessage(form);
       setFullNameSuccess(form.fullName);
       setForm(reset);
       setSuccess(true);
-      setTimeout(() => {
-        setSuccess(false);
-        setFullNameSuccess("");
-      }, 15000);
+      // setTimeout(() => {
+      //   setSuccess(false);
+      //   setFullNameSuccess("");
+      // }, 15000);
     }
   };
 
@@ -151,7 +150,7 @@ const Form = () => {
           <label htmlFor="email" className="form--content__label">
             Email Address
           </label>
-          <Zoom duration={3000}>
+          <Zoom duration={3000} cascade damping={1}>
             {error.email && (
               <p className="form--content__error">{error.email}</p>
             )}

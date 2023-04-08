@@ -18,10 +18,10 @@
     z-index: 1000;
     background-color: rgba(22, 22, 22, .8);
     border-radius: 1rem;
-    -webkit-border-radius: 1rem;
-    -moz-border-radius: 1rem;
-    -ms-border-radius: 1rem;
-    -o-border-radius: 1rem;
+      -webkit-border-radius: 1rem;
+      -moz-border-radius: 1rem;
+      -ms-border-radius: 1rem;
+      -o-border-radius: 1rem;
 
     @supports (backdrop-filter: blur()) {
       backdrop-filter: blur(.5rem);
@@ -113,6 +113,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      padding: .5rem;
       width: 100%;
     }
 
@@ -129,7 +130,7 @@
       -ms-transition: all .5s;
       -o-transition: all .5s;
       align-self: flex-start;
-    }
+}
 
     &__input:placeholder-shown+&__label {
       opacity: 0;
@@ -212,7 +213,7 @@
       color: var(--color--red);
       font-size: var(--font-size);
       font-weight: var(--font-weight--regular);
-      margin-top: -1.5rem;
+      margin-top: -1.8rem;
     }
   }
 }

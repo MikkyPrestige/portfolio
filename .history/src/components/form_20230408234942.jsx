@@ -57,7 +57,7 @@ const Form = () => {
   const handleFormSubmit = (e) => {
     e.preventDefault();
     if (validateForm()) {
-      sendMessage(form);
+      // sendMessage(form);
       setFullNameSuccess(form.fullName);
       setForm(reset);
       setSuccess(true);

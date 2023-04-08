@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { database, ref, set } from "../config";
 import Avatar from "./avatar";
 import ThumbsUp from "../assets/images/thumbs-up.png";
-import { Zoom } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 
 const Form = () => {
   // CREATE A STATE FOR THE FORM
@@ -41,9 +41,6 @@ const Form = () => {
     if (!form.email.trim()) {
       formIsValid = false;
       errors.email = "Email is required";
-    } else if (!/\S+@\S+\.\S+/.test(form.email)) {
-      formIsValid = false;
-      errors.email = "Please enter a valid email address";
     }
     if (!form.message.trim()) {
       formIsValid = false;
@@ -57,14 +54,14 @@ const Form = () => {
   const handleFormSubmit = (e) => {
     e.preventDefault();
     if (validateForm()) {
-      sendMessage(form);
+      // sendMessage(form);
       setFullNameSuccess(form.fullName);
       setForm(reset);
       setSuccess(true);
-      setTimeout(() => {
-        setSuccess(false);
-        setFullNameSuccess("");
-      }, 15000);
+      // setTimeout(() => {
+      //   setSuccess(false);
+      //   setFullNameSuccess("");
+      // }, 15000);
     }
   };
 
@@ -132,11 +129,7 @@ const Form = () => {
           <label htmlFor="fullName" className="form--content__label">
             Full Name
           </label>
-          <Zoom duration={3000}>
-            {error.fullName && (
-              <p className="form--content__error">{error.fullName}</p>
-            )}
-          </Zoom>
+          <p className="form--content__error">{error.fullName}</p>
         </div>
         <div className="form--content__container margin-bottom-1">
           <input
@@ -151,11 +144,7 @@ const Form = () => {
           <label htmlFor="email" className="form--content__label">
             Email Address
           </label>
-          <Zoom duration={3000}>
-            {error.email && (
-              <p className="form--content__error">{error.email}</p>
-            )}
-          </Zoom>
+          <p className="form--content__error">{error.email}</p>
         </div>
         <div className="form--content__container">
           <textarea
@@ -169,11 +158,9 @@ const Form = () => {
           <label htmlFor="message" className="form--content__label">
             Message
           </label>
-          <Zoom duration={3000}>
-            {error.message && (
-              <p className="form--content__error">{error.message}</p>
-            )}
-          </Zoom>
+          <Fade direction="up" triggerOnce={true}>
+  {error.message && <p className="form--content__error">{error.message}</p>}
+</Fade>
         </div>
         <div className="form--content__container">
           <button type="submit" className="form--content__btn">
