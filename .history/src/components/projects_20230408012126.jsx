@@ -741,7 +741,6 @@ const Projects = () => {
             </div>
           </Fade>
           {/* <div className="project--card">
-            <div className="project--card__side project--card__side__front">
                 <div className="project--card__bg">
                   <div className="project--card__bg--img project--card__bg--img-16"></div>
                 </div>
@@ -749,8 +748,6 @@ const Projects = () => {
                   <span className="project--card__frame__item">Html</span>
                   <span className="project--card__frame__item">CSS</span>
                 </div>
-            </div>
-            <div className="project--card__side project--card__side__back">
                 <div className="project--card__content">
                   <h2 className="project--card__content__title margin-top">
                     Survey Form
@@ -785,7 +782,6 @@ const Projects = () => {
                     <FaExternalLinkAlt style={{ color: "#a8ff78" }} />
                     View Live
                   </Link>
-                </div>
                 </div>
               </div> */}
           <Fade direction="left" duration={5000}>
@@ -839,7 +835,6 @@ const Projects = () => {
             </div>
           </Fade>
           {/* <div className="project--card">
-            <div className="project--card__side project--card__side__front">
                 <div className="project--card__bg">
                   <div className="project--card__bg--img project--card__bg--img-18"></div>
                 </div>
@@ -847,8 +842,6 @@ const Projects = () => {
                   <span className="project--card__frame__item">Html</span>
                   <span className="project--card__frame__item">CSS</span>
                 </div>
-            </div>
-            <div className="project--card__side project--card__side__back">
                 <div className="project--card__content">
                   <h2 className="project--card__content__title margin-top">
                     Technical Documentation
@@ -885,7 +878,6 @@ const Projects = () => {
                     View Live
                   </Link>
                 </div>
-            </div>
               </div> */}
           {/* <div className="project--card">
                 <div className="project--card__bg">

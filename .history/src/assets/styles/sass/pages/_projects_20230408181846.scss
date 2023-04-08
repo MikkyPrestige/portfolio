@@ -39,7 +39,7 @@
     }
 
     @include respond(laptop) {
-      grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
     }
   }
 
@@ -48,6 +48,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     box-shadow: 0 0 .5rem var(--color--dark-4);
     border-radius: .5rem;
 
@@ -57,10 +58,6 @@
       &__side {
         height: auto;
         width: 100%;
-
-        &__front {
-          transform: rotateY(0);
-        }
 
         &__back {
           transform: rotateY(0);
@@ -222,6 +219,7 @@
           background-image: url(../../../images/projects/half-moon.jpeg);
         }
       }
+
     }
 
     &__frame {

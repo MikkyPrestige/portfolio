@@ -32,7 +32,7 @@
     grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
     width: 100%;
-    overflow: hidden;
+    // overflow: hidden;
 
     @include respond(tablet-land) {
       grid-template-columns: repeat(2, 1fr);
@@ -48,6 +48,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     box-shadow: 0 0 .5rem var(--color--dark-4);
     border-radius: .5rem;
 
@@ -57,10 +58,6 @@
       &__side {
         height: auto;
         width: 100%;
-
-        &__front {
-          transform: rotateY(0);
-        }
 
         &__back {
           transform: rotateY(0);
@@ -76,7 +73,6 @@
       position: relative;
       perspective: 150rem;
       height: 33rem;
-      box-shadow: unset;
 
       &__side {
         height: 33rem;
@@ -86,6 +82,7 @@
         backface-visibility: hidden;
         border-radius: .5rem;
         box-shadow: 0 0 .5rem var(--color--dark-4);
+        // overflow: hidden;
 
         &__front {
           transform: rotateY(0);
@@ -99,7 +96,7 @@
           -o-transform: rotateY(180deg);
           display: flex;
           flex-direction: column;
-          justify-content: space-between;
+          justify-content: center;
           align-items: center;
         }
       }
@@ -222,6 +219,7 @@
           background-image: url(../../../images/projects/half-moon.jpeg);
         }
       }
+
     }
 
     &__frame {
@@ -251,10 +249,6 @@
       align-items: center;
       gap: 1rem;
       border-top: 1px solid var(--color-tertiary);
-
-      @include respond(hover) {
-        border-top: unset;
-      }
 
       &__title {
         font-family: var(--font--family--tertiary);

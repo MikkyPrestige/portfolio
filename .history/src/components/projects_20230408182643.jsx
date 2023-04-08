@@ -13,18 +13,18 @@ const Projects = () => {
           <Fade direction="right" duration={5000}>
             <div className="project--card">
               <div className="project--card__side project--card__side__front">
-                <div className="project--card__bg">
-                  <div className="project--card__bg--img project--card__bg--img-15"></div>
+                <div className="project--card__side__bg">
+                  <div className="project--card__side__bg--img project--card__bg--img-15"></div>
                 </div>
-                <div className="project--card__frame">
-                  <span className="project--card__frame__item">Html</span>
-                  <span className="project--card__frame__item">Css</span>
-                  <span className="project--card__frame__item">JavaScript</span>
+                <div className="project--card__side__frame">
+                  <span className="project--card__side__frame__item">Html</span>
+                  <span className="project--card__side__frame__item">Css</span>
+                  <span className="project--card__side__frame__item">JavaScript</span>
                 </div>
               </div>
               <div className="project--card__side project--card__side__back">
-                <div className="project--card__content">
-                  <h2 className="project--card__content__title margin-top">
+                <div className="project--card__side__content">
+                  <h2 className="project--card__side__content__title margin-top">
                     Tip Calculator
                   </h2>
                   <p className="project--card__content__desc">
@@ -37,14 +37,14 @@ const Projects = () => {
                     to the "tip calculator" frontend mentor challenge.
                   </p>
                 </div>
-                <div className="project--card__links">
+                <div className="project--card__side__links">
                   <Link
                     to={{
                       pathname:
                         "https://github.com/MeekyBerry/Frontend-Mentor-challenges/tree/main/tip-calculator-app",
                     }}
                     target="_blank"
-                    className="project--card__links__link github-link-bg"
+                    className="project--card__side__links__link github-link-bg"
                   >
                     <FaGithub style={{ color: "#000" }} />
                     View on GitHub
@@ -54,7 +54,7 @@ const Projects = () => {
                       pathname: "https://mikky-tip-calculator.vercel.app/",
                     }}
                     target="_blank"
-                    className="project--card__links__link live-link-bg blue-markup"
+                    className="project--card__side__links__link live-link-bg blue-markup"
                   >
                     <FaExternalLinkAlt style={{ color: "#a8ff78" }} />
                     View Live
@@ -66,20 +66,20 @@ const Projects = () => {
           <Fade direction="left" duration={5000}>
             <div className="project--card">
               <div className="project--card__side project--card__side__front">
-                <div className="project--card__bg">
-                  <div className="project--card__bg--img project--card__bg--img-1"></div>
+                <div className="project--card__side__bg">
+                  <div className="project--card__side__bg--img project--card__bg--img-1"></div>
                 </div>
-                <div className="project--card__frame">
-                  <span className="project--card__frame__item">Css</span>
-                  <span className="project--card__frame__item">React</span>
+                <div className="project--card__side__frame">
+                  <span className="project--card__side__frame__item">Css</span>
+                  <span className="project--card__side__frame__item">React</span>
                 </div>
               </div>
               <div className="project--card__side project--card__side__back">
-                <div className="project--card__content">
-                  <h2 className="project--card__content__title margin-top">
+                <div className="project--card__side__content">
+                  <h2 className="project--card__side__content__title margin-top">
                     GitHub Repository App
                   </h2>
-                  <p className="project--card__content__desc">
+                  <p className="project--card__side__content__desc">
                     This is a React-based web app that displays a user's
                     repositories using the GitHub API. This app's user-friendly
                     interface allows users to easily view all of their
@@ -89,14 +89,14 @@ const Projects = () => {
                     the second semester.
                   </p>
                 </div>
-                <div className="project--card__links">
+                <div className="project--card__side__links">
                   <Link
                     to={{
                       pathname:
                         "https://github.com/MeekyBerry/exam-project-altschoolafrica",
                     }}
                     target="_blank"
-                    className="project--card__links__link github-link-bg"
+                    className="project--card__side__links__link github-link-bg"
                   >
                     <FaGithub style={{ color: "#000" }} />
                     View on GitHub
@@ -106,7 +106,7 @@ const Projects = () => {
                       pathname: "https://github-repos-display.vercel.app/",
                     }}
                     target="_blank"
-                    className="project--card__links__link live-link-bg blue-markup"
+                    className="project--card__side__links__link live-link-bg blue-markup"
                   >
                     <FaExternalLinkAlt style={{ color: "#a8ff78" }} />
                     View Live
@@ -118,21 +118,21 @@ const Projects = () => {
           <Fade direction="right" duration={5000}>
             <div className="project--card">
               <div className="project--card__side project--card__side__front">
-                <div className="project--card__bg">
-                  <div className="project--card__bg--img project--card__bg--img-2"></div>
+                <div className="project--card__side__bg">
+                  <div className="project--card__side__bg--img project--card__bg--img-2"></div>
                 </div>
-                <div className="project--card__frame">
-                  <span className="project--card__frame__item">Html</span>
-                  <span className="project--card__frame__item">Css</span>
-                  <span className="project--card__frame__item">JavaScript</span>
+                <div className="project--card__side__frame">
+                  <span className="project--card__side__frame__item">Html</span>
+                  <span className="project--card__side__frame__item">Css</span>
+                  <span className="project--card__side__frame__item">JavaScript</span>
                 </div>
               </div>
               <div className="project--card__side project--card__side__back">
-                <div className="project--card__content">
-                  <h2 className="project--card__content__title margin-top">
+                <div className="project--card__side__content">
+                  <h2 className="project--card__side__content__title margin-top">
                     Phonie App
                   </h2>
-                  <p className="project--card__content__desc">
+                  <p className="project--card__side__content__desc">
                     The Phonie Project is a web-based application created by the
                     team "Phantom_Devz" that determines the telecom carrier
                     based on a phone number entered by the user. <br /> It is
@@ -140,14 +140,14 @@ const Projects = () => {
                     of Engineering Holiday Hackathon in August '22.
                   </p>
                 </div>
-                <div className="project--card__links">
+                <div className="project--card__side__links">
                   <Link
                     to={{
                       pathname:
                         "https://github.com/MeekyBerry/Phonie-project-Phantom_Devz",
                     }}
                     target="_blank"
-                    className="project--card__links__link github-link-bg"
+                    className="project--card__side__links__link github-link-bg"
                   >
                     <FaGithub style={{ color: "#000" }} />
                     View on GitHub
@@ -157,7 +157,7 @@ const Projects = () => {
                       pathname: "https://phantom-devz-phonie.netlify.app/",
                     }}
                     target="_blank"
-                    className="project--card__links__link live-link-bg blue-markup"
+                    className="project--card__side__links__link live-link-bg blue-markup"
                   >
                     <FaExternalLinkAlt style={{ color: "#a8ff78" }} />
                     View Live
@@ -169,32 +169,32 @@ const Projects = () => {
           <Fade direction="left" duration={5000}>
             <div className="project--card">
               <div className="project--card__side project--card__side__front">
-                <div className="project--card__bg">
-                  <div className="project--card__bg--img project--card__bg--img-3"></div>
+                <div className="project--card__side__bg">
+                  <div className="project--card__side__bg--img project--card__bg--img-3"></div>
                 </div>
-                <div className="project--card__frame">
-                  <span className="project--card__frame__item">Css</span>
-                  <span className="project--card__frame__item">React</span>
-                  <span className="project--card__frame__item">Firebase</span>
+                <div className="project--card__side__frame">
+                  <span className="project--card__side__frame__item">Css</span>
+                  <span className="project--card__side__frame__item">React</span>
+                  <span className="project--card__side__frame__item">Firebase</span>
                 </div>
               </div>
               <div className="project--card__side project--card__side__back">
-                <div className="project--card__content">
-                  <h2 className="project--card__content__title margin-top">
+                <div className="project--card__side__content">
+                  <h2 className="project--card__side__content__title margin-top">
                     RandomPeopleApp
                   </h2>
-                  <p className="project--card__content__desc">
+                  <p className="project--card__side__content__desc">
                     This is a web app that uses firebase authentication and
                     displays random people data generated from randomuser API.
                   </p>
                 </div>
-                <div className="project--card__links">
+                <div className="project--card__side__links">
                   <Link
                     to={{
                       pathname: "https://github.com/MeekyBerry/RandomPeopleApp",
                     }}
                     target="_blank"
-                    className="project--card__links__link github-link-bg"
+                    className="project--card__side__links__link github-link-bg"
                   >
                     <FaGithub style={{ color: "#000" }} />
                     View on GitHub
@@ -202,7 +202,7 @@ const Projects = () => {
                   <Link
                     to={{ pathname: "https://randompeopleapp.vercel.app" }}
                     target="_blank"
-                    className="project--card__links__link live-link-bg blue-markup"
+                    className="project--card__side__links__link live-link-bg blue-markup"
                   >
                     <FaExternalLinkAlt style={{ color: "#a8ff78" }} />
                     View Live
@@ -215,11 +215,11 @@ const Projects = () => {
             <div className="project--card">
               <div className="project--card__side project--card__side__front">
                 <div className="project--card__bg">
-                  <div className="project--card__bg--img project--card__bg--img-4"></div>
+                  <div className="project--card__side__bg--img project--card__bg--img-4"></div>
                 </div>
-                <div className="project--card__frame">
-                  <span className="project--card__frame__item">VueJs</span>
-                  <span className="project--card__frame__item">Sass</span>
+                <div className="project--card__side__frame">
+                  <span className="project--card__side__frame__item">VueJs</span>
+                  <span className="project--card__side__frame__item">Sass</span>
                 </div>
               </div>
               <div className="project--card__side project--card__side__back">

@@ -73,6 +73,7 @@
     }
   }
 
+
   // DESKTOP ==> 1800PX
   @else if $breakpoint==desktop {
     @media only screen and (min-width: 75em) {
@@ -87,3 +88,16 @@
     }
   }
 }
+
+// TARGET HOVER DEVICES
+// @if $breakpoint===noHover {
+//   @media only screen and (max-width: 56.25em) and (hover: none) {
+//     @content;
+//   }
+// }
+
+// @mixin hover {
+//   @media only screen and (min-width: 56.25em) and (hover: hover) {
+//     @content;
+//   }
+// }
