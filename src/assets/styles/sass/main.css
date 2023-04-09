@@ -257,13 +257,12 @@ html {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  padding: 0.2rem 0.5rem;
-  color: var(--blue-cyan);
+  padding: 0.8rem;
   border: none;
-  font-size: var(--font-size--xx-large);
-  font-weight: var(--font-weight--boldest);
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .layout--nav__button:hover {
   color: var(--color--green-dark);
@@ -286,9 +285,19 @@ html {
   background-color: var(--color--bg-dark);
   z-index: 5;
   overflow: hidden;
+  transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .layout--nav__content.show {
-  width: 100%;
+  width: 100vw;
+  height: 95vh;
   transition: all 1s ease-in-out;
   -webkit-transition: all 1s ease-in-out;
   -moz-transition: all 1s ease-in-out;
@@ -302,28 +311,46 @@ html {
   justify-content: center;
   align-items: center;
   gap: 5rem;
-  padding: 0;
-  margin-top: 8rem;
 }
 .layout--nav__content__list__item {
-  color: var(--dark-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: var(--color--white-1);
   font-family: var(--font-family--secondary);
-  font-size: var(--font-size--large);
-  font-weight: var(--font-weight--bold);
-  font-style: normal;
+  font-size: var(--font-size--x-large);
+  font-weight: var(--font-weight--medium);
   text-transform: capitalize;
-  cursor: pointer;
+  padding: 1rem 1rem;
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, var(--color--white-3) 50%);
+  background-size: 225%;
+  background-position: 0;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
   transition: all 1s ease-in-out;
   -webkit-transition: all 1s ease-in-out;
   -moz-transition: all 1s ease-in-out;
   -ms-transition: all 1s ease-in-out;
   -o-transition: all 1s ease-in-out;
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  cursor: pointer;
 }
 .layout--nav__content__list__item:hover, .layout--nav__content__list__item:active {
-  color: var(--color--text);
-}
-.layout--nav__content__list__item span {
-  color: var(--color--white-1);
+  color: var(--blue-cyan);
+  background-position: 100%;
+  transform: translateX(1rem);
+  -webkit-transform: translateX(1rem);
+  -moz-transform: translateX(1rem);
+  -ms-transform: translateX(1rem);
+  -o-transform: translateX(1rem);
 }
 .layout--large {
   display: none;
@@ -341,6 +368,7 @@ html {
 }
 .layout--large__menu {
   padding: 0.5rem;
+  position: relative;
 }
 .layout--large__menu__list {
   display: flex;
@@ -356,19 +384,30 @@ html {
 }
 .layout--large__menu__list__item, .layout--large__menu__list:link, .layout--large__menu__list:visited {
   color: var(--color--white-1);
-  font-family: var(--font-family--secondary);
+  font-family: var(--font-family--tertiary);
   font-size: var(--font-size--medium);
-  font-weight: var(--font-weight--medium);
+  font-weight: var(--font-weight--regular);
+  letter-spacing: 2px;
   text-transform: capitalize;
   cursor: pointer;
+}
+.layout--large__menu__magic-line {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 0;
+  width: 0;
+  height: 0.3rem;
+  background: radial-gradient(circle, rgb(29, 151, 108) 0%, rgb(122, 185, 240) 38%, rgb(147, 249, 185) 100%);
   transition: all 1s ease-in-out;
   -webkit-transition: all 1s ease-in-out;
   -moz-transition: all 1s ease-in-out;
   -ms-transition: all 1s ease-in-out;
   -o-transition: all 1s ease-in-out;
-}
-.layout--large__menu__list__item:hover, .layout--large__menu__list__item:active, .layout--large__menu__list:link:hover, .layout--large__menu__list:link:active, .layout--large__menu__list:visited:hover, .layout--large__menu__list:visited:active {
-  color: var(--color--markup);
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
 }
 
 .home {
@@ -715,7 +754,7 @@ html {
   overflow: hidden;
 }
 .about--desc {
-  padding: 5rem 1rem 1rem 1rem;
+  padding: 10rem 1rem 1rem 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
