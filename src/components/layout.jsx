@@ -95,14 +95,14 @@ const LayoutSmall = () => {
               </li>
               <li>
                 <CustomNavLink
-                  to="/about"
+                  to="/background"
                   onClick={closeMenu}
                   className="layout--nav__content__list__item"
                 >
                   <BiCodeAlt
                     style={{ width: "3rem", height: "3rem", color: "#228be6" }}
                   />
-                  Skills
+                  Background
                 </CustomNavLink>
               </li>
               <li>
@@ -172,11 +172,11 @@ const LayoutLarge = () => {
               Home
             </CustomNavLink>
             <CustomNavLink
-              to="/about"
+              to="/background"
               className="layout--large__menu__list__item"
               onMouseEnter={handleMagicLine}
             >
-              Skills
+              Background
             </CustomNavLink>
             <CustomNavLink
               to="/projects"

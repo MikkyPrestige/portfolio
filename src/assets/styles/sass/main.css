@@ -748,8 +748,9 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
   padding: 2rem;
+  width: 100%;
   overflow: hidden;
 }
 .about--desc {
@@ -828,7 +829,8 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
+  width: 100%;
 }
 .about--skills__title {
   display: flex;
@@ -855,39 +857,30 @@ html {
 .about--skills__content {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   gap: 2rem;
-  padding: 0;
-  width: 100%;
+  padding: 1rem 2rem;
+  width: 100vw;
 }
 .about--skills__content__items {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  width: 100%;
-  padding: 1rem 3rem;
+  padding: 1rem;
   border-radius: 1rem;
   background-color: var(--color--bg-dark);
+  width: 100%;
 }
 @media only screen and (min-width: 30.063em) {
   .about--skills__content__items {
+    grid-template-columns: repeat(4, 1fr);
     gap: 3rem 5rem;
-    padding: 1rem 5rem;
+    padding: 1rem;
   }
 }
 @media only screen and (min-width: 48em) {
   .about--skills__content__items {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-@media only screen and (min-width: 75em) {
-  .about--skills__content__items {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
   }
 }
 .about--skills__content__items__card {
@@ -895,22 +888,21 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
-  width: 10rem;
   border-radius: 1rem;
   -webkit-border-radius: 1rem;
   -moz-border-radius: 1rem;
   -ms-border-radius: 1rem;
   -o-border-radius: 1rem;
+  text-align: center;
 }
-.about--skills__content__items__avatar {
-  width: 7rem;
-  height: 7rem;
+.about--skills__content__items__card__avatar {
+  width: 9rem;
+  height: 9rem;
 }
 .about--skills__content__items__text {
   font-family: var(--font-family--secondary);
-  font-size: var(--font-size--medium);
-  font-weight: var(--font-weight--medium);
+  font-size: var(--font-size--small);
+  font-weight: var(--font-weight--regular);
   color: var(--color--white-1);
 }
 
