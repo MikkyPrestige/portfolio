@@ -202,7 +202,6 @@ html {
   font-family: "Berkshire Swash";
   font-size: var(--font-size--x-large);
   font-weight: var(--font-weight--boldest);
-  letter-spacing: 0.1rem;
   cursor: pointer;
 }
 .layout--header__title__content__span {
@@ -2130,6 +2129,80 @@ html {
   -moz-transform: scale(1.3);
   -ms-transform: scale(1.3);
   -o-transform: scale(1.3);
+}
+
+.error-page {
+  background: var(--color--bg-dark-2);
+  padding: 15rem 0 5rem;
+  padding-inline: 5rem;
+  text-align: center;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+@media only screen and (min-width: 30.063em) {
+  .error-page {
+    padding: 10rem 0 5rem;
+    padding-inline: 5rem;
+  }
+}
+@media only screen and (min-width: 56.25em) {
+  .error-page {
+    padding: 8rem 0 3rem;
+  }
+}
+.error-page--content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+.error-page--content__avatar {
+  width: 90%;
+  height: 90%;
+}
+@media only screen and (min-width: 30.063em) {
+  .error-page--content__avatar {
+    width: 60%;
+    height: 60%;
+  }
+}
+@media only screen and (min-width: 56.25em) {
+  .error-page--content__avatar {
+    width: 40%;
+    height: 40%;
+  }
+}
+.error-page--content__text {
+  font-size: var(--font-size--medium);
+  font-weight: var(--font-weight--medium);
+  font-family: var(--font-family--secondary);
+  color: var(--color--white-2);
+}
+.error-page--content__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--color--white-2);
+  color: var(--blue-cyan);
+  font-size: var(--font-size--large);
+  font-weight: var(--font-weight--medium);
+  font-family: var(--font-family--secondary);
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.error-page--content__link:hover {
+  background-color: var(--color--white-1);
+  color: var(--blue-cyan);
 }
 
 .animate__tada:hover {

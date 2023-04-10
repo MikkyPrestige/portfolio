@@ -1,0 +1,21 @@
+.error-page {
+  background: var(--color--bg-dark-2);
+  padding: 2rem;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+
+  &--content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 5rem;
+
+    &__avatar {
+      width: 45%;
+      height: 40%;
+    }
+  }
+}
