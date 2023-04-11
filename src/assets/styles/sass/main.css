@@ -361,7 +361,7 @@ html {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 100;
     width: 100%;
   }
 }
@@ -375,11 +375,6 @@ html {
   align-items: center;
   padding: 1rem;
   gap: 3rem;
-}
-@media only screen and (min-width: 56.25em) {
-  .layout--large__menu__list {
-    gap: 5rem;
-  }
 }
 .layout--large__menu__list__item, .layout--large__menu__list:link, .layout--large__menu__list:visited {
   color: var(--color--white-1);
@@ -413,7 +408,6 @@ html {
   width: 100%;
   min-height: 100vh;
   background: radial-gradient(100% 100% at 50% 100%, var(--color--bg-dark-2) 21.52%, var(--color--bg-dark) 100%);
-  margin-top: 5rem;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -989,8 +983,7 @@ html {
     left: 0;
     width: 100%;
     transition: all 0.8s ease;
-    -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
+    backface-visibility: hidden;
     border-radius: 0.5rem;
     box-shadow: 0 0 0.5rem var(--color--dark-4);
   }
