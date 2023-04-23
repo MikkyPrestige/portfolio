@@ -4,7 +4,7 @@ import GitHub from "../assets/images/socials/icons8-github-94.png";
 import LinkedIn from "../assets/images/socials/icons8-linkedin-94.png";
 import LeetCode from "../assets/images/socials/leetCode.png";
 import { Link } from "react-router-dom";
-import Resume from "../assets/images/socials/myResume.pdf";
+import Resume from "../assets/images/socials/Elue Michael - Frontend-2.pdf";
 import ProjectSlide from "./animation/project";
 import Avatar from "./avatar";
 import Footer from "./footer";
