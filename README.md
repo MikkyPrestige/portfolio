@@ -1,7 +1,8 @@
 # PORTFOLIO
-* Building my personal portfolio
-# FrameWork
+* My personal portfolio website repository 
+
+# FrameWorks
 * SASS
 * React
-# Start Date
-2/4/2023
+
+Live url: www.mikkylanky.me
