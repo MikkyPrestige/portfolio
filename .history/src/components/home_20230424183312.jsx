@@ -127,8 +127,8 @@ const Home = () => {
             </div>
           </Fade>
         </aside>
-        <section className="home--contents">
-          <section className="home--contents__wrapper">
+        <div className="home--contents">
+          <div className="home--contents__wrapper">
             <div className="home--contents__content">
               <JackInTheBox duration={5000}>
                 <h1 className="home--contents__content__title">ELUE MICHAEL</h1>
@@ -178,7 +178,7 @@ const Home = () => {
                 </div>
               </Reveal>
             </div>
-          </section>
+          </div>
           <figure className="home--contents__quote">
             <Reveal keyframes={lightSpeedInLeft} duration={5000}>
               <blockquote
@@ -204,10 +204,10 @@ const Home = () => {
               </figcaption>
             </Reveal>
           </figure>
-          <aside className="home--slides">
+          <div className="home--slides">
             <ProjectSlide />
-          </aside>
-        </section>
+          </div>
+        </div>
       </section>
       <Footer />
     </main>

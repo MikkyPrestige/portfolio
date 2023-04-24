@@ -43,7 +43,7 @@ const Projects = () => {
                     interface allows users to easily view all of their
                     repositories in one place, including details such as name,
                     description, and star rating. It was one of the projects for
-                    the <mark>AltSchool Africa School of Engineering</mark> Examination in
+                    the AltSchool Africa School of Engineering Examination in
                     the second semester.
                   </p>
                 </div>
@@ -161,7 +161,7 @@ const Projects = () => {
                     enter a specific tip percentage. The calculator also
                     includes a reset button and input validation to ensure that
                     the number of people entered is not zero. This is a solution
-                    to the "tip calculator" <mark>frontend mentor challenge</mark>.
+                    to the "tip calculator" frontend mentor challenge.
                   </p>
                 </div>
                 <div className="project--card__links">
@@ -269,9 +269,9 @@ const Projects = () => {
                   <p className="project--card__content__desc">
                     The Phonie Project is a web-based application created by the
                     team "Phantom_Devz" that determines the telecom carrier
-                    based on a phone number entered by the user. It is
-                    one of the projects featured in the <mark>AltSchool Africa School
-                    of Engineering</mark> Holiday Hackathon in August '22.
+                    based on a phone number entered by the user. <br /> It is
+                    one of the projects featured in the AltSchool Africa School
+                    of Engineering Holiday Hackathon in August '22.
                   </p>
                 </div>
                 <div className="project--card__links">

@@ -7,26 +7,16 @@ import RandomPeople from "../../assets/images/projects/randomApp.jpeg";
 import Trillo from "../../assets/images/projects/trillo.jpeg";
 import ChatAppCss from "../../assets/images/projects/chatAppCss.jpeg";
 import RepoDisplay from "../../assets/images/projects/github-repo.jpeg";
-import Task from "../../assets/images/projects/task-tracker.jpeg";
-import Clicks from "../../assets/images/projects/clicks.jpeg";
-import Duplicate from "../../assets/images/projects/duplicate.jpeg";
 import { Link } from "react-router-dom";
 import { FaArrowCircleRight } from "react-icons/fa";
 
 const Project = [
   {
-    title: "Task Tracker",
+    title: "Phonie App",
     description:
-      "A simple task tracker app that allows users to add, delete and edit tasks.",
-    image: Task,
-    link: "https://task-tracker.ntec.app/",
-  },
-  {
-    title: "GitHub Repository",
-    description:
-      "A simple web app that displays a user's GitHub repositories and also search for gitHub repo's with gitHun usernames",
-    image: RepoDisplay,
-    link: "https://github-repos-display.vercel.app/",
+      "A web-based application created by the team 'Phantom_Devz' that determines the telecom carrier based on a phone number entered by the use",
+    image: Phonie,
+    link: "https://phantom-devz-phonie.netlify.app/",
   },
   {
     title: "Tip Calculator",
@@ -36,31 +26,18 @@ const Project = [
     link: "https://mikky-tip-calculator.vercel.app/",
   },
   {
-    title: "Clicks",
-    description:
-      "A simple web app that counts the number of clicks on a button and show the location it was clicked from on a map.",
-    image: Clicks,
-    link: "https://chasing-d-clicks.vercel.app/",
-  },
-  {
-    title: "Phonie App",
-    description:
-      "A web-based application created by the team 'Phantom_Devz' that determines the telecom carrier based on a phone number entered by the use",
-    image: Phonie,
-    link: "https://phantom-devz-phonie.netlify.app/",
-  },
-  {
-    title: "Duplicate Removal",
-    description: "A simple web app that removes duplicate characters.",
-    image: Duplicate,
-    link: "https://duplicate-remover.netlify.app/",
-  },
-  {
     title: "Natours Tour",
     description:
       "A simple landing page for a fictional company that offers tours to the wilderness.",
     image: Natours,
     link: "https://natour-landing-page.netlify.app/",
+  },
+  {
+    title: "GitHub Repository",
+    description:
+      "A simple web app that displays a user's GitHub repositories and also search for gitHub repo's with gitHun usernames",
+    image: RepoDisplay,
+    link: "https://github-repos-display.vercel.app/",
   },
   {
     title: "ChatApp Css",

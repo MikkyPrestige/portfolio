@@ -1076,6 +1076,15 @@ html {
 .project--card__bg--img-22 {
   background-image: url(../../../images/projects/half-moon.jpeg);
 }
+.project--card__bg--img-23 {
+  background-image: url(../../../images/projects/task-tracker.jpeg);
+}
+.project--card__bg--img-24 {
+  background-image: url(../../../images/projects/clicks.jpeg);
+}
+.project--card__bg--img-25 {
+  background-image: url(../../../images/projects/duplicate.jpeg);
+}
 .project--card__frame {
   display: flex;
   align-items: center;

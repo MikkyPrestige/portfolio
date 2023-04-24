@@ -34,9 +34,9 @@ const Background = () => {
         }}
         className="about"
       >
-        <section className="about--wrapper">
+        <div className="about--wrapper">
           <Zoom duration={5000} cascade damping={0.0001}>
-            <section className="about--desc">
+            <div className="about--desc">
               <div className="about--img">
                 <p className="about--img__content1"> </p>
                 <p className="about--img__content2"> </p>
@@ -73,21 +73,21 @@ const Background = () => {
                   </p>
                 </div>
               </div>
-            </section>
-            <section className="about--skills">
-              <header className="about--skills__title">
+            </div>
+            <div className="about--skills">
+              <div className="about--skills__title">
                 <h1 className="about--skills__title__head">Technical skills</h1>
-                <figure className="about--skills__title__avatar">
+                <div className="about--skills__title__avatar">
                   <Avatar
                     image={Skills}
                     alt="skills-logo"
                     style={{ width: "100%", height: "100%" }}
                   />
-                </figure>
-              </header>
+                </div>
+              </div>
               <div className="about--skills__content">
                 <div className="about--skills__content__items">
-                  <figure className="about--skills__content__items__card">
+                  <div className="about--skills__content__items__card">
                     <div className="about--skills__content__items__card__avatar animate__animated animate__tada">
                       <Avatar
                         image={HTML5}
@@ -95,11 +95,11 @@ const Background = () => {
                         style={{ width: "100%", height: "100%" }}
                       />
                     </div>
-                    <figcaption className="about--skills__content__items__card__text">
+                    <h2 className="about--skills__content__items__card__text">
                       HTML5
-                    </figcaption>
-                  </figure>
-                  <figure className="about--skills__content__items__card">
+                    </h2>
+                  </div>
+                  <div className="about--skills__content__items__card">
                     <div className="about--skills__content__items__card__avatar animate__animated animate__tada">
                       <Avatar
                         image={CSS3}
@@ -107,11 +107,11 @@ const Background = () => {
                         style={{ width: "100%", height: "100%" }}
                       />
                     </div>
-                    <figcaption className="about--skills__content__items__card__text">
+                    <h2 className="about--skills__content__items__card__text">
                       CSS3
-                    </figcaption>
-                  </figure>
-                  <figure className="about--skills__content__items__card">
+                    </h2>
+                  </div>
+                  <div className="about--skills__content__items__card">
                     <div className="about--skills__content__items__card__avatar animate__animated animate__tada">
                       <Avatar
                         image={SASS}
@@ -119,11 +119,11 @@ const Background = () => {
                         style={{ width: "100%", height: "100%" }}
                       />
                     </div>
-                    <figcaption className="about--skills__content__items__card__text">
+                    <h2 className="about--skills__content__items__card__text">
                       SCSS
-                    </figcaption>
-                  </figure>
-                  <figure className="about--skills__content__items__card">
+                    </h2>
+                  </div>
+                  <div className="about--skills__content__items__card">
                     <div className="about--skills__content__items__card__avatar animate__animated animate__tada">
                       <Avatar
                         image={JS}
@@ -131,11 +131,11 @@ const Background = () => {
                         style={{ width: "100%", height: "100%" }}
                       />
                     </div>
-                    <figcaption className="about--skills__content__items__card__text">
+                    <h2 className="about--skills__content__items__card__text">
                       JavaScript
-                    </figcaption>
-                  </figure>
-                  <figure className="about--skills__content__items__card">
+                    </h2>
+                  </div>
+                  <div className="about--skills__content__items__card">
                     <div className="about--skills__content__items__card__avatar animate__animated animate__tada">
                       <Avatar
                         image={GIT}
@@ -143,11 +143,11 @@ const Background = () => {
                         style={{ width: "100%", height: "100%" }}
                       />
                     </div>
-                    <figcaption className="about--skills__content__items__card__text">
+                    <h2 className="about--skills__content__items__card__text">
                       Git
-                    </figcaption>
-                  </figure>
-                  <figure className="about--skills__content__items__card">
+                    </h2>
+                  </div>
+                  <div className="about--skills__content__items__card">
                     <div className="about--skills__content__items__card__avatar animate__animated animate__tada">
                       <Avatar
                         image={REACT}
@@ -155,11 +155,11 @@ const Background = () => {
                         style={{ width: "100%", height: "100%" }}
                       />
                     </div>
-                    <figcaption className="about--skills__content__items__card__text">
+                    <h2 className="about--skills__content__items__card__text">
                       React
-                    </figcaption>
-                  </figure>
-                  <figure className="about--skills__content__items__card">
+                    </h2>
+                  </div>
+                  <div className="about--skills__content__items__card">
                     <div className="about--skills__content__items__card__avatar animate__animated animate__tada">
                       <Avatar
                         image={VUE}
@@ -167,11 +167,11 @@ const Background = () => {
                         style={{ width: "100%", height: "100%" }}
                       />
                     </div>
-                    <figcaption className="about--skills__content__items__card__text">
+                    <h2 className="about--skills__content__items__card__text">
                       Vue
-                    </figcaption>
-                  </figure>
-                  <figure className="about--skills__content__items__card">
+                    </h2>
+                  </div>
+                  <div className="about--skills__content__items__card">
                     <div className="about--skills__content__items__card__avatar animate__animated animate__tada">
                       <Avatar
                         image={FIGMA}
@@ -179,11 +179,11 @@ const Background = () => {
                         style={{ width: "100%", height: "100%" }}
                       />
                     </div>
-                    <figcaption className="about--skills__content__items__card__text">
+                    <h2 className="about--skills__content__items__card__text">
                       Figma
-                    </figcaption>
-                  </figure>
-                  <figure className="about--skills__content__items__card">
+                    </h2>
+                  </div>
+                  <div className="about--skills__content__items__card">
                     <div className="about--skills__content__items__card__avatar animate__animated animate__tada">
                       <Avatar
                         image={FIREBASE}
@@ -191,29 +191,29 @@ const Background = () => {
                         style={{ width: "100%", height: "100%" }}
                       />
                     </div>
-                    <figcaption className="about--skills__content__items__card__text">
+                    <h2 className="about--skills__content__items__card__text">
                       Firebase
-                    </figcaption>
-                  </figure>
+                    </h2>
+                  </div>
                 </div>
               </div>
-            </section>
-            <section className="about--skills margin-top">
-              <header className="about--skills__title">
+            </div>
+            <div className="about--skills margin-top">
+              <div className="about--skills__title">
                 <h1 className="about--skills__title__head">
                   Professional skills
                 </h1>
-                <figure className="about--skills__title__avatar">
+                <div className="about--skills__title__avatar">
                   <Avatar
                     image={SoftSkill}
                     alt="soft-skills-logo"
                     style={{ width: "100%", height: "100%" }}
                   />
-                </figure>
-              </header>
+                </div>
+              </div>
               <div className="about--skills__content">
                 <div className="about--skills__content__items">
-                  <figure className="about--skills__content__items__card">
+                  <div className="about--skills__content__items__card">
                     <div className="about--skills__content__items__card__avatar animate__animated animate__tada">
                       <Avatar
                         image={Thinking}
@@ -221,10 +221,10 @@ const Background = () => {
                         style={{ width: "100%", height: "100%" }}
                       />
                     </div>
-                    <figcaption className="about--skills__content__items__card__text">
+                    <h2 className="about--skills__content__items__card__text">
                       Critical Thinking
-                    </figcaption>
-                  </figure>
+                    </h2>
+                  </div>
                   {/* <div className="about--skills__content__items__card">
                     <div className="about--skills__content__items__card__avatar animate__animated animate__tada">
                       <Avatar
@@ -237,7 +237,7 @@ const Background = () => {
                       Technical Writing
                     </h2>
                   </div> */}
-                  <figure className="about--skills__content__items__card">
+                  <div className="about--skills__content__items__card">
                     <div className="about--skills__content__items__card__avatar animate__animated animate__tada">
                       <Avatar
                         image={ShareMind}
@@ -245,11 +245,11 @@ const Background = () => {
                         style={{ width: "100%", height: "100%" }}
                       />
                     </div>
-                    <figcaption className="about--skills__content__items__card__text">
+                    <h2 className="about--skills__content__items__card__text">
                       Emotional Intelligence
-                    </figcaption>
-                  </figure>
-                  <figure className="about--skills__content__items__card">
+                    </h2>
+                  </div>
+                  <div className="about--skills__content__items__card">
                     <div className="about--skills__content__items__card__avatar animate__animated animate__tada">
                       <Avatar
                         image={Cognition}
@@ -257,11 +257,11 @@ const Background = () => {
                         style={{ width: "100%", height: "100%" }}
                       />
                     </div>
-                    <figcaption className="about--skills__content__items__card__text">
+                    <h2 className="about--skills__content__items__card__text">
                       Cognitive Skills
-                    </figcaption>
-                  </figure>
-                  <figure className="about--skills__content__items__card">
+                    </h2>
+                  </div>
+                  <div className="about--skills__content__items__card">
                     <div className="about--skills__content__items__card__avatar animate__animated animate__tada">
                       <Avatar
                         image={Mindful}
@@ -269,11 +269,11 @@ const Background = () => {
                         style={{ width: "100%", height: "100%" }}
                       />
                     </div>
-                    <figcaption className="about--skills__content__items__card__text">
+                    <h2 className="about--skills__content__items__card__text">
                       Self Management
-                    </figcaption>
-                  </figure>
-                  <figure className="about--skills__content__items__card">
+                    </h2>
+                  </div>
+                  <div className="about--skills__content__items__card">
                     <div className="about--skills__content__items__card__avatar animate__animated animate__tada">
                       <Avatar
                         image={Teamwork}
@@ -281,11 +281,11 @@ const Background = () => {
                         style={{ width: "100%", height: "100%" }}
                       />
                     </div>
-                    <figcaption className="about--skills__content__items__card__text">
+                    <h2 className="about--skills__content__items__card__text">
                       Relationship Management
-                    </figcaption>
-                  </figure>
-                  <figure className="about--skills__content__items__card">
+                    </h2>
+                  </div>
+                  <div className="about--skills__content__items__card">
                     <div className="about--skills__content__items__card__avatar animate__animated animate__tada">
                       <Avatar
                         image={Research}
@@ -293,11 +293,11 @@ const Background = () => {
                         style={{ width: "100%", height: "100%" }}
                       />
                     </div>
-                    <figcaption className="about--skills__content__items__card__text">
+                    <h2 className="about--skills__content__items__card__text">
                       Research Skills
-                    </figcaption>
-                  </figure>
-                  <figure className="about--skills__content__items__card">
+                    </h2>
+                  </div>
+                  <div className="about--skills__content__items__card">
                     <div className="about--skills__content__items__card__avatar animate__animated animate__tada">
                       <Avatar
                         image={Adaptability}
@@ -305,15 +305,15 @@ const Background = () => {
                         style={{ width: "100%", height: "100%" }}
                       />
                     </div>
-                    <figcaption className="about--skills__content__items__card__text">
+                    <h2 className="about--skills__content__items__card__text">
                       Flexibility & Adaptability
-                    </figcaption>
-                  </figure>
+                    </h2>
+                  </div>
                 </div>
               </div>
-            </section>
+            </div>
           </Zoom>
-        </section>
+        </div>
       </div>
       <Footer />
     </main>

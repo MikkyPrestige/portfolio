@@ -16,10 +16,10 @@ const Projects = () => {
         className="project margin-top-5"
       >
         <header>
-          <h1 className="project--title">My Works</h1>
+        <h1 className="project--title">My Works</h1>
         </header>
         <section className="project--wrapper">
-          <Fade direction="left" duration={5000}>
+        <Fade direction="left" duration={5000}>
             <div className="project--card">
               <figure className="project--card__side project--card__side__front">
                 <div className="project--card__bg">
@@ -33,9 +33,9 @@ const Projects = () => {
               <article className="project--card__side project--card__side__back">
                 <div className="project--card__content">
                   <header>
-                    <h2 className="project--card__content__title margin-top">
-                      GitHub Repository App
-                    </h2>
+                  <h2 className="project--card__content__title margin-top">
+                    GitHub Repository App
+                  </h2>
                   </header>
                   <p className="project--card__content__desc">
                     This is a React-based web app that displays a user's
@@ -43,7 +43,7 @@ const Projects = () => {
                     interface allows users to easily view all of their
                     repositories in one place, including details such as name,
                     description, and star rating. It was one of the projects for
-                    the <mark>AltSchool Africa School of Engineering</mark> Examination in
+                    the AltSchool Africa School of Engineering Examination in
                     the second semester.
                   </p>
                 </div>
@@ -73,11 +73,11 @@ const Projects = () => {
               </article>
             </div>
           </Fade>
-          <Fade direction="left" duration={5000}>
+        <Fade direction="left" duration={5000}>
             <div className="project--card">
               <figure className="project--card__side project--card__side__front">
                 <div className="project--card__bg">
-                  <div className="project--card__bg--img project--card__bg--img-23"></div>
+                  <div className="project--card__bg--img project--card__bg--img-22"></div>
                 </div>
                 <figcaption className="project--card__frame">
                   <span className="project--card__frame__item">Css</span>
@@ -89,24 +89,13 @@ const Projects = () => {
               <article className="project--card__side project--card__side__back">
                 <div className="project--card__content">
                   <header>
-                    <h2 className="project--card__content__title margin-top">
-                      Task Tracker
-                    </h2>
+                  <h2 className="project--card__content__title margin-top">
+                   Task Tracker
+                  </h2>
                   </header>
                   <p className="project--card__content__desc">
-                    The task tracker is a web application that was part of a
-                    group project for the ongoing{" "}
-                    <mark>LightHall Internship competition.</mark> I built the
-                    task manager page that users interact with after logging in.
-                    The app was built with React for the frontend, and Node.js &
-                    MongoDB for the backend and database. The task manager
-                    allows users to perform a range of actions such as adding,
-                    editing, and deleting tasks, as well as sorting them by
-                    various criteria like title, status, and due date. I was
-                    responsible for implementing the logic for these actions. I
-                    am happy about this project because it helped me learn more
-                    on React, linking frontend with backend and working
-                    collaboratively with a team using GitHub workflow.
+                  The task tracker is a web application that was part of a group project for the ongoing <mark>LightHall Internship competition.</mark> I built the task manager page that users interact with after logging in. The app was built with React for the frontend, and Node.js & MongoDB for the backend and database.
+                  The task manager allows users to perform a range of actions such as adding, editing, and deleting tasks, as well as sorting them by various criteria like title, status, and due date. I was responsible for implementing the logic for these actions. I am happy about this project because it helped me learn more on React, linking frontend with backend and working collaboratively with a team using GitHub workflow.
                   </p>
                 </div>
                 <div className="project--card__links">
@@ -150,9 +139,9 @@ const Projects = () => {
               <article className="project--card__side project--card__side__back">
                 <div className="project--card__content">
                   <header>
-                    <h2 className="project--card__content__title margin-top">
-                      Tip Calculator
-                    </h2>
+                  <h2 className="project--card__content__title margin-top">
+                    Tip Calculator
+                  </h2>
                   </header>
                   <p className="project--card__content__desc">
                     This is a tip calculator that calculates the correct tip
@@ -161,7 +150,7 @@ const Projects = () => {
                     enter a specific tip percentage. The calculator also
                     includes a reset button and input validation to ensure that
                     the number of people entered is not zero. This is a solution
-                    to the "tip calculator" <mark>frontend mentor challenge</mark>.
+                    to the "tip calculator" frontend mentor challenge.
                   </p>
                 </div>
                 <div className="project--card__links">
@@ -194,31 +183,24 @@ const Projects = () => {
             <div className="project--card">
               <figure className="project--card__side project--card__side__front">
                 <div className="project--card__bg">
-                  <div className="project--card__bg--img project--card__bg--img-24"></div>
+                  <div className="project--card__bg--img project--card__bg--img-15"></div>
                 </div>
                 <figcaption className="project--card__frame">
-                  <span className="project--card__frame__item">Scss</span>
-                  <span className="project--card__frame__item">React</span>
+                  <span className="project--card__frame__item">Html</span>
+                  <span className="project--card__frame__item">Css</span>
                   <span className="project--card__frame__item">Firebase</span>
                 </figcaption>
               </figure>
               <article className="project--card__side project--card__side__back">
                 <div className="project--card__content">
                   <header>
-                    <h2 className="project--card__content__title margin-top">
-                      Chasing The Clicks
-                    </h2>
+                  <h2 className="project--card__content__title margin-top">
+                    Chasing The Clicks
+                  </h2>
                   </header>
                   <p className="project--card__content__desc">
-                    The click counter app is a web application that allows users
-                    to track the number of clicks on and their location in
-                    realtime. The app was built using React and Firebase as the
-                    database. The app uses Mapbox to render a map and allows
-                    users to click on a button to increase the click count and
-                    record the location where the click occurred. I built the
-                    app in the first round of the ongoing{" "}
-                    <mark>LightHall Internship Competition</mark> and have
-                    qualified for the next round.
+                  The click counter app is a web application that allows users to track the number of clicks on and their location in realtime. The app was built using React and Firebase as the database. The app uses Mapbox to render a map and allows users to click on a button to increase the click count and record the location where the click occurred. 
+                  I built the app in the first round of the ongoing <mark>LightHall Internship Competition</mark> and have qualified for the next round.
                   </p>
                 </div>
                 <div className="project--card__links">
@@ -262,16 +244,16 @@ const Projects = () => {
               <article className="project--card__side project--card__side__back">
                 <div className="project--card__content">
                   <header>
-                    <h2 className="project--card__content__title margin-top">
-                      Phonie App
-                    </h2>
+                  <h2 className="project--card__content__title margin-top">
+                    Phonie App
+                  </h2>
                   </header>
                   <p className="project--card__content__desc">
                     The Phonie Project is a web-based application created by the
                     team "Phantom_Devz" that determines the telecom carrier
-                    based on a phone number entered by the user. It is
-                    one of the projects featured in the <mark>AltSchool Africa School
-                    of Engineering</mark> Holiday Hackathon in August '22.
+                    based on a phone number entered by the user. <br /> It is
+                    one of the projects featured in the AltSchool Africa School
+                    of Engineering Holiday Hackathon in August '22.
                   </p>
                 </div>
                 <div className="project--card__links">
@@ -300,62 +282,6 @@ const Projects = () => {
               </article>
             </div>
           </Fade>
-          <Fade direction="right" duration={5000}>
-            <div className="project--card">
-              <figure className="project--card__side project--card__side__front">
-                <div className="project--card__bg">
-                  <div className="project--card__bg--img project--card__bg--img-25"></div>
-                </div>
-                <figcaption className="project--card__frame">
-                  <span className="project--card__frame__item">Scss</span>
-                  <span className="project--card__frame__item">React</span>
-                </figcaption>
-              </figure>
-              <article className="project--card__side project--card__side__back">
-                <div className="project--card__content">
-                  <header>
-                    <h2 className="project--card__content__title margin-top">
-                      Duplicate Removal
-                    </h2>
-                  </header>
-                  <p className="project--card__content__desc">
-                    This is an app with two screens. The first screen takes user
-                    input and, upon submission, redirects to screen two, which
-                    displays the entered string as cards. Each card displays a
-                    single character from the string, and each character's
-                    duplicate instances can be removed by clicking the delete
-                    icon. If a character has no duplicates, it will remain on
-                    the screen. If there are no duplicate characters in the
-                    string, a success header is displayed. The original and
-                    updated strings are also displayed.
-                  </p>
-                </div>
-                <div className="project--card__links">
-                  <Link
-                    to={{
-                      pathname:
-                        "https://github.com/MeekyBerry/duplicate-removal",
-                    }}
-                    target="_blank"
-                    className="project--card__links__link github-link-bg"
-                  >
-                    <FaGithub style={{ color: "#000" }} />
-                    View on GitHub
-                  </Link>
-                  <Link
-                    to={{
-                      pathname: "https://duplicate-remover.netlify.app/",
-                    }}
-                    target="_blank"
-                    className="project--card__links__link live-link-bg blue-markup"
-                  >
-                    <FaExternalLinkAlt style={{ color: "#a8ff78" }} />
-                    View Live
-                  </Link>
-                </div>
-              </article>
-            </div>
-          </Fade>
           <Fade direction="left" duration={5000}>
             <div className="project--card">
               <figure className="project--card__side project--card__side__front">
@@ -371,9 +297,9 @@ const Projects = () => {
               <article className="project--card__side project--card__side__back">
                 <div className="project--card__content">
                   <header>
-                    <h2 className="project--card__content__title margin-top">
-                      RandomPeopleApp
-                    </h2>
+                  <h2 className="project--card__content__title margin-top">
+                    RandomPeopleApp
+                  </h2>
                   </header>
                   <p className="project--card__content__desc">
                     This is a web app that uses firebase authentication and
@@ -416,11 +342,11 @@ const Projects = () => {
               </figure>
               <article className="project--card__side project--card__side__back">
                 <div className="project--card__content">
-                  <header>
-                    <h2 className="project--card__content__title margin-top">
-                      Counter App
-                    </h2>
-                  </header>
+                 <header>
+                 <h2 className="project--card__content__title margin-top">
+                    Counter App
+                  </h2>
+                 </header>
                   <p className="project--card__content__desc">
                     This is a simple web tool for counting numbers.
                   </p>
@@ -463,9 +389,9 @@ const Projects = () => {
               <article className="project--card__side project--card__side__back">
                 <div className="project--card__content">
                   <header>
-                    <h2 className="project--card__content__title margin-top">
-                      Interactive Rating Component
-                    </h2>
+                  <h2 className="project--card__content__title margin-top">
+                    Interactive Rating Component
+                  </h2>
                   </header>
                   <p className="project--card__content__desc">
                     This is a solution for the Frontend Mentor Challenge,
@@ -514,11 +440,11 @@ const Projects = () => {
               </figure>
               <article className="project--card__side project--card__side__back">
                 <div className="project--card__content">
-                  <header>
-                    <h2 className="project--card__content__title margin-top">
-                      Natours Landing Page
-                    </h2>
-                  </header>
+              <header>
+              <h2 className="project--card__content__title margin-top">
+                    Natours Landing Page
+                  </h2>
+              </header>
                   <p className="project--card__content__desc">
                     This is a landing page for a fictional company called
                     Natours. It was a code along project from the online course
@@ -566,9 +492,9 @@ const Projects = () => {
               <article className="project--card__side project--card__side__back">
                 <div className="project--card__content">
                   <header>
-                    <h2 className="project--card__content__title margin-top">
-                      Trillo Landing Page
-                    </h2>
+                  <h2 className="project--card__content__title margin-top">
+                    Trillo Landing Page
+                  </h2>
                   </header>
                   <p className="project--card__content__desc">
                     This is a landing page for a fictional company called
@@ -618,9 +544,9 @@ const Projects = () => {
               <article className="project--card__side project--card__side__back">
                 <div className="project--card__content">
                   <header>
-                    <h2 className="project--card__content__title margin-top">
-                      Phony Authentication
-                    </h2>
+                  <h2 className="project--card__content__title margin-top">
+                    Phony Authentication
+                  </h2>
                   </header>
                   <p className="project--card__content__desc">
                     This is a simple fake authentication app. I worked on this
@@ -665,9 +591,9 @@ const Projects = () => {
               <article className="project--card__side project--card__side__back">
                 <div className="project--card__content">
                   <header>
-                    <h2 className="project--card__content__title margin-top">
-                      Calculator
-                    </h2>
+                  <h2 className="project--card__content__title margin-top">
+                    Calculator
+                  </h2>
                   </header>
                   <p className="project--card__content__desc">
                     This is a powerful calculator with high-level functions. The
@@ -714,9 +640,9 @@ const Projects = () => {
               <article className="project--card__side project--card__side__back">
                 <div className="project--card__content">
                   <header>
-                    <h2 className="project--card__content__title margin-top">
-                      Chat App CSS Illustration
-                    </h2>
+                  <h2 className="project--card__content__title margin-top">
+                    Chat App CSS Illustration
+                  </h2>
                   </header>
                   <p className="project--card__content__desc">
                     This is a solution to Frontend Mentor Challenge, 'Chat App
@@ -766,11 +692,11 @@ const Projects = () => {
               </figure>
               <article className="project--card__side project--card__side__back">
                 <div className="project--card__content">
-                  <header>
-                    <h2 className="project--card__content__title margin-top">
-                      Shoe-Brand Landing Page
-                    </h2>
-                  </header>
+                 <header>
+                 <h2 className="project--card__content__title margin-top">
+                    Shoe-Brand Landing Page
+                  </h2>
+                 </header>
                   <p className="project--card__content__desc">
                     This Landing page was a code along project on 'Learn HTML &
                     CSS in 2022 crash course' by Design Course on Udemy. Sass
@@ -817,9 +743,9 @@ const Projects = () => {
               <article className="project--card__side project--card__side__back">
                 <div className="project--card__content">
                   <header>
-                    <h2 className="project--card__content__title margin-top">
-                      Order Summary Card
-                    </h2>
+                  <h2 className="project--card__content__title margin-top">
+                    Order Summary Card
+                  </h2>
                   </header>
                   <p className="project--card__content__desc">
                     This is a solution to the Frontend Mentor Challenge's 'Order
@@ -868,9 +794,9 @@ const Projects = () => {
               <article className="project--card__side project--card__side__back">
                 <div className="project--card__content">
                   <header>
-                    <h2 className="project--card__content__title margin-top">
-                      Stats Preview Card
-                    </h2>
+                  <h2 className="project--card__content__title margin-top">
+                    Stats Preview Card
+                  </h2>
                   </header>
                   <p className="project--card__content__desc">
                     This is a solution to the 'Stats preview card component' on
@@ -919,9 +845,9 @@ const Projects = () => {
               <article className="project--card__side project--card__side__back">
                 <div className="project--card__content">
                   <header>
-                    <h2 className="project--card__content__title margin-top">
-                      Fylo Data Storage
-                    </h2>
+                  <h2 className="project--card__content__title margin-top">
+                    Fylo Data Storage
+                  </h2>
                   </header>
                   <p className="project--card__content__desc">
                     This is the solution to the Frontend Mentor Challenge's
@@ -1016,9 +942,9 @@ const Projects = () => {
               <article className="project--card__side project--card__side__back">
                 <div className="project--card__content">
                   <header>
-                    <h2 className="project--card__content__title margin-top">
-                      Tribute Page
-                    </h2>
+                  <h2 className="project--card__content__title margin-top">
+                    Tribute Page
+                  </h2>
                   </header>
                   <p className="project--card__content__desc">
                     For the 'Responsive Web Design' certification projects on
@@ -1160,9 +1086,9 @@ const Projects = () => {
               <article className="project--card__side project--card__side__back">
                 <div className="project--card__content">
                   <header>
-                    <h2 className="project--card__content__title margin-top">
-                      Testimonial Grid section
-                    </h2>
+                  <h2 className="project--card__content__title margin-top">
+                    Testimonial Grid section
+                  </h2>
                   </header>
                   <p className="project--card__content__desc">
                     This is the solution to the Frontend Mentor Challenge's
@@ -1209,11 +1135,11 @@ const Projects = () => {
               </figure>
               <article className="project--card__side project--card__side__back">
                 <div className="project--card__content">
-                  <header>
-                    <h2 className="project--card__content__title margin-top">
-                      Beating Heart
-                    </h2>
-                  </header>
+                 <header>
+                 <h2 className="project--card__content__title margin-top">
+                    Beating Heart
+                  </h2>
+                 </header>
                   <p className="project--card__content__desc">Just for Fun.</p>
                 </div>
                 <div className="project--card__links">
@@ -1256,11 +1182,11 @@ const Projects = () => {
               </figure>
               <article className="project--card__side project--card__side__back">
                 <div className="project--card__content">
-                  <header>
-                    <h2 className="project--card__content__title margin-top">
-                      Half Moon
-                    </h2>
-                  </header>
+                 <header>
+                 <h2 className="project--card__content__title margin-top">
+                    Half Moon
+                  </h2>
+                 </header>
                   <p className="project--card__content__desc">Just for Fun.</p>
                 </div>
                 <div className="project--card__links">

@@ -16,10 +16,9 @@ import { FaArrowCircleRight } from "react-icons/fa";
 const Project = [
   {
     title: "Task Tracker",
-    description:
-      "A simple task tracker app that allows users to add, delete and edit tasks.",
+    description: "A simple task tracker app that allows users to add, delete and edit tasks.",
     image: Task,
-    link: "https://task-tracker.ntec.app/",
+    link: "https://task-tracker.ntec.app/"
   },
   {
     title: "GitHub Repository",
@@ -37,10 +36,9 @@ const Project = [
   },
   {
     title: "Clicks",
-    description:
-      "A simple web app that counts the number of clicks on a button and show the location it was clicked from on a map.",
+    description: "A simple web app that counts the number of clicks on a button and show the location it was clicked from on a map.",
     image: Clicks,
-    link: "https://chasing-d-clicks.vercel.app/",
+    link: "https://chasing-d-clicks.vercel.app/"
   },
   {
     title: "Phonie App",
@@ -53,7 +51,7 @@ const Project = [
     title: "Duplicate Removal",
     description: "A simple web app that removes duplicate characters.",
     image: Duplicate,
-    link: "https://duplicate-remover.netlify.app/",
+    link: "https://duplicate-remover.netlify.app/"
   },
   {
     title: "Natours Tour",

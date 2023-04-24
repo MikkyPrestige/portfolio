@@ -143,9 +143,9 @@ const LayoutLarge = () => {
   };
 
   return (
-    <section className="layout--large">
+    <div className="layout--large">
       <header className="layout--header">
-        <aside className="layout--header__title">
+        <div className="layout--header__title">
           <h1 className="layout--header__title__content">
             <span className="layout--header__title__content__span">{"<"}</span>
             <span className="layout--header__title__content__span--elue">
@@ -159,9 +159,9 @@ const LayoutLarge = () => {
             </span>
             <span className="layout--header__title__content__span">{">"}</span>
           </h1>
-        </aside>
-        <section className="layout--large__menu">
-          <nav className="layout--large__menu__list">
+        </div>
+        <div className="layout--large__menu">
+          <div className="layout--large__menu__list">
             <CustomNavLink
               to="/"
               className="layout--large__menu__list__item"
@@ -190,7 +190,7 @@ const LayoutLarge = () => {
             >
               Contact
             </CustomNavLink>
-          </nav>
+          </div>
           <div
             className="layout--large__menu__magic-line"
             style={{
@@ -198,9 +198,9 @@ const LayoutLarge = () => {
               width: magicLinePosition.width,
             }}
           ></div>
-        </section>
+        </div>
       </header>
-    </section>
+    </div>
   );
 };
 

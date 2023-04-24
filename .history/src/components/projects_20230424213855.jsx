@@ -43,7 +43,7 @@ const Projects = () => {
                     interface allows users to easily view all of their
                     repositories in one place, including details such as name,
                     description, and star rating. It was one of the projects for
-                    the <mark>AltSchool Africa School of Engineering</mark> Examination in
+                    the AltSchool Africa School of Engineering Examination in
                     the second semester.
                   </p>
                 </div>
@@ -77,7 +77,7 @@ const Projects = () => {
             <div className="project--card">
               <figure className="project--card__side project--card__side__front">
                 <div className="project--card__bg">
-                  <div className="project--card__bg--img project--card__bg--img-23"></div>
+                  <div className="project--card__bg--img project--card__bg--img-22"></div>
                 </div>
                 <figcaption className="project--card__frame">
                   <span className="project--card__frame__item">Css</span>
@@ -161,7 +161,7 @@ const Projects = () => {
                     enter a specific tip percentage. The calculator also
                     includes a reset button and input validation to ensure that
                     the number of people entered is not zero. This is a solution
-                    to the "tip calculator" <mark>frontend mentor challenge</mark>.
+                    to the "tip calculator" frontend mentor challenge.
                   </p>
                 </div>
                 <div className="project--card__links">
@@ -194,11 +194,11 @@ const Projects = () => {
             <div className="project--card">
               <figure className="project--card__side project--card__side__front">
                 <div className="project--card__bg">
-                  <div className="project--card__bg--img project--card__bg--img-24"></div>
+                  <div className="project--card__bg--img project--card__bg--img-15"></div>
                 </div>
                 <figcaption className="project--card__frame">
-                  <span className="project--card__frame__item">Scss</span>
-                  <span className="project--card__frame__item">React</span>
+                  <span className="project--card__frame__item">Html</span>
+                  <span className="project--card__frame__item">Css</span>
                   <span className="project--card__frame__item">Firebase</span>
                 </figcaption>
               </figure>
@@ -269,9 +269,9 @@ const Projects = () => {
                   <p className="project--card__content__desc">
                     The Phonie Project is a web-based application created by the
                     team "Phantom_Devz" that determines the telecom carrier
-                    based on a phone number entered by the user. It is
-                    one of the projects featured in the <mark>AltSchool Africa School
-                    of Engineering</mark> Holiday Hackathon in August '22.
+                    based on a phone number entered by the user. <br /> It is
+                    one of the projects featured in the AltSchool Africa School
+                    of Engineering Holiday Hackathon in August '22.
                   </p>
                 </div>
                 <div className="project--card__links">
@@ -304,11 +304,12 @@ const Projects = () => {
             <div className="project--card">
               <figure className="project--card__side project--card__side__front">
                 <div className="project--card__bg">
-                  <div className="project--card__bg--img project--card__bg--img-25"></div>
+                  <div className="project--card__bg--img project--card__bg--img-2"></div>
                 </div>
                 <figcaption className="project--card__frame">
-                  <span className="project--card__frame__item">Scss</span>
-                  <span className="project--card__frame__item">React</span>
+                  <span className="project--card__frame__item">Html</span>
+                  <span className="project--card__frame__item">Css</span>
+                  <span className="project--card__frame__item">JavaScript</span>
                 </figcaption>
               </figure>
               <article className="project--card__side project--card__side__back">
@@ -319,15 +320,7 @@ const Projects = () => {
                     </h2>
                   </header>
                   <p className="project--card__content__desc">
-                    This is an app with two screens. The first screen takes user
-                    input and, upon submission, redirects to screen two, which
-                    displays the entered string as cards. Each card displays a
-                    single character from the string, and each character's
-                    duplicate instances can be removed by clicking the delete
-                    icon. If a character has no duplicates, it will remain on
-                    the screen. If there are no duplicate characters in the
-                    string, a success header is displayed. The original and
-                    updated strings are also displayed.
+
                   </p>
                 </div>
                 <div className="project--card__links">

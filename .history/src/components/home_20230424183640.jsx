@@ -204,9 +204,9 @@ const Home = () => {
               </figcaption>
             </Reveal>
           </figure>
-          <aside className="home--slides">
+          <div className="home--slides">
             <ProjectSlide />
-          </aside>
+          </div>
         </section>
       </section>
       <Footer />

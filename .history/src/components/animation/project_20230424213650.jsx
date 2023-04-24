@@ -16,31 +16,21 @@ import { FaArrowCircleRight } from "react-icons/fa";
 const Project = [
   {
     title: "Task Tracker",
-    description:
-      "A simple task tracker app that allows users to add, delete and edit tasks.",
+    description: "A simple task tracker app that allows users to add, delete and edit tasks.",
     image: Task,
-    link: "https://task-tracker.ntec.app/",
-  },
-  {
-    title: "GitHub Repository",
-    description:
-      "A simple web app that displays a user's GitHub repositories and also search for gitHub repo's with gitHun usernames",
-    image: RepoDisplay,
-    link: "https://github-repos-display.vercel.app/",
-  },
-  {
-    title: "Tip Calculator",
-    description:
-      "A simple tip calculator that calculates the tip amount and total bill amount based on the bill amount and tip percentage entered by the user.",
-    image: TipCalculator,
-    link: "https://mikky-tip-calculator.vercel.app/",
+    link: "https://task-tracker.ntec.app/"
   },
   {
     title: "Clicks",
-    description:
-      "A simple web app that counts the number of clicks on a button and show the location it was clicked from on a map.",
+    description: "A simple web app that counts the number of clicks on a button and show the location it was clicked from on a map.",
     image: Clicks,
-    link: "https://chasing-d-clicks.vercel.app/",
+    link: "https://chasing-d-clicks.vercel.app/"
+  },
+  {
+    title: "Duplicate Removal",
+    description: "A simple web app that removes duplicate characters.",
+    image: Duplicate,
+    link: "https://duplicate-remover.netlify.app/"
   },
   {
     title: "Phonie App",
@@ -50,10 +40,11 @@ const Project = [
     link: "https://phantom-devz-phonie.netlify.app/",
   },
   {
-    title: "Duplicate Removal",
-    description: "A simple web app that removes duplicate characters.",
-    image: Duplicate,
-    link: "https://duplicate-remover.netlify.app/",
+    title: "Tip Calculator",
+    description:
+      "A simple tip calculator that calculates the tip amount and total bill amount based on the bill amount and tip percentage entered by the user.",
+    image: TipCalculator,
+    link: "https://mikky-tip-calculator.vercel.app/",
   },
   {
     title: "Natours Tour",
@@ -61,6 +52,13 @@ const Project = [
       "A simple landing page for a fictional company that offers tours to the wilderness.",
     image: Natours,
     link: "https://natour-landing-page.netlify.app/",
+  },
+  {
+    title: "GitHub Repository",
+    description:
+      "A simple web app that displays a user's GitHub repositories and also search for gitHub repo's with gitHun usernames",
+    image: RepoDisplay,
+    link: "https://github-repos-display.vercel.app/",
   },
   {
     title: "ChatApp Css",

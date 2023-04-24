@@ -9,7 +9,7 @@ import { Fade } from "react-awesome-reveal";
 const ProjectSlider = ({
   projects,
   autoPlay = false,
-  slideInterval = 8000,
+  slideInterval = 3000,
   onNextSlide,
 }) => {
   const [currentProject, setCurrentProject] = useState(0);
