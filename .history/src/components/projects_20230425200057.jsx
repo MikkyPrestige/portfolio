@@ -100,14 +100,13 @@ const Projects = () => {
                   <p className="project--card__content__desc">
                     The task tracker is a web application built was part of a
                     group project for the ongoing{" "}
-                    <mark>LightHall Internship competition.</mark>We built a
-                    MERN web app and employ React as the front-end library. I
-                    developed the task manager page that users interact with
-                    after logging in. The task manager allows users to perform a
-                    range of actions such as adding, editing, and deleting
-                    tasks, as well as sorting them by various criteria like
-                    title, status, and due date. I was responsible for
-                    implementing the logic for these actions.
+                    <mark>LightHall Internship competition.</mark>We built a MERN web app and employ React as the front-end library. I developed
+                    the task manager page that users interact with after logging
+                    in. The task manager allows users to perform a range of
+                    actions such as adding, editing, and deleting tasks, as well
+                    as sorting them by various criteria like title, status, and
+                    due date. I was responsible for implementing the logic for
+                    these actions.
                   </p>
                 </div>
                 <div className="project--card__links">
