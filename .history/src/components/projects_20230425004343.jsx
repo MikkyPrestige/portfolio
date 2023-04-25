@@ -1,5 +1,3 @@
-import React from "react";
-import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import { FaGithub } from "react-icons/fa";
 import { FaExternalLinkAlt } from "react-icons/fa";
@@ -10,10 +8,6 @@ import { Fade } from "react-awesome-reveal";
 const Projects = () => {
   return (
     <main className="app">
-      <Helmet>
-        <title>Elue Michael | Projects</title>
-        <meta name="description" content="My works" />
-      </Helmet>
       <div
         sx={{
           backgroundColor: "background",
@@ -203,7 +197,6 @@ const Projects = () => {
                   <span className="project--card__frame__item">Scss</span>
                   <span className="project--card__frame__item">React</span>
                   <span className="project--card__frame__item">Firebase</span>
-                  <span className="project--card__frame__item">Mapbox</span>
                 </figcaption>
               </figure>
               <article className="project--card__side project--card__side__back">
@@ -420,9 +413,8 @@ const Projects = () => {
                   <div className="project--card__bg--img project--card__bg--img-4"></div>
                 </div>
                 <figcaption className="project--card__frame">
-                  <span className="project--card__frame__item">CSS</span>
-                  <span className="project--card__frame__item">Scss</span>
-                  <span className="project--card__frame__item">Vue</span>
+                  <span className="project--card__frame__item">VueJs</span>
+                  <span className="project--card__frame__item">Sass</span>
                 </figcaption>
               </figure>
               <article className="project--card__side project--card__side__back">
@@ -525,7 +517,7 @@ const Projects = () => {
                 <figcaption className="project--card__frame">
                   <span className="project--card__frame__item">Html</span>
                   <span className="project--card__frame__item">CSS</span>
-                  <span className="project--card__frame__item">Scss</span>
+                  <span className="project--card__frame__item">Sass</span>
                 </figcaption>
               </figure>
               <article className="project--card__side project--card__side__back">
@@ -576,7 +568,7 @@ const Projects = () => {
                 <figcaption className="project--card__frame">
                   <span className="project--card__frame__item">Html</span>
                   <span className="project--card__frame__item">CSS</span>
-                  <span className="project--card__frame__item">Scss</span>
+                  <span className="project--card__frame__item">Sass</span>
                 </figcaption>
               </figure>
               <article className="project--card__side project--card__side__back">
@@ -777,7 +769,7 @@ const Projects = () => {
                 <figcaption className="project--card__frame">
                   <span className="project--card__frame__item">Html</span>
                   <span className="project--card__frame__item">CSS</span>
-                  <span className="project--card__frame__item">Scss</span>
+                  <span className="project--card__frame__item">Sass</span>
                   <span className="project--card__frame__item">Javascript</span>
                 </figcaption>
               </figure>

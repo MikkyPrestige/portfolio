@@ -78,13 +78,6 @@ const Home = () => {
 
   return (
     <main className="app">
-      <Helmet>
-        <title>Elue Michael | Home</title>
-        <meta
-          name="description"
-          content="Elue Michael is a frontend developer with a strong foundation in HTML, CSS, JavaScript as well as exposure to frameworks such as React and Vue"
-        />
-      </Helmet>
       <section
         className="home"
         sx={{

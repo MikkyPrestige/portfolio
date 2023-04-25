@@ -29,12 +29,9 @@ const Background = () => {
   return (
     <main className="app">
       <Helmet>
-        <title>Elue Michael | About-Me</title>
-        <meta
-          name="description"
-          content="
-        I am a motivated and passionate frontend developer currently pursuing a diploma in Software Engineering at AltSchool Africa."
-        />
+        <title>Elue Wisdom | About-Me</title>
+        <meta name="description" content="
+        I am a motivated and passionate frontend developer currently pursuing a diploma in Software Engineering at AltSchool Africa. I've have gained experience in HTML, CSS, and JavaScript, as well as exposure to frameworks such as React and Vue. I am eager to continue my education and apply my knowledge in a professional setting. As an intern or entry-level developer, I am dedicated to delivering high-quality code and building beautiful, intuitive user experiences." />
       </Helmet>
       <div
         sx={{

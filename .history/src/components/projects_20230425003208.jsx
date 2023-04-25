@@ -1,5 +1,3 @@
-import React from "react";
-import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import { FaGithub } from "react-icons/fa";
 import { FaExternalLinkAlt } from "react-icons/fa";
@@ -10,10 +8,6 @@ import { Fade } from "react-awesome-reveal";
 const Projects = () => {
   return (
     <main className="app">
-      <Helmet>
-        <title>Elue Michael | Projects</title>
-        <meta name="description" content="My works" />
-      </Helmet>
       <div
         sx={{
           backgroundColor: "background",
@@ -104,11 +98,12 @@ const Projects = () => {
                     group project for the ongoing{" "}
                     <mark>LightHall Internship competition.</mark> I developed
                     the task manager page that users interact with after logging
-                    in. The task manager allows users to perform a range of
-                    actions such as adding, editing, and deleting tasks, as well
-                    as sorting them by various criteria like title, status, and
-                    due date. I was responsible for implementing the logic for
-                    these actions.
+                    in. The app was built with React for the frontend, and
+                    Node.js & MongoDB for the backend and database. The task
+                    manager allows users to perform a range of actions such as
+                    adding, editing, and deleting tasks, as well as sorting them
+                    by various criteria like title, status, and due date. I was
+                    responsible for implementing the logic for these actions.
                   </p>
                 </div>
                 <div className="project--card__links">
@@ -203,7 +198,6 @@ const Projects = () => {
                   <span className="project--card__frame__item">Scss</span>
                   <span className="project--card__frame__item">React</span>
                   <span className="project--card__frame__item">Firebase</span>
-                  <span className="project--card__frame__item">Mapbox</span>
                 </figcaption>
               </figure>
               <article className="project--card__side project--card__side__back">
@@ -349,7 +343,7 @@ const Projects = () => {
                   </Link>
                   <Link
                     to={{
-                      pathname: "https://duplicate-removal.vercel.app/",
+                      pathname: "https://duplicate-remover.netlify.app/",
                     }}
                     target="_blank"
                     className="project--card__links__link live-link-bg blue-markup"
@@ -420,9 +414,8 @@ const Projects = () => {
                   <div className="project--card__bg--img project--card__bg--img-4"></div>
                 </div>
                 <figcaption className="project--card__frame">
-                  <span className="project--card__frame__item">CSS</span>
-                  <span className="project--card__frame__item">Scss</span>
-                  <span className="project--card__frame__item">Vue</span>
+                  <span className="project--card__frame__item">VueJs</span>
+                  <span className="project--card__frame__item">Sass</span>
                 </figcaption>
               </figure>
               <article className="project--card__side project--card__side__back">
@@ -525,7 +518,7 @@ const Projects = () => {
                 <figcaption className="project--card__frame">
                   <span className="project--card__frame__item">Html</span>
                   <span className="project--card__frame__item">CSS</span>
-                  <span className="project--card__frame__item">Scss</span>
+                  <span className="project--card__frame__item">Sass</span>
                 </figcaption>
               </figure>
               <article className="project--card__side project--card__side__back">
@@ -576,7 +569,7 @@ const Projects = () => {
                 <figcaption className="project--card__frame">
                   <span className="project--card__frame__item">Html</span>
                   <span className="project--card__frame__item">CSS</span>
-                  <span className="project--card__frame__item">Scss</span>
+                  <span className="project--card__frame__item">Sass</span>
                 </figcaption>
               </figure>
               <article className="project--card__side project--card__side__back">
@@ -777,7 +770,7 @@ const Projects = () => {
                 <figcaption className="project--card__frame">
                   <span className="project--card__frame__item">Html</span>
                   <span className="project--card__frame__item">CSS</span>
-                  <span className="project--card__frame__item">Scss</span>
+                  <span className="project--card__frame__item">Sass</span>
                   <span className="project--card__frame__item">Javascript</span>
                 </figcaption>
               </figure>

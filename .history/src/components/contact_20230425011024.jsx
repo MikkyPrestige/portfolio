@@ -107,11 +107,8 @@ const Contact = () => {
     <main className="app">
       <Helmet>
         <title>Elue Michael | Contact</title>
-        <meta
-          name="description"
-          content="Contact me for your next project. I am available for internship or entry level
-        position in frontend development."
-        />
+        <meta name="description" content="Contact me for your next project. I am available for internship or entry level
+        position in frontend development." />
       </Helmet>
       <div
         sx={{

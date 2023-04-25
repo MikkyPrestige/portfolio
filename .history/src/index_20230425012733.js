@@ -6,7 +6,7 @@ import { BrowserRouter } from "react-router-dom";
 import { ThemeProvider } from "theme-ui";
 import theme from "./theme";
 import { HelmetProvider } from "react-helmet-async";
-import "./assets/styles/sass/main.scss";
+import "./assets/styles/sass/main.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

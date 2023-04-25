@@ -80,10 +80,7 @@ const Home = () => {
     <main className="app">
       <Helmet>
         <title>Elue Michael | Home</title>
-        <meta
-          name="description"
-          content="Elue Michael is a frontend developer with a strong foundation in HTML, CSS, JavaScript as well as exposure to frameworks such as React and Vue"
-        />
+        <meta name="description" content="Elue Michael is a frontend developer with a strong foundation in HTML, CSS, JavaScript and JavaScript frameworks like React and Vue" />
       </Helmet>
       <section
         className="home"

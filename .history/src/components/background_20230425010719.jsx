@@ -29,12 +29,9 @@ const Background = () => {
   return (
     <main className="app">
       <Helmet>
-        <title>Elue Michael | About-Me</title>
-        <meta
-          name="description"
-          content="
-        I am a motivated and passionate frontend developer currently pursuing a diploma in Software Engineering at AltSchool Africa."
-        />
+        <title>Elue Wisdom | About-Me</title>
+        <meta name="description" content="
+        I am a motivated and passionate frontend developer currently pursuing a diploma in Software Engineering at AltSchool Africa." />
       </Helmet>
       <div
         sx={{

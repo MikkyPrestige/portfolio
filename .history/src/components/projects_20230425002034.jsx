@@ -1,5 +1,3 @@
-import React from "react";
-import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import { FaGithub } from "react-icons/fa";
 import { FaExternalLinkAlt } from "react-icons/fa";
@@ -10,10 +8,6 @@ import { Fade } from "react-awesome-reveal";
 const Projects = () => {
   return (
     <main className="app">
-      <Helmet>
-        <title>Elue Michael | Projects</title>
-        <meta name="description" content="My works" />
-      </Helmet>
       <div
         sx={{
           backgroundColor: "background",
@@ -49,8 +43,8 @@ const Projects = () => {
                     interface allows users to easily view all of their
                     repositories in one place, including details such as name,
                     description, and star rating. It was one of the projects for
-                    the <mark>AltSchool Africa School of Engineering</mark>{" "}
-                    Examination in the second semester.
+                    the <mark>AltSchool Africa School of Engineering</mark> Examination in
+                    the second semester.
                   </p>
                 </div>
                 <div className="project--card__links">
@@ -102,13 +96,14 @@ const Projects = () => {
                   <p className="project--card__content__desc">
                     The task tracker is a web application built was part of a
                     group project for the ongoing{" "}
-                    <mark>LightHall Internship competition.</mark> I developed
-                    the task manager page that users interact with after logging
-                    in. The task manager allows users to perform a range of
-                    actions such as adding, editing, and deleting tasks, as well
-                    as sorting them by various criteria like title, status, and
-                    due date. I was responsible for implementing the logic for
-                    these actions.
+                    <mark>LightHall Internship competition.</mark> I developed the
+                    task manager page that users interact with after logging in.
+                    The app was built with React for the frontend, and Node.js &
+                    MongoDB for the backend and database. The task manager
+                    allows users to perform a range of actions such as adding,
+                    editing, and deleting tasks, as well as sorting them by
+                    various criteria like title, status, and due date. I was
+                    responsible for implementing the logic for these actions.
                   </p>
                 </div>
                 <div className="project--card__links">
@@ -163,8 +158,7 @@ const Projects = () => {
                     enter a specific tip percentage. The calculator also
                     includes a reset button and input validation to ensure that
                     the number of people entered is not zero. This is a solution
-                    to the "tip calculator"{" "}
-                    <mark>frontend mentor challenge</mark>.
+                    to the "tip calculator" <mark>frontend mentor challenge</mark>.
                   </p>
                 </div>
                 <div className="project--card__links">
@@ -203,7 +197,6 @@ const Projects = () => {
                   <span className="project--card__frame__item">Scss</span>
                   <span className="project--card__frame__item">React</span>
                   <span className="project--card__frame__item">Firebase</span>
-                  <span className="project--card__frame__item">Mapbox</span>
                 </figcaption>
               </figure>
               <article className="project--card__side project--card__side__back">
@@ -273,10 +266,9 @@ const Projects = () => {
                   <p className="project--card__content__desc">
                     The Phonie Project is a web-based application created by the
                     team "Phantom_Devz" that determines the telecom carrier
-                    based on a phone number entered by the user. It is one of
-                    the projects featured in the{" "}
-                    <mark>AltSchool Africa School of Engineering</mark> Holiday
-                    Hackathon in August '22.
+                    based on a phone number entered by the user. It is
+                    one of the projects featured in the <mark>AltSchool Africa School
+                    of Engineering</mark> Holiday Hackathon in August '22.
                   </p>
                 </div>
                 <div className="project--card__links">
@@ -349,7 +341,7 @@ const Projects = () => {
                   </Link>
                   <Link
                     to={{
-                      pathname: "https://duplicate-removal.vercel.app/",
+                      pathname: "https://duplicate-remover.netlify.app/",
                     }}
                     target="_blank"
                     className="project--card__links__link live-link-bg blue-markup"
@@ -382,12 +374,9 @@ const Projects = () => {
                     </h2>
                   </header>
                   <p className="project--card__content__desc">
-                    This is a web app that displays random people and their
-                    info. The data is generated from randomuser API. I also
-                    added firebase authentication to verify and saved new users.
-                    It was one of the projects for the{" "}
-                    <mark>AltSchool Africa School of Engineering</mark>{" "}
-                    Examination in the second semester.
+                    This is a web app that displays random people and their info. The data is generated from randomuser API. I also added firebase authentication to verify and saved new users.
+                    It was one of the projects for the <mark>AltSchool Africa School of Engineering</mark> Examination in
+                    the second semester.
                   </p>
                 </div>
                 <div className="project--card__links">
@@ -420,9 +409,8 @@ const Projects = () => {
                   <div className="project--card__bg--img project--card__bg--img-4"></div>
                 </div>
                 <figcaption className="project--card__frame">
-                  <span className="project--card__frame__item">CSS</span>
-                  <span className="project--card__frame__item">Scss</span>
-                  <span className="project--card__frame__item">Vue</span>
+                  <span className="project--card__frame__item">VueJs</span>
+                  <span className="project--card__frame__item">Sass</span>
                 </figcaption>
               </figure>
               <article className="project--card__side project--card__side__back">
@@ -433,10 +421,8 @@ const Projects = () => {
                     </h2>
                   </header>
                   <p className="project--card__content__desc">
-                    This is a simple web tool for counting numbers. It uses
-                    Local storage to store the count value. It was the third
-                    semester Examination project for{" "}
-                    <mark>AltSchool Africa School of Engineering.</mark>
+                    This is a simple web tool for counting numbers. It uses Local storage
+                    to store the count value. It was the third semester Examination project for <mark>AltSchool Africa School of Engineering.</mark>
                   </p>
                 </div>
                 <div className="project--card__links">
@@ -482,11 +468,8 @@ const Projects = () => {
                     </h2>
                   </header>
                   <p className="project--card__content__desc">
-                    This is an interactive web page that displays a rating
-                    component in numbers. It allows the user select and submit a
-                    number rating. Also display a "Thank you" card after a
-                    rating is submitted. This is a solution to a{" "}
-                    <mark>Frontend Mentor Challenge.</mark>
+                    This is an interactive web page that displays a rating component in numbers. It allows the user select and submit a number rating. Also display a "Thank you" card after a rating is submitted.
+                    This is a solution to a <mark>Frontend Mentor Challenge.</mark>
                   </p>
                 </div>
                 <div className="project--card__links">
@@ -525,7 +508,7 @@ const Projects = () => {
                 <figcaption className="project--card__frame">
                   <span className="project--card__frame__item">Html</span>
                   <span className="project--card__frame__item">CSS</span>
-                  <span className="project--card__frame__item">Scss</span>
+                  <span className="project--card__frame__item">Sass</span>
                 </figcaption>
               </figure>
               <article className="project--card__side project--card__side__back">
@@ -576,7 +559,7 @@ const Projects = () => {
                 <figcaption className="project--card__frame">
                   <span className="project--card__frame__item">Html</span>
                   <span className="project--card__frame__item">CSS</span>
-                  <span className="project--card__frame__item">Scss</span>
+                  <span className="project--card__frame__item">Sass</span>
                 </figcaption>
               </figure>
               <article className="project--card__side project--card__side__back">
@@ -686,9 +669,8 @@ const Projects = () => {
                     </h2>
                   </header>
                   <p className="project--card__content__desc">
-                    The calculator is a simple web application and functional
-                    tool for performing mathematical operations. The interface
-                    is sleek and user-friendly on desktop, and the mathematical
+                    This is a powerful calculator with high-level functions. The
+                    interface is sleek and user-friendly, and the mathematical
                     algorithms are advanced.
                   </p>
                 </div>
@@ -736,10 +718,10 @@ const Projects = () => {
                     </h2>
                   </header>
                   <p className="project--card__content__desc">
-                    This is a solution to{" "}
-                    <mark>Frontend Mentor Challenge.</mark> In this project, I
-                    re-created the visually stunning chat app CSS illustration
-                    created by Frontend Mentor from scratch to finish.
+                    This is a solution to Frontend Mentor Challenge, 'Chat App
+                    CSS Illustration'. Frontend Mentor created a visually
+                    stunning chat app illustration. In this project, I
+                    re-created it illustration from scratch to finish.
                   </p>
                 </div>
                 <div className="project--card__links">
@@ -777,7 +759,7 @@ const Projects = () => {
                 <figcaption className="project--card__frame">
                   <span className="project--card__frame__item">Html</span>
                   <span className="project--card__frame__item">CSS</span>
-                  <span className="project--card__frame__item">Scss</span>
+                  <span className="project--card__frame__item">Sass</span>
                   <span className="project--card__frame__item">Javascript</span>
                 </figcaption>
               </figure>
@@ -839,9 +821,9 @@ const Projects = () => {
                     </h2>
                   </header>
                   <p className="project--card__content__desc">
-                    This is a solution to the{" "}
-                    <mark>Frontend Mentor Challenge.</mark> It is a simple HTML
-                    and CSS based card component.
+                    This is a solution to the Frontend Mentor Challenge's 'Order
+                    summary component'. It is an HTML and CSS-based card
+                    component.
                   </p>
                 </div>
                 <div className="project--card__links">
@@ -890,9 +872,9 @@ const Projects = () => {
                     </h2>
                   </header>
                   <p className="project--card__content__desc">
-                    This is a solution to the{" "}
-                    <mark>Frontend Mentor Challenge.</mark> I worked on this
-                    project to practice CSS grid. as a beginner.
+                    This is a solution to the 'Stats preview card component' on
+                    Frontend Mentor Challenge. I worked on this project to
+                    practice CSS grid.
                   </p>
                 </div>
                 <div className="project--card__links">
@@ -941,8 +923,8 @@ const Projects = () => {
                     </h2>
                   </header>
                   <p className="project--card__content__desc">
-                    This is the solution to the{" "}
-                    <mark>Frontend Mentor Challenge.</mark>
+                    This is the solution to the Frontend Mentor Challenge's
+                    'Fylo data storage component'.
                   </p>
                 </div>
                 <div className="project--card__links">
@@ -1038,10 +1020,11 @@ const Projects = () => {
                     </h2>
                   </header>
                   <p className="project--card__content__desc">
-                    I created this tribute page to pay homage to the legendary
-                    musician, <mark>Bob Marley</mark>. I hold Bob Marley in high
-                    esteem and consider him to be the greatest musician of all
-                    time.
+                    For the 'Responsive Web Design' certification projects on
+                    freeCodeCamp, I created this tribute page to pay homage to
+                    the legendary musician, Bob Marley. I hold Bob Marley in
+                    high esteem and consider him to be the greatest musician of
+                    all time.
                   </p>
                 </div>
                 <div className="project--card__links">
@@ -1181,8 +1164,8 @@ const Projects = () => {
                     </h2>
                   </header>
                   <p className="project--card__content__desc">
-                    This is the solution to the{" "}
-                    <mark>Frontend Mentor Challenge</mark>
+                    This is the solution to the Frontend Mentor Challenge's
+                    'Testimonial Grid section'.
                   </p>
                 </div>
                 <div className="project--card__links">

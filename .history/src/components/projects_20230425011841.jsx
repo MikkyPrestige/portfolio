@@ -1,5 +1,5 @@
-import React from "react";
-import { Helmet } from "react-helmet";
+import React from "react"
+import { Helmet } from "react-helmet"
 import { Link } from "react-router-dom";
 import { FaGithub } from "react-icons/fa";
 import { FaExternalLinkAlt } from "react-icons/fa";
@@ -10,10 +10,7 @@ import { Fade } from "react-awesome-reveal";
 const Projects = () => {
   return (
     <main className="app">
-      <Helmet>
-        <title>Elue Michael | Projects</title>
-        <meta name="description" content="My works" />
-      </Helmet>
+cop
       <div
         sx={{
           backgroundColor: "background",
