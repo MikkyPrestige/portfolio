@@ -433,10 +433,8 @@ const Projects = () => {
                     </h2>
                   </header>
                   <p className="project--card__content__desc">
-                    This is a simple web tool for counting numbers. The count
-                    value is stored locally so that it is still available on
-                    page reload. It was built with Vue and Scss. It was the
-                    third semester Examination project for{" "}
+                    This is a simple web tool for counting numbers. The count value is stored locally so that it is still available on page reload. It was built with Vue and Scss. It was the third
+                    semester Examination project for{" "}
                     <mark>AltSchool Africa School of Engineering.</mark>
                   </p>
                 </div>

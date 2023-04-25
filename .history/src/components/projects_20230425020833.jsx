@@ -45,11 +45,9 @@ const Projects = () => {
                   </header>
                   <p className="project--card__content__desc">
                     This is a React-based web app that displays a user's
-                    repositories using the GitHub API. This app allows anyone to
-                    easily search for a GitHub repository with their username
-                    and view the repository's details. It was one of the
-                    projects for the{" "}
-                    <mark>AltSchool Africa School of Engineering</mark>{" "}
+                    repositories using the GitHub API. This app allows anyone to easily search for a GitHub repository with their username
+                    and view the repository's details. It was one of the projects for
+                    the <mark>AltSchool Africa School of Engineering</mark>{" "}
                     Examination in the second semester.
                   </p>
                 </div>
@@ -217,10 +215,8 @@ const Projects = () => {
                     The click counter app is a web application that allows users
                     to track the number of clicks on and their location in
                     realtime. The app was built using React and Firebase as the
-                    database. The app render's the user's location on a map and
-                    allows users to click on a button to increase the click
-                    count and record the location where the click occurred. I
-                    built the app in the first round of the ongoing{" "}
+                    database. The app render's the user's location on a map and allows users to click on a button to increase the click count and record the location where the click occurred. I built the
+                    app in the first round of the ongoing{" "}
                     <mark>LightHall Internship Competition</mark> and have
                     qualified for the next round.
                   </p>
@@ -433,10 +429,9 @@ const Projects = () => {
                     </h2>
                   </header>
                   <p className="project--card__content__desc">
-                    This is a simple web tool for counting numbers. The count
-                    value is stored locally so that it is still available on
-                    page reload. It was built with Vue and Scss. It was the
-                    third semester Examination project for{" "}
+                    This is a simple web tool for counting numbers. It uses
+                    Local storage to store the count value. It was the third
+                    semester Examination project for{" "}
                     <mark>AltSchool Africa School of Engineering.</mark>
                   </p>
                 </div>
