@@ -32,6 +32,65 @@ const Projects = () => {
                   <div className="project--card__bg--img project--card__bg--img-1"></div>
                 </div>
                 <figcaption className="project--card__frame">
+                  <span className="project--card__frame__item">
+                    Tailwind Css
+                  </span>
+                  <span className="project--card__frame__item">MERN stack</span>
+                </figcaption>
+              </figure>
+              <article className="project--card__side project--card__side__back">
+                <div className="project--card__content">
+                  <header>
+                    <h2 className="project--card__content__title margin-top">
+                      HangPanda Game
+                    </h2>
+                  </header>
+                  <p className="project--card__content__desc">
+                    HangPanda was part of a group project for
+                    <mark>LightHall super league</mark> which I took part in. It
+                    is a web-based game built with React and Tailwind CSS. It is
+                    a simple game where the user guesses a word by selecting
+                    letters from the alphabet. The user has 7 lives and loses a
+                    life for every wrong guess. The game ends when the user
+                    guesses the word correctly or loses all their lives. There
+                    is has a leaderBoard that displays the top players and their
+                    scores. The leaderBoard is implemented using MongoDB and
+                    Express. The game also allows user to set their own word for
+                    a single session and then a generate link for it.
+                  </p>
+                </div>
+                <div className="project--card__links">
+                  <Link
+                    to={{
+                      pathname: "https://github.com/n-shen/game-hangman",
+                    }}
+                    target="_blank"
+                    className="project--card__links__link github-link-bg"
+                  >
+                    <FaGithub style={{ color: "#000" }} />
+                    View on GitHub
+                  </Link>
+                  <Link
+                    to={{
+                      pathname: "https://hangman.ntec.app/",
+                    }}
+                    target="_blank"
+                    className="project--card__links__link live-link-bg blue-markup"
+                  >
+                    <FaExternalLinkAlt style={{ color: "#a8ff78" }} />
+                    View Live
+                  </Link>
+                </div>
+              </article>
+            </div>
+          </Fade>
+          <Fade direction="left" duration={5000}>
+            <div className="project--card">
+              <figure className="project--card__side project--card__side__front">
+                <div className="project--card__bg">
+                  <div className="project--card__bg--img project--card__bg--img-2"></div>
+                </div>
+                <figcaption className="project--card__frame">
                   <span className="project--card__frame__item">Css</span>
                   <span className="project--card__frame__item">React</span>
                 </figcaption>
@@ -83,7 +142,7 @@ const Projects = () => {
             <div className="project--card">
               <figure className="project--card__side project--card__side__front">
                 <div className="project--card__bg">
-                  <div className="project--card__bg--img project--card__bg--img-23"></div>
+                  <div className="project--card__bg--img project--card__bg--img-3"></div>
                 </div>
                 <figcaption className="project--card__frame">
                   <span className="project--card__frame__item">Css</span>
@@ -98,16 +157,15 @@ const Projects = () => {
                     </h2>
                   </header>
                   <p className="project--card__content__desc">
-                    The task tracker is a web application built was part of a
-                    group project for the ongoing{" "}
-                    <mark>LightHall Internship competition.</mark>We built a
-                    MERN web app and employ React as the front-end library. I
-                    developed the task manager page that users interact with
-                    after logging in. The task manager allows users to perform a
-                    range of actions such as adding, editing, and deleting
-                    tasks, as well as sorting them by various criteria like
-                    title, status, and due date. I was responsible for
-                    implementing the logic for these actions.
+                    Task Tracker was part of a group project for
+                    <mark>LightHall super league</mark> which I took part in. We
+                    built a MERN web app and employ React as the front-end
+                    library. I developed the task manager page that users
+                    interact with after logging in. The task manager allows
+                    users to perform a range of actions such as adding, editing,
+                    and deleting tasks, as well as sorting them by various
+                    criteria like title, status, and due date. I was responsible
+                    for implementing the logic for these actions.
                   </p>
                 </div>
                 <div className="project--card__links">
@@ -140,7 +198,7 @@ const Projects = () => {
             <div className="project--card">
               <figure className="project--card__side project--card__side__front">
                 <div className="project--card__bg">
-                  <div className="project--card__bg--img project--card__bg--img-15"></div>
+                  <div className="project--card__bg--img project--card__bg--img-4"></div>
                 </div>
                 <figcaption className="project--card__frame">
                   <span className="project--card__frame__item">Html</span>
@@ -196,65 +254,7 @@ const Projects = () => {
             <div className="project--card">
               <figure className="project--card__side project--card__side__front">
                 <div className="project--card__bg">
-                  <div className="project--card__bg--img project--card__bg--img-24"></div>
-                </div>
-                <figcaption className="project--card__frame">
-                  <span className="project--card__frame__item">Scss</span>
-                  <span className="project--card__frame__item">React</span>
-                  <span className="project--card__frame__item">Firebase</span>
-                  <span className="project--card__frame__item">Mapbox</span>
-                </figcaption>
-              </figure>
-              <article className="project--card__side project--card__side__back">
-                <div className="project--card__content">
-                  <header>
-                    <h2 className="project--card__content__title margin-top">
-                      Chasing The Clicks
-                    </h2>
-                  </header>
-                  <p className="project--card__content__desc">
-                    The click counter app is a web application that allows users
-                    to track the number of clicks on and their location in
-                    realtime. The app was built using React and Firebase as the
-                    database. The app render's the user's location on a map and
-                    allows users to click on a button to increase the click
-                    count and record the location where the click occurred. I
-                    built the app in the first round of the ongoing{" "}
-                    <mark>LightHall Internship Competition</mark> and have
-                    qualified for the next round.
-                  </p>
-                </div>
-                <div className="project--card__links">
-                  <Link
-                    to={{
-                      pathname:
-                        "https://github.com/MeekyBerry/Lighthall-internship/tree/main/chasing-clicks",
-                    }}
-                    target="_blank"
-                    className="project--card__links__link github-link-bg"
-                  >
-                    <FaGithub style={{ color: "#000" }} />
-                    View on GitHub
-                  </Link>
-                  <Link
-                    to={{
-                      pathname: "https://chasing-d-clicks.vercel.app/",
-                    }}
-                    target="_blank"
-                    className="project--card__links__link live-link-bg blue-markup"
-                  >
-                    <FaExternalLinkAlt style={{ color: "#a8ff78" }} />
-                    View Live
-                  </Link>
-                </div>
-              </article>
-            </div>
-          </Fade>
-          <Fade direction="right" duration={5000}>
-            <div className="project--card">
-              <figure className="project--card__side project--card__side__front">
-                <div className="project--card__bg">
-                  <div className="project--card__bg--img project--card__bg--img-2"></div>
+                  <div className="project--card__bg--img project--card__bg--img-5"></div>
                 </div>
                 <figcaption className="project--card__frame">
                   <span className="project--card__frame__item">Html</span>
@@ -308,7 +308,7 @@ const Projects = () => {
             <div className="project--card">
               <figure className="project--card__side project--card__side__front">
                 <div className="project--card__bg">
-                  <div className="project--card__bg--img project--card__bg--img-25"></div>
+                  <div className="project--card__bg--img project--card__bg--img-6"></div>
                 </div>
                 <figcaption className="project--card__frame">
                   <span className="project--card__frame__item">Scss</span>
@@ -360,11 +360,68 @@ const Projects = () => {
               </article>
             </div>
           </Fade>
+          <Fade direction="right" duration={5000}>
+            <div className="project--card">
+              <figure className="project--card__side project--card__side__front">
+                <div className="project--card__bg">
+                  <div className="project--card__bg--img project--card__bg--img-7"></div>
+                </div>
+                <figcaption className="project--card__frame">
+                  <span className="project--card__frame__item">Scss</span>
+                  <span className="project--card__frame__item">React</span>
+                  <span className="project--card__frame__item">Firebase</span>
+                  <span className="project--card__frame__item">Mapbox</span>
+                </figcaption>
+              </figure>
+              <article className="project--card__side project--card__side__back">
+                <div className="project--card__content">
+                  <header>
+                    <h2 className="project--card__content__title margin-top">
+                      Chasing The Clicks
+                    </h2>
+                  </header>
+                  <p className="project--card__content__desc">
+                    The click counter app is a web application that allows users
+                    to track the number of clicks on and their location in
+                    realtime. The app was built using React and Firebase as the
+                    database. The app render's the user's location on a map and
+                    allows users to click on a button to increase the click
+                    count and record the location where the click occurred. I
+                    built the app in the first round
+                    <mark>LightHall super league</mark>.
+                  </p>
+                </div>
+                <div className="project--card__links">
+                  <Link
+                    to={{
+                      pathname:
+                        "https://github.com/MeekyBerry/Lighthall-internship/tree/main/chasing-clicks",
+                    }}
+                    target="_blank"
+                    className="project--card__links__link github-link-bg"
+                  >
+                    <FaGithub style={{ color: "#000" }} />
+                    View on GitHub
+                  </Link>
+                  <Link
+                    to={{
+                      pathname: "https://chasing-d-clicks.vercel.app/",
+                    }}
+                    target="_blank"
+                    className="project--card__links__link live-link-bg blue-markup"
+                  >
+                    <FaExternalLinkAlt style={{ color: "#a8ff78" }} />
+                    View Live
+                  </Link>
+                </div>
+              </article>
+            </div>
+          </Fade>
           <Fade direction="left" duration={5000}>
             <div className="project--card">
               <figure className="project--card__side project--card__side__front">
                 <div className="project--card__bg">
-                  <div className="project--card__bg--img project--card__bg--img-3"></div>
+                  <div className="project--card__bg--img project--card__bg--img-8"></div>
                 </div>
                 <figcaption className="project--card__frame">
                   <span className="project--card__frame__item">Css</span>
@@ -416,7 +473,7 @@ const Projects = () => {
             <div className="project--card">
               <figure className="project--card__side project--card__side__front">
                 <div className="project--card__bg">
-                  <div className="project--card__bg--img project--card__bg--img-4"></div>
+                  <div className="project--card__bg--img project--card__bg--img-9"></div>
                 </div>
                 <figcaption className="project--card__frame">
                   <span className="project--card__frame__item">CSS</span>
@@ -466,7 +523,7 @@ const Projects = () => {
             <div className="project--card">
               <figure className="project--card__side project--card__side__front">
                 <div className="project--card__bg">
-                  <div className="project--card__bg--img project--card__bg--img-5"></div>
+                  <div className="project--card__bg--img project--card__bg--img-10"></div>
                 </div>
                 <figcaption className="project--card__frame">
                   <span className="project--card__frame__item">Html</span>
@@ -520,7 +577,7 @@ const Projects = () => {
             <div className="project--card">
               <figure className="project--card__side project--card__side__front">
                 <div className="project--card__bg">
-                  <div className="project--card__bg--img project--card__bg--img-6"></div>
+                  <div className="project--card__bg--img project--card__bg--img-11"></div>
                 </div>
                 <figcaption className="project--card__frame">
                   <span className="project--card__frame__item">Html</span>
@@ -571,7 +628,7 @@ const Projects = () => {
             <div className="project--card">
               <figure className="project--card__side project--card__side__front">
                 <div className="project--card__bg">
-                  <div className="project--card__bg--img project--card__bg--img-7"></div>
+                  <div className="project--card__bg--img project--card__bg--img-12"></div>
                 </div>
                 <figcaption className="project--card__frame">
                   <span className="project--card__frame__item">Html</span>
@@ -623,7 +680,7 @@ const Projects = () => {
             <div className="project--card">
               <figure className="project--card__side project--card__side__front">
                 <div className="project--card__bg">
-                  <div className="project--card__bg--img project--card__bg--img-8"></div>
+                  <div className="project--card__bg--img project--card__bg--img-13"></div>
                 </div>
                 <figcaption className="project--card__frame">
                   <span className="project--card__frame__item">Css</span>
@@ -671,7 +728,7 @@ const Projects = () => {
             <div className="project--card">
               <figure className="project--card__side project--card__side__front">
                 <div className="project--card__bg">
-                  <div className="project--card__bg--img project--card__bg--img-9"></div>
+                  <div className="project--card__bg--img project--card__bg--img-14"></div>
                 </div>
                 <figcaption className="project--card__frame">
                   <span className="project--card__frame__item">Css</span>
@@ -721,7 +778,7 @@ const Projects = () => {
             <div className="project--card">
               <figure className="project--card__side project--card__side__front">
                 <div className="project--card__bg">
-                  <div className="project--card__bg--img project--card__bg--img-10"></div>
+                  <div className="project--card__bg--img project--card__bg--img-15"></div>
                 </div>
                 <figcaption className="project--card__frame">
                   <span className="project--card__frame__item">Html</span>
@@ -772,7 +829,7 @@ const Projects = () => {
             <div className="project--card">
               <figure className="project--card__side project--card__side__front">
                 <div className="project--card__bg">
-                  <div className="project--card__bg--img project--card__bg--img-11"></div>
+                  <div className="project--card__bg--img project--card__bg--img-16"></div>
                 </div>
                 <figcaption className="project--card__frame">
                   <span className="project--card__frame__item">Html</span>
@@ -824,7 +881,7 @@ const Projects = () => {
             <div className="project--card">
               <figure className="project--card__side project--card__side__front">
                 <div className="project--card__bg">
-                  <div className="project--card__bg--img project--card__bg--img-12"></div>
+                  <div className="project--card__bg--img project--card__bg--img-17"></div>
                 </div>
                 <figcaption className="project--card__frame">
                   <span className="project--card__frame__item">Html</span>
@@ -875,7 +932,7 @@ const Projects = () => {
             <div className="project--card">
               <figure className="project--card__side project--card__side__front">
                 <div className="project--card__bg">
-                  <div className="project--card__bg--img project--card__bg--img-13"></div>
+                  <div className="project--card__bg--img project--card__bg--img-18"></div>
                 </div>
                 <figcaption className="project--card__frame">
                   <span className="project--card__frame__item">Html</span>
@@ -926,7 +983,7 @@ const Projects = () => {
             <div className="project--card">
               <figure className="project--card__side project--card__side__front">
                 <div className="project--card__bg">
-                  <div className="project--card__bg--img project--card__bg--img-14"></div>
+                  <div className="project--card__bg--img project--card__bg--img-19"></div>
                 </div>
                 <figcaption className="project--card__frame">
                   <span className="project--card__frame__item">Html</span>
@@ -971,59 +1028,11 @@ const Projects = () => {
               </article>
             </div>
           </Fade>
-          {/* <div className="project--card">
-            <div className="project--card__side project--card__side__front">
-                <div className="project--card__bg">
-                  <div className="project--card__bg--img project--card__bg--img-16"></div>
-                </div>
-                <div className="project--card__frame">
-                  <span className="project--card__frame__item">Html</span>
-                  <span className="project--card__frame__item">CSS</span>
-                </div>
-            </div>
-            <div className="project--card__side project--card__side__back">
-                <div className="project--card__content">
-                  <h2 className="project--card__content__title margin-top">
-                    Survey Form
-                  </h2>
-                  <p className="project--card__content__desc">
-                    For the 'Responsive Web Design' certification projects on
-                    freeCodeCamp, I developed this survey form that accepts
-                    various user inputs including name, email, number, dropdown,
-                    radio buttons, checkboxes, and comments. The app also
-                    includes validation and a submit button.
-                  </p>
-                </div>
-                <div className="project--card__links">
-                  <Link
-                    to={{
-                      pathname:
-                        "https://github.com/MeekyBerry/FCC-responsive-web-design-projects/tree/master/Survey%20form",
-                    }}
-                    target="_blank"
-                    className="project--card__links__link github-link-bg"
-                  >
-                    <FaGithub style={{ color: "#000" }} />
-                    View on GitHub
-                  </Link>
-                  <Link
-                    to={{
-                      pathname: "https://fcc-surveyform-project.netlify.app/",
-                    }}
-                    target="_blank"
-                    className="project--card__links__link live-link-bg blue-markup"
-                  >
-                    <FaExternalLinkAlt style={{ color: "#a8ff78" }} />
-                    View Live
-                  </Link>
-                </div>
-                </div>
-              </div> */}
           <Fade direction="left" duration={5000}>
             <div className="project--card">
               <figure className="project--card__side project--card__side__front">
                 <div className="project--card__bg">
-                  <div className="project--card__bg--img project--card__bg--img-17"></div>
+                  <div className="project--card__bg--img project--card__bg--img-20"></div>
                 </div>
                 <figcaption className="project--card__frame">
                   <span className="project--card__frame__item">Html</span>
@@ -1070,103 +1079,11 @@ const Projects = () => {
               </article>
             </div>
           </Fade>
-          {/* <div className="project--card">
-            <div className="project--card__side project--card__side__front">
-                <div className="project--card__bg">
-                  <div className="project--card__bg--img project--card__bg--img-18"></div>
-                </div>
-                <div className="project--card__frame">
-                  <span className="project--card__frame__item">Html</span>
-                  <span className="project--card__frame__item">CSS</span>
-                </div>
-            </div>
-            <div className="project--card__side project--card__side__back">
-                <div className="project--card__content">
-                  <h2 className="project--card__content__title margin-top">
-                    Technical Documentation
-                  </h2>
-                  <p className="project--card__content__desc">
-                    For the 'Responsive Web Design' certification projects on
-                    freeCodeCamp, I created this CSS documentation. I found CSS
-                    to be particularly fascinating when I first embarked on my
-                    journey as a developer, which inspired me to take this topic
-                    for the project.
-                  </p>
-                </div>
-                <div className="project--card__links">
-                  <Link
-                    to={{
-                      pathname:
-                        "https://github.com/MeekyBerry/FCC-responsive-web-design-projects/tree/master/CSS%20documentation",
-                    }}
-                    target="_blank"
-                    className="project--card__links__link github-link-bg"
-                  >
-                    <FaGithub style={{ color: "#000" }} />
-                    View on GitHub
-                  </Link>
-                  <Link
-                    to={{
-                      pathname:
-                        "https://fcc-documentention-project.netlify.app/#Descendant_Selectors",
-                    }}
-                    target="_blank"
-                    className="project--card__links__link live-link-bg blue-markup"
-                  >
-                    <FaExternalLinkAlt style={{ color: "#a8ff78" }} />
-                    View Live
-                  </Link>
-                </div>
-            </div>
-              </div> */}
-          {/* <div className="project--card">
-                <div className="project--card__bg">
-                  <div className="project--card__bg--img project--card__bg--img-19"></div>
-                </div>
-                <div className="project--card__frame">
-                  <span className="project--card__frame__item">Html</span>
-                  <span className="project--card__frame__item">CSS</span>
-                </div>
-                <div className="project--card__content">
-                  <h2 className="project--card__content__title margin-top">
-                    Product Landing Page
-                  </h2>
-                  <p className="project--card__content__desc">
-                    For the 'Responsive Web Design' certification projects on
-                    freeCodeCamp, I developed this product landing page
-                    featuring Binance, a company I aspire to work for someday.
-                  </p>
-                </div>
-                <div className="project--card__links">
-                  <Link
-                    to={{
-                      pathname:
-                        "https://github.com/MeekyBerry/FCC-responsive-web-design-projects/tree/master/Binance%20landing%20page",
-                    }}
-                    target="_blank"
-                    className="project--card__links__link github-link-bg"
-                  >
-                    <FaGithub style={{ color: "#000" }} />
-                    View on GitHub
-                  </Link>
-                  <Link
-                    to={{
-                      pathname:
-                        "https://fcc-landingpage-project.netlify.app/#home",
-                    }}
-                    target="_blank"
-                    className="project--card__links__link live-link-bg blue-markup"
-                  >
-                    <FaExternalLinkAlt style={{ color: "#a8ff78" }} />
-                    View Live
-                  </Link>
-                </div>
-              </div> */}
           <Fade direction="right" duration={5000}>
             <div className="project--card">
               <figure className="project--card__side project--card__side__front">
                 <div className="project--card__bg">
-                  <div className="project--card__bg--img project--card__bg--img-20"></div>
+                  <div className="project--card__bg--img project--card__bg--img-21"></div>
                 </div>
                 <figcaption className="project--card__frame">
                   <span className="project--card__frame__item">Html</span>
@@ -1216,7 +1133,7 @@ const Projects = () => {
             <div className="project--card">
               <figure className="project--card__side project--card__side__front">
                 <div className="project--card__bg">
-                  <div className="project--card__bg--img project--card__bg--img-21"></div>
+                  <div className="project--card__bg--img project--card__bg--img-22"></div>
                 </div>
                 <figcaption className="project--card__frame">
                   <span className="project--card__frame__item">Html</span>
@@ -1263,7 +1180,7 @@ const Projects = () => {
             <div className="project--card">
               <figure className="project--card__side project--card__side__front">
                 <div className="project--card__bg">
-                  <div className="project--card__bg--img project--card__bg--img-22"></div>
+                  <div className="project--card__bg--img project--card__bg--img-23"></div>
                 </div>
                 <figcaption className="project--card__frame">
                   <span className="project--card__frame__item">Html</span>

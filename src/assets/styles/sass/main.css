@@ -1024,79 +1024,73 @@ code {
   border-radius: 0.5rem;
 }
 .project--card__bg--img-1 {
-  background-image: url(../../../images/projects/github-repo.jpeg);
+  background-image: url(../../../images/projects/hangman.jpeg);
 }
 .project--card__bg--img-2 {
-  background-image: url(../../../images/projects/phonieApp.jpeg);
+  background-image: url(../../../images/projects/github-repo.jpeg);
 }
 .project--card__bg--img-3 {
-  background-image: url(../../../images/projects/randomApp.jpeg);
-}
-.project--card__bg--img-4 {
-  background-image: url(../../../images/projects/counter.jpeg);
-}
-.project--card__bg--img-5 {
-  background-image: url(../../../images/projects/ratingApp.jpeg);
-}
-.project--card__bg--img-6 {
-  background-image: url(../../../images/projects/natours.jpeg);
-}
-.project--card__bg--img-7 {
-  background-image: url(../../../images/projects/trillo.jpeg);
-}
-.project--card__bg--img-8 {
-  background-image: url(../../../images/projects/phonyApp.jpeg);
-}
-.project--card__bg--img-9 {
-  background-image: url(../../../images/projects/calculator.jpeg);
-}
-.project--card__bg--img-10 {
-  background-image: url(../../../images/projects/chatAppCss.jpeg);
-}
-.project--card__bg--img-11 {
-  background-image: url(../../../images/projects/shoebrand.jpeg);
-}
-.project--card__bg--img-12 {
-  background-image: url(../../../images/projects/orderCard.jpeg);
-}
-.project--card__bg--img-13 {
-  background-image: url(../../../images/projects/statsCard.jpeg);
-}
-.project--card__bg--img-14 {
-  background-image: url(../../../images/projects/fylo.jpeg);
-}
-.project--card__bg--img-15 {
-  background-image: url(../../../images/projects/tip-calculator.jpeg);
-}
-.project--card__bg--img-16 {
-  background-image: url(../../../images/projects/form.jpeg);
-}
-.project--card__bg--img-17 {
-  background-image: url(../../../images/projects/marley.jpeg);
-}
-.project--card__bg--img-18 {
-  background-image: url(../../../images/projects/cssDocumentation.jpeg);
-}
-.project--card__bg--img-19 {
-  background-image: url(../../../images/projects/binance.jpeg);
-}
-.project--card__bg--img-20 {
-  background-image: url(../../../images/projects/grid.jpeg);
-}
-.project--card__bg--img-21 {
-  background-image: url(../../../images/projects/beating-heart.jpeg);
-}
-.project--card__bg--img-22 {
-  background-image: url(../../../images/projects/half-moon.jpeg);
-}
-.project--card__bg--img-23 {
   background-image: url(../../../images/projects/task-tracker.jpeg);
 }
-.project--card__bg--img-24 {
+.project--card__bg--img-4 {
+  background-image: url(../../../images/projects/tip-calculator.jpeg);
+}
+.project--card__bg--img-5 {
+  background-image: url(../../../images/projects/phonieApp.jpeg);
+}
+.project--card__bg--img-6 {
+  background-image: url(../../../images/projects/duplicate.jpeg);
+}
+.project--card__bg--img-7 {
   background-image: url(../../../images/projects/clicks.jpeg);
 }
-.project--card__bg--img-25 {
-  background-image: url(../../../images/projects/duplicate.jpeg);
+.project--card__bg--img-8 {
+  background-image: url(../../../images/projects/randomApp.jpeg);
+}
+.project--card__bg--img-9 {
+  background-image: url(../../../images/projects/counter.jpeg);
+}
+.project--card__bg--img-10 {
+  background-image: url(../../../images/projects/ratingApp.jpeg);
+}
+.project--card__bg--img-11 {
+  background-image: url(../../../images/projects/natours.jpeg);
+}
+.project--card__bg--img-12 {
+  background-image: url(../../../images/projects/trillo.jpeg);
+}
+.project--card__bg--img-13 {
+  background-image: url(../../../images/projects/phonyApp.jpeg);
+}
+.project--card__bg--img-14 {
+  background-image: url(../../../images/projects/calculator.jpeg);
+}
+.project--card__bg--img-15 {
+  background-image: url(../../../images/projects/chatAppCss.jpeg);
+}
+.project--card__bg--img-16 {
+  background-image: url(../../../images/projects/shoebrand.jpeg);
+}
+.project--card__bg--img-17 {
+  background-image: url(../../../images/projects/orderCard.jpeg);
+}
+.project--card__bg--img-18 {
+  background-image: url(../../../images/projects/statsCard.jpeg);
+}
+.project--card__bg--img-19 {
+  background-image: url(../../../images/projects/fylo.jpeg);
+}
+.project--card__bg--img-20 {
+  background-image: url(../../../images/projects/marley.jpeg);
+}
+.project--card__bg--img-21 {
+  background-image: url(../../../images/projects/grid.jpeg);
+}
+.project--card__bg--img-22 {
+  background-image: url(../../../images/projects/beating-heart.jpeg);
+}
+.project--card__bg--img-23 {
+  background-image: url(../../../images/projects/half-moon.jpeg);
 }
 .project--card__frame {
   display: flex;
