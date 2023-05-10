@@ -74,7 +74,7 @@ const ProjectSlider = ({
                 height: "100%",
                 border: "1px solid #ededed",
                 borderRadius: "1rem",
-                objectFit: "contain",
+                objectFit: "cover",
               }}
             />
           </div>

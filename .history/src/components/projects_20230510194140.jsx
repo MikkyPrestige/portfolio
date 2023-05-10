@@ -46,15 +46,17 @@ const Projects = () => {
                     </h2>
                   </header>
                   <p className="project--card__content__desc">
-                    HangPanda game is a team project for
+                    HangPanda was part of a group project for
                     <mark>LightHall super league</mark> which I took part in. It
-                    is a web-based game built with MERN and Tailwind CSS. It is
+                    is a web-based game built with React and Tailwind CSS. It is
                     a simple game where the user guesses a word by selecting
                     letters from the alphabet. The user has 7 lives and loses a
                     life for every wrong guess. The game ends when the user
                     guesses the word correctly or loses all their lives. There
                     is has a leaderBoard that displays the top players and their
-                    scores.
+                    scores. The leaderBoard is implemented using MongoDB and
+                    Express. The game also allows user to set their own word for
+                    a single session and then a generate link for it.
                   </p>
                 </div>
                 <div className="project--card__links">
@@ -155,7 +157,7 @@ const Projects = () => {
                     </h2>
                   </header>
                   <p className="project--card__content__desc">
-                    Task Tracker is a team project for
+                    Task Tracker was part of a group project for
                     <mark>LightHall super league</mark> which I took part in. We
                     built a MERN web app and employ React as the front-end
                     library. I developed the task manager page that users

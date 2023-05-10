@@ -17,56 +17,74 @@ import { FaArrowCircleRight } from "react-icons/fa";
 const Project = [
   {
     title: "HangPanda",
-    image: HangPanda,
-    link: "https://hangman.ntec.app/",
+    description:
+      "A simple task tracker app that allows users to add, delete and edit tasks.",
+    image: Task,
+    link: "https://task-tracker.ntec.app/",
   },
   {
     title: "Task Tracker",
+    description:
+      "A simple task tracker app that allows users to add, delete and edit tasks.",
     image: Task,
     link: "https://task-tracker.ntec.app/",
   },
   {
     title: "GitHub Repository",
+    description:
+      "A simple web app that displays a user's GitHub repositories and also search for gitHub repo's with gitHun usernames",
     image: RepoDisplay,
     link: "https://github-repos-display.vercel.app/",
   },
   {
     title: "Tip Calculator",
+    description:
+      "A simple tip calculator that calculates the tip amount and total bill amount based on the bill amount and tip percentage entered by the user.",
     image: TipCalculator,
     link: "https://mikky-tip-calculator.vercel.app/",
   },
   {
     title: "Clicks",
+    description:
+      "A simple web app that counts the number of clicks on a button and show the location it was clicked from on a map.",
     image: Clicks,
     link: "https://chasing-d-clicks.vercel.app/",
   },
   {
     title: "Phonie App",
+    description:
+      "A web-based application created by the team 'Phantom_Devz' that determines the telecom carrier based on a phone number entered by the use",
     image: Phonie,
     link: "https://phantom-devz-phonie.netlify.app/",
   },
   {
     title: "Duplicate Removal",
+    description: "A simple web app that removes duplicate characters.",
     image: Duplicate,
     link: "https://duplicate-removal.vercel.app/",
   },
   {
     title: "Natours Tour",
+    description:
+      "A simple landing page for a fictional company that offers tours to the wilderness.",
     image: Natours,
     link: "https://natour-landing-page.netlify.app/",
   },
   {
     title: "ChatApp Css",
+    description: "A simple chat app illustration created with CSS.",
     image: ChatAppCss,
     link: "https://chat-app-css-project.netlify.app/",
   },
   {
     title: "Random People",
+    description: "A simple web app that displays random people's information.",
     image: RandomPeople,
     link: "https://randompeopleapp.vercel.app",
   },
   {
     title: "Trillo Hotel",
+    description: "A simple landing page for a fictional Hotel residency.",
     image: Trillo,
     link: "https://fantastic-crostata-3e9a02.netlify.app/",
   },

@@ -48,13 +48,14 @@ const Projects = () => {
                   <p className="project--card__content__desc">
                     HangPanda game is a team project for
                     <mark>LightHall super league</mark> which I took part in. It
-                    is a web-based game built with MERN and Tailwind CSS. It is
+                    is a web-based game built with React and Tailwind CSS. It is
                     a simple game where the user guesses a word by selecting
                     letters from the alphabet. The user has 7 lives and loses a
                     life for every wrong guess. The game ends when the user
                     guesses the word correctly or loses all their lives. There
                     is has a leaderBoard that displays the top players and their
-                    scores.
+                    scores. The leaderBoard is implemented using MongoDB and
+                    Express.
                   </p>
                 </div>
                 <div className="project--card__links">
