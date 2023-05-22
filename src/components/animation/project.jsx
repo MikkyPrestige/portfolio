@@ -1,5 +1,6 @@
 import React from "react";
 import ProjectSlider from "./projectSlider";
+import Laundry from "../../assets/images/projects/laundry.jpeg";
 import TipCalculator from "../../assets/images/projects/tip-calculator.jpeg";
 import Phonie from "../../assets/images/projects/phonieApp.jpeg";
 import Natours from "../../assets/images/projects/natours.jpeg";
@@ -15,6 +16,11 @@ import { Link } from "react-router-dom";
 import { FaArrowCircleRight } from "react-icons/fa";
 
 const Project = [
+  {
+    title: "Machala Laundry",
+    image: Laundry,
+    link: "https://machalalaundryservice.com",
+  },
   {
     title: "HangPanda",
     image: HangPanda,

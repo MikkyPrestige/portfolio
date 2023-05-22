@@ -29,6 +29,62 @@ const Projects = () => {
             <div className="project--card">
               <figure className="project--card__side project--card__side__front">
                 <div className="project--card__bg">
+                  <div className="project--card__bg--img project--card__bg--img-24"></div>
+                </div>
+                <figcaption className="project--card__frame">
+                  <span className="project--card__frame__item">Scss</span>
+                  <span className="project--card__frame__item">React</span>
+                  <span className="project--card__frame__item">Firebase</span>
+                </figcaption>
+              </figure>
+              <article className="project--card__side project--card__side__back">
+                <div className="project--card__content">
+                  <header>
+                    <h2 className="project--card__content__title margin-top">
+                      Machala Laundry Website
+                    </h2>
+                  </header>
+                  <p className="project--card__content__desc">
+                    I had the opportunity to build the Machala Laundry Service
+                    website from scratch. Using the React and Firebase, I
+                    created a user-friendly platform that showcases their
+                    laundry services. The website features convenient
+                    functionalities such as online booking, live chat, and the
+                    business google reviews. It was a fulfilling experience to
+                    contribute to the success of Machala Laundry Service by
+                    delivering a professional and functional website that meets
+                    their needs and engages their customers.
+                  </p>
+                </div>
+                <div className="project--card__links">
+                  <Link
+                    to={{
+                      pathname: "https://github.com/MeekyBerry/machala-laundry",
+                    }}
+                    target="_blank"
+                    className="project--card__links__link github-link-bg"
+                  >
+                    <FaGithub style={{ color: "#000" }} />
+                    View on GitHub
+                  </Link>
+                  <Link
+                    to={{
+                      pathname: "https://machalalaundryservice.com/",
+                    }}
+                    target="_blank"
+                    className="project--card__links__link live-link-bg blue-markup"
+                  >
+                    <FaExternalLinkAlt style={{ color: "#a8ff78" }} />
+                    View Live
+                  </Link>
+                </div>
+              </article>
+            </div>
+          </Fade>
+          <Fade direction="left" duration={5000}>
+            <div className="project--card">
+              <figure className="project--card__side project--card__side__front">
+                <div className="project--card__bg">
                   <div className="project--card__bg--img project--card__bg--img-1"></div>
                 </div>
                 <figcaption className="project--card__frame">

@@ -1092,6 +1092,9 @@ code {
 .project--card__bg--img-23 {
   background-image: url(../../../images/projects/half-moon.jpeg);
 }
+.project--card__bg--img-24 {
+  background-image: url(../../../images/projects/laundry.jpeg);
+}
 .project--card__frame {
   display: flex;
   align-items: center;
