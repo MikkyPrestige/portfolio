@@ -1,6 +1,6 @@
 // FOOTER COMPONENT
 import React from "react";
-import Avatar from "./avatar";
+import Avatar from "../components/avatar";
 import CodeCup from "../assets/images/projects/coding-coffee.jpg";
 import Discord from "../assets/images/socials/discord.svg";
 import Github from "../assets/images/socials/icons8-github-94.png";

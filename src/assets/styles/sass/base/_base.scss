@@ -54,3 +54,27 @@ code {
   background-color: var(--color--green);
   color: var(--color--white-1);
 }
+
+.custom-loader {
+  width: 60px;
+  height: 25px;
+  border: 2px solid #3F3AF4;
+  border-radius: 50%;
+  display: grid;
+  animation: loading 2s infinite linear;
+  margin: 30rem auto;
+
+  &::before,
+  &::after {
+    content: "";
+    grid-area: 1/1;
+    border: inherit;
+    border-radius: 50%;
+    animation: inherit;
+    animation-duration: 3s;
+  }
+
+  &::after {
+    --s: -1;
+  }
+}

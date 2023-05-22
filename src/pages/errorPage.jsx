@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import { FaHome } from "react-icons/fa";
 import Pikabu from "../assets/images/pikabu-error-404.gif";
-import Avatar from "./avatar";
+import Avatar from "../components/avatar";
 import { Zoom } from "react-awesome-reveal";
 /** @jsxImportSource theme-ui */
 

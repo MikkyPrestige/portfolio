@@ -3,7 +3,6 @@ import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import { FaGithub } from "react-icons/fa";
 import { FaExternalLinkAlt } from "react-icons/fa";
-import Footer from "./footer";
 import { Fade } from "react-awesome-reveal";
 /** @jsxImportSource theme-ui */
 
@@ -29,6 +28,63 @@ const Projects = () => {
             <div className="project--card">
               <figure className="project--card__side project--card__side__front">
                 <div className="project--card__bg">
+                  <div className="project--card__bg--img project--card__bg--img-24"></div>
+                </div>
+                <figcaption className="project--card__frame">
+                  <span className="project--card__frame__item">Scss</span>
+                  <span className="project--card__frame__item">React</span>
+                  <span className="project--card__frame__item">Firebase</span>
+                </figcaption>
+              </figure>
+              <article className="project--card__side project--card__side__back">
+                <div className="project--card__content">
+                  <header>
+                    <h2 className="project--card__content__title margin-top">
+                      Machala Laundry Website
+                    </h2>
+                  </header>
+                  <p className="project--card__content__desc">
+                    I had the opportunity to build the Machala Laundry Service
+                    website from scratch. Using the React, I created a
+                    user-friendly platform that showcases their laundry
+                    services. The website features convenient functionalities
+                    such as online booking, live chat, and the business google
+                    reviews.Additionally, I managed the hosting setup, ensuring
+                    a secure and reliable online presence. It was a fulfilling
+                    experience to contribute to the success of Machala Laundry
+                    Service by delivering a professional and functional website
+                    that meets their needs and engages their customers.
+                  </p>
+                </div>
+                <div className="project--card__links">
+                  <Link
+                    to={{
+                      pathname: "https://github.com/MeekyBerry/machala-laundry",
+                    }}
+                    target="_blank"
+                    className="project--card__links__link github-link-bg"
+                  >
+                    <FaGithub style={{ color: "#000" }} />
+                    View on GitHub
+                  </Link>
+                  <Link
+                    to={{
+                      pathname: "https://machalalaundryservice.com/",
+                    }}
+                    target="_blank"
+                    className="project--card__links__link live-link-bg blue-markup"
+                  >
+                    <FaExternalLinkAlt style={{ color: "#a8ff78" }} />
+                    View Live
+                  </Link>
+                </div>
+              </article>
+            </div>
+          </Fade>
+          <Fade direction="left" duration={5000}>
+            <div className="project--card">
+              <figure className="project--card__side project--card__side__front">
+                <div className="project--card__bg">
                   <div className="project--card__bg--img project--card__bg--img-1"></div>
                 </div>
                 <figcaption className="project--card__frame">
@@ -48,7 +104,7 @@ const Projects = () => {
                   <p className="project--card__content__desc">
                     HangPanda game is a team project for
                     <mark>LightHall super league</mark> which I took part in. It
-                    is a web-based game built with with MERN and Tailwind CSS. It is
+                    is a web-based game built with MERN and Tailwind CSS. It is
                     a simple game where the user guesses a word by selecting
                     letters from the alphabet. The user has 7 lives and loses a
                     life for every wrong guess. The game ends when the user
@@ -1222,7 +1278,6 @@ const Projects = () => {
           </Fade>
         </section>
       </div>
-      <Footer />
     </main>
   );
 };

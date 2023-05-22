@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
-import Form from "./form";
-import Avatar from "./avatar";
+import Form from "../components/form";
+import Avatar from "../components/avatar";
 import Location from "../assets/images/socials/location.png";
 import Gmail from "../assets/images/socials/gmail.png";
 import Call from "../assets/images/socials/icon-call.png";
@@ -10,7 +10,6 @@ import Twitter from "../assets/images/socials/twitter.png";
 import Linkedin from "../assets/images/socials/icons8-linkedin-94.png";
 import MapBoxgl from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
-import Footer from "./footer";
 import { Fade, Reveal } from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
 /** @jsxImportSource theme-ui */
@@ -421,7 +420,6 @@ const Contact = () => {
           </section>
         </aside>
       </div>
-      <Footer />
     </main>
   );
 };

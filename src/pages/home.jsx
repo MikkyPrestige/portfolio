@@ -6,9 +6,8 @@ import LinkedIn from "../assets/images/socials/icons8-linkedin-94.png";
 import LeetCode from "../assets/images/socials/leetCode.png";
 import { Link } from "react-router-dom";
 import Resume from "../assets/images/socials/myResume.pdf";
-import ProjectSlide from "./animation/project";
-import Avatar from "./avatar";
-import Footer from "./footer";
+import ProjectSlide from "../components/animation/project";
+import Avatar from "../components/avatar";
 import { Reveal, JackInTheBox, Fade } from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
 /** @jsxImportSource theme-ui */
@@ -217,7 +216,6 @@ const Home = () => {
           </aside>
         </section>
       </section>
-      <Footer />
     </main>
   );
 };

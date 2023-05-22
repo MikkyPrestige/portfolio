@@ -1,6 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import Avatar from "./avatar";
+import Avatar from "../components/avatar";
 import Skills from "../assets/images/skills/skill-logo.png";
 import HTML5 from "../assets/images/skills/html-logo.png";
 import CSS3 from "../assets/images/skills/css-logo.png";
@@ -20,7 +20,6 @@ import ShareMind from "../assets/images/skills/share-mind.png";
 // import Writing from "../assets/images/skills/web-article.png";
 import Mindful from "../assets/images/skills/mindful.svg";
 import Teamwork from "../assets/images/skills/teamwork.svg";
-import Footer from "./footer";
 import { Zoom } from "react-awesome-reveal";
 import "animate.css";
 /** @jsxImportSource theme-ui */
@@ -324,7 +323,6 @@ const Background = () => {
           </Zoom>
         </section>
       </div>
-      <Footer />
     </main>
   );
 };

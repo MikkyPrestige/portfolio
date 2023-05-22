@@ -67,3 +67,9 @@
     transform: scale3d(1, 1, 1);
   }
 }
+
+@keyframes loading {
+  100% {
+    transform: rotate(calc(var(--s, 1)*1turn))
+  }
+}
