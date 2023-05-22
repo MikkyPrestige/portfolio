@@ -46,14 +46,15 @@ const Projects = () => {
                   </header>
                   <p className="project--card__content__desc">
                     I had the opportunity to build the Machala Laundry Service
-                    website from scratch. Using the React and Firebase, I
-                    created a user-friendly platform that showcases their
-                    laundry services. The website features convenient
-                    functionalities such as online booking, live chat, and the
-                    business google reviews. It was a fulfilling experience to
-                    contribute to the success of Machala Laundry Service by
-                    delivering a professional and functional website that meets
-                    their needs and engages their customers.
+                    website from scratch. Using the React, I created a
+                    user-friendly platform that showcases their laundry
+                    services. The website features convenient functionalities
+                    such as online booking, live chat, and the business google
+                    reviews.Additionally, I managed the hosting setup, ensuring
+                    a secure and reliable online presence. It was a fulfilling
+                    experience to contribute to the success of Machala Laundry
+                    Service by delivering a professional and functional website
+                    that meets their needs and engages their customers.
                   </p>
                 </div>
                 <div className="project--card__links">
