@@ -8,14 +8,11 @@ import Call from "../assets/images/socials/icon-call.png";
 import Discord from "../assets/images/socials/discord.svg";
 import Twitter from "../assets/images/socials/twitter.png";
 import Linkedin from "../assets/images/socials/icons8-linkedin-94.png";
-import MapBoxgl from "mapbox-gl";
+import { mapboxgl } from "./token";
 import "mapbox-gl/dist/mapbox-gl.css";
 import { Fade, Reveal } from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
 /** @jsxImportSource theme-ui */
-
-MapBoxgl.accessToken =
-  "pk.eyJ1IjoibWlra3lsYW5reSIsImEiOiJjbGV2dzJkYmsyNGNtM3JwNHQwM2JhZW54In0.lnfhNIrn8tfvMUYXyCFOGA";
 
 const Flash = keyframes`
   from,
@@ -80,7 +77,7 @@ const Contact = () => {
 
   useEffect(() => {
     const initializeMap = ({ setMap, mapContainer }) => {
-      const map = new MapBoxgl.Map({
+      const map = new mapboxgl.Map({
         container: mapContainer.current,
         style: `mapbox://styles/mapbox/${selectedStyle}`,
         center: [location.lng, location.lat],
@@ -89,7 +86,7 @@ const Contact = () => {
         pitch: location.pitch,
       });
       setMap(map);
-      map.addControl(new MapBoxgl.NavigationControl(), "bottom-right");
+      map.addControl(new mapboxgl.NavigationControl(), "bottom-right");
     };
     if (!map) initializeMap({ setMap, mapContainer });
   }, [map, location, selectedStyle]);
