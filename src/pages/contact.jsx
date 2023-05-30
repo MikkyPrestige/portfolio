@@ -8,7 +8,7 @@ import Call from "../assets/images/socials/icon-call.png";
 import Discord from "../assets/images/socials/discord.svg";
 import Twitter from "../assets/images/socials/twitter.png";
 import Linkedin from "../assets/images/socials/icons8-linkedin-94.png";
-import { mapboxgl } from "../config";
+import { mapboxgl } from "../config/index.js";
 import "mapbox-gl/dist/mapbox-gl.css";
 import { Fade, Reveal } from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
