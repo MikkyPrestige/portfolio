@@ -25,5 +25,5 @@ yarn-error.log*
 .vercel
 
 # imp
-./src/config
-./src/pages/token.js
+/src/config
+/src/pages/token.js
