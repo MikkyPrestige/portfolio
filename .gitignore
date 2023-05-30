@@ -26,4 +26,3 @@ yarn-error.log*
 
 # imp
 /src/config
-/src/pages/token.js
