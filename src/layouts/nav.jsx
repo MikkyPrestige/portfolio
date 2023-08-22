@@ -1,10 +1,12 @@
 import { React, useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 import { MdClose } from "react-icons/md";
 import { FiMenu } from "react-icons/fi";
 import { TbSmartHome } from "react-icons/tb";
 import { BiCodeAlt } from "react-icons/bi";
 import { FcWorkflow, FcCollaboration } from "react-icons/fc";
-import { NavLink } from "react-router-dom";
+import Avatar from "../components/avatar";
+import Logo from "../assets/images/logo.png";
 
 const Layout = () => {
   return (
@@ -50,21 +52,13 @@ const LayoutSmall = () => {
   return (
     <section className="layout layout--small">
       <header className="layout--header">
-        <aside className="layout--header__title">
-          <h1 className="layout--header__title__content">
-            <span className="layout--header__title__content__span">{"<"}</span>
-            <span className="layout--header__title__content__span--elue">
-              ELUE
-            </span>
-            <span className="layout--header__title__content__span--michael">
-              MICHAEL
-            </span>
-            <span className="layout--header__title__content__span--line">
-              {"/"}
-            </span>
-            <span className="layout--header__title__content__span">{">"}</span>
-          </h1>
-        </aside>
+        <Link to="/" className="layout--header__logo">
+          <Avatar
+            image={Logo}
+            alt="Logo"
+            style={{ width: "100%", height: "100%" }}
+          />
+        </Link>
         <nav className="layout--nav">
           <button className="layout--nav__button" onClick={toggleMenu}>
             {showMenu ? (
@@ -144,23 +138,15 @@ const LayoutLarge = () => {
 
   return (
     <section className="layout--large">
-      <header className="layout--header">
-        <aside className="layout--header__title">
-          <h1 className="layout--header__title__content">
-            <span className="layout--header__title__content__span">{"<"}</span>
-            <span className="layout--header__title__content__span--elue">
-              ELUE
-            </span>
-            <span className="layout--header__title__content__span--michael">
-              MICHAEL
-            </span>
-            <span className="layout--header__title__content__span--line">
-              {"/"}
-            </span>
-            <span className="layout--header__title__content__span">{">"}</span>
-          </h1>
-        </aside>
-        <section className="layout--large__menu">
+      <header className="layout--large__header">
+        <Link to="/" className="layout--large__header__logo">
+          <Avatar
+            image={Logo}
+            alt="Logo"
+            style={{ width: "100%", height: "100%" }}
+          />
+        </Link>
+        <div className="layout--large__menu">
           <nav className="layout--large__menu__list">
             <CustomNavLink
               to="/"
@@ -198,7 +184,7 @@ const LayoutLarge = () => {
               width: magicLinePosition.width,
             }}
           ></div>
-        </section>
+        </div>
       </header>
     </section>
   );

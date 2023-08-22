@@ -17,7 +17,10 @@ import Thinking from "../assets/images/skills/hacker-thinking.gif";
 import Adaptability from "../assets/images/skills/adaptability-skill.svg";
 import Research from "../assets/images/skills/research.gif";
 import ShareMind from "../assets/images/skills/share-mind.png";
-// import Writing from "../assets/images/skills/web-article.png";
+import Agile from "../assets/images/skills/agile-management.png";
+import Typescript from "../assets/images/skills/typescript.png";
+import MongoDB from "../assets/images/skills/mongo-db.png";
+import Auth0 from "../assets/images/skills/auth0.png";
 import Mindful from "../assets/images/skills/mindful.svg";
 import Teamwork from "../assets/images/skills/teamwork.svg";
 import { Zoom } from "react-awesome-reveal";
@@ -28,11 +31,11 @@ const Background = () => {
   return (
     <main className="app">
       <Helmet>
-        <title>Elue Michael | About-Me</title>
+        <title>Front-End Dev | My About</title>
         <meta
           name="description"
           content="
-        I am a motivated and passionate frontend developer currently pursuing a diploma in Software Engineering at AltSchool Africa."
+          I am an enthusiastic and dedicated frontend developer, holding a diploma in FrontEnd Engineering from AltSchool Africa."
         />
       </Helmet>
       <div
@@ -66,18 +69,22 @@ const Background = () => {
                     !
                   </h2>
                   <p className="about--content__text__desc">
-                    I am a motivated and passionate frontend developer currently
-                    pursuing a diploma in Software Engineering at AltSchool
-                    Africa. <br /> I've have gained experience in HTML, CSS, and
-                    JavaScript, as well as exposure to frameworks such as React
-                    and Vue. I am eager to continue my education and apply my
-                    knowledge in a professional setting. <br /> As an intern or
-                    entry-level developer, I am dedicated to delivering clean
-                    and efficient code, effectively collaborating with my team,
-                    and constantly striving for growth and improvement. I am
-                    excited about the opportunity to contribute to a company's
-                    success while also further developing my skills in a dynamic
-                    and supportive environment.
+                    I am an enthusiastic and dedicated frontend developer,
+                    holding a diploma in FrontEnd Engineering from AltSchool
+                    Africa. My journey has equipped me with a solid grounding in
+                    essential web technologies like HTML, CSS, and JavaScript.
+                    Additionally, I have embraced the world of modern frameworks
+                    including React and Vue, empowering me to create engaging
+                    user experiences. Beyond frontend expertise, I excel in
+                    crafting full stack applications utilizing the MERN stack.
+                    This proficiency allows me to seamlessly integrate the
+                    frontend and backend of applications, creating a smooth user
+                    experience. Embracing collaboration, I am always eager to
+                    learn from others and share my knowledge with my peers.
+                    Fueled by a diligent work ethic and a continuous thirst for
+                    learning and self-improvement my journey in the world of
+                    frontend development is by a genuine passion, and I am
+                    always excited to push boundaries and expand my horizons.
                   </p>
                 </div>
               </div>
@@ -170,6 +177,30 @@ const Background = () => {
                   <figure className="about--skills__content__items__card">
                     <div className="about--skills__content__items__card__avatar animate__animated animate__tada">
                       <Avatar
+                        image={Typescript}
+                        alt="Typescript logo"
+                        style={{ width: "100%", height: "100%" }}
+                      />
+                    </div>
+                    <figcaption className="about--skills__content__items__card__text">
+                      TypeScript
+                    </figcaption>
+                  </figure>
+                  <figure className="about--skills__content__items__card">
+                    <div className="about--skills__content__items__card__avatar animate__animated animate__tada">
+                      <Avatar
+                        image={MongoDB}
+                        alt="MongoDB logo"
+                        style={{ width: "100%", height: "100%" }}
+                      />
+                    </div>
+                    <figcaption className="about--skills__content__items__card__text">
+                      MongoDB
+                    </figcaption>
+                  </figure>
+                  <figure className="about--skills__content__items__card">
+                    <div className="about--skills__content__items__card__avatar animate__animated animate__tada">
+                      <Avatar
                         image={VUE}
                         alt="vue-logo"
                         style={{ width: "100%", height: "100%" }}
@@ -189,6 +220,18 @@ const Background = () => {
                     </div>
                     <figcaption className="about--skills__content__items__card__text">
                       Figma
+                    </figcaption>
+                  </figure>
+                  <figure className="about--skills__content__items__card">
+                    <div className="about--skills__content__items__card__avatar animate__animated animate__tada">
+                      <Avatar
+                        image={Auth0}
+                        alt="Auth0 logo"
+                        style={{ width: "100%", height: "100%" }}
+                      />
+                    </div>
+                    <figcaption className="about--skills__content__items__card__text">
+                      Auth0
                     </figcaption>
                   </figure>
                   <figure className="about--skills__content__items__card">
@@ -225,7 +268,7 @@ const Background = () => {
                     <div className="about--skills__content__items__card__avatar animate__animated animate__tada">
                       <Avatar
                         image={Thinking}
-                        alt="teamwork-logo"
+                        alt="thinking logo"
                         style={{ width: "100%", height: "100%" }}
                       />
                     </div>
@@ -233,18 +276,18 @@ const Background = () => {
                       Critical Thinking
                     </figcaption>
                   </figure>
-                  {/* <div className="about--skills__content__items__card">
+                  <figure className="about--skills__content__items__card">
                     <div className="about--skills__content__items__card__avatar animate__animated animate__tada">
                       <Avatar
-                        image={Writing}
-                        alt="teamwork-logo"
+                        image={Agile}
+                        alt="Agile logo"
                         style={{ width: "100%", height: "100%" }}
                       />
                     </div>
-                    <h2 className="about--skills__content__items__card__text">
-                      Technical Writing
-                    </h2>
-                  </div> */}
+                    <figcaption className="about--skills__content__items__card__text">
+                      Agile Development
+                    </figcaption>
+                  </figure>
                   <figure className="about--skills__content__items__card">
                     <div className="about--skills__content__items__card__avatar animate__animated animate__tada">
                       <Avatar

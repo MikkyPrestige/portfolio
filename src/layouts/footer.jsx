@@ -60,14 +60,14 @@ const Footer = () => {
                   </a>
                 </p>
                 <p className="footer--container__content--details__text">
-                  I am a software developer with a passion for creating
+                  I am a Front-End Developer with a passion for building
                   beautiful and functional user interfaces.
                 </p>
               </div>
             </div>
             <div className="footer--container__content--media">
               <h2 className="footer--container__content--media--title">
-                Media
+                My Media
               </h2>
               <div className="footer--container__content--media--links">
                 <a

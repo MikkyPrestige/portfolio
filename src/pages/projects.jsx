@@ -10,7 +10,7 @@ const Projects = () => {
   return (
     <main className="app">
       <Helmet>
-        <title>Elue Michael | Projects</title>
+        <title>Front-End Dev | My Projects</title>
         <meta name="description" content="My works" />
       </Helmet>
       <div
@@ -28,6 +28,58 @@ const Projects = () => {
             <div className="project--card">
               <figure className="project--card__side project--card__side__front">
                 <div className="project--card__bg">
+                  <div className="project--card__bg--img project--card__bg--img-25"></div>
+                </div>
+                <figcaption className="project--card__frame">
+                  <span className="project--card__frame__item">React</span>
+                  <span className="project--card__frame__item">TypeScript</span>
+                  <span className="project--card__frame__item">MongoDB</span>
+                </figcaption>
+              </figure>
+              <article className="project--card__side project--card__side__back">
+                <div className="project--card__content">
+                  <header>
+                    <h2 className="project--card__content__title margin-top">
+                      HospitoFind
+                    </h2>
+                  </header>
+                  <p className="project--card__content__desc">
+                    Access to healthcare in Nigeria can be very difficult and
+                    painstaking. Quite absurd being that the first thing to
+                    living is being healthy. HospitoFind is a simple tool that
+                    aims to help any user find, export, and share hospitals
+                    within the region.
+                  </p>
+                </div>
+                <div className="project--card__links">
+                  <Link
+                    to={{
+                      pathname: "https://github.com/MeekyBerry/hospitoFind",
+                    }}
+                    target="_blank"
+                    className="project--card__links__link github-link-bg"
+                  >
+                    <FaGithub style={{ color: "#000" }} />
+                    View on GitHub
+                  </Link>
+                  <Link
+                    to={{
+                      pathname: "hhttps://hospitofind.netlify.app",
+                    }}
+                    target="_blank"
+                    className="project--card__links__link live-link-bg blue-markup"
+                  >
+                    <FaExternalLinkAlt style={{ color: "#a8ff78" }} />
+                    View Live
+                  </Link>
+                </div>
+              </article>
+            </div>
+          </Fade>
+          <Fade direction="left" duration={5000}>
+            <div className="project--card">
+              <figure className="project--card__side project--card__side__front">
+                <div className="project--card__bg">
                   <div className="project--card__bg--img project--card__bg--img-24"></div>
                 </div>
                 <figcaption className="project--card__frame">
@@ -40,7 +92,7 @@ const Projects = () => {
                 <div className="project--card__content">
                   <header>
                     <h2 className="project--card__content__title margin-top">
-                      Machala Laundry Website
+                      Machala Laundry
                     </h2>
                   </header>
                   <p className="project--card__content__desc">
@@ -66,6 +118,56 @@ const Projects = () => {
                   <Link
                     to={{
                       pathname: "https://machalalaundryservice.com/",
+                    }}
+                    target="_blank"
+                    className="project--card__links__link live-link-bg blue-markup"
+                  >
+                    <FaExternalLinkAlt style={{ color: "#a8ff78" }} />
+                    View Live
+                  </Link>
+                </div>
+              </article>
+            </div>
+          </Fade>
+          <Fade direction="left" duration={5000}>
+            <div className="project--card">
+              <figure className="project--card__side project--card__side__front">
+                <div className="project--card__bg">
+                  <div className="project--card__bg--img project--card__bg--img-26"></div>
+                </div>
+                <figcaption className="project--card__frame">
+                  <span className="project--card__frame__item">CSS</span>
+                  <span className="project--card__frame__item">React</span>
+                </figcaption>
+              </figure>
+              <article className="project--card__side project--card__side__back">
+                <div className="project--card__content">
+                  <header>
+                    <h2 className="project--card__content__title margin-top">
+                      PrestigeEnigma Advocates
+                    </h2>
+                  </header>
+                  <p className="project--card__content__desc">
+                    I built the PrestigeEnigma Advocates website using React, I
+                    created a user-friendly platform that showcases the legal
+                    services of a fictional law firm.
+                  </p>
+                </div>
+                <div className="project--card__links">
+                  <Link
+                    to={{
+                      pathname:
+                        "https://github.com/MeekyBerry/law-firm-website",
+                    }}
+                    target="_blank"
+                    className="project--card__links__link github-link-bg"
+                  >
+                    <FaGithub style={{ color: "#000" }} />
+                    View on GitHub
+                  </Link>
+                  <Link
+                    to={{
+                      pathname: "https://law-firm-website-seven.vercel.app",
                     }}
                     target="_blank"
                     className="project--card__links__link live-link-bg blue-markup"
@@ -149,24 +251,22 @@ const Projects = () => {
                 <div className="project--card__content">
                   <header>
                     <h2 className="project--card__content__title margin-top">
-                      GitHub Repository App
+                      GitFolio
                     </h2>
                   </header>
                   <p className="project--card__content__desc">
                     This is a React-based web app that displays a user's
-                    repositories using the GitHub API. This app allows anyone to
-                    easily search for a GitHub repository with their username
-                    and view the repository's details. It was one of the
-                    projects for the{" "}
-                    <mark>AltSchool Africa School of Engineering</mark>{" "}
+                    repositories using the GitHub API. This app allows to easily
+                    search for anyone's GitHub repository with their username
+                    and view the repository details. It was one of the projects
+                    for the <mark>AltSchool Africa School of Engineering</mark>{" "}
                     Examination in the second semester.
                   </p>
                 </div>
                 <div className="project--card__links">
                   <Link
                     to={{
-                      pathname:
-                        "https://github.com/MeekyBerry/exam-project-altschoolafrica",
+                      pathname: "https://github.com/MeekyBerry/GitFolio",
                     }}
                     target="_blank"
                     className="project--card__links__link github-link-bg"
@@ -176,7 +276,7 @@ const Projects = () => {
                   </Link>
                   <Link
                     to={{
-                      pathname: "https://github-repos-display.vercel.app/",
+                      pathname: "https://gitfoliohub.vercel.app",
                     }}
                     target="_blank"
                     className="project--card__links__link live-link-bg blue-markup"
@@ -369,7 +469,7 @@ const Projects = () => {
                 <div className="project--card__content">
                   <header>
                     <h2 className="project--card__content__title margin-top">
-                      Duplicate Removal
+                      StringRefine
                     </h2>
                   </header>
                   <p className="project--card__content__desc">
@@ -387,8 +487,7 @@ const Projects = () => {
                 <div className="project--card__links">
                   <Link
                     to={{
-                      pathname:
-                        "https://github.com/MeekyBerry/duplicate-removal",
+                      pathname: "https://github.com/MeekyBerry/StringRefine",
                     }}
                     target="_blank"
                     className="project--card__links__link github-link-bg"
@@ -398,7 +497,7 @@ const Projects = () => {
                   </Link>
                   <Link
                     to={{
-                      pathname: "https://duplicate-removal.vercel.app/",
+                      pathname: "https://stringrefine.vercel.app",
                     }}
                     target="_blank"
                     className="project--card__links__link live-link-bg blue-markup"
@@ -444,8 +543,7 @@ const Projects = () => {
                 <div className="project--card__links">
                   <Link
                     to={{
-                      pathname:
-                        "https://github.com/MeekyBerry/Lighthall-internship/tree/main/chasing-clicks",
+                      pathname: "https://github.com/MeekyBerry/Chasing-Clicks",
                     }}
                     target="_blank"
                     className="project--card__links__link github-link-bg"
@@ -455,60 +553,8 @@ const Projects = () => {
                   </Link>
                   <Link
                     to={{
-                      pathname: "https://chasing-d-clicks.vercel.app/",
+                      pathname: "https://chasing-clicks.vercel.app",
                     }}
-                    target="_blank"
-                    className="project--card__links__link live-link-bg blue-markup"
-                  >
-                    <FaExternalLinkAlt style={{ color: "#a8ff78" }} />
-                    View Live
-                  </Link>
-                </div>
-              </article>
-            </div>
-          </Fade>
-          <Fade direction="left" duration={5000}>
-            <div className="project--card">
-              <figure className="project--card__side project--card__side__front">
-                <div className="project--card__bg">
-                  <div className="project--card__bg--img project--card__bg--img-8"></div>
-                </div>
-                <figcaption className="project--card__frame">
-                  <span className="project--card__frame__item">Css</span>
-                  <span className="project--card__frame__item">React</span>
-                  <span className="project--card__frame__item">Firebase</span>
-                  <span className="project--card__frame__item">Rest API</span>
-                </figcaption>
-              </figure>
-              <article className="project--card__side project--card__side__back">
-                <div className="project--card__content">
-                  <header>
-                    <h2 className="project--card__content__title margin-top">
-                      RandomPeopleApp
-                    </h2>
-                  </header>
-                  <p className="project--card__content__desc">
-                    This is a web app that displays random people and their
-                    info. The data is generated from randomuser API. I also
-                    added firebase authentication to verify and saved new users.
-                    It was one of the projects for the{" "}
-                    <mark>AltSchool Africa School of Engineering</mark>{" "}
-                    Examination in the second semester.
-                  </p>
-                </div>
-                <div className="project--card__links">
-                  <Link
-                    to={{
-                      pathname: "https://github.com/MeekyBerry/RandomPeopleApp",
-                    }}
-                    target="_blank"
-                    className="project--card__links__link github-link-bg"
-                  >
-                    <FaGithub style={{ color: "#000" }} />
-                    View on GitHub
-                  </Link>
-                  <Link
-                    to={{ pathname: "https://randompeopleapp.vercel.app" }}
                     target="_blank"
                     className="project--card__links__link live-link-bg blue-markup"
                   >
@@ -573,6 +619,108 @@ const Projects = () => {
             <div className="project--card">
               <figure className="project--card__side project--card__side__front">
                 <div className="project--card__bg">
+                  <div className="project--card__bg--img project--card__bg--img-14"></div>
+                </div>
+                <figcaption className="project--card__frame">
+                  <span className="project--card__frame__item">Css</span>
+                  <span className="project--card__frame__item">React</span>
+                </figcaption>
+              </figure>
+              <article className="project--card__side project--card__side__back">
+                <div className="project--card__content">
+                  <header>
+                    <h2 className="project--card__content__title margin-top">
+                      Calculator
+                    </h2>
+                  </header>
+                  <p className="project--card__content__desc">
+                    The calculator is a simple web application and functional
+                    tool for performing mathematical operations. The interface
+                    is sleek and user-friendly on desktop, and the mathematical
+                    algorithms are advanced.
+                  </p>
+                </div>
+                <div className="project--card__links">
+                  <Link
+                    to={{
+                      pathname: "https://github.com/MeekyBerry/calculator",
+                    }}
+                    target="_blank"
+                    className="project--card__links__link github-link-bg"
+                  >
+                    <FaGithub style={{ color: "#000" }} />
+                    View on GitHub
+                  </Link>
+                  <Link
+                    to={{
+                      pathname: "https://calculator-omega-murex.vercel.app",
+                    }}
+                    target="_blank"
+                    className="project--card__links__link live-link-bg blue-markup"
+                  >
+                    <FaExternalLinkAlt style={{ color: "#a8ff78" }} />
+                    View Live
+                  </Link>
+                </div>
+              </article>
+            </div>
+          </Fade>
+          <Fade direction="left" duration={5000}>
+            <div className="project--card">
+              <figure className="project--card__side project--card__side__front">
+                <div className="project--card__bg">
+                  <div className="project--card__bg--img project--card__bg--img-8"></div>
+                </div>
+                <figcaption className="project--card__frame">
+                  <span className="project--card__frame__item">Css</span>
+                  <span className="project--card__frame__item">React</span>
+                  <span className="project--card__frame__item">Firebase</span>
+                  <span className="project--card__frame__item">Rest API</span>
+                </figcaption>
+              </figure>
+              <article className="project--card__side project--card__side__back">
+                <div className="project--card__content">
+                  <header>
+                    <h2 className="project--card__content__title margin-top">
+                      RandomProfiles
+                    </h2>
+                  </header>
+                  <p className="project--card__content__desc">
+                    This is a web app that displays random people and their
+                    info. The data is generated from randomuser API. I also
+                    added firebase authentication to verify and saved new users.
+                    It was one of the projects for the{" "}
+                    <mark>AltSchool Africa School of Engineering</mark>{" "}
+                    Examination in the second semester.
+                  </p>
+                </div>
+                <div className="project--card__links">
+                  <Link
+                    to={{
+                      pathname: "https://github.com/MeekyBerry/RandomProfiles",
+                    }}
+                    target="_blank"
+                    className="project--card__links__link github-link-bg"
+                  >
+                    <FaGithub style={{ color: "#000" }} />
+                    View on GitHub
+                  </Link>
+                  <Link
+                    to={{ pathname: "https://randomprofiles.vercel.app" }}
+                    target="_blank"
+                    className="project--card__links__link live-link-bg blue-markup"
+                  >
+                    <FaExternalLinkAlt style={{ color: "#a8ff78" }} />
+                    View Live
+                  </Link>
+                </div>
+              </article>
+            </div>
+          </Fade>
+          <Fade direction="left" duration={5000}>
+            <div className="project--card">
+              <figure className="project--card__side project--card__side__front">
+                <div className="project--card__bg">
                   <div className="project--card__bg--img project--card__bg--img-10"></div>
                 </div>
                 <figcaption className="project--card__frame">
@@ -611,7 +759,7 @@ const Projects = () => {
                   <Link
                     to={{
                       pathname:
-                        "https://interactive-ratings-component-project.netlify.app/",
+                        "https://interactive-ratings-component-project.netlify.app",
                     }}
                     target="_blank"
                     className="project--card__links__link live-link-bg blue-markup"
@@ -662,7 +810,7 @@ const Projects = () => {
                   </Link>
                   <Link
                     to={{
-                      pathname: "https://natour-landing-page.netlify.app/",
+                      pathname: "https://natour-landing-page.netlify.app",
                     }}
                     target="_blank"
                     className="project--card__links__link live-link-bg blue-markup"
@@ -713,8 +861,7 @@ const Projects = () => {
                   </Link>
                   <Link
                     to={{
-                      pathname:
-                        "https://fantastic-crostata-3e9a02.netlify.app/",
+                      pathname: "https://fantastic-crostata-3e9a02.netlify.app",
                     }}
                     target="_blank"
                     className="project--card__links__link live-link-bg blue-markup"
@@ -763,57 +910,7 @@ const Projects = () => {
                     View on GitHub
                   </Link>
                   <Link
-                    to={{ pathname: "https://fake-auth.vercel.app/" }}
-                    target="_blank"
-                    className="project--card__links__link live-link-bg blue-markup"
-                  >
-                    <FaExternalLinkAlt style={{ color: "#a8ff78" }} />
-                    View Live
-                  </Link>
-                </div>
-              </article>
-            </div>
-          </Fade>
-          <Fade direction="left" duration={5000}>
-            <div className="project--card">
-              <figure className="project--card__side project--card__side__front">
-                <div className="project--card__bg">
-                  <div className="project--card__bg--img project--card__bg--img-14"></div>
-                </div>
-                <figcaption className="project--card__frame">
-                  <span className="project--card__frame__item">Css</span>
-                  <span className="project--card__frame__item">React</span>
-                </figcaption>
-              </figure>
-              <article className="project--card__side project--card__side__back">
-                <div className="project--card__content">
-                  <header>
-                    <h2 className="project--card__content__title margin-top">
-                      Calculator
-                    </h2>
-                  </header>
-                  <p className="project--card__content__desc">
-                    The calculator is a simple web application and functional
-                    tool for performing mathematical operations. The interface
-                    is sleek and user-friendly on desktop, and the mathematical
-                    algorithms are advanced.
-                  </p>
-                </div>
-                <div className="project--card__links">
-                  <Link
-                    to={{
-                      pathname: "https://github.com/MeekyBerry/calculator",
-                    }}
-                    target="_blank"
-                    className="project--card__links__link github-link-bg"
-                  >
-                    <FaGithub style={{ color: "#000" }} />
-                    View on GitHub
-                  </Link>
-                  <Link
-                    to={{
-                      pathname: "https://calculator-omega-murex.vercel.app/",
-                    }}
+                    to={{ pathname: "https://fake-auth.vercel.app" }}
                     target="_blank"
                     className="project--card__links__link live-link-bg blue-markup"
                   >
@@ -1168,99 +1265,6 @@ const Projects = () => {
                     to={{
                       pathname:
                         "https://testimonial-grids-section.netlify.app/",
-                    }}
-                    target="_blank"
-                    className="project--card__links__link live-link-bg blue-markup"
-                  >
-                    <FaExternalLinkAlt style={{ color: "#a8ff78" }} />
-                    View Live
-                  </Link>
-                </div>
-              </article>
-            </div>
-          </Fade>
-          <Fade direction="left" duration={5000}>
-            <div className="project--card">
-              <figure className="project--card__side project--card__side__front">
-                <div className="project--card__bg">
-                  <div className="project--card__bg--img project--card__bg--img-22"></div>
-                </div>
-                <figcaption className="project--card__frame">
-                  <span className="project--card__frame__item">Html</span>
-                  <span className="project--card__frame__item">CSS</span>
-                </figcaption>
-              </figure>
-              <article className="project--card__side project--card__side__back">
-                <div className="project--card__content">
-                  <header>
-                    <h2 className="project--card__content__title margin-top">
-                      Beating Heart
-                    </h2>
-                  </header>
-                  <p className="project--card__content__desc">Just for Fun.</p>
-                </div>
-                <div className="project--card__links">
-                  <Link
-                    to={{
-                      pathname:
-                        "https://github.com/MeekyBerry/FCC-responsive-web-design-projects/tree/master/Beating%20heart",
-                    }}
-                    target="_blank"
-                    className="project--card__links__link github-link-bg"
-                  >
-                    <FaGithub style={{ color: "#000" }} />
-                    View on GitHub
-                  </Link>
-                  <Link
-                    to={{
-                      pathname:
-                        "https://fanciful-salamander-e14723.netlify.app/",
-                    }}
-                    target="_blank"
-                    className="project--card__links__link live-link-bg blue-markup"
-                  >
-                    <FaExternalLinkAlt style={{ color: "#a8ff78" }} />
-                    View Live
-                  </Link>
-                </div>
-              </article>
-            </div>
-          </Fade>
-          <Fade direction="right" duration={5000}>
-            <div className="project--card">
-              <figure className="project--card__side project--card__side__front">
-                <div className="project--card__bg">
-                  <div className="project--card__bg--img project--card__bg--img-23"></div>
-                </div>
-                <figcaption className="project--card__frame">
-                  <span className="project--card__frame__item">Html</span>
-                  <span className="project--card__frame__item">CSS</span>
-                </figcaption>
-              </figure>
-              <article className="project--card__side project--card__side__back">
-                <div className="project--card__content">
-                  <header>
-                    <h2 className="project--card__content__title margin-top">
-                      Half Moon
-                    </h2>
-                  </header>
-                  <p className="project--card__content__desc">Just for Fun.</p>
-                </div>
-                <div className="project--card__links">
-                  <Link
-                    to={{
-                      pathname:
-                        "https://github.com/MeekyBerry/FCC-responsive-web-design-projects/tree/master/Half%20moon",
-                    }}
-                    target="_blank"
-                    className="project--card__links__link github-link-bg"
-                  >
-                    <FaGithub style={{ color: "#000" }} />
-                    View on GitHub
-                  </Link>
-                  <Link
-                    to={{
-                      pathname: "https://dreamy-dango-249305.netlify.app/",
                     }}
                     target="_blank"
                     className="project--card__links__link live-link-bg blue-markup"

@@ -12,7 +12,7 @@ const ErrorPage = () => {
   return (
     <aside className="app">
       <Helmet>
-        <title>404 Error</title>
+        <title>Front-End Dev | 404 Error</title>
         <meta name="description" content="404 error page" />
       </Helmet>
       <Zoom duration={5000}>

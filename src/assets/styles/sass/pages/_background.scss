@@ -64,7 +64,8 @@
 
       &__head {
         font-size: var(--font-size--x-large);
-        font-weight: var(--font-weight--medium);
+        font-family: var(--font-family--Tilt);
+        letter-spacing: 0.1rem;
       }
 
       &__span {
@@ -87,8 +88,11 @@
         font-weight: var(--font-weight--regular);
 
         &__name {
+          font-size: var(--font-size--xx-large);
           color: var(--blue-cyan);
-          font-weight: var(--font-weight--medium);
+          font-weight: var(--font-weight--bold);
+          font-family: var(--font-family--Tilt);
+          letter-spacing: 0.2rem;
         }
       }
 
@@ -117,8 +121,9 @@
       // background-color: var(--color--bg-dark);
 
       &__head {
-        font-size: var(--font__title -size--x-large);
-        font-weight: var(--font-weight--bold);
+        font-size: var(--font-size--x-large);
+        font-family: var(--font-family--Tilt);
+        letter-spacing: 0.1rem;
         background-image: linear-gradient(to bottom, var(--dark-blue), var(--light-blue--1));
         background-clip: text;
         -webkit-background-clip: text;

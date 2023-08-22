@@ -102,7 +102,7 @@ const Contact = () => {
   return (
     <main className="app">
       <Helmet>
-        <title>Elue Michael | Contact</title>
+        <title>Front-End Dev | Contact Me</title>
         <meta
           name="description"
           content="Contact me for your next project. I am available for internship or entry level

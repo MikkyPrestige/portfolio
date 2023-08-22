@@ -1,6 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import WebDeveloper from "../assets/images/web-developer.gif";
+import myAvatar from "../assets/images/myAvatar.png";
 import GitHub from "../assets/images/socials/icons8-github-94.png";
 import LinkedIn from "../assets/images/socials/icons8-linkedin-94.png";
 import LeetCode from "../assets/images/socials/leetCode.png";
@@ -78,10 +78,11 @@ const Home = () => {
   return (
     <main className="app">
       <Helmet>
-        <title>Elue Michael | Home</title>
+        <title>Front-End Dev | Home Page</title>
         <meta
           name="description"
-          content="Elue Michael is a frontend developer with a strong foundation in HTML, CSS, JavaScript as well as exposure to frameworks such as React and Vue"
+          content="
+          I am a dedicated web developer with a focus on HTML, JavaScript, React, MongoDB, and an array of other tools and technologies."
         />
       </Helmet>
       <section
@@ -108,7 +109,7 @@ const Home = () => {
                 />
               </Link>
               <Link
-                to="https://leetcode.com/meekyberry/"
+                to="https://leetcode.com/meekyberry"
                 target="_blank"
                 rel="noreferrer"
                 className="home--media__frame__img"
@@ -120,7 +121,7 @@ const Home = () => {
                 />
               </Link>
               <Link
-                to="https://www.linkedin.com/in/mikkylanky/"
+                to="https://www.linkedin.com/in/mikkylanky"
                 target="_blank"
                 rel="noreferrer"
                 className="home--media__frame__img"
@@ -140,13 +141,15 @@ const Home = () => {
               <JackInTheBox duration={5000}>
                 <h1 className="home--contents__content__title">ELUE MICHAEL</h1>
                 <h2 className="home--contents__content__subtitle">
-                  Frontend Developer
+                  Front-End Developer
                 </h2>
                 <p className="home--contents__content__desc">
-                  I'm a frontend Developer with a strong foundation in HTML,
-                  CSS, JavaScript, and more looking for opportunities to develop
-                  and enhance my skills while creating innovative and dynamic
-                  web solutions.
+                  I am a dedicated web developer with a focus on HTML,
+                  JavaScript, React, MongoDB, and an array of other tools and
+                  technologies. My driving force is to create exceptional
+                  software that positively impacts the lives of those in my
+                  community. My inherent traits include rapid adaptability, team
+                  collaboration, and adept problem-solving.
                 </p>
                 <div className="home--contents__content__btn">
                   <a href={Resume} target="_blank" rel="noreferrer">
@@ -169,11 +172,12 @@ const Home = () => {
                   <div className="home--contents__illustration__wrapper">
                     <div className="home--contents__illustration__wrapper--avatar">
                       <Avatar
-                        image={WebDeveloper}
-                        alt="GIF of a web developer working"
+                        image={myAvatar}
+                        alt="Avatar"
                         style={{
                           width: "100%",
                           height: "100%",
+                          objectFit: "cover",
                         }}
                       />
                     </div>

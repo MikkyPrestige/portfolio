@@ -10,6 +10,7 @@
 
 # production
 /build
+/node_modules
 
 # misc
 .DS_Store
@@ -23,6 +24,4 @@ yarn-debug.log*
 yarn-error.log*
 
 .vercel
-
-# imp
-/src/config
+.env
