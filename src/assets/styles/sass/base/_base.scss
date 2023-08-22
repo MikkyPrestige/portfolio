@@ -1,0 +1,80 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 45%; // 1rem ===> 7/16
+
+  @include respond(phone-normal) {
+    font-size: 50%; // 1rem ===> 8/16
+  }
+
+  @include respond(tablet-port) {
+    font-size: 56.25%; // 1rem ===> 9/16
+  }
+
+  @include respond(tablet-land) {
+    font-size: 62.5%; // 1rem ===> 10/16
+  }
+
+  @include respond(laptop) {
+    font-size: 68.75%; // 1rem ===> 11/16
+  }
+
+  @include respond(desktop) {
+    font-size: 75%; // 1rem ===> 12/16
+  }
+
+  @include respond(large-screens) {
+    font-size: 87.5%; // 1rem ===> 14/16
+  }
+}
+
+body {
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+::selection {
+  background-color: var(--color--green);
+  color: var(--color--white-1);
+}
+
+.custom-loader {
+  width: 60px;
+  height: 25px;
+  border: 2px solid #3F3AF4;
+  border-radius: 50%;
+  display: grid;
+  animation: loading 2s infinite linear;
+  margin: 30rem auto;
+
+  &::before,
+  &::after {
+    content: "";
+    grid-area: 1/1;
+    border: inherit;
+    border-radius: 50%;
+    animation: inherit;
+    animation-duration: 3s;
+  }
+
+  &::after {
+    --s: -1;
+  }
+}
