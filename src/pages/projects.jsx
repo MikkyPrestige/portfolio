@@ -64,7 +64,7 @@ const Projects = () => {
                   </Link>
                   <Link
                     to={{
-                      pathname: "hhttps://hospitofind.netlify.app",
+                      pathname: "https://hospitofind.netlify.app",
                     }}
                     target="_blank"
                     className="project--card__links__link live-link-bg blue-markup"
