@@ -157,7 +157,7 @@ const Projects = () => {
                   <Link
                     to={{
                       pathname:
-                        "https://github.com/MeekyBerry/law-firm-website",
+                        "https://github.com/MeekyBerry/PrestigeEnigma-Advocates",
                     }}
                     target="_blank"
                     className="project--card__links__link github-link-bg"
@@ -167,7 +167,7 @@ const Projects = () => {
                   </Link>
                   <Link
                     to={{
-                      pathname: "https://law-firm-website-seven.vercel.app",
+                      pathname: "https://prestigeadvocates.vercel.app",
                     }}
                     target="_blank"
                     className="project--card__links__link live-link-bg blue-markup"

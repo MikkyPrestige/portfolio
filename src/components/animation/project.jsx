@@ -26,7 +26,7 @@ const Project = [
   {
     title: "PrestigeEnigma Advocates",
     image: LawFirm,
-    link: "https://law-firm-website-seven.vercel.app",
+    link: "https://prestigeadvocates.vercel.app",
   },
   {
     title: "HangPanda",
