@@ -166,9 +166,9 @@ const Home = () => {
                 </div>
               </JackInTheBox>
             </div>
-            <div className="animation-overflow">
+            <div className="home--contents__illustration">
               <Reveal keyframes={rotateInDownRight} duration={5000}>
-                <div className="home--contents__illustration">
+                <div>
                   <div className="home--contents__illustration__wrapper">
                     <div className="home--contents__illustration__wrapper--avatar">
                       <Avatar
@@ -177,7 +177,7 @@ const Home = () => {
                         style={{
                           width: "100%",
                           height: "100%",
-                          objectFit: "cover",
+                          objectFit: "contain",
                         }}
                       />
                     </div>

@@ -5,7 +5,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding: 0;
+  padding: 0 1rem;
 
   &--media {
     display: flex;
@@ -85,11 +85,12 @@
 
       @include respond(laptop) {
         flex-direction: row;
-        gap: 5rem;
+        justify-content: center;
+        gap: 1rem;
       }
 
       @include respond(desktop) {
-        // gap: 10rem;
+        gap: 3rem;
         justify-content: space-between;
       }
     }
@@ -104,6 +105,7 @@
       // overflow: hidden;
 
       @include respond(laptop) {
+        flex-basis: 70%;
         padding: 0 3rem;
       }
 
@@ -178,6 +180,7 @@
       position: relative;
       width: 100%;
       flex-grow: 1;
+      overflow: hidden;
 
       &__wrapper {
         width: 90%;
@@ -187,11 +190,11 @@
         left: 3%;
 
         &--avatar {
-          width: 50%;
-          height: 50%;
+          width: 70%;
+          height: 70%;
           position: absolute;
-          top: 15%;
-          left: 28%;
+          top: 3.5%;
+          left: 22%;
           z-index: 100;
         }
 
@@ -201,7 +204,7 @@
           width: 75%;
           position: relative;
           top: 5%;
-          left: 23%;
+          left: 25%;
           opacity: 0.3;
           overflow: hidden;
 
@@ -237,9 +240,8 @@
         font-size: var(--font-size);
         font-weight: 100;
         color: var(--color--markup-2);
-        line-height: 1.8rem;
-        white-space: pre-wrap;
-        letter-spacing: 2px;
+        line-height: 1.65rem;
+        letter-spacing: 5px;
 
         @include respond(laptop) {
           font-size: 0.8rem;

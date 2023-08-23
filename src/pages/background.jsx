@@ -22,6 +22,7 @@ import Typescript from "../assets/images/skills/typescript.png";
 import MongoDB from "../assets/images/skills/mongo-db.png";
 import Auth0 from "../assets/images/skills/auth0.png";
 import Mindful from "../assets/images/skills/mindful.svg";
+import myAvatar from "../assets/images/prestige.jpeg";
 import Teamwork from "../assets/images/skills/teamwork.svg";
 import { Zoom } from "react-awesome-reveal";
 import "animate.css";
@@ -47,22 +48,30 @@ const Background = () => {
       >
         <section className="about--wrapper">
           <Zoom duration={5000} cascade damping={0.0001}>
+            <div className="about--content__title">
+              <h1 className="about--content__title__head">
+                <span className="about--content__title__span">/</span>
+                About-Me
+              </h1>
+              <p className="about--content__title__subhead">Who am i?</p>
+            </div>
             <section className="about--desc">
               <div className="about--img">
-                <p className="about--img__content1"> </p>
-                <p className="about--img__content2"> </p>
+                <Avatar
+                  image={myAvatar}
+                  alt="My avatar"
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover",
+                    borderRadius: "10%",
+                  }}
+                />
               </div>
               <div className="about--content">
-                <div className="about--content__title">
-                  <h1 className="about--content__title__head">
-                    <span className="about--content__title__span">/</span>
-                    About-Me
-                  </h1>
-                  <p className="about--content__title__subhead">Who am i?</p>
-                </div>
                 <div className="about--content__text">
                   <h2 className="about--content__text__head">
-                    Hi, I'm{" "}
+                    I'm{" "}
                     <span className="about--content__text__head__name">
                       Elue
                     </span>
