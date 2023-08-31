@@ -54,7 +54,7 @@ const Projects = () => {
                 <div className="project--card__links">
                   <Link
                     to={{
-                      pathname: "https://github.com/MeekyBerry/hospitoFind",
+                      pathname: "https://github.com/MikkyPrestige/hospitoFind",
                     }}
                     target="_blank"
                     className="project--card__links__link github-link-bg"
@@ -96,9 +96,8 @@ const Projects = () => {
                     </h2>
                   </header>
                   <p className="project--card__content__desc">
-                    I built the Machala Laundry Service website from scratch.
-                    Using the React, I created a user-friendly platform that
-                    showcases their laundry services. The website features
+                    Machala Laundry Service website is a user-friendly platform
+                    that showcases their laundry services. The website features
                     convenient functionalities such as online booking, live
                     chat, and reviews. I also managed the hosting setup,
                     ensuring a secure and reliable online presence.
@@ -107,7 +106,8 @@ const Projects = () => {
                 <div className="project--card__links">
                   <Link
                     to={{
-                      pathname: "https://github.com/MeekyBerry/machala-laundry",
+                      pathname:
+                        "https://github.com/MikkyPrestige/machala-laundry",
                     }}
                     target="_blank"
                     className="project--card__links__link github-link-bg"
@@ -117,7 +117,7 @@ const Projects = () => {
                   </Link>
                   <Link
                     to={{
-                      pathname: "https://machalalaundryservice.com/",
+                      pathname: "https://machalalaundryservice.com",
                     }}
                     target="_blank"
                     className="project--card__links__link live-link-bg blue-markup"
@@ -148,16 +148,15 @@ const Projects = () => {
                     </h2>
                   </header>
                   <p className="project--card__content__desc">
-                    I built the PrestigeEnigma Advocates website using React, I
-                    created a user-friendly platform that showcases the legal
-                    services of a fictional law firm.
+                    PrestigeEnigma Advocates website is a user-friendly platform
+                    that showcases the legal services of a fictional law firm.
                   </p>
                 </div>
                 <div className="project--card__links">
                   <Link
                     to={{
                       pathname:
-                        "https://github.com/MeekyBerry/PrestigeEnigma-Advocates",
+                        "https://github.com/MikkyPrestige/PrestigeEnigma-Advocates",
                     }}
                     target="_blank"
                     className="project--card__links__link github-link-bg"
@@ -200,10 +199,9 @@ const Projects = () => {
                     </h2>
                   </header>
                   <p className="project--card__content__desc">
-                    HangPanda game is a team project for
-                    <mark>LightHall super league</mark> which I took part in. It
-                    is a web-based game built with MERN and Tailwind CSS. It is
-                    a simple game where the user guesses a word by selecting
+                    HangPanda game is a team project which I took part in. It is
+                    a web-based game built with MERN and Tailwind CSS. It is a
+                    simple game where the user guesses a word by selecting
                     letters from the alphabet. The user has 7 lives and loses a
                     life for every wrong guess. The game ends when the user
                     guesses the word correctly or loses all their lives. There
@@ -224,7 +222,7 @@ const Projects = () => {
                   </Link>
                   <Link
                     to={{
-                      pathname: "https://hangman.ntec.app/",
+                      pathname: "https://hangman.ntec.app",
                     }}
                     target="_blank"
                     className="project--card__links__link live-link-bg blue-markup"
@@ -255,18 +253,16 @@ const Projects = () => {
                     </h2>
                   </header>
                   <p className="project--card__content__desc">
-                    This is a React-based web app that displays a user's
-                    repositories using the GitHub API. This app allows to easily
-                    search for anyone's GitHub repository with their username
-                    and view the repository details. It was one of the projects
-                    for the <mark>AltSchool Africa School of Engineering</mark>{" "}
-                    Examination in the second semester.
+                    This is a web app that displays my GitHub repositories using
+                    the GitHub API. The app is also used to easily search for
+                    anyone's GitHub repository with their username and view the
+                    repository details.
                   </p>
                 </div>
                 <div className="project--card__links">
                   <Link
                     to={{
-                      pathname: "https://github.com/MeekyBerry/GitFolio",
+                      pathname: "https://github.com/MikkyPrestige/GitFolio",
                     }}
                     target="_blank"
                     className="project--card__links__link github-link-bg"
@@ -296,7 +292,7 @@ const Projects = () => {
                 </div>
                 <figcaption className="project--card__frame">
                   <span className="project--card__frame__item">Css</span>
-                  <span className="project--card__frame__item">MERN</span>
+                  <span className="project--card__frame__item">MERN Stack</span>
                 </figcaption>
               </figure>
               <article className="project--card__side project--card__side__back">
@@ -307,22 +303,21 @@ const Projects = () => {
                     </h2>
                   </header>
                   <p className="project--card__content__desc">
-                    Task Tracker is a team project for
-                    <mark>LightHall super league</mark> which I took part in. We
-                    built a MERN web app and employ React as the front-end
-                    library. I developed the task manager page that users
-                    interact with after logging in. The task manager allows
-                    users to perform a range of actions such as adding, editing,
-                    and deleting tasks, as well as sorting them by various
-                    criteria like title, status, and due date. I was responsible
-                    for implementing the logic for these actions.
+                    Task Tracker is a team project by me and two others. We
+                    built a MERN web app using React for the front-end library.
+                    I developed the task manager page that users interact with
+                    after logging in. The task manager allows users to perform a
+                    range of actions such as adding, editing, and deleting
+                    tasks, as well as sorting them by various criteria like
+                    title, status, and due date. I was responsible for
+                    implementing the logic for these actions.
                   </p>
                 </div>
                 <div className="project--card__links">
                   <Link
                     to={{
                       pathname:
-                        "https://github.com/MeekyBerry/lighthall-super-league-level-2",
+                        "https://github.com/MikkyPrestige/lighthall-super-league-level-2",
                     }}
                     target="_blank"
                     className="project--card__links__link github-link-bg"
@@ -332,7 +327,7 @@ const Projects = () => {
                   </Link>
                   <Link
                     to={{
-                      pathname: "https://task-tracker.ntec.app/",
+                      pathname: "https://task-tracker.ntec.app",
                     }}
                     target="_blank"
                     className="project--card__links__link live-link-bg blue-markup"
@@ -369,16 +364,14 @@ const Projects = () => {
                     entered by the user. It has a "Custom" button where you can
                     enter a specific tip percentage. The calculator also
                     includes a reset button and input validation to ensure that
-                    the number of people entered is not zero. This is a solution
-                    to the "tip calculator"{" "}
-                    <mark>frontend mentor challenge</mark>.
+                    the number of people entered is not zero.
                   </p>
                 </div>
                 <div className="project--card__links">
                   <Link
                     to={{
                       pathname:
-                        "https://github.com/MeekyBerry/Frontend-Mentor-challenges/tree/main/tip-calculator-app",
+                        "https://github.com/MikkyPrestige/Frontend-Mentor-challenges/tree/main/tip-calculator-app",
                     }}
                     target="_blank"
                     className="project--card__links__link github-link-bg"
@@ -432,7 +425,7 @@ const Projects = () => {
                   <Link
                     to={{
                       pathname:
-                        "https://github.com/MeekyBerry/Phonie-project-Phantom_Devz",
+                        "https://github.com/MikkyPrestige/Phonie-project-Phantom_Devz",
                     }}
                     target="_blank"
                     className="project--card__links__link github-link-bg"
@@ -487,7 +480,7 @@ const Projects = () => {
                 <div className="project--card__links">
                   <Link
                     to={{
-                      pathname: "https://github.com/MeekyBerry/StringRefine",
+                      pathname: "https://github.com/MikkyPrestige/StringRefine",
                     }}
                     target="_blank"
                     className="project--card__links__link github-link-bg"
@@ -535,15 +528,14 @@ const Projects = () => {
                     realtime. The app was built using React and Firebase as the
                     database. The app render's the user's location on a map and
                     allows users to click on a button to increase the click
-                    count and record the location where the click occurred. I
-                    built the app in the first round
-                    <mark>LightHall super league</mark>.
+                    count and record the location where the click occurred.
                   </p>
                 </div>
                 <div className="project--card__links">
                   <Link
                     to={{
-                      pathname: "https://github.com/MeekyBerry/Chasing-Clicks",
+                      pathname:
+                        "https://github.com/MikkyPrestige/Chasing-Clicks",
                     }}
                     target="_blank"
                     className="project--card__links__link github-link-bg"
@@ -587,15 +579,13 @@ const Projects = () => {
                   <p className="project--card__content__desc">
                     This is a simple web tool for counting numbers. The count
                     value is stored locally so that it is still available on
-                    page reload. It was built with Vue and Scss. It was the
-                    third semester Examination project for{" "}
-                    <mark>AltSchool Africa School of Engineering.</mark>
+                    page reload.
                   </p>
                 </div>
                 <div className="project--card__links">
                   <Link
                     to={{
-                      pathname: "https://github.com/MeekyBerry/counter-app",
+                      pathname: "https://github.com/MikkyPrestige/counter-app",
                     }}
                     target="_blank"
                     className="project--card__links__link github-link-bg"
@@ -636,14 +626,13 @@ const Projects = () => {
                   <p className="project--card__content__desc">
                     The calculator is a simple web application and functional
                     tool for performing mathematical operations. The interface
-                    is sleek and user-friendly on desktop, and the mathematical
-                    algorithms are advanced.
+                    is sleek and user-friendly on desktop.
                   </p>
                 </div>
                 <div className="project--card__links">
                   <Link
                     to={{
-                      pathname: "https://github.com/MeekyBerry/calculator",
+                      pathname: "https://github.com/MikkyPrestige/calculator",
                     }}
                     target="_blank"
                     className="project--card__links__link github-link-bg"
@@ -688,16 +677,14 @@ const Projects = () => {
                   <p className="project--card__content__desc">
                     This is a web app that displays random people and their
                     info. The data is generated from randomuser API. I also
-                    added firebase authentication to verify and saved new users.
-                    It was one of the projects for the{" "}
-                    <mark>AltSchool Africa School of Engineering</mark>{" "}
-                    Examination in the second semester.
+                    added firebase authentication.
                   </p>
                 </div>
                 <div className="project--card__links">
                   <Link
                     to={{
-                      pathname: "https://github.com/MeekyBerry/RandomProfiles",
+                      pathname:
+                        "https://github.com/MikkyPrestige/RandomProfiles",
                     }}
                     target="_blank"
                     className="project--card__links__link github-link-bg"
@@ -740,15 +727,14 @@ const Projects = () => {
                     This is an interactive web page that displays a rating
                     component in numbers. It allows the user select and submit a
                     number rating. Also display a "Thank you" card after a
-                    rating is submitted. This is a solution to a{" "}
-                    <mark>Frontend Mentor Challenge.</mark>
+                    rating is submitted.
                   </p>
                 </div>
                 <div className="project--card__links">
                   <Link
                     to={{
                       pathname:
-                        "https://github.com/MeekyBerry/Frontend-Mentor-challenges/tree/main/interactive-rating-component",
+                        "https://github.com/MikkyPrestige/Frontend-Mentor-challenges/tree/main/interactive-rating-component",
                     }}
                     target="_blank"
                     className="project--card__links__link github-link-bg"
@@ -791,16 +777,16 @@ const Projects = () => {
                     </h2>
                   </header>
                   <p className="project--card__content__desc">
-                    This is a landing page for a fictional company called
-                    Natours. It was a code along project from the online course
-                    by JONAS SCHMEDTMANN on Udemy.
+                    This is a landing page for a fictional company. It was a
+                    code along project from the online course by JONAS
+                    SCHMEDTMANN on Udemy.
                   </p>
                 </div>
                 <div className="project--card__links">
                   <Link
                     to={{
                       pathname:
-                        "https://github.com/MeekyBerry/Advanced-CSS-Sass-Course-Projects/tree/master/Natours-project",
+                        "https://github.com/MikkyPrestige/Advanced-CSS-Sass-Course-Projects/tree/master/Natours-project",
                     }}
                     target="_blank"
                     className="project--card__links__link github-link-bg"
@@ -842,16 +828,16 @@ const Projects = () => {
                     </h2>
                   </header>
                   <p className="project--card__content__desc">
-                    This is a landing page for a fictional company called
-                    Trillo. It was a code along project from the online course
-                    by JONAS SCHMEDTMANN on Udemy.
+                    This is a landing page for a fictional company. It was a
+                    code along project from the online course by JONAS
+                    SCHMEDTMANN on Udemy.
                   </p>
                 </div>
                 <div className="project--card__links">
                   <Link
                     to={{
                       pathname:
-                        "https://github.com/MeekyBerry/Advanced-CSS-Sass-Course-Projects/tree/master/Trillow-project",
+                        "https://github.com/MikkyPrestige/Advanced-CSS-Sass-Course-Projects/tree/master/Trillow-project",
                     }}
                     target="_blank"
                     className="project--card__links__link github-link-bg"
@@ -901,7 +887,7 @@ const Projects = () => {
                   <Link
                     to={{
                       pathname:
-                        "https://github.com/MeekyBerry/fake-user-authentication",
+                        "https://github.com/MikkyPrestige/fake-user-authentication",
                     }}
                     target="_blank"
                     className="project--card__links__link github-link-bg"
@@ -940,17 +926,15 @@ const Projects = () => {
                     </h2>
                   </header>
                   <p className="project--card__content__desc">
-                    This is a solution to{" "}
-                    <mark>Frontend Mentor Challenge.</mark> In this project, I
-                    re-created the visually stunning chat app CSS illustration
-                    created by Frontend Mentor from scratch to finish.
+                    In this project, I re-created the chat app CSS illustration
+                    on Frontend Mentor Challenge.
                   </p>
                 </div>
                 <div className="project--card__links">
                   <Link
                     to={{
                       pathname:
-                        "https://github.com/MeekyBerry/Frontend-Mentor-challenges/tree/main/chat-app-css-illustration",
+                        "https://github.com/MikkyPrestige/Frontend-Mentor-challenges/tree/main/chat-app-css-illustration",
                     }}
                     target="_blank"
                     className="project--card__links__link github-link-bg"
@@ -960,7 +944,7 @@ const Projects = () => {
                   </Link>
                   <Link
                     to={{
-                      pathname: "https://chat-app-css-project.netlify.app/",
+                      pathname: "https://chat-app-css-project.netlify.app",
                     }}
                     target="_blank"
                     className="project--card__links__link live-link-bg blue-markup"
@@ -994,15 +978,14 @@ const Projects = () => {
                   </header>
                   <p className="project--card__content__desc">
                     This Landing page was a code along project on 'Learn HTML &
-                    CSS in 2022 crash course' by Design Course on Udemy. Sass
-                    was also used but only for the Nesting feature.
+                    CSS in 2022 crash course' by Design Course on Udemy.
                   </p>
                 </div>
                 <div className="project--card__links">
                   <Link
                     to={{
                       pathname:
-                        "https://github.com/MeekyBerry/Shoe-brand-landing-page",
+                        "https://github.com/MikkyPrestige/Shoe-brand-landing-page",
                     }}
                     target="_blank"
                     className="project--card__links__link github-link-bg"
@@ -1012,7 +995,7 @@ const Projects = () => {
                   </Link>
                   <Link
                     to={{
-                      pathname: "https://shoe-brand-landing-page.netlify.app/",
+                      pathname: "https://shoe-brand-landing-page.netlify.app",
                     }}
                     target="_blank"
                     className="project--card__links__link live-link-bg blue-markup"
@@ -1043,16 +1026,14 @@ const Projects = () => {
                     </h2>
                   </header>
                   <p className="project--card__content__desc">
-                    This is a solution to the{" "}
-                    <mark>Frontend Mentor Challenge.</mark> It is a simple HTML
-                    and CSS based card component.
+                    This is a simple HTML and CSS based card component.
                   </p>
                 </div>
                 <div className="project--card__links">
                   <Link
                     to={{
                       pathname:
-                        "https://github.com/MeekyBerry/Frontend-Mentor-challenges/tree/main/order-summary-card-component",
+                        "https://github.com/MikkyPrestige/Frontend-Mentor-challenges/tree/main/order-summary-card-component",
                     }}
                     target="_blank"
                     className="project--card__links__link github-link-bg"
@@ -1063,7 +1044,7 @@ const Projects = () => {
                   <Link
                     to={{
                       pathname:
-                        "https://order-summary-card-project.netlify.app/",
+                        "https://order-summary-card-project.netlify.app",
                     }}
                     target="_blank"
                     className="project--card__links__link live-link-bg blue-markup"
@@ -1094,16 +1075,15 @@ const Projects = () => {
                     </h2>
                   </header>
                   <p className="project--card__content__desc">
-                    This is a solution to the{" "}
-                    <mark>Frontend Mentor Challenge.</mark> I worked on this
-                    project to practice CSS grid. as a beginner.
+                    I worked on this project from Frontend Mentor's Challenge to
+                    practice CSS grid as a beginner.
                   </p>
                 </div>
                 <div className="project--card__links">
                   <Link
                     to={{
                       pathname:
-                        "https://github.com/MeekyBerry/Frontend-Mentor-challenges/tree/main/stats-preview-card-compo",
+                        "https://github.com/MikkyPrestige/Frontend-Mentor-challenges/tree/main/stats-preview-card-compo",
                     }}
                     target="_blank"
                     className="project--card__links__link github-link-bg"
@@ -1114,7 +1094,7 @@ const Projects = () => {
                   <Link
                     to={{
                       pathname:
-                        "https://stats-preview-card-project.netlify.app/",
+                        "https://stats-preview-card-project.netlify.app",
                     }}
                     target="_blank"
                     className="project--card__links__link live-link-bg blue-markup"
@@ -1145,15 +1125,14 @@ const Projects = () => {
                     </h2>
                   </header>
                   <p className="project--card__content__desc">
-                    This is the solution to the{" "}
-                    <mark>Frontend Mentor Challenge.</mark>
+                    This is the solution to Frontend Mentor's Challenge.
                   </p>
                 </div>
                 <div className="project--card__links">
                   <Link
                     to={{
                       pathname:
-                        "https://github.com/MeekyBerry/Frontend-Mentor-challenges/tree/main/fylo-data-store-layout",
+                        "https://github.com/MikkyPrestige/Frontend-Mentor-challenges/tree/main/fylo-data-store-layout",
                     }}
                     target="_blank"
                     className="project--card__links__link github-link-bg"
@@ -1163,7 +1142,7 @@ const Projects = () => {
                   </Link>
                   <Link
                     to={{
-                      pathname: "https://fylo-data-store-layout.netlify.app/",
+                      pathname: "https://fylo-data-store-layout.netlify.app",
                     }}
                     target="_blank"
                     className="project--card__links__link live-link-bg blue-markup"
@@ -1195,16 +1174,15 @@ const Projects = () => {
                   </header>
                   <p className="project--card__content__desc">
                     I created this tribute page to pay homage to the legendary
-                    musician, <mark>Bob Marley</mark>. I hold Bob Marley in high
-                    esteem and consider him to be the greatest musician of all
-                    time.
+                    musician, <mark>Bob Marley</mark>. Bob Marley is my Idol and
+                    consider him to be the greatest musician of all time.
                   </p>
                 </div>
                 <div className="project--card__links">
                   <Link
                     to={{
                       pathname:
-                        "https://github.com/MeekyBerry/FCC-responsive-web-design-projects/tree/master/Bob%20Marley",
+                        "https://github.com/MikkyPrestige/FCC-responsive-web-design-projects/tree/master/Bob%20Marley",
                     }}
                     target="_blank"
                     className="project--card__links__link github-link-bg"
@@ -1214,7 +1192,7 @@ const Projects = () => {
                   </Link>
                   <Link
                     to={{
-                      pathname: "https://bob-marley-tribute.netlify.app/",
+                      pathname: "https://bob-marley-tribute.netlify.app",
                     }}
                     target="_blank"
                     className="project--card__links__link live-link-bg blue-markup"
@@ -1253,7 +1231,7 @@ const Projects = () => {
                   <Link
                     to={{
                       pathname:
-                        "https://github.com/MeekyBerry/Frontend-Mentor-challenges/tree/main/testimonial-grid-section",
+                        "https://github.com/MikkyPrestige/Frontend-Mentor-challenges/tree/main/testimonial-grid-section",
                     }}
                     target="_blank"
                     className="project--card__links__link github-link-bg"
@@ -1263,8 +1241,7 @@ const Projects = () => {
                   </Link>
                   <Link
                     to={{
-                      pathname:
-                        "https://testimonial-grids-section.netlify.app/",
+                      pathname: "https://testimonial-grids-section.netlify.app",
                     }}
                     target="_blank"
                     className="project--card__links__link live-link-bg blue-markup"

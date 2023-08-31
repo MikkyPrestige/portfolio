@@ -19,7 +19,7 @@ import Research from "../assets/images/skills/research.gif";
 import ShareMind from "../assets/images/skills/share-mind.png";
 import Agile from "../assets/images/skills/agile-management.png";
 import Typescript from "../assets/images/skills/typescript.png";
-import MongoDB from "../assets/images/skills/mongo-db.png";
+import MERN from "../assets/images/skills/mern.webp";
 import Auth0 from "../assets/images/skills/auth0.png";
 import Mindful from "../assets/images/skills/mindful.svg";
 import myAvatar from "../assets/images/prestige.jpeg";
@@ -35,8 +35,7 @@ const Background = () => {
         <title>Front-End Dev | My About</title>
         <meta
           name="description"
-          content="
-          I am an enthusiastic and dedicated frontend developer, holding a diploma in FrontEnd Engineering from AltSchool Africa."
+          content="I am an enthusiastic and dedicated frontend developer"
         />
       </Helmet>
       <div
@@ -79,18 +78,14 @@ const Background = () => {
                   </h2>
                   <p className="about--content__text__desc">
                     I am an enthusiastic and dedicated frontend developer,
-                    holding a diploma in FrontEnd Engineering from AltSchool
-                    Africa. My journey has equipped me with a solid grounding in
-                    essential web technologies like HTML, CSS, and JavaScript.
-                    Additionally, I have embraced the world of modern frameworks
-                    including React and Vue, empowering me to create engaging
-                    user experiences. Beyond frontend expertise, I excel in
-                    crafting full stack applications utilizing the MERN stack.
-                    This proficiency allows me to seamlessly integrate the
-                    frontend and backend of applications, creating a smooth user
-                    experience. Embracing collaboration, I am always eager to
-                    learn from others and share my knowledge with my peers.
-                    Fueled by a diligent work ethic and a continuous thirst for
+                    holding a diploma in Front-End Engineering from AltSchool
+                    Africa School Of Engineering. My journey has equipped me
+                    with a solid grounding in essential web technologies like
+                    HTML, CSS, and JavaScript. Additionally, I have embraced the
+                    world of modern frameworks including React, Vue and
+                    currently mastering TypeScript. Beyond frontend expertise, I
+                    also build full stack apps utilizing the MERN stack. Fueled
+                    by a diligent work ethic and a continuous thirst for
                     learning and self-improvement my journey in the world of
                     frontend development is by a genuine passion, and I am
                     always excited to push boundaries and expand my horizons.
@@ -198,13 +193,13 @@ const Background = () => {
                   <figure className="about--skills__content__items__card">
                     <div className="about--skills__content__items__card__avatar animate__animated animate__tada">
                       <Avatar
-                        image={MongoDB}
+                        image={MERN}
                         alt="MongoDB logo"
                         style={{ width: "100%", height: "100%" }}
                       />
                     </div>
                     <figcaption className="about--skills__content__items__card__text">
-                      MongoDB
+                      MERN Stack
                     </figcaption>
                   </figure>
                   <figure className="about--skills__content__items__card">

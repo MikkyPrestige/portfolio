@@ -180,7 +180,7 @@ const Contact = () => {
                       rel="noreferrer"
                       className="contact--content__right__media__links__item--link"
                     >
-                      mikkylanky#0055
+                      @mikkyprestige
                     </a>
                   </div>
                   <div className="contact--content__right__media__links__item">
@@ -192,12 +192,12 @@ const Contact = () => {
                       />
                     </div>
                     <a
-                      href="https://twitter.com/Mikky_lanky"
+                      href="https://twitter.com/MikkyPrestige"
                       target="_blank"
                       rel="noreferrer"
                       className="contact--content__right__media__links__item--link"
                     >
-                      @mikky_lanky
+                      @MikkyPrestige
                     </a>
                   </div>
                   <div className="contact--content__right__media__links__item">
@@ -209,12 +209,12 @@ const Contact = () => {
                       />
                     </div>
                     <a
-                      href="https://www.linkedin.com/in/mikkylanky/"
+                      href="https://www.linkedin.com/in/mikkyprestige"
                       target="_blank"
                       rel="noreferrer"
                       className="contact--content__right__media__links__item--link"
                     >
-                      @mikkylanky
+                      @mikkyprestige
                     </a>
                   </div>
                   <div className="contact--content__right__media__links__item">
@@ -228,12 +228,12 @@ const Contact = () => {
                       </svg>
                     </div>
                     <a
-                      href="https://hashnode.com/@Mikkylanky"
+                      href="https://hashnode.com/@MikkyPrestige"
                       target="_blank"
                       rel="noreferrer"
                       className="contact--content__right__media__links__item--link"
                     >
-                      @Mikkylanky
+                      @MikkyPrestige
                     </a>
                   </div>
                 </div>

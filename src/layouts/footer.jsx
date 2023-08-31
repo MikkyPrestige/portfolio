@@ -71,7 +71,7 @@ const Footer = () => {
               </h2>
               <div className="footer--container__content--media--links">
                 <a
-                  href="https://github.com/MeekyBerry"
+                  href="https://github.com/MikkyPrestige"
                   target="_blank"
                   rel="noreferrer"
                   className="footer--container__content--media--links--link"
@@ -83,7 +83,7 @@ const Footer = () => {
                   />
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/mikkylanky/"
+                  href="https://www.linkedin.com/in/mikkyprestige"
                   target="_blank"
                   rel="noreferrer"
                   className="footer--container__content--media--links--link"
@@ -112,7 +112,9 @@ const Footer = () => {
           <div className="footer--container__copyright">
             <p className="footer--container__copyright--text">
               &copy; 2023.{" "}
-              <a href="https://github.com/MeekyBerry/portfolio">Michael Elue</a>
+              <a href="https://github.com/MikkyPrestige/portfolio">
+                Michael Elue
+              </a>
             </p>
           </div>
         </Reveal>

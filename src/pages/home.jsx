@@ -81,8 +81,7 @@ const Home = () => {
         <title>Front-End Dev | Home Page</title>
         <meta
           name="description"
-          content="
-          I am a dedicated web developer with a focus on HTML, JavaScript, React, MongoDB, and an array of other tools and technologies."
+          content="I am a dedicated web developer with a focus on HTML, JavaScript, React, Mern Stack and more"
         />
       </Helmet>
       <section
@@ -97,7 +96,7 @@ const Home = () => {
             <div className="home--media__line"></div>
             <div className="home--media__frame">
               <Link
-                to="https://github.com/MeekyBerry"
+                to="https://github.com/MikkyPrestige"
                 target="_blank"
                 rel="noreferrer"
                 className="home--media__frame__img"
@@ -109,7 +108,7 @@ const Home = () => {
                 />
               </Link>
               <Link
-                to="https://leetcode.com/meekyberry"
+                to="https://leetcode.com/mikkyprestige"
                 target="_blank"
                 rel="noreferrer"
                 className="home--media__frame__img"
@@ -121,7 +120,7 @@ const Home = () => {
                 />
               </Link>
               <Link
-                to="https://www.linkedin.com/in/mikkylanky"
+                to="https://www.linkedin.com/in/mikkyprestige"
                 target="_blank"
                 rel="noreferrer"
                 className="home--media__frame__img"
@@ -147,9 +146,7 @@ const Home = () => {
                   I am a dedicated web developer with a focus on HTML,
                   JavaScript, React, MongoDB, and an array of other tools and
                   technologies. My driving force is to create exceptional
-                  software that positively impacts the lives of those in my
-                  community. My inherent traits include rapid adaptability, team
-                  collaboration, and adept problem-solving.
+                  software that positively impacts the lives of those around me.
                 </p>
                 <div className="home--contents__content__btn">
                   <a href={Resume} target="_blank" rel="noreferrer">
