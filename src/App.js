@@ -38,7 +38,7 @@ function App() {
               position: "absolute",
               top: "-4rem",
               left: "25rem",
-              zIndex: "10000",
+              zIndex: "110",
             }}
           >
             <button

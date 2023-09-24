@@ -60,7 +60,12 @@ const LayoutSmall = () => {
           />
         </Link>
         <nav className="layout--nav">
-          <button className="layout--nav__button" onClick={toggleMenu}>
+          <button
+            className="layout--nav__button"
+            type="button"
+            aria-label="Toggle menu"
+            onClick={toggleMenu}
+          >
             {showMenu ? (
               <MdClose
                 style={{ width: "3rem", height: "3rem", color: "#228be6" }}

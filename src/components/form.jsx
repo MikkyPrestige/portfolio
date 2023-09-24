@@ -133,6 +133,7 @@ const Form = () => {
             id="fullName"
             placeholder="enter your full name"
             value={form.fullName}
+            autoComplete="on"
             onChange={handleFormChange}
             className="form--content__input"
           />
@@ -152,6 +153,7 @@ const Form = () => {
             id="email"
             placeholder="enter your email (username@example.com)"
             value={form.email}
+            autoComplete="off"
             onChange={handleFormChange}
             className="form--content__input"
           />

@@ -79,11 +79,11 @@
         transition: transform 0.3s ease-in-out;
 
         &:hover {
-          transform: translateX(-0.5rem);
           -webkit-transform: translateX(-0.5rem);
           -moz-transform: translateX(-0.5rem);
           -ms-transform: translateX(-0.5rem);
           -o-transform: translateX(-0.5rem);
+          transform: translateX(-0.5rem);
         }
 
         &--icon {
@@ -153,11 +153,12 @@
         transition: transform 0.3s ease-in-out;
 
         &:hover {
-          transform: scale(1.1);
           -webkit-transform: scale();
           -moz-transform: scale();
           -ms-transform: scale();
           -o-transform: scale();
+          transform: scale(1.1);
+
           text-decoration: underline;
         }
       }
@@ -186,11 +187,11 @@
       transition: transform 0.3s ease-in-out;
 
       &:active {
-        transform: scale(1.1);
         -webkit-transform: scale(1.1);
         -moz-transform: scale(1.1);
         -ms-transform: scale(1.1);
         -o-transform: scale(1.1);
+        transform: scale(1.1);
       }
     }
   }
@@ -222,11 +223,11 @@
       transition: transform 0.3s ease-in-out;
 
       &:hover {
-        transform: scale(1.1);
         -webkit-transform: scale();
         -moz-transform: scale();
         -ms-transform: scale();
         -o-transform: scale();
+        transform: scale(1.1);
       }
 
       &:active {

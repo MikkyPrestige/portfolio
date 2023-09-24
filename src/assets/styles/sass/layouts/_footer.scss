@@ -62,17 +62,18 @@
         &__logo {
           width: 5rem;
           height: 5rem;
-          border-radius: 50%;
           -o-border-radius: 50%;
           -webkit-border-radius: 50%;
           -moz-border-radius: 50%;
           -ms-border-radius: 50%;
+          border-radius: 50%;
           border: 1px solid var(--grey-color--1);
           margin-left: 1rem;
         }
 
         &__email {
           &--link {
+
             &:link,
             &:visited {
               font-size: var(--font-size--small);
@@ -80,11 +81,11 @@
               color: var(--blue-cyan);
               text-decoration: none;
               padding: 0.5rem;
-              transition: all 0.3s ease-in-out;
               -webkit-transition: all 0.3s ease-in-out;
               -moz-transition: all 0.3s ease-in-out;
               -ms-transition: all 0.3s ease-in-out;
               -o-transition: all 0.3s ease-in-out;
+              transition: all 0.3s ease-in-out;
               cursor: pointer;
             }
 
@@ -93,11 +94,11 @@
               // color: var(--color--white-1);
               box-shadow: var(--box-shadow);
               border: unset;
-              transform: scale(1.3);
               -webkit-transform: scale(1.3);
               -moz-transform: scale(1.3);
               -ms-transform: scale(1.3);
               -o-transform: scale(1.3);
+              transform: scale(1.3);
             }
           }
         }
@@ -148,8 +149,8 @@
             height: 3.5rem;
 
             &:hover {
-              animation: Heartbeat 3s infinite;
               -webkit-animation: Heartbeat 3s infinite;
+              animation: Heartbeat 3s infinite;
             }
           }
         }
@@ -173,8 +174,9 @@
         &:visited {
           text-decoration: none;
           color: var(--blue-cyan);
-          transition: all 0.3s ease-in-out;
           -webkit-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+
           cursor: pointer;
 
           &:hover,
@@ -182,11 +184,11 @@
             // color: var(--color--white-1);
             box-shadow: var(--box-shadow);
             border: unset;
-            transform: scale(1.3);
             -webkit-transform: scale(1.3);
             -moz-transform: scale(1.3);
             -ms-transform: scale(1.3);
             -o-transform: scale(1.3);
+            transform: scale(1.3);
           }
         }
       }

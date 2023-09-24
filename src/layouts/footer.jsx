@@ -51,17 +51,18 @@ const Footer = () => {
               <div className="footer--container__content--details__wrapper">
                 <p className="footer--container__content--details__email">
                   <a
-                    href="mailto: michaelelue117@gmail.com"
+                    href="mailto: eluemichael1@outlook.com"
                     target="_blank"
                     rel="noreferrer"
                     className="footer--container__content--details__email--link"
                   >
-                    michaelelue117@gmail.com
+                    eluemichael1@outlook.com
                   </a>
                 </p>
                 <p className="footer--container__content--details__text">
-                  I am a Front-End Developer with a passion for building
-                  beautiful and functional user interfaces.
+                  I am a Front-End Developer with experience building web
+                  applications. My passion is to build beautiful and functional
+                  user interfaces!
                 </p>
               </div>
             </div>
@@ -113,7 +114,7 @@ const Footer = () => {
             <p className="footer--container__copyright--text">
               &copy; 2023.{" "}
               <a href="https://github.com/MikkyPrestige/portfolio">
-                Michael Elue
+                PrestigeEnigma
               </a>
             </p>
           </div>

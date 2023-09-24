@@ -99,6 +99,7 @@ const ProjectSlider = ({
           <button
             className="projectSlider--controls__btn"
             onClick={handlePreviousSlide}
+            aria-label="Go to previous project slide"
           >
             <FaBackward
               style={{
@@ -111,6 +112,7 @@ const ProjectSlider = ({
           <button
             className="projectSlider--controls__btn padding-small"
             onClick={handlePlayPause}
+            aria-label="Toggle play/pause animation of the project's slider"
           >
             {isPlaying ? (
               <Avatar
@@ -129,6 +131,7 @@ const ProjectSlider = ({
           <button
             className="projectSlider--controls__btn"
             onClick={handleNextSlide}
+            aria-label="Go to next project slide"
           >
             <FaForward
               style={{ width: "2rem", height: "2rem", fill: "#1D976C" }}
@@ -142,6 +145,7 @@ const ProjectSlider = ({
           <div className="projectSlider--pagination">
             {projects.map((project, index) => (
               <button
+                aria-label="Clicking this button to go to this specific project"
                 key={index}
                 className={`projectSlider--pagination__dot ${
                   currentProject === index ? "active" : ""

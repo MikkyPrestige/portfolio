@@ -87,7 +87,7 @@ const Home = () => {
       <section
         className="home"
         sx={{
-          backgroundColor: "background",
+          backgroundColor: "layoutBG",
           color: "text",
         }}
       >

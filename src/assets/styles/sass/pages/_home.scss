@@ -27,11 +27,11 @@
       height: 1px;
       margin-top: 10rem;
       background-color: var(--blue-cyan);
-      transform: rotate(90deg);
       -webkit-transform: rotate(90deg);
       -moz-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
       -o-transform: rotate(90deg);
+      transform: rotate(90deg);
     }
 
     &__frame {
@@ -50,11 +50,11 @@
         transition: transform 0.3s ease-in-out;
 
         &:hover {
-          transform: scale(1.1);
           -webkit-transform: scale();
           -moz-transform: scale();
           -ms-transform: scale();
           -o-transform: scale();
+          transform: scale(1.1);
         }
       }
     }
@@ -114,8 +114,9 @@
         font-size: var(--font-size--xx-large);
         letter-spacing: 0.2rem;
         background-image: linear-gradient(to bottom, var(--grey-color--1), var(--blue-cyan));
-        background-clip: text;
         -webkit-background-clip: text;
+        background-clip: text;
+
         -webkit-text-fill-color: transparent;
         text-transform: capitalize;
       }
@@ -166,11 +167,11 @@
           }
 
           &:hover {
-            transform: scale(1.1);
             -webkit-transform: scale();
             -moz-transform: scale();
             -ms-transform: scale();
             -o-transform: scale();
+            transform: scale(1.1);
           }
         }
       }
@@ -214,11 +215,11 @@
             position: absolute;
             width: 80%;
             height: 80%;
-            border-radius: 20%;
             -webkit-border-radius: 20%;
             -moz-border-radius: 20%;
             -ms-border-radius: 20%;
             -o-border-radius: 20%;
+            border-radius: 20%;
           }
 
           &::before {
@@ -267,11 +268,11 @@
       }
 
       @include respond(laptop) {
-        transform: translateX(-10%);
         -webkit-transform: translateX(-10%);
         -moz-transform: translateX(-10%);
         -ms-transform: translateX(-10%);
         -o-transform: translateX(-10%);
+        transform: translateX(-10%);
       }
 
       &__block {
