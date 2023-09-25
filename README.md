@@ -1,8 +1,8 @@
 # PORTFOLIO
-* My personal portfolio website repository 
+* My personal portfolio website 
 
 # FrameWorks
 * SASS
 * React
 
-Live url: www.mikkylanky.me
+Live url: www.michaelelue.tech
