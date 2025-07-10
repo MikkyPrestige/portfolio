@@ -117,7 +117,7 @@ const Projects = () => {
                   </Link>
                   <Link
                     to={{
-                      pathname: "https://machalalaundryservice.com",
+                      pathname: “https://machalalaundryservice.netlify.app”,
                     }}
                     target="_blank"
                     className="project--card__links__link live-link-bg blue-markup"
