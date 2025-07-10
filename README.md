@@ -5,4 +5,4 @@
 * SASS
 * React
 
-Live url: www.michaelelue.tech
+Live url: https://michaelelue.netlify.app
