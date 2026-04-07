@@ -1,5 +1,5 @@
 # PORTFOLIO
-* My personal portfolio website 
+* My personal portfolio website
 
 # FrameWorks
 * SASS
