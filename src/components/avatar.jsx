@@ -1,5 +1,5 @@
-const Avatar = ({ image = "", alt = "", style = {} }) => {
-  return <img src={image} alt={alt} style={style} />;
+const Avatar = ({ image = "", alt = "", style = {}, loading = "lazy" }) => {
+  return <img src={image} alt={alt} style={style} loading={loading} decoding="async" />;
 };
 
 export default Avatar;

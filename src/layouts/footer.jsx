@@ -1,10 +1,9 @@
-// FOOTER COMPONENT
 import React from "react";
 import Avatar from "../components/avatar";
-import CodeCup from "../assets/images/projects/coding-coffee.jpg";
+import CodeCup from "../assets/images/projects/coding-coffee.webp";
 import Discord from "../assets/images/socials/discord.svg";
-import Github from "../assets/images/socials/icons8-github-94.png";
-import Linkedin from "../assets/images/socials/linkedin.png";
+import Github from "../assets/images/socials/icons8-github-94.webp";
+import Linkedin from "../assets/images/socials/linkedin.webp";
 import { Reveal } from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
 /** @jsxImportSource theme-ui */
@@ -34,7 +33,7 @@ const Footer = () => {
         <p className="footer--line__content"></p>
       </div>
       <div className="footer--container animation-overflow">
-        <Reveal keyframes={FadeInBottomLeft} duration={5000}>
+        <Reveal keyframes={FadeInBottomLeft} duration={1500}>
           <div className="footer--container__content">
             <div className="footer--container__content--details">
               <div className="footer--container__content--details__logo">
@@ -53,7 +52,7 @@ const Footer = () => {
                   <a
                     href="mailto: eluemichael1@outlook.com"
                     target="_blank"
-                    rel="noreferrer"
+                   rel="noopener noreferrer"
                     className="footer--container__content--details__email--link"
                   >
                     eluemichael1@outlook.com
@@ -74,7 +73,7 @@ const Footer = () => {
                 <a
                   href="https://github.com/MikkyPrestige"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   className="footer--container__content--media--links--link"
                 >
                   <Avatar
@@ -86,7 +85,7 @@ const Footer = () => {
                 <a
                   href="https://www.linkedin.com/in/mikkyprestige"
                   target="_blank"
-                  rel="noreferrer"
+                 rel="noopener noreferrer"
                   className="footer--container__content--media--links--link"
                 >
                   <Avatar
@@ -98,7 +97,7 @@ const Footer = () => {
                 <a
                   href="https://discordapp.com/users/786382582220193803"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   className="footer--container__content--media--links--link"
                 >
                   <Avatar
@@ -112,9 +111,9 @@ const Footer = () => {
           </div>
           <div className="footer--container__copyright">
             <p className="footer--container__copyright--text">
-              &copy; 2023.{" "}
-              <a href="https://github.com/MikkyPrestige/portfolio">
-                PrestigeEnigma
+             &copy; {new Date().getFullYear()}.{" "}
+              <a href="https://github.com/MikkyPrestige">
+                  zero //
               </a>
             </p>
           </div>

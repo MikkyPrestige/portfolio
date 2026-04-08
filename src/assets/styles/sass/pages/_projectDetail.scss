@@ -1,0 +1,193 @@
+.project-detail {
+  width: 100%;
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 2rem;
+
+  &__back {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 1.5rem;
+    text-decoration: none;
+    color: var(--blue-cyan);
+    font-weight: 600;
+  }
+
+  &__header {
+    margin-bottom: 2rem;
+
+    h1 {
+      font-size: clamp(2.2rem, 3vw, 3.4rem);
+      margin-bottom: 0.8rem;
+      font-family: var(--font-family--Tilt);
+      line-height: 1.2;
+    }
+
+    p {
+      font-size: 1.6rem;
+      line-height: 1.6;
+      opacity: 0.95;
+    }
+  }
+
+  &__hero {
+    width: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    border: 1px solid var(--color-tertiary);
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
+  }
+
+  &__stack {
+    margin-bottom: 2rem;
+
+    h2 {
+      margin-bottom: 1rem;
+      font-size: 2rem;
+    }
+
+    div {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+    }
+
+    span {
+      padding: 0.5rem 1rem;
+      border-radius: 999px;
+      border: 1px solid var(--color-tertiary);
+      font-size: 1.3rem;
+      font-weight: 600;
+    }
+  }
+
+  &__case {
+    margin-bottom: 2rem;
+    padding: 1.2rem;
+    border-radius: 0.8rem;
+    border: 1px solid var(--color-tertiary);
+
+    h2 {
+      margin-bottom: 1rem;
+      font-size: 2rem;
+    }
+
+    p {
+      margin-bottom: 0.8rem;
+      font-size: 1.5rem;
+      line-height: 1.65;
+    }
+  }
+
+  &__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  // ===== phone-small (<= 480px) =====
+  @include respond(phone-small) {
+    padding: 5rem;
+
+    &__back {
+      font-size: 1.35rem;
+      margin-bottom: 1rem;
+    }
+
+    &__header {
+      margin-bottom: 1.4rem;
+
+      h1 {
+        font-size: 2.1rem;
+      }
+
+      p {
+        font-size: 1.4rem;
+        line-height: 1.55;
+      }
+    }
+
+    &__hero {
+      margin-bottom: 1.4rem;
+      border-radius: 0.7rem;
+    }
+
+    &__stack {
+      margin-bottom: 1.4rem;
+
+      h2 {
+        font-size: 1.75rem;
+      }
+
+      span {
+        font-size: 1.2rem;
+        padding: 0.45rem 0.85rem;
+      }
+    }
+
+    &__case {
+      margin-bottom: 1.4rem;
+      padding: 1rem;
+
+      h2 {
+        font-size: 1.75rem;
+      }
+
+      p {
+        font-size: 1.35rem;
+        line-height: 1.55;
+      }
+    }
+
+    &__links {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr;
+
+      .project--card__links__link {
+        justify-content: center;
+        width: 100%;
+      }
+    }
+  }
+
+  // ===== tablet-land and above (>= 768px in your mixin mapping) =====
+  @include respond(tablet-land) {
+    padding: 1.8rem;
+
+    &__header {
+      h1 {
+        font-size: clamp(2.2rem, 3vw, 3rem);
+      }
+
+      p {
+        font-size: 1.55rem;
+      }
+    }
+
+    &__case {
+      p {
+        font-size: 1.45rem;
+      }
+    }
+
+    &__links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+  }
+
+  // ===== laptop and above =====
+  @include respond(laptop) {
+    padding: 2rem;
+  }
+}

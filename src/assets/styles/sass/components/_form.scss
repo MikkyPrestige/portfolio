@@ -204,11 +204,23 @@
       font-family: inherit;
       font-size: var(--font-size--small);
       font-weight: var(--font-weight--bold);
-      -webkit-transition: all 0.5s;
-      -moz-transition: all 0.5s;
-      -ms-transition: all 0.5s;
-      -o-transition: all 0.5s;
-      transition: all 0.5s;
+      -webkit-transition: all 0.25s ease;
+      -moz-transition: all 0.25s ease;
+      -ms-transition: all 0.25s ease;
+      -o-transition: all 0.25s ease;
+      transition: all 0.25s ease;
+      position: relative;
+
+        &:disabled {
+        opacity: 0.65;
+        cursor: not-allowed;
+        transform: none;
+        filter: grayscale(20%);
+      }
+
+         &[disabled]:hover {
+        transform: none;
+      }
 
       &:hover {
         background-position: right center;
@@ -219,7 +231,8 @@
       color: var(--color--red);
       font-size: var(--font-size);
       font-weight: var(--font-weight--regular);
-      margin-top: -1.5rem;
+       margin-top: 0.6rem;
+      line-height: 1.4;
     }
   }
 }

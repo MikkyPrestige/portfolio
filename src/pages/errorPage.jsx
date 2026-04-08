@@ -1,6 +1,5 @@
-// 404 ERROR COMPONENT
 import React from "react";
-import { Helmet } from "react-helmet";
+import SEO  from "../components/seo";
 import { Link } from "react-router-dom";
 import { FaHome } from "react-icons/fa";
 import Pikabu from "../assets/images/pikabu-error-404.gif";
@@ -11,11 +10,13 @@ import { Zoom } from "react-awesome-reveal";
 const ErrorPage = () => {
   return (
     <aside className="app">
-      <Helmet>
-        <title>Front-End Dev | 404 Error</title>
-        <meta name="description" content="404 error page" />
-      </Helmet>
-      <Zoom duration={5000}>
+   <SEO
+  title="404 | Page Not Found"
+  description="The page you are looking for could not be found."
+  canonical="https://michaelelue.netlify.app/404"
+  noindex
+/>
+      <Zoom duration={2000}>
         <div
           sx={{
             backgroundColor: "background",

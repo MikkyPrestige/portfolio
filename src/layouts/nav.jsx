@@ -6,7 +6,7 @@ import { TbSmartHome } from "react-icons/tb";
 import { BiCodeAlt } from "react-icons/bi";
 import { FcWorkflow, FcCollaboration } from "react-icons/fc";
 import Avatar from "../components/avatar";
-import Logo from "../assets/images/logo.png";
+import Logo from "../assets/images/logo.webp";
 
 const Layout = () => {
   return (

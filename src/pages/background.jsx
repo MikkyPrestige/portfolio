@@ -1,28 +1,28 @@
 import React from "react";
-import { Helmet } from "react-helmet";
+import SEO  from "../components/seo";
 import Avatar from "../components/avatar";
-import Skills from "../assets/images/skills/skill-logo.png";
-import HTML5 from "../assets/images/skills/html-logo.png";
-import CSS3 from "../assets/images/skills/css-logo.png";
-import SASS from "../assets/images/skills/sass-logo.png";
-import JS from "../assets/images/skills/javascript-logo.png";
-import GIT from "../assets/images/skills/git-logo.png";
-import REACT from "../assets/images/skills/react-logo.png";
-import VUE from "../assets/images/skills/vue-logo.png";
-import FIGMA from "../assets/images/skills/figma-logo.png";
+import Skills from "../assets/images/skills/skill-logo.webp";
+import HTML5 from "../assets/images/skills/html-logo.webp";
+import CSS3 from "../assets/images/skills/css-logo.webp";
+import SASS from "../assets/images/skills/sass-logo.webp";
+import JS from "../assets/images/skills/javascript-logo.webp";
+import GIT from "../assets/images/skills/git-logo.webp";
+import REACT from "../assets/images/skills/react-logo.webp";
+import VUE from "../assets/images/skills/vue-logo.webp";
+import FIGMA from "../assets/images/skills/figma-logo.webp";
 import FIREBASE from "../assets/images/skills/firebase.svg";
 import SoftSkill from "../assets/images/skills/flexibility-skill.svg";
 import Cognition from "../assets/images/skills/cognition.svg";
 import Thinking from "../assets/images/skills/hacker-thinking.gif";
 import Adaptability from "../assets/images/skills/adaptability-skill.svg";
 import Research from "../assets/images/skills/research.gif";
-import ShareMind from "../assets/images/skills/share-mind.png";
-import Agile from "../assets/images/skills/agile-management.png";
-import Typescript from "../assets/images/skills/typescript.png";
+import ShareMind from "../assets/images/skills/share-mind.webp";
+import Agile from "../assets/images/skills/agile-management.webp";
+import Typescript from "../assets/images/skills/typescript.webp";
 import MERN from "../assets/images/skills/mern.webp";
-import Auth0 from "../assets/images/skills/auth0.png";
+import Auth0 from "../assets/images/skills/auth0.webp";
 import Mindful from "../assets/images/skills/mindful.svg";
-import myAvatar from "../assets/images/prestige.jpeg";
+import myAvatar from "../assets/images/prestige.webp";
 import Teamwork from "../assets/images/skills/teamwork.svg";
 import { Zoom } from "react-awesome-reveal";
 import "animate.css";
@@ -31,13 +31,11 @@ import "animate.css";
 const Background = () => {
   return (
     <main className="app">
-      <Helmet>
-        <title>Front-End Dev | My About</title>
-        <meta
-          name="description"
-          content="I am an enthusiastic and dedicated frontend developer"
-        />
-      </Helmet>
+   <SEO
+  title="Background | Elue Michael"
+  description="Technical and professional background, core skills, and engineering strengths."
+  canonical="https://michaelelue.netlify.app/background"
+/>
       <div
         sx={{
           backgroundColor: "background",
@@ -46,7 +44,7 @@ const Background = () => {
         className="about"
       >
         <section className="about--wrapper">
-          <Zoom duration={5000} cascade damping={0.0001}>
+          <Zoom duration={1500} cascade damping={0.0001}>
             <div className="about--content__title">
               <h1 className="about--content__title__head">
                 <span className="about--content__title__span">/</span>
@@ -58,7 +56,7 @@ const Background = () => {
               <div className="about--img">
                 <Avatar
                   image={myAvatar}
-                  alt="My avatar"
+                  alt="Elue Michael Portrait"
                   style={{
                     width: "100%",
                     height: "100%",

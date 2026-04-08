@@ -1,18 +1,16 @@
 import React from "react";
-import { Helmet } from "react-helmet";
-import myAvatar from "../assets/images/myAvatar.png";
-import GitHub from "../assets/images/socials/icons8-github-94.png";
-import LinkedIn from "../assets/images/socials/icons8-linkedin-94.png";
-import LeetCode from "../assets/images/socials/leetCode.png";
+import SEO  from "../components/seo";
+import myAvatar from "../assets/images/myAvatar.webp";
+import GitHub from "../assets/images/socials/icons8-github-94.webp";
+import LinkedIn from "../assets/images/socials/icons8-linkedin-94.webp";
 import { Link } from "react-router-dom";
-import Resume from "../assets/images/socials/myResume.pdf";
+import Resume from "../assets/images/socials/elue_michael_software_engineer.pdf";
 import ProjectSlide from "../components/animation/project";
 import Avatar from "../components/avatar";
 import { Reveal, JackInTheBox, Fade } from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
 /** @jsxImportSource theme-ui */
 
-// ANIMATION
 const rotateInDownRight = keyframes`
 from {
   -webkit-transform: rotate3d(0, 0, 1, -45deg);
@@ -77,13 +75,11 @@ const Home = () => {
 
   return (
     <main className="app">
-      <Helmet>
-        <title>Front-End Dev | Home Page</title>
-        <meta
-          name="description"
-          content="I am a dedicated web developer with a focus on HTML, JavaScript, React, Mern Stack and more"
-        />
-      </Helmet>
+    <SEO
+  title="Elue Michael | Front-End Software Engineer"
+  description="Front-end software engineer focused on React, accessibility, performance, and clean user experiences."
+  canonical="https://michaelelue.netlify.app/"
+/>
       <section
         className="home"
         sx={{
@@ -92,13 +88,13 @@ const Home = () => {
         }}
       >
         <aside className="home--media">
-          <Fade direction="up" duration={5000}>
+          <Fade direction="up" duration={900}>
             <div className="home--media__line"></div>
             <div className="home--media__frame">
               <Link
                 to="https://github.com/MikkyPrestige"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 className="home--media__frame__img"
               >
                 <Avatar
@@ -108,21 +104,9 @@ const Home = () => {
                 />
               </Link>
               <Link
-                to="https://leetcode.com/mikkyprestige"
-                target="_blank"
-                rel="noreferrer"
-                className="home--media__frame__img"
-              >
-                <Avatar
-                  image={LeetCode}
-                  alt="LeetCode Icon"
-                  style={{ width: "100%", height: "100%", borderRadius: "50%" }}
-                />
-              </Link>
-              <Link
                 to="https://www.linkedin.com/in/mikkyprestige"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 className="home--media__frame__img"
               >
                 <Avatar
@@ -137,7 +121,7 @@ const Home = () => {
         <section className="home--contents">
           <section className="home--contents__wrapper">
             <div className="home--contents__content">
-              <JackInTheBox duration={5000}>
+              <JackInTheBox duration={1200}>
                 <h1 className="home--contents__content__title">ELUE MICHAEL</h1>
                 <h2 className="home--contents__content__subtitle">
                   Front-End Developer
@@ -149,7 +133,7 @@ const Home = () => {
                   software that positively impacts the lives of those around me.
                 </p>
                 <div className="home--contents__content__btn">
-                  <a href={Resume} target="_blank" rel="noreferrer">
+                  <a href={Resume} target="_blank" rel="noopener noreferrer">
                     <button className="home--contents__content__btn__link">
                       View My Resume
                     </button>
@@ -164,7 +148,7 @@ const Home = () => {
               </JackInTheBox>
             </div>
             <div className="home--contents__illustration">
-              <Reveal keyframes={rotateInDownRight} duration={5000}>
+              <Reveal keyframes={rotateInDownRight} duration={1500}>
                 <div>
                   <div className="home--contents__illustration__wrapper">
                     <div className="home--contents__illustration__wrapper--avatar">
@@ -188,7 +172,7 @@ const Home = () => {
             </div>
           </section>
           <figure className="home--contents__quote">
-            <Reveal keyframes={lightSpeedInLeft} duration={5000}>
+            <Reveal keyframes={lightSpeedInLeft} duration={1500}>
               <blockquote
                 className="home--contents__quote__block"
                 cite="https://www.ted.com/speakers/alan_kay#:~:text=%22The%20best%20way%20to%20predict,epistemology%2C%20molecular%20biology%20and%20more"
@@ -203,7 +187,7 @@ const Home = () => {
                   <a
                     href="https://www.ted.com/speakers/alan_kay#:~:text=%22The%20best%20way%20to%20predict,epistemology%2C%20molecular%20biology%20and%20more"
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                     className="home--contents__quote__block__caption__cite"
                   >
                     TED ideas worth spreading
