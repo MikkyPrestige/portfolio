@@ -9,7 +9,7 @@ import { Fade } from "react-awesome-reveal";
 const ProjectSlider = ({
   projects,
   autoPlay = false,
-  slideInterval = 8000,
+  slideInterval = 5000,
   onNextSlide,
 }) => {
   const [currentProject, setCurrentProject] = useState(0);
@@ -17,21 +17,18 @@ const ProjectSlider = ({
   const [isHovered, setIsHovered] = useState("");
   const slideRef = useRef(null);
 
-  // FUNCTION TO HANDLE NEXT SLIDE
   const handleNextSlide = () => {
     setCurrentProject(
       currentProject === projects.length - 1 ? 0 : currentProject + 1
     );
   };
 
-  // FUNCTION TO HANDLE PREVIOUS SLIDE
   const handlePreviousSlide = () => {
     setCurrentProject(
       currentProject === 0 ? projects.length - 1 : currentProject - 1
     );
   };
 
-  // FUNCTION TO HANDLE PLAY/PAUSE
   const handlePlayPause = () => {
     setIsPlaying(!isPlaying);
   };
@@ -64,7 +61,7 @@ const ProjectSlider = ({
       }}
     >
       <div className="projectSlider--contents">
-        <Fade duration={5000} direction="right">
+        <Fade duration={1500} direction="right">
           <div className="projectSlider--contents__container">
             <Avatar
               image={projects[currentProject].image}
@@ -93,8 +90,8 @@ const ProjectSlider = ({
           </div>
         </Fade>
       </div>
-      {/* <div className="animation-overflow"> */}
-      <Fade direction="left" duration={5000}>
+
+      <Fade direction="left" duration={1500}>
         <div className="projectSlider--controls">
           <button
             className="projectSlider--controls__btn"
@@ -139,8 +136,8 @@ const ProjectSlider = ({
           </button>
         </div>
       </Fade>
-      {/* </div> */}
-      <Fade direction="right" duration={5000}>
+
+      <Fade direction="right" duration={1500}>
         {projects.length > 1 && (
           <div className="projectSlider--pagination">
             {projects.map((project, index) => (
@@ -155,7 +152,6 @@ const ProjectSlider = ({
                 onMouseLeave={() => setIsHovered(-1)}
               >
                 {isHovered === index && (
-                  // Display tooltip for the only for particular dot hovered on
                   <span className="projectSlider--pagination__dot--tooltip">
                     {project.title}
                   </span>

@@ -1,13 +1,12 @@
 import React, { useRef, useEffect, useState } from "react";
-import { Helmet } from "react-helmet";
+import SEO  from "../components/seo";
 import Form from "../components/form";
 import Avatar from "../components/avatar";
-import Location from "../assets/images/socials/location.png";
-import Gmail from "../assets/images/socials/gmail.png";
-import Call from "../assets/images/socials/icon-call.png";
+import Location from "../assets/images/socials/location.webp";
+import Gmail from "../assets/images/socials/gmail.webp";
+import Call from "../assets/images/socials/icon-call.webp";
 import Discord from "../assets/images/socials/discord.svg";
-import Twitter from "../assets/images/socials/twitter.png";
-import Linkedin from "../assets/images/socials/icons8-linkedin-94.png";
+import Linkedin from "../assets/images/socials/icons8-linkedin-94.webp";
 import { mapboxgl } from "../config";
 import "mapbox-gl/dist/mapbox-gl.css";
 import { Fade, Reveal } from "react-awesome-reveal";
@@ -101,14 +100,11 @@ const Contact = () => {
 
   return (
     <main className="app">
-      <Helmet>
-        <title>Front-End Dev | Contact Me</title>
-        <meta
-          name="description"
-          content="Contact me for your next project. I am available for internship or entry level
-        position in frontend development."
-        />
-      </Helmet>
+   <SEO
+  title="Contact | Elue Michael"
+  description="Get in touch for software engineering opportunities and collaborations."
+  canonical="https://michaelelue.netlify.app/contact"
+/>
       <div
         sx={{
           backgroundColor: "background",
@@ -118,14 +114,14 @@ const Contact = () => {
         id="contact"
       >
         <header className="contact--header">
-          <Reveal keyframes={Wobble} duration={10000}>
+          <Reveal keyframes={Wobble} duration={1500}>
             <h1 className="contact--header__title">Contact /</h1>
             <p className="contact--header__subtitle">Get in touch</p>
           </Reveal>
         </header>
         <section className="contact--content">
           <section className="contact--content__right">
-            <Fade direction="left" duration={5000}>
+            <Fade direction="left" duration={900}>
               <h2 className="contact--content__right__title">
                 Message or Call me here
               </h2>
@@ -177,27 +173,10 @@ const Contact = () => {
                     <a
                       href="https://discordapp.com/users/786382582220193803"
                       target="_blank"
-                      rel="noreferrer"
+                      rel="noopener noreferrer"
                       className="contact--content__right__media__links__item--link"
                     >
                       @mikkyprestige
-                    </a>
-                  </div>
-                  <div className="contact--content__right__media__links__item">
-                    <div className="contact--content__right__media__links__item--avatar">
-                      <Avatar
-                        image={Twitter}
-                        alt="Twitter Icon"
-                        style={{ width: "100%", height: "100%" }}
-                      />
-                    </div>
-                    <a
-                      href="https://twitter.com/MikkyPrestige"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="contact--content__right__media__links__item--link"
-                    >
-                      @MikkyPrestige
                     </a>
                   </div>
                   <div className="contact--content__right__media__links__item">
@@ -211,7 +190,7 @@ const Contact = () => {
                     <a
                       href="https://www.linkedin.com/in/mikkyprestige"
                       target="_blank"
-                      rel="noreferrer"
+                      rel="noopener noreferrer"
                       className="contact--content__right__media__links__item--link"
                     >
                       @mikkyprestige
@@ -230,7 +209,7 @@ const Contact = () => {
                     <a
                       href="https://hashnode.com/@MikkyPrestige"
                       target="_blank"
-                      rel="noreferrer"
+                      rel="noopener noreferrer"
                       className="contact--content__right__media__links__item--link"
                     >
                       @MikkyPrestige
@@ -241,7 +220,7 @@ const Contact = () => {
             </Fade>
           </section>
           <div className="contact--content__animation">
-            <Fade direction="right" duration={5000}>
+            <Fade direction="right" duration={900}>
               <section className="contact--content__left">
                 <h2 className="contact--content__left__title">
                   Send me a message let's talk👋
@@ -253,7 +232,7 @@ const Contact = () => {
         </section>
         <aside className="contact--location margin-top">
           <div className="animation-overflow">
-            <Reveal keyframes={Flash} duration={25000}>
+            <Reveal keyframes={Flash} duration={2000}>
               <header className="contact--location__head">
                 <h2 className="contact--location__head__title">Locate Me </h2>
                 <span className="contact--location__head__avatar margin-left-minus">
@@ -409,11 +388,6 @@ const Contact = () => {
               ref={mapContainer}
               className="contact--location__map--container"
             ></div>
-            {/* <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.0000000000005!2d3.3515629999999997!3d6.524444000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8f7e7b5c3b3b%3A0x9b2f3b2b2b2b2b2b2!2sAsaba%2C%20Nigeria!5e0!3m2!1sen!2sng!4v1621361000000!5m2!1sen!2sng"
-            title="Location Map"
-            loading="lazy"
-          ></iframe> */}
           </section>
         </aside>
       </div>

@@ -5,10 +5,10 @@ import Footer from "./layouts/footer";
 import AppRoutes from "./routes";
 import Fallback from "./components/fallback";
 import { Box, useColorMode } from "theme-ui";
-/** @jsxImportSource theme-ui */
 import Dark from "./assets/images/night.svg";
-import Light from "./assets/images/light.png";
+import Light from "./assets/images/light.webp";
 import Avatar from "./components/avatar";
+/** @jsxImportSource theme-ui */
 
 function App() {
   const [state, setState] = useState("light");
@@ -20,8 +20,16 @@ function App() {
   };
 
   return (
-    <ErrorBoundary FallbackComponent={Fallback}>
+    <ErrorBoundary
+      FallbackComponent={Fallback}
+      onError={(error, info) => reportError(error, info)}
+      onReset={() => window.location.assign("/")}
+    >
       <Suspense fallback={<div className="custom-loader"></div>}>
+        <a href="#main-content" className="skip-link">
+          Skip to main content
+        </a>
+
         <Box
           sx={{
             marginTop: "5rem",
@@ -75,7 +83,9 @@ function App() {
             </button>
           </div>
           <Nav colorMode={colorMode} />
-          <AppRoutes colorMode={colorMode} />
+          <main id="main-content">
+            <AppRoutes colorMode={colorMode} />
+          </main>
           <Footer colorMode={colorMode} />
         </Box>
       </Suspense>
