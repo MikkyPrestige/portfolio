@@ -5,7 +5,7 @@ const Home = lazy(() => import("../pages/home"));
 const Projects = lazy(() => import("../pages/projects"));
 const ProjectDetail = lazy(() => import("../pages/projectDetail"));
 const Contact = lazy(() => import("../pages/contact"));
-const Background = lazy(() => import("../pages/background"));
+const Background = lazy(() => import("../pages/about"));
 const ErrorPage = lazy(() => import("../pages/errorPage"));
 
 const AppRoutes = ({ colorMode }) => {

@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet-async";
 const SITE_URL = "https://michaelelue.netlify.app";
 const DEFAULT_TITLE = "Elue Michael | Front-End Software Engineer";
 const DEFAULT_DESC =
-  "Front-end software engineer building accessible, performant web applications with React and modern JavaScript tooling.";
+  "Hi, I'm Elue Michael, a passionate front-end software engineer specializing in crafting engaging and user-friendly web experiences. With a strong foundation in JavaScript and React, I bring designs to life with clean, efficient code. I thrive on solving complex problems and continuously learning new technologies to stay at the forefront of web development. Let's build something amazing together!";
 const DEFAULT_IMAGE = `${SITE_URL}/android-chrome-384x384.png`;
 
 const SEO = ({

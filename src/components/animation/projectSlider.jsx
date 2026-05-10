@@ -1,166 +1,147 @@
-import { React, useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import Avatar from "../avatar";
 import Play from "../../assets/images/play.svg";
 import Pause from "../../assets/images/pause.svg";
-import { FaForward } from "react-icons/fa";
-import { FaBackward } from "react-icons/fa";
+import { FaForward, FaBackward, FaGithub } from "react-icons/fa";
 import { Fade } from "react-awesome-reveal";
 
-const ProjectSlider = ({
-  projects,
-  autoPlay = false,
-  slideInterval = 5000,
-  onNextSlide,
-}) => {
+const ProjectSlider = ({ projects = [], autoPlay = false, slideInterval = 5000 }) => {
   const [currentProject, setCurrentProject] = useState(0);
   const [isPlaying, setIsPlaying] = useState(autoPlay);
-  const [isHovered, setIsHovered] = useState("");
-  const slideRef = useRef(null);
+  const intervalRef = useRef(null);
+
+  const hasProjects = projects.length > 0;
+  const active = hasProjects ? projects[currentProject] : null;
 
   const handleNextSlide = () => {
-    setCurrentProject(
-      currentProject === projects.length - 1 ? 0 : currentProject + 1
-    );
+    setCurrentProject((prev) => (prev === projects.length - 1 ? 0 : prev + 1));
   };
 
   const handlePreviousSlide = () => {
-    setCurrentProject(
-      currentProject === 0 ? projects.length - 1 : currentProject - 1
-    );
+    setCurrentProject((prev) => (prev === 0 ? projects.length - 1 : prev - 1));
   };
 
   const handlePlayPause = () => {
-    setIsPlaying(!isPlaying);
+    setIsPlaying((prev) => !prev);
   };
 
   useEffect(() => {
-    if (isPlaying) {
-      slideRef.current = setInterval(() => {
-        setCurrentProject(
-          currentProject === projects.length - 1 ? 0 : currentProject + 1
-        );
-      }, slideInterval);
-    } else {
-      clearInterval(slideRef.current);
-    }
-    return () => clearInterval(slideRef.current);
-  }, [isPlaying, slideInterval, currentProject, projects.length]);
+    if (!hasProjects) return;
 
-  useEffect(() => {
-    if (onNextSlide) {
-      onNextSlide(currentProject);
+    if (isPlaying) {
+      intervalRef.current = setInterval(handleNextSlide, slideInterval);
     }
-  }, [currentProject, onNextSlide]);
+
+    return () => clearInterval(intervalRef.current);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isPlaying, slideInterval, currentProject, hasProjects]);
+
+  if (!hasProjects) {
+    return (
+      <section className="project-slider">
+        <p className="project-slider__empty">No featured projects yet.</p>
+      </section>
+    );
+  }
 
   return (
-    <section
-      className="projectSlider animation-overflow"
-      sx={{
-        backgroundColor: "background",
-        color: "text",
-      }}
-    >
-      <div className="projectSlider--contents">
-        <Fade duration={1500} direction="right">
-          <div className="projectSlider--contents__container">
+    <section className="project-slider" sx={{ backgroundColor: "background", color: "text" }}>
+      <Fade duration={900} triggerOnce>
+        <article className="project-slider__card">
+          <div className="project-slider__media">
             <Avatar
-              image={projects[currentProject].image}
-              alt={projects[currentProject].title}
-              style={{
-                width: "100%",
-                height: "100%",
-                border: "1px solid #ededed",
-                borderRadius: "1rem",
-                objectFit: "contain",
-              }}
+              image={active.image}
+              alt={active.title}
+              style={{ width: "100%", height: "100%", objectFit: "cover" }}
             />
           </div>
-          <div className="projectSlider--contents__details">
-            <h2 className="projectSlider--contents__details--title">
-              {projects[currentProject].title}
-            </h2>
-            <a
-              href={projects[currentProject].link}
-              target="_blank"
-              rel="noreferrer"
-              className="projectSlider--contents__details--link"
-            >
-              View Project
-            </a>
+
+          <div className="project-slider__content">
+            <h3 className="project-slider__title">{active.title}</h3>
+            <p className="project-slider__desc">{active.description}</p>
+
+            <div className="project-slider__chips">
+              {active.stack?.map((tech) => (
+                <span key={tech} className="project-slider__chip">
+                  {tech}
+                </span>
+              ))}
+            </div>
+
+            <div className="project-slider__actions">
+              <Link to={`/projects/${active.slug}`} className="project-slider__btn project-slider__btn--primary">
+                Case Study
+              </Link>
+
+              <a
+                href={active.live || active.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-slider__btn project-slider__btn--ghost"
+              >
+                Live Demo
+              </a>
+
+              <a
+                href={active.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-slider__icon-btn"
+                aria-label={`Open ${active.title} GitHub repository`}
+              >
+                <FaGithub />
+              </a>
+            </div>
           </div>
-        </Fade>
+        </article>
+      </Fade>
+
+      <div className="project-slider__controls">
+        <button
+          className="project-slider__control-btn"
+          onClick={handlePreviousSlide}
+          aria-label="Go to previous project"
+        >
+          <FaBackward />
+        </button>
+
+        <button
+          className="project-slider__control-btn project-slider__control-btn--play"
+          onClick={handlePlayPause}
+          aria-label={isPlaying ? "Pause autoplay" : "Start autoplay"}
+        >
+          {isPlaying ? (
+            <Avatar image={Pause} alt="Pause" style={{ width: "2rem", height: "2rem" }} />
+          ) : (
+            <Avatar image={Play} alt="Play" style={{ width: "2rem", height: "2rem" }} />
+          )}
+        </button>
+
+        <button
+          className="project-slider__control-btn"
+          onClick={handleNextSlide}
+          aria-label="Go to next project"
+        >
+          <FaForward />
+        </button>
       </div>
 
-      <Fade direction="left" duration={1500}>
-        <div className="projectSlider--controls">
-          <button
-            className="projectSlider--controls__btn"
-            onClick={handlePreviousSlide}
-            aria-label="Go to previous project slide"
-          >
-            <FaBackward
-              style={{
-                width: "2rem",
-                height: "2rem",
-                fill: "rgba(255, 0, 0, 0.5)",
-              }}
-            />
-          </button>
-          <button
-            className="projectSlider--controls__btn padding-small"
-            onClick={handlePlayPause}
-            aria-label="Toggle play/pause animation of the project's slider"
-          >
-            {isPlaying ? (
-              <Avatar
-                image={Pause}
-                alt="Pause Icon"
-                style={{ width: "2.5rem", height: "2.5rem" }}
-              />
-            ) : (
-              <Avatar
-                image={Play}
-                alt="Play Icon"
-                style={{ width: "2.5rem", height: "2.5rem" }}
-              />
-            )}
-          </button>
-          <button
-            className="projectSlider--controls__btn"
-            onClick={handleNextSlide}
-            aria-label="Go to next project slide"
-          >
-            <FaForward
-              style={{ width: "2rem", height: "2rem", fill: "#1D976C" }}
-            />
-          </button>
-        </div>
-      </Fade>
-
-      <Fade direction="right" duration={1500}>
-        {projects.length > 1 && (
-          <div className="projectSlider--pagination">
-            {projects.map((project, index) => (
-              <button
-                aria-label="Clicking this button to go to this specific project"
-                key={index}
-                className={`projectSlider--pagination__dot ${
-                  currentProject === index ? "active" : ""
-                }`}
-                onClick={() => setCurrentProject(index)}
-                onMouseEnter={() => setIsHovered(index)}
-                onMouseLeave={() => setIsHovered(-1)}
-              >
-                {isHovered === index && (
-                  <span className="projectSlider--pagination__dot--tooltip">
-                    {project.title}
-                  </span>
-                )}
-              </button>
-            ))}
-          </div>
-        )}
-      </Fade>
+      {projects.length > 1 && (
+  <div className="project-slider__pagination">
+    {projects.map((project, index) => (
+      <button
+        key={project.slug || index}
+        aria-label={`Go to ${project.title} slide`}
+        className={`project-slider__dot ${currentProject === index ? "active" : ""}`}
+        onClick={() => setCurrentProject(index)}
+      />
+    ))}
+    <span className="project-slider__counter">
+      {currentProject + 1} / {projects.length} — {active.title}
+    </span>
+  </div>
+)}
     </section>
   );
 };

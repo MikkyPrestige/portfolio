@@ -68,7 +68,7 @@ const ProjectDetail = () => {
             className="project--card__links__link github-link-bg"
           >
             <FaGithub style={{ color: "#000" }} />
-            View on GitHub
+            View Code
           </a>
 
           <a

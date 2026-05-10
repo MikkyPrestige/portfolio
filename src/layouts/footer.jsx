@@ -1,123 +1,76 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Avatar from "../components/avatar";
-import CodeCup from "../assets/images/projects/coding-coffee.webp";
-import Discord from "../assets/images/socials/discord.svg";
 import Github from "../assets/images/socials/icons8-github-94.webp";
 import Linkedin from "../assets/images/socials/linkedin.webp";
-import { Reveal } from "react-awesome-reveal";
-import { keyframes } from "@emotion/react";
+import Discord from "../assets/images/socials/discord.svg";
 /** @jsxImportSource theme-ui */
-
-const FadeInBottomLeft = keyframes`  from {
-  opacity: 0;
-  -webkit-transform: translate3d(-100%, 100%, 0);
-  transform: translate3d(-100%, 100%, 0);
-}
-to {
-  opacity: 1;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
-}`;
 
 const Footer = () => {
   return (
     <footer
-      sx={{
-        backgroundColor: "background",
-        color: "text",
-      }}
+      sx={{ backgroundColor: "background", color: "text" }}
       className="footer"
+      aria-label="Site footer"
     >
-      <div className="footer--line">
-        <p className="footer--line__content"></p>
+      <div className="footer__inner">
+        <section className="footer__brand">
+          <p className="footer__eyebrow">Software Engineer</p>
+          <h2 className="footer__name">Elue Michael</h2>
+          <p className="footer__bio">
+            Passionate about crafting engaging web experiences. Let's build something amazing together!
+          </p>
+        </section>
+
+        <nav className="footer__nav" aria-label="Footer navigation">
+          <h3 className="footer__heading">Navigate</h3>
+          <ul className="footer__list">
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/projects">Projects</Link></li>
+            <li><Link to="/about">About</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
+          </ul>
+        </nav>
+
+        <section className="footer__contact" aria-label="Contact links">
+          <h3 className="footer__heading">Connect</h3>
+          <a className="footer__email" href="mailto:eluemichael1@outlook.com">
+            eluemichael1@outlook.com
+          </a>
+
+          <div className="footer__socials">
+            <a
+              href="https://github.com/MikkyPrestige"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Visit GitHub profile"
+            >
+              <Avatar image={Github} alt="GitHub" style={{ width: "100%", height: "100%" }} />
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/mikkyprestige"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Visit LinkedIn profile"
+            >
+              <Avatar image={Linkedin} alt="LinkedIn" style={{ width: "100%", height: "100%" }} />
+            </a>
+
+            <a
+              href="https://discordapp.com/users/786382582220193803"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open Discord profile"
+            >
+              <Avatar image={Discord} alt="Discord" style={{ width: "100%", height: "100%" }} />
+            </a>
+          </div>
+        </section>
       </div>
-      <div className="footer--container animation-overflow">
-        <Reveal keyframes={FadeInBottomLeft} duration={1500}>
-          <div className="footer--container__content">
-            <div className="footer--container__content--details">
-              <div className="footer--container__content--details__logo">
-                <Avatar
-                  image={CodeCup}
-                  alt="Laptop Image"
-                  style={{
-                    width: "100%",
-                    height: "100%",
-                    borderRadius: "50%",
-                  }}
-                />
-              </div>
-              <div className="footer--container__content--details__wrapper">
-                <p className="footer--container__content--details__email">
-                  <a
-                    href="mailto: eluemichael1@outlook.com"
-                    target="_blank"
-                   rel="noopener noreferrer"
-                    className="footer--container__content--details__email--link"
-                  >
-                    eluemichael1@outlook.com
-                  </a>
-                </p>
-                <p className="footer--container__content--details__text">
-                  I am a Front-End Developer with experience building web
-                  applications. My passion is to build beautiful and functional
-                  user interfaces!
-                </p>
-              </div>
-            </div>
-            <div className="footer--container__content--media">
-              <h2 className="footer--container__content--media--title">
-                My Media
-              </h2>
-              <div className="footer--container__content--media--links">
-                <a
-                  href="https://github.com/MikkyPrestige"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="footer--container__content--media--links--link"
-                >
-                  <Avatar
-                    image={Github}
-                    alt="GitHub Icon"
-                    style={{ width: "100%", height: "100%" }}
-                  />
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/mikkyprestige"
-                  target="_blank"
-                 rel="noopener noreferrer"
-                  className="footer--container__content--media--links--link"
-                >
-                  <Avatar
-                    image={Linkedin}
-                    alt="GitHub Icon"
-                    style={{ width: "100%", height: "100%" }}
-                  />
-                </a>
-                <a
-                  href="https://discordapp.com/users/786382582220193803"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="footer--container__content--media--links--link"
-                >
-                  <Avatar
-                    image={Discord}
-                    alt="GitHub Icon"
-                    style={{ width: "100%", height: "100%" }}
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="footer--container__copyright">
-            <p className="footer--container__copyright--text">
-             &copy; {new Date().getFullYear()}.{" "}
-              <a href="https://github.com/MikkyPrestige">
-                  zero //
-              </a>
-            </p>
-          </div>
-        </Reveal>
+
+      <div className="footer__bottom">
+        <p>© {new Date().getFullYear()} Elue Michael.</p>
       </div>
     </footer>
   );

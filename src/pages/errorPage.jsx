@@ -12,7 +12,7 @@ const ErrorPage = () => {
     <aside className="app">
    <SEO
   title="404 | Page Not Found"
-  description="The page you are looking for could not be found."
+  description=" Sorry, the page you're looking for doesn't exist. It might have been moved or deleted."
   canonical="https://michaelelue.netlify.app/404"
   noindex
 />
@@ -37,7 +37,7 @@ const ErrorPage = () => {
               />
             </div>
             <p className="error-page--content__text">
-              The page you are looking for does not exist!!!
+              Oops! The page you're looking for doesn't exist. It might have been moved or deleted.
             </p>
           </div>
           <Link to="/" className="error-page--content__link">
