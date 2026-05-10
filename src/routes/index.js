@@ -5,7 +5,7 @@ const Home = lazy(() => import("../pages/home"));
 const Projects = lazy(() => import("../pages/projects"));
 const ProjectDetail = lazy(() => import("../pages/projectDetail"));
 const Contact = lazy(() => import("../pages/contact"));
-const Background = lazy(() => import("../pages/about"));
+const About = lazy(() => import("../pages/about"));
 const ErrorPage = lazy(() => import("../pages/errorPage"));
 
 const AppRoutes = ({ colorMode }) => {
@@ -18,10 +18,7 @@ const AppRoutes = ({ colorMode }) => {
         element={<ProjectDetail colorMode={colorMode} />}
       />
       <Route path="/contact" element={<Contact colorMode={colorMode} />} />
-      <Route
-        path="/background"
-        element={<Background colorMode={colorMode} />}
-      />
+      <Route path="/about" element={<About colorMode={colorMode} />} />
       <Route path="*" element={<ErrorPage colorMode={colorMode} />} />
     </Routes>
   );
