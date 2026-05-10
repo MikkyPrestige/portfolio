@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
-import SEO  from "../components/seo";
+import SEO from "../components/seo";
 import Form from "../components/form";
 import Avatar from "../components/avatar";
 import Location from "../assets/images/socials/location.webp";
@@ -9,58 +9,8 @@ import Discord from "../assets/images/socials/discord.svg";
 import Linkedin from "../assets/images/socials/icons8-linkedin-94.webp";
 import { mapboxgl } from "../config";
 import "mapbox-gl/dist/mapbox-gl.css";
-import { Fade, Reveal } from "react-awesome-reveal";
-import { keyframes } from "@emotion/react";
+import { Fade } from "react-awesome-reveal";
 /** @jsxImportSource theme-ui */
-
-const Flash = keyframes`
-  from,
-  50%,
-  to {
-    opacity: 1;
-  }
-
-  25%,
-  75% {
-    opacity: 0;
-  }
-}`;
-
-const Wobble = keyframes`
-  from {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-
-  15% {
-    -webkit-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
-    transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
-  }
-
-  30% {
-    -webkit-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
-    transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
-  }
-
-  45% {
-    -webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
-    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
-  }
-
-  60% {
-    -webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
-    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
-  }
-
-  75% {
-    -webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
-    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
-  }
-
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }`;
 
 const Contact = () => {
   const mapContainer = useRef(null);
@@ -76,7 +26,7 @@ const Contact = () => {
 
   useEffect(() => {
     const initializeMap = ({ setMap, mapContainer }) => {
-      const map = new mapboxgl.Map({
+      const mapInstance = new mapboxgl.Map({
         container: mapContainer.current,
         style: `mapbox://styles/mapbox/${selectedStyle}`,
         center: [location.lng, location.lat],
@@ -84,9 +34,11 @@ const Contact = () => {
         bearing: location.bearing,
         pitch: location.pitch,
       });
-      setMap(map);
-      map.addControl(new mapboxgl.NavigationControl(), "bottom-right");
+
+      setMap(mapInstance);
+      mapInstance.addControl(new mapboxgl.NavigationControl(), "bottom-right");
     };
+
     if (!map) initializeMap({ setMap, mapContainer });
   }, [map, location, selectedStyle]);
 
@@ -100,12 +52,13 @@ const Contact = () => {
 
   return (
     <main className="app">
-   <SEO
-  title="Contact | Elue Michael"
-  description="Get in touch for software engineering opportunities and collaborations."
-  canonical="https://michaelelue.netlify.app/contact"
-/>
-      <div
+      <SEO
+        title="Contact | Elue Michael"
+        description="Get in touch for software engineering opportunities and collaborations."
+        canonical="https://michaelelue.netlify.app/contact"
+      />
+
+      <section
         sx={{
           backgroundColor: "background",
           color: "text",
@@ -114,61 +67,48 @@ const Contact = () => {
         id="contact"
       >
         <header className="contact--header">
-          <Reveal keyframes={Wobble} duration={1500}>
-            <h1 className="contact--header__title">Contact /</h1>
-            <p className="contact--header__subtitle">Get in touch</p>
-          </Reveal>
+          <p className="contact--header__eyebrow">Contact</p>
+          <h1 className="contact--header__title">Let’s build something valuable together.</h1>
+          <p className="contact--header__subtitle">
+            Whether you have a question, want to collaborate on a project, or just want to say hi, my inbox is always open. I look forward to connecting with you!
+          </p>
         </header>
+
         <section className="contact--content">
-          <section className="contact--content__right">
-            <Fade direction="left" duration={900}>
-              <h2 className="contact--content__right__title">
-                Message or Call me here
-              </h2>
+          <Fade direction="up" duration={900} triggerOnce>
+            <aside className="contact--content__right" aria-label="Contact information">
+              <h2 className="contact--content__right__title">Direct contact</h2>
+
               <div className="contact--content__right__links">
                 <div className="contact--content__right__links__item">
                   <div className="contact--content__right__links__item--avatar">
-                    <Avatar
-                      image={Gmail}
-                      alt="Gmail Icon"
-                      style={{ width: "100%", height: "100%" }}
-                    />
+                    <Avatar image={Gmail} alt="Gmail Icon" style={{ width: "100%", height: "100%" }} />
                   </div>
                   <a
-                    href="mailto: michaelelue117@gmail.com"
+                    href="mailto:michaelelue117@gmail.com"
                     className="contact--content__right__links__item--link"
                   >
                     michaelelue117@gmail.com
                   </a>
                 </div>
+
                 <div className="contact--content__right__links__item">
                   <div className="contact--content__right__links__item--avatar">
-                    <Avatar
-                      image={Call}
-                      alt="Phone Icon"
-                      style={{ width: "100%", height: "100%" }}
-                    />
+                    <Avatar image={Call} alt="Phone Icon" style={{ width: "100%", height: "100%" }} />
                   </div>
-                  <a
-                    href="tel: +2348030849685"
-                    className="contact--content__right__links__item--link"
-                  >
-                    +2348030849685
+                  <a href="tel:+2348030849685" className="contact--content__right__links__item--link">
+                    +234 803 084 9685
                   </a>
                 </div>
               </div>
+
               <div className="contact--content__right__media">
-                <h2 className="contact--content__right__media__title">
-                  <span>#</span> All Media{" "}
-                </h2>
+                <h3 className="contact--content__right__media__title">Socials</h3>
+
                 <div className="contact--content__right__media__links">
                   <div className="contact--content__right__media__links__item">
                     <div className="contact--content__right__media__links__item--avatar discordSize">
-                      <Avatar
-                        image={Discord}
-                        alt="Discord Icon"
-                        style={{ width: "90%", height: "100%" }}
-                      />
+                      <Avatar image={Discord} alt="Discord Icon" style={{ width: "90%", height: "100%" }} />
                     </div>
                     <a
                       href="https://discordapp.com/users/786382582220193803"
@@ -179,13 +119,10 @@ const Contact = () => {
                       @mikkyprestige
                     </a>
                   </div>
+
                   <div className="contact--content__right__media__links__item">
                     <div className="contact--content__right__media__links__item--avatar">
-                      <Avatar
-                        image={Linkedin}
-                        alt="Linkedin Icon"
-                        style={{ width: "100%", height: "100%" }}
-                      />
+                      <Avatar image={Linkedin} alt="LinkedIn Icon" style={{ width: "100%", height: "100%" }} />
                     </div>
                     <a
                       href="https://www.linkedin.com/in/mikkyprestige"
@@ -196,13 +133,10 @@ const Contact = () => {
                       @mikkyprestige
                     </a>
                   </div>
+
                   <div className="contact--content__right__media__links__item">
                     <div className="contact--content__right__media__links__item--avatar">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 512 512"
-                        fill="#228be6"
-                      >
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#228be6">
                         <path d="M35.19 171.1C-11.72 217.1-11.72 294 35.19 340.9L171.1 476.8C217.1 523.7 294 523.7 340.9 476.8L476.8 340.9C523.7 294 523.7 217.1 476.8 171.1L340.9 35.19C294-11.72 217.1-11.72 171.1 35.19L35.19 171.1zM315.5 315.5C282.6 348.3 229.4 348.3 196.6 315.5C163.7 282.6 163.7 229.4 196.6 196.6C229.4 163.7 282.6 163.7 315.5 196.6C348.3 229.4 348.3 282.6 315.5 315.5z" />
                       </svg>
                     </div>
@@ -217,34 +151,28 @@ const Contact = () => {
                   </div>
                 </div>
               </div>
-            </Fade>
-          </section>
-          <div className="contact--content__animation">
-            <Fade direction="right" duration={900}>
-              <section className="contact--content__left">
-                <h2 className="contact--content__left__title">
-                  Send me a message let's talk👋
-                </h2>
-                <Form />
-              </section>
-            </Fade>
-          </div>
+            </aside>
+          </Fade>
+
+          <Fade direction="up" duration={900} triggerOnce>
+            <section className="contact--content__left" aria-label="Send a message">
+              <h2 className="contact--content__left__title">Send a message 👋</h2>
+              <p className="contact--content__left__desc">
+                Share your idea, role, or project scope and I’ll get back to you as soon as possible.
+              </p>
+              <Form />
+            </section>
+          </Fade>
         </section>
+
         <aside className="contact--location margin-top">
-          <div className="animation-overflow">
-            <Reveal keyframes={Flash} duration={2000}>
-              <header className="contact--location__head">
-                <h2 className="contact--location__head__title">Locate Me </h2>
-                <span className="contact--location__head__avatar margin-left-minus">
-                  <Avatar
-                    image={Location}
-                    alt="Location icon"
-                    style={{ width: "100%", height: "100%" }}
-                  />
-                </span>
-              </header>
-            </Reveal>
-          </div>
+          <header className="contact--location__head">
+            <h2 className="contact--location__head__title">Location & Map Style</h2>
+            <span className="contact--location__head__avatar">
+              <Avatar image={Location} alt="Location icon" style={{ width: "100%", height: "100%" }} />
+            </span>
+          </header>
+
           <section className="contact--location__map">
             <div className="contact--location__map--menu">
               <div className="contact--location__map--menu__item">
@@ -257,13 +185,11 @@ const Contact = () => {
                   checked={selectedStyle === "satellite-streets-v12"}
                   className="contact--location__map--menu__item--input"
                 />
-                <label
-                  htmlFor="satellite-streets-v12"
-                  className="contact--location__map--menu__item--label"
-                >
+                <label htmlFor="satellite-streets-v12" className="contact--location__map--menu__item--label">
                   Satellite Street
                 </label>
               </div>
+
               <div className="contact--location__map--menu__item">
                 <input
                   type="radio"
@@ -274,13 +200,11 @@ const Contact = () => {
                   checked={selectedStyle === "light-v10"}
                   className="contact--location__map--menu__item--input"
                 />
-                <label
-                  htmlFor="light-v10"
-                  className="contact--location__map--menu__item--label"
-                >
+                <label htmlFor="light-v10" className="contact--location__map--menu__item--label">
                   Light
                 </label>
               </div>
+
               <div className="contact--location__map--menu__item">
                 <input
                   type="radio"
@@ -291,13 +215,11 @@ const Contact = () => {
                   checked={selectedStyle === "dark-v10"}
                   className="contact--location__map--menu__item--input"
                 />
-                <label
-                  htmlFor="dark-v10"
-                  className="contact--location__map--menu__item--label"
-                >
+                <label htmlFor="dark-v10" className="contact--location__map--menu__item--label">
                   Dark
                 </label>
               </div>
+
               <div className="contact--location__map--menu__item">
                 <input
                   type="radio"
@@ -308,13 +230,11 @@ const Contact = () => {
                   checked={selectedStyle === "streets-v11"}
                   className="contact--location__map--menu__item--input"
                 />
-                <label
-                  htmlFor="streets-v11"
-                  className="contact--location__map--menu__item--label"
-                >
+                <label htmlFor="streets-v11" className="contact--location__map--menu__item--label">
                   Streets
                 </label>
               </div>
+
               <div className="contact--location__map--menu__item">
                 <input
                   type="radio"
@@ -325,13 +245,11 @@ const Contact = () => {
                   checked={selectedStyle === "outdoors-v11"}
                   className="contact--location__map--menu__item--input"
                 />
-                <label
-                  htmlFor="outdoors-v11"
-                  className="contact--location__map--menu__item--label"
-                >
+                <label htmlFor="outdoors-v11" className="contact--location__map--menu__item--label">
                   Outdoors
                 </label>
               </div>
+
               <div className="contact--location__map--menu__item">
                 <input
                   type="radio"
@@ -342,13 +260,11 @@ const Contact = () => {
                   checked={selectedStyle === "satellite-v9"}
                   className="contact--location__map--menu__item--input"
                 />
-                <label
-                  htmlFor="satellite-v9"
-                  className="contact--location__map--menu__item--label"
-                >
+                <label htmlFor="satellite-v9" className="contact--location__map--menu__item--label">
                   Satellite
                 </label>
               </div>
+
               <div className="contact--location__map--menu__item">
                 <input
                   type="radio"
@@ -359,13 +275,11 @@ const Contact = () => {
                   checked={selectedStyle === "navigation-day-v1"}
                   className="contact--location__map--menu__item--input"
                 />
-                <label
-                  htmlFor="navigation-day-v1"
-                  className="contact--location__map--menu__item--label"
-                >
+                <label htmlFor="navigation-day-v1" className="contact--location__map--menu__item--label">
                   Navigation Day
                 </label>
               </div>
+
               <div className="contact--location__map--menu__item">
                 <input
                   type="radio"
@@ -376,21 +290,16 @@ const Contact = () => {
                   checked={selectedStyle === "navigation-night-v1"}
                   className="contact--location__map--menu__item--input"
                 />
-                <label
-                  htmlFor="navigation-night-v1"
-                  className="contact--location__map--menu__item--label"
-                >
+                <label htmlFor="navigation-night-v1" className="contact--location__map--menu__item--label">
                   Navigation Night
                 </label>
               </div>
             </div>
-            <div
-              ref={mapContainer}
-              className="contact--location__map--container"
-            ></div>
+
+            <div ref={mapContainer} className="contact--location__map--container" />
           </section>
         </aside>
-      </div>
+      </section>
     </main>
   );
 };

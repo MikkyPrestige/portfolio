@@ -24,7 +24,6 @@ const Form = () => {
     const { name, value } = e.target;
     setForm((prev) => ({ ...prev, [name]: value }));
 
-    // clear field-level error while typing
     if (error[name]) {
       setError((prev) => ({ ...prev, [name]: "" }));
     }
@@ -78,7 +77,6 @@ const Form = () => {
         setSuccess(false);
         setFullNameSuccess("");
       }, 8000);
-
     } catch (err) {
       console.error("Critical submission error:", err);
       setSubmitError("Communication failed. Please try again later.");
@@ -91,7 +89,7 @@ const Form = () => {
     setSuccess(false);
   };
 
-return (
+  return (
     <section
       sx={{
         backgroundColor: "background",
@@ -115,15 +113,14 @@ return (
                 <strong>
                   <em>{fullNameSuccess}</em>
                 </strong>{" "}
-                for sending a message, I will get back to you as soon as
-                possible.
+                for sending a message. I will get back to you as soon as possible.
               </p>
               <button
                 onClick={removePopup}
                 className="form--popup__content--btn"
                 type="button"
               >
-                Okay!
+                Okay
               </button>
             </div>
           </div>
@@ -132,11 +129,14 @@ return (
 
       <form className="form--content" onSubmit={handleFormSubmit} noValidate>
         <div className="form--content__container margin-bottom-1">
+          <label htmlFor="fullName" className="form--content__label">
+            Name
+          </label>
           <input
             type="text"
             name="fullName"
             id="fullName"
-            placeholder="enter your full name"
+            placeholder="Enter your full name"
             value={form.fullName}
             autoComplete="name"
             onChange={handleFormChange}
@@ -145,10 +145,7 @@ return (
             aria-invalid={!!error.fullName}
             aria-describedby={error.fullName ? "fullName-error" : undefined}
           />
-          <label htmlFor="fullName" className="form--content__label">
-            Name
-          </label>
-          <Zoom duration={1000}>
+          <Zoom duration={300}>
             {error.fullName && (
               <p id="fullName-error" className="form--content__error" role="alert">
                 {error.fullName}
@@ -158,11 +155,14 @@ return (
         </div>
 
         <div className="form--content__container margin-bottom-1">
+          <label htmlFor="email" className="form--content__label">
+            Email
+          </label>
           <input
             type="email"
             name="email"
             id="email"
-            placeholder="enter your email (username@example.com)"
+            placeholder="Enter your email (you@example.com)"
             value={form.email}
             autoComplete="email"
             onChange={handleFormChange}
@@ -171,10 +171,7 @@ return (
             aria-invalid={!!error.email}
             aria-describedby={error.email ? "email-error" : undefined}
           />
-          <label htmlFor="email" className="form--content__label">
-            Email
-          </label>
-          <Zoom duration={1000}>
+          <Zoom duration={300}>
             {error.email && (
               <p id="email-error" className="form--content__error" role="alert">
                 {error.email}
@@ -184,10 +181,13 @@ return (
         </div>
 
         <div className="form--content__container">
+          <label htmlFor="message" className="form--content__label">
+            Message
+          </label>
           <textarea
             name="message"
             id="message"
-            placeholder="enter your message"
+            placeholder="Tell me about your project or opportunity..."
             value={form.message}
             onChange={handleFormChange}
             className="form--content__input form--content__msg"
@@ -195,10 +195,7 @@ return (
             aria-invalid={!!error.message}
             aria-describedby={error.message ? "message-error" : undefined}
           />
-          <label htmlFor="message" className="form--content__label">
-            Message
-          </label>
-          <Zoom duration={1000}>
+          <Zoom duration={300}>
             {error.message && (
               <p id="message-error" className="form--content__error" role="alert">
                 {error.message}
