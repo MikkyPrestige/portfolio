@@ -1,6 +1,6 @@
 # Hey, I'm Elue Michael 👋
 
-[![Live Portfolio](https://img.shields.io/badge/🔗_Live_Site-Visit_Now-0B9D8F?style=for-the-badge&logo=vercel)](https://your-portfolio.vercel.app)
+[![Live Portfolio](https://img.shields.io/badge/🔗_Live_Site-Visit_Now-0B9D8F?style=for-the-badge&logo=vercel)]([https://your-portfolio.vercel.app](https://elue-michael.vercel.app/))
 
 A front‑end developer who loves building clean, accessible, and performant digital experiences.  
 This repo holds the code for my personal portfolio, where I share the projects I'm most proud of and a little about my journey.
@@ -34,8 +34,8 @@ react‑icons · responsive design · dark/light theme · accessibility (ARIA, s
 
 ## 📬 Let's Connect
 
-- **Email** – [your.email@example.com](mailto:eluemichael1@outlook.com)
-- **LinkedIn** – [linkedin.com/in/yourprofile](https://www.linkedin.com/in/mikkyprestige)
+- **Email** – [Contact Me](mailto:eluemichael1@outlook.com)
+- **LinkedIn** – [Let's Connect](https://www.linkedin.com/in/mikkyprestige)
 ---
 
 *“Code is poetry and this is my verse.”*
