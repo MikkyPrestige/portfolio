@@ -12,7 +12,6 @@ const Projects = () => {
       <SEO
         title="Projects | Elue Michael"
         description="Selected software engineering projects, case studies, and live demos."
-        canonical="https://michaelelue.netlify.app/projects"
       />
 
       <section

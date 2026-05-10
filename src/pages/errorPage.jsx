@@ -13,7 +13,6 @@ const ErrorPage = () => {
    <SEO
   title="404 | Page Not Found"
   description=" Sorry, the page you're looking for doesn't exist. It might have been moved or deleted."
-  canonical="https://michaelelue.netlify.app/404"
   noindex
 />
       <Zoom duration={2000}>
