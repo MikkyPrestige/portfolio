@@ -55,7 +55,6 @@ const Contact = () => {
       <SEO
         title="Contact | Elue Michael"
         description="Get in touch for software engineering opportunities and collaborations."
-        canonical="https://michaelelue.netlify.app/contact"
       />
 
       <section

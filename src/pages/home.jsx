@@ -28,7 +28,6 @@ const build = async () => {
       <SEO
         title="Elue Michael | Front-End Software Engineer"
         description="Hi, I'm Elue Michael, a passionate front-end software engineer specializing in crafting engaging and user-friendly web experiences. With a strong foundation in JavaScript and React, I bring designs to life with clean, efficient code."
-        canonical="https://michaelelue.netlify.app/"
       />
 
       <section
