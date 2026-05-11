@@ -6,7 +6,7 @@ const SITE_URL = "https://elue-michael.vercel.app";
 const DEFAULT_TITLE = "Elue Michael | Front-End Software Engineer";
 const DEFAULT_DESC =
   "Front‑end software engineer passionate about building accessible, performant web apps with React and modern JavaScript. Let's create something great together.";
-const DEFAULT_IMAGE = `${SITE_URL}/social-share.png`;
+const DEFAULT_IMAGE = `${SITE_URL}/social-share.webp`;
 const DEFAULT_IMAGE_ALT = "Elue Michael portfolio preview";
 
 const SEO = ({

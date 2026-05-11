@@ -74,6 +74,7 @@
       width: 100%;
       height: 100%;
       margin: 0;
+      background-color: var(--color-tertiary);
     }
 
     &__bg {
@@ -83,17 +84,18 @@
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+        object-fit: contain;
 
-        &-1 {
-          background-image: url(../../../images/projects/hospitofind.png);
-        }
-
-        &-2 {
+         &-1 {
           background-image: url(../../../images/projects/trustbank.webp);
         }
 
+        &-2 {
+          background-image: url(../../../images/projects/hospitofind.webp);
+        }
+
         &-3 {
-          background-image: url(../../../images/projects/gitAudit.png);
+          background-image: url(../../../images/projects/gitAudit.webp);
         }
 
          &-4 {
@@ -101,11 +103,11 @@
         }
 
          &-5 {
-          background-image: url(../../../images/projects/law-firm.webp);
+          background-image: url(../../../images/projects/telegram.webp);
         }
 
         &-6 {
-          background-image: url(../../../images/projects/bob-marley.png);
+          background-image: url(../../../images/projects/leadgen.webp);
         }
       }
     }
@@ -228,6 +230,10 @@
     &--card {
       border-color: #2a3645;
       background: rgba(21, 29, 40, 0.95);
+
+        &__media {
+    background-color: #2a3645;
+  }
     }
 
     &__content {

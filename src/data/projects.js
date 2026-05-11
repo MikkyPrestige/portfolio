@@ -1,31 +1,11 @@
-import HospitoFind from "../assets/images/projects/hospitofind.png";
+import HospitoFind from "../assets/images/projects/hospitofind.webp";
+import HospitoLeads from "../assets/images/projects/leadgen.webp";
 import Laundry from "../assets/images/projects/laundry.webp";
-import LawFirm from "../assets/images/projects/law-firm.webp";
-import GitAudit from "../assets/images/projects/gitAudit.png";
+import FootballX from "../assets/images/projects/telegram.webp";
+import GitAudit from "../assets/images/projects/gitAudit.webp";
 import TrustBank from "../assets/images/projects/trustbank.webp";
-import Bob from "../assets/images/projects/bob-marley.png";
 
 const projects = [
-  {
-    slug: "hospitofind",
-    title: "HospitoFind",
-    image: HospitoFind,
-    stack: ["React", "CSS Modules", "MongoDB"],
-    github: "https://github.com/MikkyPrestige/hospitoFind",
-    live: "https://hospitofind.online",
-    description:
-      "A healthcare facility directory and symptom-guided assistant platform designed to improve discoverability and trust in healthcare data. The project features a searchable directory with location-aware filtering, structured records, and a moderation workflow for community-submitted updates. Additionally, it includes a symptom-guided assistant flow to enhance discovery intent and reduce user friction when seeking urgent care options.",
-    caseStudy: {
-      problem:
-        "The healthcare industry often suffers from fragmented and unreliable data, making it difficult for users to find accurate information about nearby facilities, especially in urgent situations. The challenge was to create a platform that not only aggregated healthcare facility data but also provided a user-friendly experience that guided users based on their symptoms and location.",
-      solution:
-        "I developed a full-stack application using React for the front-end and MongoDB for the back-end to manage healthcare facility data. The platform includes a searchable directory with location-aware filtering, allowing users to find relevant facilities based on their current location. I also implemented a moderation workflow for community-submitted updates to ensure data accuracy and reliability. The symptom-guided assistant flow was designed to help users quickly identify appropriate care options based on their symptoms, reducing friction and improving the overall user experience.",
-      impact:
-        "The platform successfully improved the discoverability of healthcare facilities and provided users with a more intuitive way to find care options based on their symptoms. It also demonstrated my ability to design and implement a complex system that addresses real-world problems in the healthcare industry, balancing user experience, data integrity, and community engagement.",
-    },
-    featured: true,
-    bgClass: "project--card__bg--img-1",
-  },
   {
     slug: "trust-bank",
     title: "Trust Bank",
@@ -42,6 +22,26 @@ const projects = [
         "I implemented a robust backend with PostgreSQL to handle transactional data integrity and concurrency. The front-end was built with Next.js to provide a responsive and intuitive user interface for both customers and administrators. I also developed operational tools for managing accounts, transactions, and platform settings, ensuring a comprehensive simulation experience.",
       impact:
         "The platform successfully simulated realistic banking operations, providing users with an engaging and educational experience. It also demonstrated my ability to design and implement complex systems that require careful consideration of data integrity, user experience, and operational needs.",
+    },
+    featured: true,
+    bgClass: "project--card__bg--img-1",
+  },
+  {
+    slug: "hospitofind",
+    title: "HospitoFind",
+    image: HospitoFind,
+    stack: ["React", "CSS Modules", "MongoDB"],
+    github: "https://github.com/MikkyPrestige/hospitoFind",
+    live: "https://hospitofind.online",
+    description:
+      "A healthcare facility directory and symptom-guided assistant platform designed to improve discoverability and trust in healthcare data. The project features a searchable directory with location-aware filtering, structured records, and a moderation workflow for community-submitted updates. Additionally, it includes a symptom-guided assistant flow to enhance discovery intent and reduce user friction when seeking urgent care options.",
+    caseStudy: {
+      problem:
+        "The healthcare industry often suffers from fragmented and unreliable data, making it difficult for users to find accurate information about nearby facilities, especially in urgent situations. The challenge was to create a platform that not only aggregated healthcare facility data but also provided a user-friendly experience that guided users based on their symptoms and location.",
+      solution:
+        "I developed a full-stack application using React for the front-end and MongoDB for the back-end to manage healthcare facility data. The platform includes a searchable directory with location-aware filtering, allowing users to find relevant facilities based on their current location. I also implemented a moderation workflow for community-submitted updates to ensure data accuracy and reliability. The symptom-guided assistant flow was designed to help users quickly identify appropriate care options based on their symptoms, reducing friction and improving the overall user experience.",
+      impact:
+        "The platform successfully improved the discoverability of healthcare facilities and provided users with a more intuitive way to find care options based on their symptoms. It also demonstrated my ability to design and implement a complex system that addresses real-world problems in the healthcare industry, balancing user experience, data integrity, and community engagement.",
     },
     featured: true,
     bgClass: "project--card__bg--img-2",
@@ -87,45 +87,51 @@ const projects = [
     bgClass: "project--card__bg--img-4",
   },
   {
-    slug: "prestigeenigma-advocates",
-    title: "PrestigeEnigma Advocates",
-    image: LawFirm,
-    stack: ["React", "CSS"],
-    github: "https://github.com/MikkyPrestige/PrestigeEnigma-Advocates",
-    live: "https://prestigeadvocates.vercel.app",
+    slug: "football-x-agent",
+    title: "Football X Agent",
+    image: FootballX,
+    stack: ["Python", "Groq LLM", "Telegram Bot", "API-Football", "Docker"],
+    github: "https://github.com/MikkyPrestige/football-x-agent",
+    live: "https://t.me/MyFootballAgentBot",
     description:
-      "A responsive landing page for a law firm, designed to enhance user experience and drive client engagement. The project focused on creating a clear section hierarchy, service-focused messaging, and conversion-friendly calls to action to guide potential clients through the discovery and inquiry process.",
+      "An AI powered Telegram bot that monitors live football matches, analyses news sentiment, and generates draft tweets. It combines real‑time data from 7+ sports sources, a Groq powered large language model for content generation, and a full command driven queue management system for reviewing, holding, posting, and tracking tweet performance.",
     caseStudy: {
       problem:
-        "The law firm needed a modern, user-friendly landing page that effectively communicated their services and encouraged potential clients to take action. The challenge was to create a design that was both professional and approachable, while also being optimized for conversions.",
+        "Football content creators and analysts struggle to keep up with live matches and breaking news, often spending hours manually aggregating sources and drafting social posts. The challenge was to build an intelligent agent that could autonomously collect real‑time data, synthesise insights, and manage a publish queue, all within a lightweight, always available interface.",
       solution:
-        "I designed a clean, responsive layout with a clear visual hierarchy to guide users through the content. I focused on crafting service-focused messaging and strategically placed calls to action to encourage inquiries. The design also incorporated trust signals and client testimonials to build credibility.",
+        "I architected a Python based agent running in Docker that ingests live match events, RSS feeds, Reddit threads, and API‑Football data. The Groq LLM generates contextual draft tweets with a custom few shot prompt and style rule system. Users interact with the bot entirely through Telegram commands reviewing a queue of drafts, quarantining, posting, and tracking engagement metrics. A health check system monitors source reliability, and the database can be backed up to Telegram itself.",
       impact:
-        "The landing page successfully enhanced the firm's online presence and improved user engagement. It provided a clear pathway for potential clients to learn about the firm's services and take action, ultimately contributing to increased inquiries and client acquisition.",
+        "The bot automates the entire content workflow: from data ingestion and analysis to draft generation and performance tracking. It demonstrates advanced Python engineering, prompt engineering for LLMs, robust error handling, and thoughtful UX design within the constraints of a chat interface. The project reflects my genuine passion for football and understanding of automation.",
     },
     featured: true,
     bgClass: "project--card__bg--img-5",
   },
   {
-    slug: "tribute-page",
-    title: "Bob Marley",
-    image: Bob,
-    stack: ["HTML", "CSS"],
-    github: "https://github.com/MikkyPrestige/bob_marley",
-    live: "https://bob-marley-mu.vercel.app",
+    slug: "hospitofind-leadgen",
+    title: "HospitoFind Lead Gen",
+    image: HospitoLeads,
+    stack: [
+      "Python",
+      "Reddit API",
+      "Google Sheets API",
+      "GitHub Actions",
+      "Email Enrichment",
+    ],
+    github: "https://github.com/MikkyPrestige/hospitofind-leadgen",
+    live: "https://github.com/MikkyPrestige/hospitofind-leadgen",
     description:
-      "A personal tribute to my idol, Bob Marley. I created this project to celebrate his life, his music, and the message of 'One Love' that has inspired me. The page features a clean, responsive design with a focus on storytelling and accessibility, ensuring that visitors can easily navigate through the content and learn about Bob Marley's legacy.",
+      "An automated lead generation pipeline for identifying potential healthcare facility outreach targets. It monitors Reddit for relevant threads, scores each lead by intent and relevance, and outputs structured, enriched records into a Google Sheet. The system runs on a daily cron, making the entire lead discovery process hands‑off.",
     caseStudy: {
       problem:
-        "I wanted to create a tribute page that not only honored Bob Marley's legacy but also provided an engaging and accessible experience for visitors. The challenge was to present a wealth of information in a way that was easy to navigate and visually appealing.",
+        "Identifying valuable marketing or partnership leads in the healthcare space traditionally involves manual searching across forums, social media, and directories. The process is time consuming, inconsistent and rarely produces structured, scored outputs that can be fed directly into outreach workflows.",
       solution:
-        "I designed a responsive layout that highlights key moments in Bob Marley's life and career, using a combination of images, text, and multimedia elements. I also focused on accessibility by ensuring that the page was navigable via keyboard and screen readers, and by using semantic HTML to structure the content effectively.",
+        "I built a Python script that runs as a GitHub Actions cron job, scanning specified subreddits for posts mentioning healthcare needs, facility requests, or operational gaps. Using NLP‑based intent scoring and keyword analysis, each lead is assigned a relevance score. The enriched data, including post content, author context, timestamp, and inferred contact details via email enrichment, is written automatically to a Google Sheet. Blacklisting and deduplication prevent repeat entries, and a sent‑log tracks outreach status.",
       impact:
-        "The tribute page serves as a heartfelt homage to Bob Marley, offering fans and newcomers alike an engaging way to explore his life and music. It also demonstrates my ability to create meaningful, content-rich web experiences with a focus on accessibility and user engagement.",
+        "The result is a reliable, low cost lead generation pipeline that surfaces actionable opportunities daily, with zero manual intervention. It showcases automation, API integration (Reddit, Google Sheets, email enrichment), and data engineering skills, with a clear use case for healthcare focused sales or growth teams.",
     },
     featured: true,
     bgClass: "project--card__bg--img-6",
-  },
+  }
 ];
 
 export default projects;

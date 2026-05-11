@@ -11,7 +11,7 @@ import REACT from "../assets/images/skills/react-logo.webp";
 import NextJs from "../assets/images/skills/nextjs.webp";
 import PostgreSQL from "../assets/images/skills/postgresql.webp";
 import MERN from "../assets/images/skills/mern.webp";
-import GIT from "../assets/images/skills/git-logo.webp";
+import Python from "../assets/images/skills/python.webp";
 import FIGMA from "../assets/images/skills/figma-logo.webp";
 import Teamwork from "../assets/images/skills/teamwork.svg";
 import Adaptability from "../assets/images/skills/adaptability-skill.svg";
@@ -30,7 +30,7 @@ const technicalSkills = [
   { name: "Next.js", icon: NextJs },
   { name: "PostgreSQL", icon: PostgreSQL},
   { name: "Mern Stack", icon: MERN },
-  { name: "Git", icon: GIT },
+  { name: "Python", icon: Python },
   { name: "Figma", icon: FIGMA },
 ];
 
