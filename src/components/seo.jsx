@@ -1,20 +1,26 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
+import { useLocation } from "react-router-dom";
 
-const SITE_URL = "https://michaelelue.netlify.app";
+const SITE_URL = "https://elue-michael.vercel.app";
 const DEFAULT_TITLE = "Elue Michael | Front-End Software Engineer";
 const DEFAULT_DESC =
-  "Hi, I'm Elue Michael, a passionate front-end software engineer specializing in crafting engaging and user-friendly web experiences. With a strong foundation in JavaScript and React, I bring designs to life with clean, efficient code. I thrive on solving complex problems and continuously learning new technologies to stay at the forefront of web development. Let's build something amazing together!";
-const DEFAULT_IMAGE = `${SITE_URL}/android-chrome-384x384.png`;
+  "Front‑end software engineer passionate about building accessible, performant web apps with React and modern JavaScript. Let's create something great together.";
+const DEFAULT_IMAGE = `${SITE_URL}/social-share.png`;
+const DEFAULT_IMAGE_ALT = "Elue Michael portfolio preview";
 
 const SEO = ({
   title = DEFAULT_TITLE,
   description = DEFAULT_DESC,
-  canonical = SITE_URL,
+  canonical: customCanonical,
   image = DEFAULT_IMAGE,
+  imageAlt = DEFAULT_IMAGE_ALT,
   type = "website",
   noindex = false,
 }) => {
+  const { pathname } = useLocation();
+  const canonical = customCanonical || `${SITE_URL}${pathname}`;
+
   return (
     <Helmet>
       <title>{title}</title>
@@ -29,12 +35,16 @@ const SEO = ({
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={image} />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:image:alt" content={imageAlt} />
 
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:url" content={canonical} />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
+      <meta name="twitter:image:alt" content={imageAlt} />
     </Helmet>
   );
 };

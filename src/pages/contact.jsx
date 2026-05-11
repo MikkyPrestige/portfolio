@@ -1,4 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
+import { useColorMode } from "theme-ui";
 import SEO from "../components/seo";
 import Form from "../components/form";
 import Avatar from "../components/avatar";
@@ -6,13 +7,16 @@ import Location from "../assets/images/socials/location.webp";
 import Gmail from "../assets/images/socials/gmail.webp";
 import Call from "../assets/images/socials/icon-call.webp";
 import Discord from "../assets/images/socials/discord.svg";
-import Linkedin from "../assets/images/socials/icons8-linkedin-94.webp";
+import Linkedin from "../assets/images/socials/linkedin.webp";
 import { mapboxgl } from "../config";
 import "mapbox-gl/dist/mapbox-gl.css";
 import { Fade } from "react-awesome-reveal";
+import { MdWavingHand } from "react-icons/md";
 /** @jsxImportSource theme-ui */
 
 const Contact = () => {
+  const [colorMode] = useColorMode();
+  const themeClass = colorMode === "dark" ? "theme-dark" : "";
   const mapContainer = useRef(null);
   const [map, setMap] = useState(null);
   const [selectedStyle, setSelectedStyle] = useState("satellite-streets-v12");
@@ -62,7 +66,7 @@ const Contact = () => {
           backgroundColor: "background",
           color: "text",
         }}
-        className="contact margin-top-5"
+        className={`contact margin-top-5 ${themeClass}`}
         id="contact"
       >
         <header className="contact--header">
@@ -155,7 +159,9 @@ const Contact = () => {
 
           <Fade direction="up" duration={900} triggerOnce>
             <section className="contact--content__left" aria-label="Send a message">
-              <h2 className="contact--content__left__title">Send a message 👋</h2>
+              <h2 className="contact--content__left__title">Send a message
+                <MdWavingHand className="contact--content__left__waving-icon" />
+                </h2>
               <p className="contact--content__left__desc">
                 Share your idea, role, or project scope and I’ll get back to you as soon as possible.
               </p>
@@ -166,7 +172,7 @@ const Contact = () => {
 
         <aside className="contact--location margin-top">
           <header className="contact--location__head">
-            <h2 className="contact--location__head__title">Location & Map Style</h2>
+            <h2 className="contact--location__head__title">My Location</h2>
             <span className="contact--location__head__avatar">
               <Avatar image={Location} alt="Location icon" style={{ width: "100%", height: "100%" }} />
             </span>

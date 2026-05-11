@@ -1,5 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import { useColorMode } from "theme-ui";
 import Avatar from "../components/avatar";
 import myAvatar from "../assets/images/prestige.webp";
 import HTML5 from "../assets/images/skills/html-logo.webp";
@@ -9,13 +10,15 @@ import Typescript from "../assets/images/skills/typescript.webp";
 import REACT from "../assets/images/skills/react-logo.webp";
 import NextJs from "../assets/images/skills/nextjs.webp";
 import PostgreSQL from "../assets/images/skills/postgresql.webp";
-import FIREBASE from "../assets/images/skills/firebase.svg";
+import MERN from "../assets/images/skills/mern.webp";
 import GIT from "../assets/images/skills/git-logo.webp";
 import FIGMA from "../assets/images/skills/figma-logo.webp";
 import Teamwork from "../assets/images/skills/teamwork.svg";
 import Adaptability from "../assets/images/skills/adaptability-skill.svg";
 import Cognition from "../assets/images/skills/cognition.svg";
 import Agile from "../assets/images/skills/agile-management.webp";
+import Flexibility from "../assets/images/skills/flexibility-skill.svg";
+import Mind from "../assets/images/skills/share-mind.webp";
 /** @jsxImportSource theme-ui */
 
 const technicalSkills = [
@@ -26,7 +29,7 @@ const technicalSkills = [
   { name: "React", icon: REACT },
   { name: "Next.js", icon: NextJs },
   { name: "PostgreSQL", icon: PostgreSQL},
-  { name: "Firebase", icon: FIREBASE },
+  { name: "Mern Stack", icon: MERN },
   { name: "Git", icon: GIT },
   { name: "Figma", icon: FIGMA },
 ];
@@ -36,8 +39,8 @@ const professionalSkills = [
   { name: "Collaboration", icon: Teamwork },
   { name: "Agile Delivery", icon: Agile },
   { name: "Adaptability", icon: Adaptability },
-  { name: "Product Thinking" },
-  { name: "Communication" },
+  { name: "Product Thinking", icon: Mind },
+  { name: "Communication", icon: Flexibility },
 ];
 
 const SkillCard = ({ name, icon }) => (
@@ -60,7 +63,10 @@ const SkillCard = ({ name, icon }) => (
   </li>
 );
 
-const Background = () => {
+const About = () => {
+  const [colorMode] = useColorMode();
+  const themeClass = colorMode === "dark" ? "theme-dark" : "";
+
   return (
     <main className="app">
       <Helmet>
@@ -73,7 +79,7 @@ const Background = () => {
 
       <section
         sx={{ backgroundColor: "background", color: "text" }}
-        className="about"
+        className={`about ${themeClass}`}
         aria-label="About Elue Michael"
       >
         <div className="about__container">
@@ -141,4 +147,4 @@ const Background = () => {
   );
 };
 
-export default Background;
+export default About;

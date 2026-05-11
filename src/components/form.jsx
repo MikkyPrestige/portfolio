@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useColorMode } from "theme-ui";
 import { database, ref, set } from "../config";
 import emailjs from "@emailjs/browser";
 import Avatar from "./avatar";
@@ -7,6 +8,9 @@ import { Zoom } from "react-awesome-reveal";
 /** @jsxImportSource theme-ui */
 
 const Form = () => {
+  const [colorMode] = useColorMode();
+  const themeClass = colorMode === "dark" ? "theme-dark" : "";
+
   const initialForm = {
     fullName: "",
     email: "",
@@ -95,7 +99,7 @@ const Form = () => {
         backgroundColor: "background",
         color: "text",
       }}
-      className="form"
+      className={`form ${themeClass}`}
     >
       {success && (
         <aside className="form--popup" role="status" aria-live="polite">

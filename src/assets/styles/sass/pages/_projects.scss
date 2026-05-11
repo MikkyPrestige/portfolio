@@ -208,3 +208,74 @@
     }
   }
 }
+
+.theme-dark {
+  .project {
+    &--header {
+      &__eyebrow {
+        color: #6cb8ff;
+      }
+      &__intro {
+        color: #a9b4c0;
+        opacity: 0.92;
+      }
+    }
+
+    &--title {
+      color: #e6edf3;
+    }
+
+    &--card {
+      border-color: #2a3645;
+      background: rgba(21, 29, 40, 0.95);
+    }
+
+    &__content {
+      &__title {
+        color: #e6edf3;
+      }
+      &__desc {
+        color: #a9b4c0;
+        opacity: 0.92;
+      }
+    }
+
+    &__frame {
+      &__item {
+        border-color: #2a3645;
+        color: #a9b4c0;
+      }
+    }
+
+    &__links {
+      &__link {
+        &--github {
+          color: #e6edf3;
+          border-color: #2a3645;
+
+          &:hover {
+            border-color: #6cb8ff;
+          }
+        }
+
+        &--demo {
+          background: #228be6;
+          color: #ffffff;
+
+          &:hover {
+            background: #1c7ed6;
+          }
+        }
+
+        &--case {
+          color: #6cb8ff;
+          border-color: #6cb8ff;
+
+          &:hover {
+            background: rgba(108, 184, 255, 0.12);
+          }
+        }
+      }
+    }
+  }
+}

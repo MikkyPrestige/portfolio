@@ -6,11 +6,13 @@ import Linkedin from "../assets/images/socials/linkedin.webp";
 import Discord from "../assets/images/socials/discord.svg";
 /** @jsxImportSource theme-ui */
 
-const Footer = () => {
+const Footer = ({ colorMode }) => {
+    const themeClass = colorMode === "dark" ? "theme-dark" : "";
+
   return (
     <footer
       sx={{ backgroundColor: "background", color: "text" }}
-      className="footer"
+      className={`footer ${themeClass}`}
       aria-label="Site footer"
     >
       <div className="footer__inner">
@@ -70,7 +72,7 @@ const Footer = () => {
       </div>
 
       <div className="footer__bottom">
-        <p>© {new Date().getFullYear()} Elue Michael.</p>
+        <p>&copy; {new Date().getFullYear()} Elue Michael.</p>
       </div>
     </footer>
   );

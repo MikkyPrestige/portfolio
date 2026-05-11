@@ -80,7 +80,6 @@
   &__title {
     max-width: 12ch;
     margin-bottom: 1rem;
-    color: #1f2a37;
     font-family: var(--font--family--primary);
     font-size: clamp(3.4rem, 6vw, 6.4rem);
     font-weight: 900;
@@ -94,9 +93,9 @@
 
   &__subtitle {
     max-width: 58ch;
-    color: #334155;
+    color: #52606d;
     font-family: var(--font--family--primary);
-    font-size: clamp(1.55rem, 2vw, 2rem);
+    font-size: clamp(1.65rem, 2vw, 2rem);
     line-height: 1.75;
   }
 
@@ -218,7 +217,6 @@
     z-index: 2;
     border-radius: 1.5rem;
     overflow: hidden;
-    background: #ffffff;
     border: 1px solid rgba(31, 42, 55, 0.14);
     box-shadow: 0 1.2rem 3rem rgba(15, 23, 32, 0.12);
 
@@ -282,7 +280,7 @@
   }
 }
 
-.theme-ui-dark {
+.theme-dark {
   .home {
     &__social-link {
       background: rgba(21, 29, 40, 0.95);

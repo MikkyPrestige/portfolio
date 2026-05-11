@@ -93,7 +93,6 @@
     gap: 1rem;
   }
 
-  // ===== phone-small (<= 480px) =====
   @include respond(phone-small) {
     padding: 5rem;
 
@@ -159,7 +158,6 @@
     }
   }
 
-  // ===== tablet-land and above (>= 768px in your mixin mapping) =====
   @include respond(tablet-land) {
     padding: 1.8rem;
 
@@ -186,8 +184,51 @@
     }
   }
 
-  // ===== laptop and above =====
   @include respond(laptop) {
     padding: 2rem;
+  }
+}
+
+.theme-dark {
+  .project-detail {
+    &__back {
+      color: #6cb8ff
+    }
+
+    &__header {
+      h1 {
+        color: #e6edf3;
+      }
+      p {
+        color: #a9b4c0;
+        opacity: 0.92;
+      }
+    }
+
+    &__hero {
+      border-color: #2a3645;
+    }
+
+    &__stack {
+      h2 {
+        color: #e6edf3;
+      }
+      span {
+        border-color: #2a3645;
+        color: #e6edf3;
+      }
+    }
+
+    &__case {
+      border-color: #2a3645;
+      background: rgba(21, 29, 40, 0.95);
+
+      h2 {
+        color: #e6edf3;
+      }
+      p {
+        color: #a9b4c0;
+      }
+    }
   }
 }

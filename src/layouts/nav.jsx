@@ -25,19 +25,19 @@ const CustomNavLink = ({ to, label, end, className, onClick }) => (
   </NavLink>
 );
 
-const Layout = () => {
+const Layout = ({ colorMode }) => {
   const [showMenu, setShowMenu] = useState(false);
-
   const toggleMenu = () => setShowMenu((prev) => !prev);
   const closeMenu = () => setShowMenu(false);
+  const themeClass = colorMode === "dark" ? "theme-dark" : "";
 
   return (
     <>
       {/* Mobile Nav */}
-      <section className="layout layout--small">
+      <section className={`layout layout--small ${themeClass}`}>
         <header className="layout__header">
           <Link to="/" className="layout__logo" aria-label="Go to homepage">
-            <Avatar image={Logo} alt="Brand Logo" style={{ width: "100%", height: "100%" }} />
+            <Avatar image={Logo} alt="Brand Logo" style={{ width: "100%", height: "100%", backgroundColor: "rgba(31, 42, 55, 0.25)", objectFit: "cover" }} />
           </Link>
 
           <button
@@ -70,10 +70,10 @@ const Layout = () => {
       </section>
 
       {/* Desktop Nav */}
-      <section className="layout--large">
+      <section className={`layout--large ${themeClass}`}>
         <header className="layout__header layout__header--desktop">
           <Link to="/" className="layout__logo layout__logo--desktop" aria-label="Go to homepage">
-            <Avatar image={Logo} alt="Brand Logo" style={{ width: "100%", height: "100%", backgroundColor: "rgba(31, 42, 55, 0.12)" }} />
+            <Avatar image={Logo} alt="Brand Logo" style={{ width: "100%", height: "100%", backgroundColor: "rgba(31, 42, 55, 0.25)", objectFit: "cover" }} />
           </Link>
 
           <nav className="layout__nav" aria-label="Main navigation">

@@ -1,14 +1,18 @@
 import React from "react";
+import { useColorMode } from "theme-ui";
 /** @jsxImportSource theme-ui */
 
 const Fallback = ({ error, resetErrorBoundary }) => {
+  const [colorMode] = useColorMode();
+  const themeClass = colorMode === "dark" ? "theme-dark" : "";
+
   return (
     <div
       sx={{
         backgroundColor: "background",
         color: "text",
       }}
-      className="fallback"
+      className={`fallback ${themeClass}`}
       role="alert"
       aria-live="assertive"
     >

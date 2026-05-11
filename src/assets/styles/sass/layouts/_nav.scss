@@ -62,8 +62,8 @@
     justify-content: center;
 
     &--desktop {
-      width: 3.5rem;
-      height: 3.5rem;
+      width: 4rem;
+      height: 4rem;
     }
   }
 
@@ -187,9 +187,9 @@
   }
 }
 
-.theme-ui-dark {
-  .layout,
-  .layout--large {
+.theme-dark {
+  &.layout,
+  &.layout--large {
     border-bottom: 1px solid rgba(230, 237, 243, 0.12);
     background: rgba(15, 23, 32, 0.9);
     box-shadow: 0 2px 16px rgba(0, 0, 0, 0.28);

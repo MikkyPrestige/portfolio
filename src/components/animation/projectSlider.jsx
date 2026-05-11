@@ -1,41 +1,50 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useCallback  } from "react";
 import { Link } from "react-router-dom";
 import Avatar from "../avatar";
 import Play from "../../assets/images/play.svg";
 import Pause from "../../assets/images/pause.svg";
 import { FaForward, FaBackward, FaGithub } from "react-icons/fa";
 import { Fade } from "react-awesome-reveal";
+/** @jsxImportSource theme-ui */
 
 const ProjectSlider = ({ projects = [], autoPlay = false, slideInterval = 5000 }) => {
   const [currentProject, setCurrentProject] = useState(0);
   const [isPlaying, setIsPlaying] = useState(autoPlay);
   const intervalRef = useRef(null);
+  const sliderRef = useRef(null);
 
   const hasProjects = projects.length > 0;
   const active = hasProjects ? projects[currentProject] : null;
 
-  const handleNextSlide = () => {
+  const handleNextSlide = useCallback(() => {
     setCurrentProject((prev) => (prev === projects.length - 1 ? 0 : prev + 1));
-  };
+  }, [projects.length]);
 
-  const handlePreviousSlide = () => {
+  const handlePreviousSlide = useCallback(() => {
     setCurrentProject((prev) => (prev === 0 ? projects.length - 1 : prev - 1));
-  };
+  }, [projects.length]);
 
   const handlePlayPause = () => {
     setIsPlaying((prev) => !prev);
   };
 
+  // Autoplay logic
   useEffect(() => {
-    if (!hasProjects) return;
-
-    if (isPlaying) {
-      intervalRef.current = setInterval(handleNextSlide, slideInterval);
-    }
-
+    if (!hasProjects || !isPlaying) return;
+    intervalRef.current = setInterval(handleNextSlide, slideInterval);
     return () => clearInterval(intervalRef.current);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [isPlaying, slideInterval, currentProject, hasProjects]);
+  }, [isPlaying, slideInterval, handleNextSlide, hasProjects]);
+
+    // Keyboard navigation (arrow keys)
+  const handleKeyDown = (e) => {
+    if (e.key === "ArrowLeft") {
+      e.preventDefault();
+      handlePreviousSlide();
+    } else if (e.key === "ArrowRight") {
+      e.preventDefault();
+      handleNextSlide();
+    }
+  };
 
   if (!hasProjects) {
     return (
@@ -46,8 +55,14 @@ const ProjectSlider = ({ projects = [], autoPlay = false, slideInterval = 5000 }
   }
 
   return (
-    <section className="project-slider" sx={{ backgroundColor: "background", color: "text" }}>
-      <Fade duration={900} triggerOnce>
+    <section
+      className="project-slider"
+      ref={sliderRef}
+      tabIndex={0}
+      onKeyDown={handleKeyDown}
+      aria-label="Featured projects slider"
+      sx={{ backgroundColor: "background", color: "text" }}
+    >
         <article className="project-slider__card">
           <div className="project-slider__media">
             <Avatar
@@ -57,6 +72,7 @@ const ProjectSlider = ({ projects = [], autoPlay = false, slideInterval = 5000 }
             />
           </div>
 
+        <Fade duration={500} key={currentProject}>
           <div className="project-slider__content">
             <h3 className="project-slider__title">{active.title}</h3>
             <p className="project-slider__desc">{active.description}</p>
@@ -94,8 +110,8 @@ const ProjectSlider = ({ projects = [], autoPlay = false, slideInterval = 5000 }
               </a>
             </div>
           </div>
+          </Fade>
         </article>
-      </Fade>
 
       <div className="project-slider__controls">
         <button

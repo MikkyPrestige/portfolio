@@ -177,3 +177,66 @@
     line-height: 1.3;
   }
 }
+
+.theme-dark {
+  .about {
+    &__eyebrow {
+      color: #6cb8ff;
+    }
+
+    &__title {
+      color: #e6edf3;
+    }
+
+    &__intro {
+      color: #a9b4c0;
+    }
+
+    &__profile {
+      border-color: #2a3645;
+      background: rgba(21, 29, 40, 0.95);
+    }
+
+    &__image-ring {
+      border-color: #2a3645;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    }
+
+    &__status {
+      color: #6cb8ff;
+      border-color: #6cb8ff;
+    }
+
+    &__bio {
+      h2 {
+        color: #e6edf3;
+      }
+      p {
+        color: #a9b4c0;
+      }
+    }
+
+    &__section-head {
+      h2 {
+        color: #e6edf3;
+      }
+      p {
+        color: #a9b4c0;
+      }
+    }
+
+    &__skill-card {
+      border-color: #2a3645;
+      background: rgba(21, 29, 40, 0.95);
+    }
+
+    &__skill-name {
+      color: #e6edf3;
+    }
+
+    &__skill-icon--text {
+      border-color: #6cb8ff;
+      color: #6cb8ff;
+    }
+  }
+}

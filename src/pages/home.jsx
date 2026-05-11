@@ -1,8 +1,9 @@
 import React from "react";
+import { useColorMode } from "theme-ui";
 import SEO from "../components/seo";
 import myAvatar from "../assets/images/myAvatar.webp";
 import GitHub from "../assets/images/socials/icons8-github-94.webp";
-import LinkedIn from "../assets/images/socials/icons8-linkedin-94.webp";
+import LinkedIn from "../assets/images/socials/linkedin.webp";
 import Resume from "../assets/images/socials/elue_michael_software_engineer.pdf";
 import ProjectSlide from "../components/animation/project";
 import Avatar from "../components/avatar";
@@ -10,6 +11,9 @@ import { Fade } from "react-awesome-reveal";
 /** @jsxImportSource theme-ui */
 
 const Home = () => {
+  const [colorMode] = useColorMode();
+  const themeClass = colorMode === "dark" ? "theme-dark" : "";
+
   const codeSnippet = `
 const build = async () => {
   const ui = "accessible";
@@ -27,11 +31,11 @@ const build = async () => {
     <main className="app">
       <SEO
         title="Elue Michael | Front-End Software Engineer"
-        description="Hi, I'm Elue Michael, a passionate front-end software engineer specializing in crafting engaging and user-friendly web experiences. With a strong foundation in JavaScript and React, I bring designs to life with clean, efficient code."
+        description="Front‑end software engineer passionate about building accessible, performant web apps with React and modern JavaScript. Let's create something great together."
       />
 
       <section
-        className="home"
+        className={`home ${themeClass}`}
         sx={{
           backgroundColor: "background",
           color: "text",

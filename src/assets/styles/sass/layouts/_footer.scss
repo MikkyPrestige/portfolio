@@ -131,3 +131,53 @@
     }
   }
 }
+
+.theme-dark {
+  .footer {
+    border-top-color: #2a3645;
+
+    &__eyebrow {
+      color: #6cb8ff;
+    }
+
+    &__name {
+      color: #e6edf3;
+    }
+
+    &__bio {
+      color: #a9b4c0;
+    }
+
+    &__heading {
+      color: #6cb8ff;
+    }
+
+    &__list a {
+      color: #e6edf3;
+
+      &:hover {
+        color: #6cb8ff;
+      }
+    }
+
+    &__email {
+      color: #6cb8ff;
+    }
+
+    &__socials a {
+      border-color: #2a3645;
+
+      &:hover {
+        border-color: #6cb8ff;
+      }
+    }
+
+    &__bottom {
+      border-top-color: #2a3645;
+
+      p {
+        color: #a9b4c0;
+      }
+    }
+  }
+}

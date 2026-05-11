@@ -1,6 +1,7 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import { useColorMode } from "theme-ui";
 import { FaGithub, FaExternalLinkAlt, FaArrowLeft } from "react-icons/fa";
 import projects from "../data/projects";
 /** @jsxImportSource theme-ui */
@@ -9,10 +10,13 @@ const ProjectDetail = () => {
   const { slug } = useParams();
   const project = projects.find((p) => p.slug === slug);
 
+  const [colorMode] = useColorMode();
+  const themeClass = colorMode === "dark" ? "theme-dark" : "";
+
   if (!project) {
     return (
       <main className="app">
-        <section className="project-detail margin-top-5">
+        <section className={`project-detail margin-top-5 ${themeClass}`}>
           <h1>Project not found</h1>
           <Link to="/projects">Back to Projects</Link>
         </section>
@@ -28,7 +32,7 @@ const ProjectDetail = () => {
       </Helmet>
 
       <section
-        className="project-detail margin-top-5"
+        className={`project-detail margin-top-5 ${themeClass}`}
         sx={{ backgroundColor: "background", color: "text" }}
       >
         <Link to="/projects" className="project-detail__back">

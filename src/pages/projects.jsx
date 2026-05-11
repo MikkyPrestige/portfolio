@@ -1,4 +1,5 @@
 import React from "react";
+import { useColorMode } from "theme-ui";
 import SEO from "../components/seo";
 import { Link } from "react-router-dom";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
@@ -7,6 +8,9 @@ import projects from "../data/projects";
 /** @jsxImportSource theme-ui */
 
 const Projects = () => {
+  const [colorMode] = useColorMode();
+  const themeClass = colorMode === "dark" ? "theme-dark" : "";
+
   return (
     <main className="app">
       <SEO
@@ -19,7 +23,7 @@ const Projects = () => {
           backgroundColor: "background",
           color: "text",
         }}
-        className="project margin-top-5"
+        className={`project margin-top-5 ${themeClass}`}
       >
         <header className="project--header">
           <p className="project--header__eyebrow">Portfolio</p>

@@ -1,7 +1,6 @@
 import HospitoFind from "../assets/images/projects/hospitofind.png";
 import Laundry from "../assets/images/projects/laundry.webp";
 import LawFirm from "../assets/images/projects/law-firm.webp";
-// import HangPanda from "../assets/images/projects/hangman.webp";
 import GitAudit from "../assets/images/projects/gitAudit.png";
 import TrustBank from "../assets/images/projects/trustbank.webp";
 import Bob from "../assets/images/projects/bob-marley.png";
@@ -73,7 +72,7 @@ const projects = [
     image: Laundry,
     stack: ["SCSS", "React", "Firebase"],
     github: "https://github.com/MikkyPrestige/machala-laundry",
-    live: "https://machalalaundryservice.netlify.app",
+    live: "https://machala-laundry.vercel.app",
     description:
       "A responsive service platform for a local laundry business, designed to enhance online presence and streamline customer interactions. The platform features a booking-focused user experience, embedded communication channels, and social-proof integration to improve service discoverability and reduce manual communication overhead.",
     caseStudy: {
@@ -87,26 +86,6 @@ const projects = [
     featured: true,
     bgClass: "project--card__bg--img-4",
   },
-  // {
-  //   slug: "hangpanda",
-  //   title: "HangPanda",
-  //   image: HangPanda,
-  //   stack: ["MERN", "Tailwind"],
-  //   github: "https://github.com/n-shen/game-hangman",
-  //   live: "https://hangman.ntec.app",
-  //   description:
-  //     "A collaborative MERN-stack word game featuring a real-time leaderboard and responsive UI. I contributed to the front-end logic and styling using Tailwind CSS, implementing a real-time scoring system and the global leaderboard to track top players.",
-  //   caseStudy: {
-  //     problem:
-  //       "The team needed an engaging multiplayer-style game experience with responsive interactions and a leaderboard that reflected score progression clearly.",
-  //     solution:
-  //       "I developed key front-end gameplay interactions, integrated scoring UI states, and implemented leaderboard display logic with responsive layouts. I also worked on component-level styling for a smooth, consistent user experience across screen sizes.",
-  //     impact:
-  //       "The game delivered a fun, competitive loop with clear feedback and replay value. It also demonstrated effective team collaboration and rapid feature delivery in a shared MERN codebase.",
-  //   },
-  //   featured: true,
-  //   bgClass: "project--card__bg--img-3",
-  // },
   {
     slug: "prestigeenigma-advocates",
     title: "PrestigeEnigma Advocates",
