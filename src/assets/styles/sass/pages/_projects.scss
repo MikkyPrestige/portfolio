@@ -86,24 +86,24 @@
         background-repeat: no-repeat;
         object-fit: contain;
 
-         &-1 {
-          background-image: url(../../../images/projects/trustbank.webp);
-        }
-
-        &-2 {
+        &-1 {
           background-image: url(../../../images/projects/hospitofind.webp);
         }
 
+         &-2 {
+          background-image: url(../../../images/projects/trustbank.webp);
+        }
+
         &-3 {
+          background-image: url(../../../images/projects/footydraft.png);
+        }
+
+        &-4 {
           background-image: url(../../../images/projects/gitAudit.webp);
         }
 
-         &-4 {
-          background-image: url(../../../images/projects/laundry.webp);
-        }
-
          &-5 {
-          background-image: url(../../../images/projects/telegram.webp);
+          background-image: url(../../../images/projects/laundry.webp);
         }
 
         &-6 {
